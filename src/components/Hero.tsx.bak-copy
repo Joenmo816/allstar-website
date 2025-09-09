@@ -1,0 +1,29 @@
+import Link from "next/link";
+
+export default function Hero() {
+  return (
+    <section className="bg-gradient-to-r from-blue-50 to-emerald-50/60 border-b">
+      <div className="mx-auto max-w-6xl px-4 py-16 md:py-20">
+        <div className="max-w-3xl">
+          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
+            Bee-conscious <span className="text-emerald-600">pest control</span> for South KC
+          </h1>
+          <p className="mt-3 text-lg text-gray-700 md:text-xl">
+            Locally owned & state-certified in KS & MO. Modern, targeted treatments with
+            <span className="font-semibold"> Guaranteed Service. Guaranteed Results.</span>
+          </p>
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            <Link href="/schedule" className="inline-flex items-center justify-center rounded-xl px-5 py-3 font-medium bg-blue-700 text-white hover:opacity-90 shadow-sm">Schedule Now</Link>
+            <Link href="/services" className="inline-flex items-center justify-center rounded-xl px-5 py-3 font-medium border hover:shadow bg-white/80 backdrop-blur">Explore Services</Link>
+            <Link href="/pests" className="inline-flex items-center justify-center rounded-xl px-5 py-3 font-medium border hover:shadow bg-white/80 backdrop-blur">Explore Pest Library</Link>
+          </div>
+          <ul className="mt-6 grid gap-2 text-gray-700 text-base list-disc pl-6">
+            <li>Licensed & Insured • BBB-Accredited</li>
+            <li>Senior & Veteran discounts</li>
+            <li>South KC service area — KS & MO</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}

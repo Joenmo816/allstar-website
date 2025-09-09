@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* minimal reset */
+html, body { min-height: 100%; }
+@import "leaflet/dist/leaflet.css";
+

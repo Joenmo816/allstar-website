@@ -1,0 +1,43 @@
+import Link from "next/link";
+import fs from "fs";
+import path from "path";
+
+function formatName(slug: string) {
+  // Insert spaces before capital letters, handle common pest words
+  return slug
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .replace(/cockroach/gi, "Cockroach")
+    .replace(/spider/gi, "Spider")
+    .replace(/ant/gi, "Ant")
+    .replace(/beetle/gi, "Beetle")
+    .replace(/bug/gi, "Bug")
+    .replace(/hornet/gi, "Hornet")
+    .replace(/wasp/gi, "Wasp")
+    .replace(/termite/gi, "Termite")
+    .replace(/moth/gi, "Moth")
+    .replace(/bat/gi, "Bat")
+    .replace(/mosquito/gi, "Mosquito")
+    .replace(/fly/gi, "Fly")
+    .replace(/tick/gi, "Tick")
+    .replace(/flea/gi, "Flea")
+    .replace(/\b\w/g, c => c.toUpperCase());
+}
+
+export default function PestLibrary() {
+  const dir = path.join(process.cwd(), "src/app/pests");
+  const pests = fs.readdirSync(dir).filter(f => f !== "page.tsx" && f !== "[slug]");
+
+  return (
+    <main className="mx-auto max-w-6xl px-4 py-12">
+      <h1 className="text-3xl font-bold mb-6">Pest Library</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        {pests.map((pest) => (
+          <Link key={pest} href={`/pests/${pest}`} className="block rounded-lg border p-4 hover:shadow-sm">
+            <span className="font-semibold">{formatName(pest)}</span>
+            <div className="text-sm text-gray-500">/{pest}</div>
+          </Link>
+        ))}
+      </div>
+    </main>
+  );
+}
