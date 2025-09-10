@@ -21,7 +21,7 @@ export default function Page() {
         <p className="text-gray-700">A small, shy spider (six eyes in three pairs) native to the south-central/Midwest U.S., including Missouri. Prefers undisturbed, dry places; bites are uncommon but medically important.</p>
       </header>
 
-      <section className="space-y-3"><h2 className="text-xl font-semibold">Biology & Identification</h2><div className="text-gray-700 space-y-2"><ul class='list-disc pl-6'>
+      <section className="space-y-3"><h2 className="text-xl font-semibold">Biology & Identification</h2><div className="text-gray-700 space-y-2"><ul className='list-disc pl-6'>
 <li>Light to medium brown with a violin-like mark on the cephalothorax; most reliable ID trait is six eyes in three pairs (many spiders have eight).</li>
 <li>Reclusive; hunts at night and hides in cluttered, seldom-disturbed areas by day.</li>
 </ul></div></section>
@@ -34,3 +34,4 @@ export default function Page() {
     </main>
   );
 }
+

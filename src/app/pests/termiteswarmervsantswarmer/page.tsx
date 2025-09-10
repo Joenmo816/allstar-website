@@ -21,7 +21,7 @@ export default function Page() {
         <p className="text-gray-700">Swarmers are the winged reproductives. Correct ID matters: termites indicate a colony that can damage wood; ants usually signal an ant colony nearby (often non-wood-destroying).</p>
       </header>
 
-      <section className="space-y-3"><h2 className="text-xl font-semibold">Biology & Identification</h2><div className="text-gray-700 space-y-2"><ul class='list-disc pl-6'>
+      <section className="space-y-3"><h2 className="text-xl font-semibold">Biology & Identification</h2><div className="text-gray-700 space-y-2"><ul className='list-disc pl-6'>
 <li><b>Antennae</b>: termites straight; ants elbowed.</li>
 <li><b>Waist</b>: termites broad/straight-sided; ants have a pinched waist.</li>
 <li><b>Wings</b>: termites front & hind wings equal length, often twice body length; ants’ front wings are longer than hind wings.</li>
@@ -35,3 +35,4 @@ export default function Page() {
     </main>
   );
 }
+

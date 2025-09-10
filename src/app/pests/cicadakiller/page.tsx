@@ -21,7 +21,7 @@ export default function Page() {
         <p className="text-gray-700">Large solitary wasps that provision underground burrows with paralyzed cicadas. Intimidating in size but typically non-aggressive; males cannot sting.</p>
       </header>
 
-      <section className="space-y-3"><h2 className="text-xl font-semibold">Biology & Identification</h2><div className="text-gray-700 space-y-2"><ul class='list-disc pl-6'>
+      <section className="space-y-3"><h2 className="text-xl font-semibold">Biology & Identification</h2><div className="text-gray-700 space-y-2"><ul className='list-disc pl-6'>
 <li>Eastern cicada killer (<i>Sphecius speciosus</i>) is common east of the Rockies. Females hunt cicadas and place them in soil chambers for larvae.</li>
 <li>Burrows in bare/sandy soil leave crescent or U-shaped mounds of spoil at the entrance.</li>
 </ul></div></section>
@@ -34,3 +34,4 @@ export default function Page() {
     </main>
   );
 }
+

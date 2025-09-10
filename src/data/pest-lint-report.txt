@@ -1,0 +1,160 @@
+==== Pest Library Lint Report ====
+Project: C:\allstar-website
+Date   : 09/09/2025 12:22:56
+
+Totals: 51 pests; 49 OK; 2 with issues
+
+[Acrobat Ant] (acrobatant)
+  Issues: None
+
+[Argentine Ant] (argentineant)
+  Issues: None
+
+[Asian Beetle] (asianbeetle)
+  Issues: None
+
+[Assassin Bug] (assassinbug)
+  Issues: None
+
+[Barn Spider] (barnspider)
+  Issues: None
+
+[Bat Bug] (batbug)
+  Issues: None
+
+[Bed Bug] (bedbug)
+  Issues: None
+
+[Black Cricket] (blackcricket)
+  Issues: None
+
+[Black Widow] (blackwidow)
+  Issues: None
+
+[Blue Mud Dauber] (bluemuddauber)
+  Issues: None
+
+[Boxelder Bug] (boxelderbug)
+  Issues: None
+
+[Brown Banded Cockroach] (brownbandedcockroach)
+  Issues: None
+
+[Bumble Bee] (bumblebee)
+  Issues: None
+
+[Carpenter Bee] (carpenterbee)
+  Issues: None
+
+[Cave Cricket] (cavecricket)
+  Issues: None
+
+[Cellar Spider] (cellarspider)
+  Issues: None
+
+[Clover Mite] (clovermite)
+  Issues: None
+
+[Daddy Longlegs] (daddylonglegs)
+  Issues: Missing appearance; Missing habitat; Missing diet; Missing lifeCycle; Missing behavior; Signs array empty; HealthRisks array empty; PropertyRisks array empty; Prevention array empty
+
+[Digger Wasp] (diggerwasp)
+  Issues: None
+
+[Drugstore Beetle] (drugstorebeetle)
+  Issues: None
+
+[European Hornet] (europeanhornet)
+  Issues: None
+
+[Flour Beetle] (flourbeetle)
+  Issues: None
+
+[Funnel Spider] (funnelspider)
+  Issues: None
+
+[Garden Spider] (gardenspider)
+  Issues: None
+
+[German Cockroach] (germancockroach)
+  Issues: None
+
+[Grain Beetle] (grainbeetle)
+  Issues: None
+
+[Grass Spider] (grassspider)
+  Issues: None
+
+[Hobo Spider] (hobospider)
+  Issues: None
+
+[Honey Bee] (honeybee)
+  Issues: None
+
+[House Centipede] (housecentipede)
+  Issues: None
+
+[Indian Meal Moth] (indianmealmoth)
+  Issues: None
+
+[Japanese Beetle] (japanesebeetle)
+  Issues: None
+
+[Jumping Spider] (jumpingspider)
+  Issues: None
+
+[Lady Bug] (ladybug)
+  Issues: None
+
+[Leaf Cutter Bee] (leafcutterbee)
+  Issues: None
+
+[Long Jawed Spider] (longjawedspider)
+  Issues: None
+
+[Mason Bee] (masonbee)
+  Issues: None
+
+[Mud Dauber] (muddauber)
+  Issues: None
+
+[Odorous House Ant] (odoroushouseant)
+  Issues: None
+
+[Oriental Cockroach] (orientalcockroach)
+  Issues: None
+
+[Paper Wasp] (paperwasp)
+  Issues: None
+
+[Praying Mantis] (prayingmantis)
+  Issues: None
+
+[Red Wasp] (redwasp)
+  Issues: None
+
+[Sawtooth Beetle] (sawtoothbeetle)
+  Issues: None
+
+[Smokey Brown Cockroach] (smokeybrowncockroach)
+  Issues: None
+
+[Stink Bug] (stinkbug)
+  Issues: None
+
+[Subterranean Termite] (subterraneantermite)
+  Issues: None
+
+[Sweat Bee] (sweatbee)
+  Issues: None
+
+[Walking Stick] (walkingstick)
+  Issues: None
+
+[Wolf Spider] (wolfspider)
+  Issues: None
+
+[Yellow Sac Spider] (yellowsacspider)
+  Issues: Image file missing: C:\allstar-website\pests\yellowsacspider.jpg
+
+

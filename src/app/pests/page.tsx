@@ -1,3 +1,4 @@
+import { displayNameFromSlug } from "@/lib/pestNames";
 export const runtime = "nodejs";
 
 import fs from "fs";
@@ -84,4 +85,5 @@ export default function PestLibrary() {
     </main>
   );
 }
+
 
