@@ -1,3 +1,15 @@
+export function titleize(raw: string): string {
+  const s = (raw || "")
+    .replace(/[_-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  return s.replace(/\b\w/g, (c) => c.toUpperCase());
+}
+export function normalizeKey(input: string): string {
+  return (input || "").toLowerCase().replace(/[^a-z]/g, "");
+}
+
+/** Canonical display names keyed by slug-without-punctuation (lowercase letters only). */
 export const pestNames: Record<string, string> = {
   acrobatant: "Acrobat Ant",
   argentineant: "Argentine Ant",
@@ -12,6 +24,7 @@ export const pestNames: Record<string, string> = {
   boxelderbug: "Boxelder Bug",
   brownbandedcockroach: "Brown Banded Cockroach",
   bumblebee: "Bumble Bee",
+  carpenterant: "Carpenter Ant",
   carpenterbee: "Carpenter Bee",
   cavecricket: "Cave Cricket",
   cellarspider: "Cellar Spider",
@@ -34,9 +47,9 @@ export const pestNames: Record<string, string> = {
   ladybug: "Lady Bug",
   japanesebeetle: "Japanese Beetle",
   leafcutterbee: "Leaf Cutter Bee",
-  muddauber: "Mud Dauber",
   longjawedspider: "Long Jawed Spider",
   masonbee: "Mason Bee",
+  muddauber: "Mud Dauber",
   odoroushouseant: "Odorous House Ant",
   orientalcockroach: "Oriental Cockroach",
   paperwasp: "Paper Wasp",
@@ -49,33 +62,16 @@ export const pestNames: Record<string, string> = {
   sweatbee: "Sweat Bee",
   walkingstick: "Walking Stick",
   wolfspider: "Wolf Spider",
-  yellowsacspider: "Yellow Sac Spider",
+  yellowsacspider: "Yellow Sac Spider"
 };
 
-/**
- * Normalize any slug-ish string to a map key:
- *  - lowercases
- *  - removes all non-letters
- *  - joins words
- */
-export function normalizeKey(input: string): string {
-  return (input || "")
-    .toLowerCase()
-    .replace(/[^a-z]/g, ""); // keep letters only
-}
-
-/**
- * Returns a proper display name. If not found in map,
- * falls back to "Title Case" based on dashes/underscores/spaces.
- */
-export function displayNameFromSlug(raw: string): string {
-  const k = normalizeKey(raw);
-  if (pestNames[k]) return pestNames[k];
-
-  // Fallback: Title Case
-  const cleaned = (raw || "")
-    .replace(/[_-]+/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-  return cleaned.replace(/\b\w/g, (c) => c.toUpperCase());
+/** Accepts string or object {slug|name} and returns a display name. */
+export function displayNameFromAny(x: any): string {
+  if (typeof x === "string") {
+    const k = normalizeKey(x);
+    return pestNames[k] || titleize(x);
+  }
+  const s = String(x?.slug ?? x?.name ?? x ?? "");
+  const k = normalizeKey(s);
+  return pestNames[k] || titleize(s);
 }

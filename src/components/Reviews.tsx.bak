@@ -1,4 +1,3 @@
-import { displayNameFromAny } from "@/lib/pestNames";
 function Stars(){ return <span aria-label="5 stars">★★★★★</span>; }
 
 export default function Reviews(){
@@ -15,12 +14,11 @@ export default function Reviews(){
           <div key={idx} className="card">
             <p className="text-amber-500"><Stars/></p>
             <p className="mt-2 text-sm text-gray-700">“{q.text}”</p>
-            <p className="mt-3 text-sm font-semibold">{ displayNameFromAny(q.name) }</p>
+            <p className="mt-3 text-sm font-semibold">{q.name}</p>
           </div>
         ))}
       </div>
     </section>
   );
 }
-
 
