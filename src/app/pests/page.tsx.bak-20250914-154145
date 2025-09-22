@@ -1,0 +1,48 @@
+"use client";
+import Link from "next/link";
+import Image from "next/image";
+import { useMemo, useState } from "react";
+import { pests } from "@/data/pests";
+import { displayName } from "@/lib/display";
+
+const srcOrPlaceholder = (src?: string) => src ?? "/images/pests/placeholder.svg";
+
+export default function PestsPage() {
+  const [q, setQ] = useState("");
+  const filtered = useMemo(() => {
+    const s = q.trim().toLowerCase();
+    if (!s) return pests;
+    return pests.filter(p =>
+      (p.name?.toLowerCase().includes(s) || p.slug.includes(s) || p.scientificName?.toLowerCase().includes(s))
+    );
+  }, [q]);
+
+  return (
+    <main className="mx-auto max-w-6xl px-4 py-10">
+      <h1 className="text-3xl font-bold mb-4">Pest Library</h1>
+      <input
+        value={q}
+        onChange={e => setQ(e.target.value)}
+        placeholder="Search pests by name or species…"
+        className="w-full sm:w-96 border rounded-lg px-3 py-2 mb-6"
+        aria-label="Search pests"
+      />
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {filtered.map(p => (
+          <Link key={p.slug} href={`/pests/${p.slug}`} className="rounded-2xl shadow p-4 hover:shadow-lg transition">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
+              <Image
+                src={srcOrPlaceholder(p.image)}
+                alt={p.alt ?? displayName(p)}
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <h3 className="mt-3 text-lg font-semibold">{displayName(p)}</h3>
+            {p.scientificName && <p className="text-sm text-gray-600 italic">{p.scientificName}</p>}
+          </Link>
+        ))}
+      </div>
+    </main>
+  );
+}

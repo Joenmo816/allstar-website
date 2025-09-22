@@ -1,51 +1,20 @@
-import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+const SRC = "/images/spider-identification-chart.png";
 
-export const metadata: Metadata = {
-  title: "Spider Identification Chart (Free Download) | All Star Pest Solutions KC",
-  description: "Free, printable spider ID chart for Kansas City homes. Download the JPG or share this page.",
-  alternates: { canonical: "/resources/spider-chart" },
-  openGraph: {
-    title: "Spider Identification Chart — All Star Pest Solutions",
-    description: "Free, printable spider ID chart for KC homeowners.",
-    images: ["/downloads/spider-identification-chart.jpg"],
-    type: "article",
-  },
+export const metadata = {
+  title: "Spider Identification Chart (Free Download) | All Star Pest Solutions",
+  description: "Printable spider ID chart for Kansas City homes. Call (913) 738-STAR for help.",
 };
 
-export default function Page() {
+export default function SpiderChartPage() {
   return (
-    <main className="px-6 py-10 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold">Spider Identification Chart (Free Download)</h1>
-      <p className="mt-2 text-gray-600">
-        Print or share this chart. Need help ID’ing a spider? Call (913) 738-STAR.
-      </p>
-
-      <div className="mt-6 rounded-xl overflow-hidden shadow">
-        <Image
-          src="/downloads/spider-identification-chart.jpg"
-          alt="Spider Identification Chart - All Star Pest Solutions"
-          width={1600}
-          height={2067}
-          priority
-        />
+    <main className="mx-auto max-w-5xl px-4 py-10">
+      <h1 className="text-4xl font-bold">Spider Identification Chart (Free Download)</h1>
+      <p className="mt-2 text-gray-600">Print or share this chart. Need help ID’ing a spider? Call (913) 738-STAR.</p>
+      <div className="mt-6 rounded-2xl shadow overflow-hidden relative aspect-[4/3]">
+        <Image src={SRC} alt="Spider Identification Chart - All Star Pest Solutions" fill sizes="100vw" priority />
       </div>
-
-      <div className="mt-6 flex gap-3">
-        <a
-          href="/api/download/spider-chart"
-          className="inline-flex items-center rounded-lg px-4 py-2 bg-blue-600 text-white font-medium shadow hover:bg-blue-700"
-        >
-          Download JPG
-        </a>
-        <Link
-          href="/contact"
-          className="inline-flex items-center rounded-lg px-4 py-2 bg-red-600 text-white font-medium shadow hover:bg-red-700"
-        >
-          Schedule a Free Inspection
-        </Link>
-      </div>
+      <a className="mt-4 inline-block underline" href={SRC} download>Download high-resolution chart</a>
     </main>
   );
 }

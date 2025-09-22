@@ -1,11 +1,30 @@
+import Link from "next/link";
 export default function Footer(){
   return (
-    <footer className="footer">
-      <div className="wrap">
-        <small>© All Star Pest Solutions. Guaranteed Service. Guaranteed Results.</small>
-        <a href="https://www.bbb.org/us/mo/cleveland/profile/pest-control-services/all-star-pest-solutions-0714-1000071121/#sealclick" target="_blank" rel="nofollow">
-          <img src="https://seal-nebraska.bbb.org/seals/blue-seal-250-52-bbb-1000071121.png" alt="BBB Accredited" height={40} />
-        </a>
+    <footer className="bg-gray-50 border-t mt-12">
+      <div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h4 className="text-xl font-bold text-brand-blue">All Star Pest Solutions</h4>
+          <p className="mt-2 text-sm text-gray-600">Kansas City’s family-owned pest professionals. Chemical treatments only for termites (Termidor®), no baiting.</p>
+        </div>
+        <div>
+          <h5 className="font-semibold">Quick Links</h5>
+          <ul className="mt-2 text-sm text-gray-600 space-y-1">
+            <li><Link href="/services">Services</Link></li>
+            <li><Link href="/pest-library">Pest Library</Link></li>
+            <li><Link href="/service-area">Service Area</Link></li>
+            <li><Link href="/about">About</Link></li>
+          </ul>
+        </div>
+        <div>
+          <h5 className="font-semibold">Contact</h5>
+          <p className="mt-2 text-sm text-gray-600">Phone: (XXX) XXX-XXXX</p>
+          <p className="text-sm text-gray-600">Email: info@allstarpest.com</p>
+          <p className="text-sm text-gray-600">Hours: Mon–Sat 8am–6pm</p>
+        </div>
+      </div>
+      <div className="border-t bg-white">
+        <div className="container mx-auto px-4 py-4 text-xs text-gray-500 text-center">© {new Date().getFullYear()} All Star Pest Solutions</div>
       </div>
     </footer>
   );

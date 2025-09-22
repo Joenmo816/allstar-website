@@ -1,0 +1,158 @@
+export type Pest = {
+  name: string;
+  slug: string;
+  image: string;
+  category: string;
+  risk: "High" | "Medium" | "Low";
+  description: string;
+};
+
+export const pests: Pest[] = [
+  {
+    name: "American House Spider",
+    slug: "american-house-spider",
+    image: "/images/pests/american-house-spider.jpg",
+    category: "Spider",
+    risk: "Medium",
+    description: "A common cobweb spider found indoors, often in corners and basements."
+  },
+  {
+    name: "Asian Beetle",
+    slug: "asian-beetle",
+    image: "/images/pests/asian-beetle.jpg",
+    category: "Beetle",
+    risk: "Low",
+    description: "Often mistaken for ladybugs, these beetles gather indoors in the fall."
+  },
+  {
+    name: "Blue Mud Dauber",
+    slug: "blue-mud-dauber",
+    image: "/images/pests/blue-mud-dauber.jpg",
+    category: "Wasp",
+    risk: "Medium",
+    description: "A solitary wasp that preys on spiders. Usually not aggressive."
+  },
+  {
+    name: "Assassin Bug",
+    slug: "assassin-bug",
+    image: "/images/pests/assassin-bug.jpg",
+    category: "Bug",
+    risk: "High",
+    description: "Predatory insect with a painful bite; some species can spread Chagas disease."
+  },
+  {
+    name: "Barn Spider",
+    slug: "barn-spider",
+    image: "/images/pests/barn-spider.jpg",
+    category: "Spider",
+    risk: "Low",
+    description: "Orb-weaver spider commonly found on barns, sheds, and outdoor structures."
+  },
+  {
+    name: "Bat Bug",
+    slug: "bat-bug",
+    image: "/images/pests/bat-bug.jpg",
+    category: "Bug",
+    risk: "Medium",
+    description: "Close relative of bed bugs that primarily feeds on bats but can bite humans."
+  },
+  {
+    name: "Brown Widow",
+    slug: "brown-widow",
+    image: "/images/pests/brown-widow.jpg",
+    category: "Spider",
+    risk: "High",
+    description: "Venomous spider related to the Black Widow; bite is less dangerous but painful."
+  },
+  {
+    name: "Cave Cricket",
+    slug: "cave-cricket",
+    image: "/images/pests/cave-cricket.jpg",
+    category: "Cricket",
+    risk: "Low",
+    description: "Also called camel crickets, they live in dark, damp spaces like basements and caves."
+  },
+  {
+    name: "Clothes Moth",
+    slug: "clothes-moth",
+    image: "/images/pests/clothes-moth.jpg",
+    category: "Moth",
+    risk: "Medium",
+    description: "Known for damaging fabrics, especially wool, silk, and fur."
+  },
+  {
+    name: "Daddy Longlegs",
+    slug: "daddy-longlegs",
+    image: "/images/pests/daddy-longlegs.jpg",
+    category: "Arachnid",
+    risk: "Low",
+    description: "Also known as harvestmen. Harmless and beneficial scavengers."
+  },
+  {
+    name: "Garden Spider",
+    slug: "garden-spider",
+    image: "/images/pests/garden-spider.jpg",
+    category: "Spider",
+    risk: "Low",
+    description: "Large orb-weaver spider that spins big, circular webs outdoors."
+  },
+  {
+    name: "Grass Spider",
+    slug: "grass-spider",
+    image: "/images/pests/grass-spider.jpg",
+    category: "Spider",
+    risk: "Low",
+    description: "Fast-moving funnel-web weavers commonly found in lawns and bushes."
+  },
+  {
+    name: "Longjawed Spider",
+    slug: "longjawed-spider",
+    image: "/images/pests/longjawed-spider.jpg",
+    category: "Spider",
+    risk: "Low",
+    description: "Slender spiders with long jaws, often found near water and vegetation."
+  },
+  {
+    name: "Red Wasp",
+    slug: "red-wasp",
+    image: "/images/pests/red-wasp.jpg",
+    category: "Wasp",
+    risk: "High",
+    description: "Aggressive stinging wasp with painful venom, often nesting in eaves or trees."
+  },
+  {
+    name: "Sawtooth Beetle",
+    slug: "sawtooth-beetle",
+    image: "/images/pests/sawtooth-beetle.jpg",
+    category: "Beetle",
+    risk: "Low",
+    description: "Stored-product pest commonly found in grains and packaged foods."
+  },
+  {
+    name: "Smoky Brown Cockroach",
+    slug: "smoky-brown-cockroach",
+    image: "/images/pests/smoky-brown-cockroach.jpg",
+    category: "Cockroach",
+    risk: "High",
+    description: "A large outdoor roach that invades homes for food and water."
+  },
+  {
+    name: "Walking Stick",
+    slug: "walking-stick",
+    image: "/images/pests/walking-stick.jpg",
+    category: "Insect",
+    risk: "Low",
+    description: "Harmless plant-feeding insect camouflaged as a stick or twig."
+  },
+  {
+    name: "Bold Jumping Spider",
+    slug: "bold-jumping-spider",
+    image: "/images/pests/bold-jumping-spider.jpg",
+    category: "Spider",
+    risk: "Low",
+    description: "Small, active jumping spider with iridescent green fangs. Generally harmless."
+  }
+];
+
+export default pests;
+

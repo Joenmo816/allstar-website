@@ -1,0 +1,52 @@
+export type Pest = {
+  slug: string;
+  name: string;
+  scientificName?: string;
+  group?: "Ant" | "Spider" | "Roach" | "Wasp/Hornet" | "Rodent" | "Termite" | "Other";
+  image?: string;     // e.g. "/images/pests/carpenter-ant.jpg"
+  alt?: string;
+};
+
+export const pests: Pest[] = [
+  { slug: "carpenter-ant",       name: "Carpenter Ant",       scientificName: "Camponotus spp.",           group: "Ant",           image: "/images/pests/carpenter-ant.jpg",       alt: "Carpenter ant" },
+  { slug: "odorous-house-ant",   name: "Odorous House Ant",   scientificName: "Tapinoma sessile",          group: "Ant",           image: "/images/pests/odorous-house-ant.jpg" },
+  { slug: "pavement-ant",        name: "Pavement Ant",        scientificName: "Tetramorium immigrans",     group: "Ant",           image: "/images/pests/pavement-ant.jpg" },
+  { slug: "acrobat-ant",         name: "Acrobat Ant",         scientificName: "Crematogaster spp.",        group: "Ant",           image: "/images/pests/acrobat-ant.jpg" },
+  { slug: "argentine-ant",       name: "Argentine Ant",       scientificName: "Linepithema humile",        group: "Ant",           image: "/images/pests/argentine-ant.jpg" },
+
+  { slug: "brown-recluse",       name: "Brown Recluse",       scientificName: "Loxosceles reclusa",        group: "Spider",        image: "/images/pests/brown-recluse.jpg" },
+  { slug: "black-widow",         name: "Black Widow",         scientificName: "Latrodectus mactans",       group: "Spider",        image: "/images/pests/black-widow.jpg" },
+  { slug: "yellow-sac-spider",   name: "Yellow Sac Spider",   scientificName: "Cheiracanthium spp.",       group: "Spider",        image: "/images/pests/yellow-sac-spider.jpg" },
+  { slug: "wolf-spider",         name: "Wolf Spider",         scientificName: "Lycosidae (family)",        group: "Spider",        image: "/images/pests/wolf-spider.jpg" },
+  { slug: "cellar-spider",       name: "Cellar Spider",       scientificName: "Pholcidae (family)",        group: "Spider",        image: "/images/pests/cellar-spider.jpg" },
+
+  { slug: "german-cockroach",    name: "German Cockroach",    scientificName: "Blattella germanica",       group: "Roach",         image: "/images/pests/german-cockroach.jpg" },
+  { slug: "american-cockroach",  name: "American Cockroach",  scientificName: "Periplaneta americana",     group: "Roach",         image: "/images/pests/american-cockroach.jpg" },
+  { slug: "brown-banded-cockroach", name: "Brown-Banded Cockroach", scientificName: "Supella longipalpa",  group: "Roach",         image: "/images/pests/brown-banded-cockroach.jpg" },
+  { slug: "oriental-cockroach",  name: "Oriental Cockroach",  scientificName: "Blatta orientalis",         group: "Roach",         image: "/images/pests/oriental-cockroach.jpg" },
+
+  { slug: "paper-wasp",          name: "Paper Wasp",          scientificName: "Polistes spp.",             group: "Wasp/Hornet",   image: "/images/pests/paper-wasp.jpg" },
+  { slug: "yellowjacket",        name: "Yellowjacket",        scientificName: "Vespula spp.",              group: "Wasp/Hornet",   image: "/images/pests/yellowjacket.jpg" },
+  { slug: "bald-faced-hornet",   name: "Bald-faced Hornet",   scientificName: "Dolichovespula maculata",  group: "Wasp/Hornet",   image: "/images/pests/bald-faced-hornet.jpg" },
+
+  { slug: "house-mouse",         name: "House Mouse",         scientificName: "Mus musculus",              group: "Rodent",        image: "/images/pests/house-mouse.jpg" },
+  { slug: "norway-rat",          name: "Norway Rat",          scientificName: "Rattus norvegicus",         group: "Rodent",        image: "/images/pests/norway-rat.jpg" },
+
+  { slug: "subterranean-termite", name: "Subterranean Termite", scientificName: "Rhinotermitidae (family)", group: "Termite",       image: "/images/pests/subterranean-termite.jpg" },
+  { slug: "termite-swarmer",     name: "Termite Swarmer",     scientificName: "Alate (winged)",            group: "Termite",       image: "/images/pests/termite-swarmer.jpg" },
+
+  { slug: "bed-bug",             name: "Bed Bug",             scientificName: "Cimex lectularius",         group: "Other",         image: "/images/pests/bed-bug.jpg" },
+  { slug: "flea",                name: "Flea",                scientificName: "Siphonaptera (order)",      group: "Other",         image: "/images/pests/flea.jpg" },
+  { slug: "tick",                name: "Tick",                scientificName: "Ixodidae (family)",         group: "Other",         image: "/images/pests/tick.jpg" },
+  { slug: "silverfish",          name: "Silverfish",          scientificName: "Lepisma saccharinum",       group: "Other",         image: "/images/pests/silverfish.jpg" },
+  { slug: "earwig",              name: "Earwig",              scientificName: "Dermaptera (order)",        group: "Other",         image: "/images/pests/earwig.jpg" },
+  { slug: "house-centipede",     name: "House Centipede",     scientificName: "Scutigera coleoptrata",     group: "Other",         image: "/images/pests/house-centipede.jpg" },
+  { slug: "springtail",          name: "Springtail",          scientificName: "Collembola (order)",        group: "Other",         image: "/images/pests/springtail.jpg" },
+  { slug: "stink-bug",           name: "Stink Bug",           scientificName: "Halyomorpha halys",         group: "Other",         image: "/images/pests/stink-bug.jpg" },
+  { slug: "carpenter-bee",       name: "Carpenter Bee",       scientificName: "Xylocopa spp.",             group: "Other",         image: "/images/pests/carpenter-bee.jpg" }
+];
+
+export function getPest(slug: string) {
+  return pests.find(p => p.slug === slug);
+}
+

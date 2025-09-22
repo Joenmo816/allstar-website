@@ -1,0 +1,28 @@
+import Image from "next/image";
+
+export default function HomePage() {
+  return (
+    <main>
+      {/* Hero Section */}
+      <div className="relative w-full h-[500px] md:h-[600px]">
+        <Image
+          src="/images/kc.jpg"
+          alt="Kansas City Skyline with Union Station"
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center text-white">
+          <h1 className="text-4xl md:text-6xl font-bold">
+            All Star Pest Solutions
+          </h1>
+          <p className="mt-4 text-lg md:text-2xl">
+            Guaranteed Service. Guaranteed Results.
+          </p>
+        </div>
+      </div>
+
+      {/* Rest of homepage content */}
+    </main>
+  );
+}
