@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingContactBar from "@/components/FloatingContactBar";
@@ -10,22 +10,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/apple-touch-icon.png", sizes: "180x180" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" }
     ],
-    shortcut: "/favicon-32x32.png",
-  },
-};
-
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "PestControl",
-  "name": "All Star Pest Solutions",
-  "url": "https://www.example.com",
-  "telephone": "(XXX) XXX-XXXX",
-  "logo": "/logo.png",
-  "image": "/images/kc.jpg",
-  "areaServed": "Kansas City, MO"
+    apple: [{ url: "/apple-touch-icon.png" }],
+    shortcut: ["/favicon-32x32.png"]
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -36,7 +25,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="min-h-[70vh]">{children}</main>
         <Footer />
         <FloatingContactBar />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       </body>
     </html>
   );

@@ -1,35 +1,25 @@
-import Link from "next/link";
+﻿export const metadata = { title: "Services | All Star Pest Solutions" };
 
-export const metadata = {
-  title: "Services | All Star Pest Solutions",
-  description: "Residential and commercial pest control services in the Kansas City metro."
-};
+const ITEMS = [
+  { href: "/services/general-pest", title: "General Pest", blurb: "Ants, spiders, roaches and more." },
+  { href: "/services/rodent", title: "Rodent Control", blurb: "Mice & rats—inspection, exclusion, control." },
+  { href: "/services/wasp", title: "Wasp & Hornet", blurb: "Nest removal and perimeter protection." },
+  { href: "/services/termite", title: "Termite (Termidor®)", blurb: "Chemical treatments only. No baiting." },
+];
 
-export default function Page() {
+export default function ServicesPage(){
   return (
-    <main className="mx-auto max-w-6xl px-4 py-10">
-      <h1 className="text-3xl font-bold">Our Services</h1>
-      <p className="text-gray-600 mt-2">Guaranteed Service. Guaranteed Results. State-certified in Kansas & Missouri.</p>
-
-      <div className="grid gap-6 md:grid-cols-2 mt-8">
-        <Link href="/services/residential" className="rounded-2xl border p-6 hover:shadow">
-          <h2 className="text-xl font-semibold">Residential</h2>
-          <p className="text-gray-600 mt-2">Quarterly protection plans, one-time treatments, termite inspections, and more.</p>
-          <div className="mt-3 text-blue-700 font-medium">Explore Residential →</div>
-        </Link>
-
-        <Link href="/services/commercial" className="rounded-2xl border p-6 hover:shadow">
-          <h2 className="text-xl font-semibold">Commercial</h2>
-          <p className="text-gray-600 mt-2">Tailored programs for apartments, restaurants, warehouses, and offices.</p>
-          <div className="mt-3 text-blue-700 font-medium">Explore Commercial →</div>
-        </Link>
+    <div className="container mx-auto px-4 py-10">
+      <h1 className="text-3xl md:text-4xl font-extrabold text-brand-blue">Our Services</h1>
+      <div className="mt-6 grid md:grid-cols-2 gap-6">
+        {ITEMS.map(i => (
+          <a key={i.href} href={i.href} className="group rounded-xl border bg-white p-5 hover:shadow-md transition">
+            <div className="text-xl font-bold">{i.title}</div>
+            <div className="text-sm text-gray-600 mt-1">{i.blurb}</div>
+            <div className="mt-4 text-brand-teal font-semibold">Learn more →</div>
+          </a>
+        ))}
       </div>
-
-      <div className="mt-10">
-        <Link href="/schedule" className="inline-block rounded-xl bg-blue-700 text-white px-5 py-3 font-medium hover:opacity-90">
-          Schedule an Inspection
-        </Link>
-      </div>
-    </main>
+    </div>
   );
 }
