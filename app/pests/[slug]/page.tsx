@@ -1,3 +1,4 @@
+import Image from "next/image";
 interface PageProps { params: { slug: string } }
 
 const pestCopy: Record<string, string> = {
@@ -15,7 +16,7 @@ export default function PestDetail({ params }: PageProps) {
     <main className="mx-auto max-w-3xl px-4 py-10 sm:py-14">
       <h1 className="text-3xl font-bold">{name}</h1>
       <div className="mt-6 overflow-hidden rounded-xl border">
-        <img src={image} alt={name} className="w-full h-auto object-cover" />
+        <Image src={image} alt={name} className="w-full h-auto object-cover" width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} />
       </div>
       <p className="mt-6 text-zinc-700">{pestCopy[slug] ?? "More information coming soon."}</p>
       <div className="mt-8 flex gap-3">

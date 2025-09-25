@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function AboutPage() {
   return (
     <main className="container py-12">
@@ -8,7 +9,7 @@ export default function AboutPage() {
         home or business protected.
       </p>
       <div className="mt-8">
-        <img src="/images/kc-family-owned.jpg" alt="KC family owned" className="rounded-2xl border" />
+        <Image src="/images/kc-family-owned.jpg" alt="KC family owned" className="rounded-2xl border" width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} />
       </div>
     </main>
   );

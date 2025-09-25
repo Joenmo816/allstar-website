@@ -1,9 +1,10 @@
+import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="border-t bg-white">
       <div className="container py-8 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
         <div>
-          <img src="/logo.svg" alt="All Star Pest Solutions" className="h-10 w-auto" />
+          <Image src="/logo.svg" alt="All Star Pest Solutions" className="h-10 w-auto" width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} />
           <p className="mt-3 muted">KC's Bugman! Family-owned & operated. Local service. Guaranteed results.</p>
 
           {/* Trust badges */}
@@ -15,11 +16,10 @@ export default function Footer() {
               className="badge"
               aria-label="BBB Accredited Business"
             >
-              <img
+              <Image
                 src="http://seal-nebraska.bbb.org/seals/blue-seal-293-61-bbb-1000071121.png"
                 alt="All Star Pest Solutions BBB Business Review"
-                className="h-6 w-auto"
-              />
+                className="h-6 w-auto" width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} />
               <span className="sr-only">BBB Accredited Business</span>
             </a>
             {/* <span className="badge">Environmentally Friendly & Children and Pet Safe</span>

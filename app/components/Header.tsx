@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
@@ -6,7 +7,7 @@ export default function Header() {
       <div className="container flex items-center justify-between py-3">
         <Link href="/" className="flex items-center gap-3" aria-label="All Star Pest Solutions Home">
           {/* BIG LOGO */}
-          <img src="/logo.svg" alt="All Star Pest Solutions" className="h-10 sm:h-12 md:h-14 w-auto" />
+          <Image src="/logo.svg" alt="All Star Pest Solutions" className="h-10 sm:h-12 md:h-14 w-auto" width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} />
           <span className="sr-only">All Star Pest Solutions</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
@@ -27,11 +28,10 @@ export default function Header() {
             rel="nofollow"
             aria-label="BBB Accredited Business"
           >
-            <img
+            <Image
               src="http://seal-nebraska.bbb.org/seals/blue-seal-293-61-bbb-1000071121.png"
               alt="All Star Pest Solutions BBB Business Review"
-              className="h-6 w-auto"
-            />
+              className="h-6 w-auto" width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} />
           </a>
 
           {/* Your own badges (optional local svgs/pngs)

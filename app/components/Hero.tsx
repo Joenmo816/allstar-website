@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
@@ -17,9 +18,10 @@ export default function Hero() {
           <p className="mt-3 text-xs text-zinc-500">Proudly serving the Kansas City metro.</p>
         </div>
         <div className="relative">
-          <img src="/images/kc-family-owned.jpg" alt="KC family owned" className="rounded-2xl border w-full object-cover" />
+          <Image src="/images/kc-family-owned.jpg" alt="KC family owned" className="rounded-2xl border w-full object-cover" width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} />
         </div>
       </div>
     </section>
   );
 }
+
