@@ -1,0 +1,24 @@
+# Auto-normalize text files to LF in repo, CRLF in working copy on Windows
+* text=auto eol=lf
+
+# Ensure specific file types always use LF
+*.ts   text eol=lf
+*.tsx  text eol=lf
+*.js   text eol=lf
+*.jsx  text eol=lf
+*.css  text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+
+# Binary files should never be modified by Git
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.woff binary
+*.woff2 binary
+*.ttf  binary
+*.eot  binary
+*.pdf  binary
+*.zip  binary

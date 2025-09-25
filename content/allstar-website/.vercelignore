@@ -1,0 +1,5 @@
+.next/cache
+__route_backups
+__name_patch_backup
+**/*.bak
+**/*.ps1
