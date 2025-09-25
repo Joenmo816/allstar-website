@@ -1,41 +1,38 @@
-﻿// src/app/pests/page.tsx
 import Image from "next/image";
-import { pests } from "@/data/pests";
+import Link from "next/link";
+import { PESTS } from "@/data/pests.generated";
+import { DESCRIPTIONS } from "@/data/descriptions";
+import { withAutoDetails } from "@/lib/pest-gen";
 
-export const metadata = {
-  title: "Pest Library | All Star Pest Solutions",
-  description: "Browse common Kansas City pests with images and quick facts."
-};
-
-export default function PestLibraryPage() {
-  const list = pests.slice().sort((a, b) => a.name.localeCompare(b.name));
-
+export default function PestsPage() {
   return (
-    <div className="container mx-auto px-4 py-10">
-      <h1 className="text-3xl md:text-4xl font-extrabold text-brand-blue">Pest Library</h1>
-      <p className="mt-2 text-gray-700">Click any pest to learn more.</p>
-
-      <div className="mt-6 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {list.length === 0 && (
-          <div className="text-gray-600">
-            No items yet. Add images to <code>/public/images/pests</code> and add rows in <code>src/data/pests.generated.ts</code>.
-          </div>
-        )}
-        {list.map((p) => (
-          <a
-            key={p.slug}
-            href={`/pests/${p.slug}`}
-            className="group rounded-xl border bg-white hover:shadow-md transition overflow-hidden"
-          >
-            <div className="relative h-40 w-full bg-gray-100">
-              <Image src={p.image} alt={p.name} fill className="object-cover" />
-            </div>
-            <div className="p-3">
-              <div className="font-semibold">{p.name}</div>
-              <div className="text-xs text-gray-600">{p.group} • {p.risk} risk</div>
-            </div>
-          </a>
-        ))}
+    <main className="max-w-7xl mx-auto px-4 py-10">
+      <h1 className="text-3xl font-bold mb-6">Pest Library</h1>
+      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {PESTS.map(p => {
+          const d = withAutoDetails(p, DESCRIPTIONS);
+          return (
+            <Link
+              key={p.slug}
+              href={`/pest/${p.slug}`}
+              className="block rounded-2xl shadow p-3 hover:shadow-lg transition"
+            >
+              <div className="relative w-full aspect-square overflow-hidden rounded-xl">
+                <Image
+                  src={p.image}
+                  alt={p.title}
+                  fill
+                  sizes="(max-width:768px) 100vw, 25vw"
+                />
+              </div>
+              <div className="mt-3 text-center font-medium">{p.title}</div>
+              <p className="mt-1 text-sm text-gray-600 line-clamp-2">
+                {d.biology}
+              </p>
+            </Link>
+          );
+        })}
       </div>
-    </div>
+    </main>
   );
+}

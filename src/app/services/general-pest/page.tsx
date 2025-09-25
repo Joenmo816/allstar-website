@@ -1,4 +1,4 @@
-﻿export const metadata = { title: 'General Pest | All Star Pest Solutions' };
+﻿export const metadata = { title: 'General Pest Services | All Star Pest Solutions' };
 type SectionProps = { title: string, children: React.ReactNode };
 function Section({ title, children }: SectionProps){
   return (
@@ -12,7 +12,8 @@ export default function GeneralPest(){
   return (
     <div className='container mx-auto px-4 py-10 grid md:grid-cols-2 gap-6'>
       <Section title='What We Treat'>
-        Ants, spiders, roaches, silverfish, pantry pests and more for residential & light commercial.
+        Ants, Bed Bugs, Boxelder Bugs, Centipedes, Clover Mites, Cockroaches, Crickets, 
+        Earwigs, Fleas, Millipedes, Silverfish, Termites, Wasps and more for residential! 
       </Section>
       <Section title='Our Approach'>
         Inspection, targeted application, and exterior barrier—always safety-first and label-driven.

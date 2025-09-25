@@ -1,25 +1,39 @@
-﻿export const metadata = { title: "Services | All Star Pest Solutions" };
+import Link from "next/link";
 
-const ITEMS = [
-  { href: "/services/general-pest", title: "General Pest", blurb: "Ants, spiders, roaches and more." },
-  { href: "/services/rodent", title: "Rodent Control", blurb: "Mice & rats—inspection, exclusion, control." },
-  { href: "/services/wasp", title: "Wasp & Hornet", blurb: "Nest removal and perimeter protection." },
-  { href: "/services/termite", title: "Termite (Termidor®)", blurb: "Chemical treatments only. No baiting." },
-];
-
-export default function ServicesPage(){
+export default function ServicesPage() {
   return (
-    <div className="container mx-auto px-4 py-10">
-      <h1 className="text-3xl md:text-4xl font-extrabold text-brand-blue">Our Services</h1>
-      <div className="mt-6 grid md:grid-cols-2 gap-6">
-        {ITEMS.map(i => (
-          <a key={i.href} href={i.href} className="group rounded-xl border bg-white p-5 hover:shadow-md transition">
-            <div className="text-xl font-bold">{i.title}</div>
-            <div className="text-sm text-gray-600 mt-1">{i.blurb}</div>
-            <div className="mt-4 text-brand-teal font-semibold">Learn more →</div>
-          </a>
-        ))}
+    <main className="max-w-7xl mx-auto px-6 py-12">
+      <h1 className="text-3xl font-bold mb-4">Services</h1>
+      <p className="text-gray-700 mb-6">
+        KC’s Bugman — Over 28 years protecting KC homes & businesses with eco-smart treatments.
+      </p>
+
+      <div className="grid gap-6 md:grid-cols-3 mb-10">
+        <Link href="/plans" className="block rounded-2xl border p-6 hover:shadow transition">
+          <h2 className="text-lg font-semibold">Plans & Programs</h2>
+          <p className="text-gray-700">Quarterly & monthly options, one-time treatments.</p>
+        </Link>
+        <Link href="/guarantee" className="block rounded-2xl border p-6 hover:shadow transition">
+          <h2 className="text-lg font-semibold">Our Guarantee</h2>
+          <p className="text-gray-700">If pests return, so do we — at no extra cost.</p>
+        </Link>
+        <Link href="/pests/coverage" className="block rounded-2xl border p-6 hover:shadow transition">
+          <h2 className="text-lg font-semibold">Pest Coverage</h2>
+          <p className="text-gray-700">25+ common pests covered; specialty add-ons available.</p>
+        </Link>
+        <Link href="/pricing" className="block rounded-2xl border p-6 hover:shadow transition">
+          <h2 className="text-lg font-semibold">Pricing & Cost</h2>
+          <p className="text-gray-700">Transparent ranges & what affects price.</p>
+        </Link>
+        <Link href="/learn" className="block rounded-2xl border p-6 hover:shadow transition">
+          <h2 className="text-lg font-semibold">Learn Center</h2>
+          <p className="text-gray-700">Signs, prevention tips, and how our process works.</p>
+        </Link>
+        <Link href="/contact" className="block rounded-2xl border p-6 hover:shadow transition">
+          <h2 className="text-lg font-semibold">Free Inspection</h2>
+          <p className="text-gray-700">We’ll assess and tailor a plan to your property.</p>
+        </Link>
       </div>
-    </div>
+    </main>
   );
 }

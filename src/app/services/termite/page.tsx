@@ -12,8 +12,7 @@ export default function Termite(){
   return (
     <div className='container mx-auto px-4 py-10 grid md:grid-cols-2 gap-6'>
       <Section title='Treatment Type'>
-        We perform <strong>chemical treatments only</strong> with <strong>Termidor®</strong>. We <strong>do not</strong> offer baiting systems.
-      </Section>
+        We perform <strong>Termite treatments</strong> with <strong>Termidor®</strong>. We , VA/FHA Refinance inspections!  </Section>
       <Section title='Inspection & Quote'>
         Thorough inspection, moisture & conducive condition check, and a clear proposal before work begins.
       </Section>

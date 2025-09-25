@@ -1,0 +1,35 @@
+import Image from "next/image";
+import Link from "next/link";
+
+type Props = {
+  href?: string;
+  className?: string;
+  width?: number;
+  height?: number;
+};
+
+export default function BbbSeal({
+  href = "https://www.bbb.org/",  // TODO: replace with your BBB profile URL
+  className = "",
+  width = 300,     // bump default size
+  height = 120,
+}: Props) {
+  return (
+    <Link
+      href={href}
+      aria-label="Better Business Bureau profile — opens in a new tab"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className}
+    >
+      <Image
+        src="/images/brand/bbb-accredited.jpg"
+        alt="BBB Accredited Business"
+        width={width}
+        height={height}
+        className="h-auto w-auto max-w-full"
+        priority
+      />
+    </Link>
+  );
+}

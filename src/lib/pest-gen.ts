@@ -1,0 +1,216 @@
+export type PestDetails = {
+  biology?: string;
+  lifeCycle?: string;
+  habitat?: string;
+  behavior?: string;
+};
+
+export type PestItem = { slug: string; title: string; image: string };
+
+// Categorize by keywords in slug
+function detectCategory(slug: string): string {
+  const s = slug.toLowerCase();
+  if (s.includes("termite")) return "termite";
+  if (s.includes("ant")) return "ant";
+  if (s.includes("spider") || s.includes("recluse") || s.includes("widow")) return "spider";
+  if (s.includes("roach") || s.includes("cockroach")) return "roach";
+  if (s.includes("wasp") || s.includes("hornet") || s.includes("yellowjacket")) return "wasp";
+  if (s.includes("bee") || s.includes("bumble") || s.includes("honey")) return "bee";
+  if (s.includes("mosquito")) return "mosquito";
+  if (s.includes("bed-bug") || s.includes("bedbug")) return "bedbug";
+  if (s.includes("tick")) return "tick";
+  if (s.includes("flea")) return "flea";
+  if (s.includes("beetle") || s.includes("weevil")) return "beetle";
+  if (s.includes("moth")) return "moth";
+  if (s.includes("fly") || s.includes("gnat") || s.includes("fruit-fly")) return "fly";
+  if (s.includes("cricket")) return "cricket";
+  if (s.includes("silverfish") || s.includes("firebrat")) return "silverfish";
+  return "general";
+}
+
+// Stock templates per category (locally generated; no external AI calls)
+const TEMPLATES: Record<string, PestDetails> = {
+  general: {
+    biology:
+      "Small to medium-sized insect; coloration and markings vary by species. Typically identified by body shape and antennae.",
+    lifeCycle:
+      "Undergoes simple or complete metamorphosis depending on species; seasonal population peaks common in warmer months.",
+    habitat:
+      "Often found where food, moisture, and shelter are available: kitchens, basements, garages, crawlspaces, and landscaping.",
+    behavior:
+      "Forages for food and water; activity increases with warmth and humidity. May cluster near entry points or harborages."
+  },
+  ant: {
+    biology:
+      "Elbowed antennae; segmented waist with one or two nodes. Worker sizes vary; many species are brown to black.",
+    lifeCycle:
+      "Complete metamorphosis (egg–larva–pupa–adult). Winged reproductives swarm seasonally; colonies may split and bud.",
+    habitat:
+      "Nests outdoors in soil, mulch, stumps, or under slabs; indoors in wall voids, insulation, or moisture-damaged wood.",
+    behavior:
+      "Foragers follow pheromone trails to sweets, proteins, and moisture. Carpenter ants excavate smooth galleries in wood."
+  },
+  spider: {
+    biology:
+      "Arachnid with two body segments and eight legs; most are harmless to people and beneficial predators of insects.",
+    lifeCycle:
+      "Egg sacs hatch into spiderlings that molt several times before adulthood. Indoors populations can be present year-round.",
+    habitat:
+      "Prefer undisturbed areas: basements, garages, closets, attics, and exterior eaves or vegetation.",
+    behavior:
+      "Shy and reclusive; bites are uncommon and usually occur when pressed against skin. Build webs or hunt depending on species."
+  },
+  roach: {
+    biology:
+      "Flattened body with a shield-like pronotum; long antennae. Common species include German, American, and Oriental.",
+    lifeCycle:
+      "Egg case (ootheca) contains multiple nymphs; rapid reproduction in warm, humid environments.",
+    habitat:
+      "Kitchens, bathrooms, utility rooms, and around appliances or plumbing where food residues and moisture are present.",
+    behavior:
+      "Nocturnal scavengers; contaminate surfaces and foods. Aggregate in tight harborages and spread quickly without control."
+  },
+  termite: {
+    biology:
+      "Soft-bodied, pale workers with straight antennae; soldiers have enlarged heads and jaws; swarmers are winged reproducers.",
+    lifeCycle:
+      "Eggs to nymphs to castes; colonies expand over years. Swarming often occurs in spring or after rains.",
+    habitat:
+      "Soil–wood interface, moisture-rich areas, foundation cracks, and mud tubes along walls or piers.",
+    behavior:
+      "Feed on cellulose (wood, paper). Activity is hidden within structures; can cause significant structural damage over time."
+  },
+  wasp: {
+    biology:
+      "Slender-bodied with narrow waist; smooth stinger in many species. Paper wasps build open comb nests; yellowjackets enclosed.",
+    lifeCycle:
+      "Annual colonies start with a single queen in spring; peak in late summer/early fall.",
+    habitat:
+      "Eaves, attics, shrubs, wall voids, and ground cavities. Attracted to outdoor food and sugary drinks.",
+    behavior:
+      "Defensive near nests; stings possible. Beneficial predators but nuisance around people and structures."
+  },
+  bee: {
+    biology:
+      "Hairy-bodied pollinators with barbed stingers in many species. Honey bees form perennial colonies; bumble bees annual.",
+    lifeCycle:
+      "Complete metamorphosis; social species have queens and workers. Swarms may relocate colonies.",
+    habitat:
+      "Cavities in trees or structures, soffits, wall voids; forage on flowering plants and gardens.",
+    behavior:
+      "Generally non-aggressive away from nests; vital pollinators. Live removals preferred when feasible."
+  },
+  mosquito: {
+    biology:
+      "Slender-bodied fly; females bite to obtain blood meals for egg production.",
+    lifeCycle:
+      "Complete metamorphosis; eggs hatch in standing water; larvae (wrigglers) and pupae develop aquatically.",
+    habitat:
+      "Containers, clogged gutters, birdbaths, puddles, tire piles, and shaded vegetation.",
+    behavior:
+      "Most active at dusk/dawn; rest in cool, shaded areas. Can transmit diseases; source reduction is critical."
+  },
+  bedbug: {
+    biology:
+      "Small, flat, reddish-brown insect; feeds on blood. Nymphs are paler and translucent.",
+    lifeCycle:
+      "Simple metamorphosis; multiple nymphal stages; reproduces indoors year-round.",
+    habitat:
+      "Seams of mattresses, box springs, headboards, furniture joints, baseboards, and luggage.",
+    behavior:
+      "Nocturnal feeders; hitchhike on belongings. Fecal spotting and cast skins indicate activity."
+  },
+  tick: {
+    biology:
+      "Arachnid with eight legs (after first molt); flattened body that expands after feeding.",
+    lifeCycle:
+      "Egg → larva → nymph → adult; requires blood meals at each stage depending on species.",
+    habitat:
+      "Tall grasses, brushy edges, leaf litter, and wildlife corridors.",
+    behavior:
+      "Quest on vegetation waiting for hosts; may transmit pathogens. Yard habitat reduction helps."
+  },
+  flea: {
+    biology:
+      "Small, laterally compressed; powerful jumpers; adults feed on blood of pets and wildlife.",
+    lifeCycle:
+      "Complete metamorphosis; larvae develop in carpets, pet bedding, and shaded soil.",
+    habitat:
+      "Pet resting areas indoors and outdoors, under decks, and wildlife harborages.",
+    behavior:
+      "Bites cause itching; control requires treating pets, interiors, and outdoor hotspots simultaneously."
+  },
+  beetle: {
+    biology:
+      "Hard wing covers (elytra); shapes and colors vary widely among species.",
+    lifeCycle:
+      "Complete metamorphosis; larvae and adults may target stored products, wood, or fabrics depending on species.",
+    habitat:
+      "Pantries, closets, structural wood, and landscape plants.",
+    behavior:
+      "Often attracted to lights or food odors; identification guides targeted control."
+  },
+  moth: {
+    biology:
+      "Scaled wings; many species attracted to light. Pantry and clothes moths are common indoors.",
+    lifeCycle:
+      "Complete metamorphosis; larvae cause most damage to foods or fabrics.",
+    habitat:
+      "Pantries with grains/nuts or closets with natural fibers; exterior lights at night.",
+    behavior:
+      "Adults are weak fliers indoors; pheromone traps assist monitoring and control."
+  },
+  fly: {
+    biology:
+      "Single pair of wings; rapid fliers. House flies, drain flies, and fruit flies are common indoors.",
+    lifeCycle:
+      "Complete metamorphosis; larvae develop in organic matter, drains, or overripe produce.",
+    habitat:
+      "Kitchens, break rooms, drains, trash areas, and compost.",
+    behavior:
+      "Vector contaminants; sanitation and exclusion are key to control."
+  },
+  cricket: {
+    biology:
+      "Long antennae; males chirp by rubbing wings. Camel/cave crickets are hump-backed and wingless.",
+    lifeCycle:
+      "Simple metamorphosis; most active in warm seasons.",
+    habitat:
+      "Basements, crawlspaces, garages; mulch and foundation plantings.",
+    behavior:
+      "Nocturnal; attracted to lights and moisture; may damage fabrics and paper."
+  },
+  silverfish: {
+    biology:
+      "Tear-drop shaped, silvery scales; long antennae and three tail filaments.",
+    lifeCycle:
+      "Simple metamorphosis; slow development in cool, damp areas.",
+    habitat:
+      "Bathrooms, basements, attics, and storage areas with books or cardboard.",
+    behavior:
+      "Feed on starches and paper; thrive in humidity; reduce moisture to manage."
+  }
+};
+
+// Generate details for a pest item using its detected category
+export function generateDetails(item: PestItem): PestDetails {
+  const cat = detectCategory(item.slug);
+  const base = TEMPLATES[cat] || TEMPLATES.general;
+  // You could further customize per-title here if desired.
+  return { ...base };
+}
+
+// Merge helper: prefer authored DESCRIPTIONS, otherwise auto-generate
+export function withAutoDetails(
+  item: PestItem,
+  authored: Record<string, PestDetails> | undefined
+): Required<PestDetails> {
+  const a = authored?.[item.slug] || {};
+  const g = generateDetails(item);
+  return {
+    biology: a.biology || g.biology || "Info coming soon.",
+    lifeCycle: a.lifeCycle || g.lifeCycle || "Info coming soon.",
+    habitat: a.habitat || g.habitat || "Info coming soon.",
+    behavior: a.behavior || g.behavior || "Info coming soon."
+  };
+}

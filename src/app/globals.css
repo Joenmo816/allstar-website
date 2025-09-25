@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Minimal body reset so text is visible even if components fail */
+html, body { min-height:100%; }

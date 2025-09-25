@@ -1,9 +1,10 @@
 ﻿export const metadata = { title: "Service Area | All Star Pest Solutions" };
 
 const AREAS = [
-  "Kansas City, MO", "Kansas City, KS", "Overland Park", "Olathe", "Lee’s Summit",
-  "Independence", "Shawnee", "Lenexa", "Blue Springs", "Liberty",
-  "Raytown", "Gladstone", "Prairie Village", "Leawood", "Grandview"
+  "Kansas City, MO", "Overland Park", "Olathe", "Lee’s Summit", "Harrisonville", "Freeman", "Belton", "Raymore", "Peculiar", "Cleveland", 
+  "Bucyrus", "Stillwell", "Loch Lloyd", "Martin City", "Lacygne", "Drexel", "Archie", "Adrian", "Garden City", "Pleasant Hill",
+   "Lenexa", "Louisburg", "Paola", "Osawatomie", "Spring Hill", "Raytown", "Prairie Village", "Leawood", "Grandview", "Gardner", "Prairie Village", 
+   "Mission Hills", "Mission", "Merriam", "Shawnee", "Stanley", "Johnson County, KS", "Miami County, KS", "Cass County, MO", "Jackson COunty, MO" 
 ];
 
 export default function ServiceAreaPage(){
@@ -16,7 +17,7 @@ export default function ServiceAreaPage(){
           <li key={city} className="rounded-lg border bg-white px-4 py-3">{city}</li>
         ))}
       </ul>
-      <a href="/contact" className="inline-block mt-8 px-5 py-3 rounded-md bg-brand-teal text-white font-semibold">Request Service</a>
+      <a href="/contact" className="inline-block mt-8 px-5 py-3 rounded-md bg-brand-teal text-white font-semibold">Don't see your town listed? Request Service</a>
     </div>
   );
 }
