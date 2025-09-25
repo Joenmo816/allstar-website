@@ -3,7 +3,7 @@ export default function ServicesPage() {
     <main className="mx-auto max-w-5xl p-6 space-y-8">
       <h1 className="text-3xl font-bold">Local Service. Guaranteed Results.</h1>
       <p>
-        Family-owned in Kansas City with 28+ years’ experience. Certified in KS & MO.
+        Family-owned in Kansas City with 28+ years&apos; experience. Certified in KS & MO.
         No mandatory contracts. Veteran & senior discounts.
       </p>
 
