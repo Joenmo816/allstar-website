@@ -1,11 +1,12 @@
 import fs from "fs";
 import path from "path";
-/** Returns "/images/xyz.ext" if public/images/xyz.ext exists, else null. */
-export function resolvePublicImageUrl(names: string[], subdir = "images"): string | null {
+
+/** Returns "/images/<name>" if it exists in public/images, else null. */
+export function resolvePublicImageUrl(names: string[]): string | null {
   for (const n of names) {
-    const rel = `${subdir}/${n}`;
-    const full = path.join(process.cwd(), "public", rel);
-    if (fs.existsSync(full)) return "/" + rel.replace(/\\/g, "/");
+    const full = path.join(process.cwd(), "public", "images", n);
+    if (fs.existsSync(full)) return "/images/" + n.replace(/\\/g, "/");
   }
   return null;
 }
+

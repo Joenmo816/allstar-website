@@ -1,23 +1,24 @@
 import Link from "next/link";
 import Image from "next/image";
 import TrustBadges from "@/components/TrustBadges";
+import { resolvePublicImageUrl } from "@/lib/publicImage";
+
+const bgUrl = resolvePublicImageUrl(["kc-bg.webp","kc-bg.jpg","kc-bg.png"]);
 
 export default function HomePage() {
-  // Put your skyline at: public/images/kc-bg.png (or change the filename below)
-  const bgUrl = "/images/kc-bg.png";
-
   return (
     <section className="relative isolate overflow-hidden rounded-2xl">
-      {/* Background image */}
-      <Image
-        src={bgUrl}
-        alt=""
-        fill
-        priority
-        className="absolute inset-0 -z-10 object-cover opacity-25"
-      />
-
-      <div className="absolute inset-0 -z-20 bg-gradient-to-b from-white to gray-50" />
+      {bgUrl ? (
+        <Image
+          src={bgUrl}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="absolute inset-0 -z-10 object-cover opacity-25"
+        />
+      ) : null}
+      <div className="absolute inset-0 -z-20 bg-gradient-to-b from-white to-gray-50" />
 
       <div className="grid gap-8 py-8 md:grid-cols-2 md:items-center">
         <div className="space-y-4">
@@ -49,3 +50,4 @@ export default function HomePage() {
     </section>
   );
 }
+

@@ -1,7 +1,7 @@
+import { DESCRIPTIONS } from "@/data/descriptions";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { PESTS } from "@/data/pests.generated";
-import { DESCRIPTIONS } from "@/data/descriptions";
 import { withAutoDetails } from "@/lib/pest-gen";
 
 type Props = { params: { slug: string } };
@@ -10,7 +10,7 @@ export default function PestDetailPage({ params }: Props) {
   const item = PESTS.find(p => p.slug === params.slug);
   if (!item) return notFound();
 
-  const d = withAutoDetails(item, DESCRIPTIONS);
+  const d = withAutoDetails(item, DESCRIPTIONS, DESCRIPTIONS, DESCRIPTIONS);
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-10">
@@ -43,3 +43,6 @@ export default function PestDetailPage({ params }: Props) {
     </main>
   );
 }
+
+
+

@@ -16,3 +16,4 @@ export const PESTS: Pest[] = [];
 export function bySlug(slug: string): Pest | undefined {
   return PESTS.find(p => p.slug === slug);
 }
+
