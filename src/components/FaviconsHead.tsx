@@ -1,1 +1,9 @@
-export default function FaviconsHead() {  // Files produced by scripts/generate-icons.mjs  return (    <>      {/* Standard favicons */}      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />      <link rel="icon" href="/favicon.ico" />      {/* Apple iOS */}      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />      {/* PWA manifest */}      <link rel="manifest" href="/site.webmanifest" />      {/* Windows / Edge tile color */}      <meta name="msapplication-TileColor" content="#0d47a1" />      {/* Theme color for mobile browsers */}      <meta name="theme-color" content="#2e7d32" />      {/* Safari pinned tab (only exists if favicons generated it) */}      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2e7d32" />    </>  );}
+export default function FaviconsHead() {
+  return (
+    <>
+      <link rel="icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <meta name="theme-color" content="#0D3B66" />
+    </>
+  );
+}
