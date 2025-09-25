@@ -1,19 +1,19 @@
-"use client";
-import { useState } from "react";
+import Image from "next/image";
 
-export default function BBBSealPreview() {
-  const [size, setSize] = useState(120);
+export default function BBBPage() {
   return (
-    <section>
-      <h1 style={{ fontSize: 28, marginBottom: 16 }}>BBB Seal Preview</h1>
-      <p>Drag the slider to test visual size for headers/footers.</p>
-      <input type="range" min={60} max={240} value={size} onChange={e => setSize(parseInt(e.target.value))}/>
-      <div style={{ marginTop: 20 }}>
-        <img src="/images/bbb-seal.png" alt="BBB Accredited Business" style={{ width: size, height: "auto" }} />
-      </div>
-      <pre style={{ marginTop: 16, background: "#f6f6f6", padding: 12 }}>
-        {`<img src="/images/bbb-seal.png" alt="BBB Accredited Business" width="${size}" />`}
-      </pre>
-    </section>
+    <main className="mx-auto max-w-5xl p-6">
+      <h1 className="text-2xl font-bold mb-4">BBB Accreditation</h1>
+      <Image
+        src="/images/bbb-seal.png"
+        alt="BBB Accredited Business seal"
+        width={480}
+        height={240}
+        priority
+      />
+      <p className="mt-4">
+        We’re proud to maintain our BBB accreditation and deliver honest, local service.
+      </p>
+    </main>
   );
 }
