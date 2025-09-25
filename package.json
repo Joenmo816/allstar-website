@@ -16,6 +16,7 @@
   "type": "commonjs",
   "dependencies": {
     "@react-leaflet/core": "2.1.0",
+    "@vercel/sdk": "^1.11.4",
     "gray-matter": "^4.0.3",
     "leaflet": "1.9.4",
     "lucide-react": "^0.544.0",
