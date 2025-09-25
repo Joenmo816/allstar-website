@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 export default function Footer() {
   return (
@@ -31,16 +32,16 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold">Services</h3>
           <ul className="mt-2 space-y-1 text-sm">
-            <li><a className="hover:underline" href="/services/residential">Residential</a></li>
-            <li><a className="hover:underline" href="/services/commercial">Commercial</a></li>
+            <li><Link href="/services/residential">Residential</Link></li>
+            <li><Link href="/services/commercial">Commercial</Link></li>
           </ul>
         </div>
 
         <div>
           <h3 className="font-semibold">Company</h3>
           <ul className="mt-2 space-y-1 text-sm">
-            <li><a className="hover:underline" href="/about">About</a></li>
-            <li><a className="hover:underline" href="/contact">Contact</a></li>
+            <li><Link href="/about">About</Link></li>
+            <li><Link href="/contact">Contact</Link></li>
           </ul>
         </div>
 
@@ -57,3 +58,4 @@ export default function Footer() {
     </footer>
   );
 }
+

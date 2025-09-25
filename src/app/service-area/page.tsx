@@ -1,4 +1,5 @@
-﻿export const metadata = { title: "Service Area | All Star Pest Solutions" };
+import Link from "next/link";
+export const metadata = { title: "Service Area | All Star Pest Solutions" };
 
 const AREAS = [
   "Kansas City, MO", "Overland Park", "Olathe", "Lee’s Summit", "Harrisonville", "Freeman", "Belton", "Raymore", "Peculiar", "Cleveland", 
@@ -17,7 +18,7 @@ export default function ServiceAreaPage(){
           <li key={city} className="rounded-lg border bg-white px-4 py-3">{city}</li>
         ))}
       </ul>
-      <a href="/contact" className="inline-block mt-8 px-5 py-3 rounded-md bg-brand-teal text-white font-semibold">Don't see your town listed? Request Service</a>
+      <Link href="/contact">Don't see your town listed? Request Service</Link>
     </div>
   );
 }

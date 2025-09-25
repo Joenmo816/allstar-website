@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function GuaranteePage() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-12">
@@ -20,7 +21,7 @@ export default function GuaranteePage() {
       </ul>
 
       <p className="text-gray-700">
-        Need help now? <a href="/contact" className="text-emerald-700 underline">Schedule a free inspection</a> and we’ll tailor a plan for your property.
+        Need help now? <Link href="/contact">Schedule a free inspection</Link> and we’ll tailor a plan for your property.
       </p>
     </main>
   );

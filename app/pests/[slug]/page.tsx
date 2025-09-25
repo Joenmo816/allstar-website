@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 interface PageProps { params: { slug: string } }
 
@@ -20,9 +21,10 @@ export default function PestDetail({ params }: PageProps) {
       </div>
       <p className="mt-6 text-zinc-700">{pestCopy[slug] ?? "More information coming soon."}</p>
       <div className="mt-8 flex gap-3">
-        <a href="/contact" className="btn-primary">Request Service</a>
-        <a href="/services" className="btn-outline">See Services</a>
+        <Link href="/contact">Request Service</Link>
+        <Link href="/services">See Services</Link>
       </div>
     </main>
   );
 }
+

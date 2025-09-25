@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 import Hero from "./components/Hero";
 
@@ -12,12 +13,9 @@ export default function Home() {
             <p className="muted mt-2">
               Flexible plans and one-time treatments tailored to your home.
             </p>
-            <a
-              href="/services/residential"
-              className="mt-4 inline-block btn-primary"
-            >
+            <Link href="/services/residential">
               Explore Residential
-            </a>
+            </Link>
           </div>
 
           <div className="card">
@@ -25,12 +23,9 @@ export default function Home() {
             <p className="muted mt-2">
               Discreet, compliant programs for businesses across the KC metro.
             </p>
-            <a
-              href="/services/commercial"
-              className="mt-4 inline-block btn-accent"
-            >
+            <Link href="/services/commercial">
               Explore Commercial
-            </a>
+            </Link>
           </div>
 
           <div className="card">
@@ -38,15 +33,14 @@ export default function Home() {
             <p className="muted mt-2">
               Identify common pests and learn how we treat them.
             </p>
-            <a
-              href="/pests"
-              className="mt-4 inline-block btn-outline"
-            >
+            <Link href="/pests">
               Browse Library
-            </a>
+            </Link>
           </div>
         </div>
       </section>
     </>
   );
 }
+
+

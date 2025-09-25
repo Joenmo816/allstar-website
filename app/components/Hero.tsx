@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 export default function Hero() {
   return (
@@ -12,8 +13,8 @@ export default function Hero() {
             Residential & commercial programs with environmentally friendly, children- and pet-safe options. Local service. Guaranteed results.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a href="/contact" className="btn-primary">Get a Quote</a>
-            <a href="/services" className="btn-outline">See Services</a>
+            <Link href="/contact">Get a Quote</Link>
+            <Link href="/services">See Services</Link>
           </div>
           <p className="mt-3 text-xs text-zinc-500">Proudly serving the Kansas City metro.</p>
         </div>
@@ -24,4 +25,5 @@ export default function Hero() {
     </section>
   );
 }
+
 
