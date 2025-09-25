@@ -1,50 +1,48 @@
 export default function ServicesPage() {
   return (
-    <main className="mx-auto max-w-5xl p-6 space-y-8">
-      <h1 className="text-3xl font-bold">Local Service. Guaranteed Results.</h1>
-      <p>
-        Family-owned in Kansas City with 28+ years’ experience. Certified in KS & MO.
-        No mandatory contracts. Veteran & senior discounts.
-      </p>
+    <div className="space-y-10">
+      <header className="space-y-2">
+        <h1 className="text-3xl font-bold">Service Plans</h1>
+        <p className="text-gray-700">
+          Certified in KS & MO • No mandatory contracts • Veteran & senior discounts
+        </p>
+      </header>
 
-      <section>
-        <h2 className="text-2xl font-semibold mb-2">Why Choose Us</h2>
-        <ul className="list-disc list-inside space-y-1">
-          <li>State-Certified Technicians (KS/MO)</li>
-          <li>Eco-Smart • Kid &amp; Pet Friendly</li>
-          <li>Locally Owned &amp; Operated</li>
-          <li>BBB &amp; Community-Trusted</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-semibold mb-2">Service Plans</h2>
-
-        <div className="border rounded-lg p-4 mb-6">
-          <h3 className="text-xl font-semibold">Quarterly Protection (Most Popular)</h3>
-          <p className="mt-2">
-            Keeps common pests out year-round with proactive exterior service and free call-backs.
+      <div className="grid gap-6 md:grid-cols-2">
+        <div className="card">
+          <h2 className="text-xl font-semibold">
+            Quarterly Protection <span className="text-xs text-allstarGreen">(Most Popular)</span>
+          </h2>
+          <p className="mt-2 text-gray-700">
+            Year-round protection with proactive exterior service and free between-visit re-services.
           </p>
-          <ul className="list-disc list-inside space-y-1 mt-2">
-            <li>Initial interior + exterior service</li>
-            <li>Quarterly exterior barrier &amp; web/wasp removal</li>
-            <li>Free re-services between visits</li>
+          <ul className="mt-3 list-disc list-inside space-y-1 text-sm">
+            <li>Initial interior &amp; exterior service</li>
+            <li>Exterior barrier each season + web/wasp sweep</li>
+            <li>Free re-service if pests return</li>
           </ul>
-          <p className="mt-2 italic">Fit: Most homes</p>
+          <p className="mt-3 text-sm italic">Great fit: most single-family homes &amp; townhomes.</p>
         </div>
 
-        <div className="border rounded-lg p-4">
-          <h3 className="text-xl font-semibold">Monthly Pro Care</h3>
-          <p className="mt-2">
-            For heavy pressure homes or businesses needing tighter intervals and enhanced monitoring.
+        <div className="card">
+          <h2 className="text-xl font-semibold">
+            Monthly Pro Care <span className="text-xs text-gray-500">High-Activity Homes</span>
+          </h2>
+          <p className="mt-2 text-gray-700">
+            For homes that see more frequent pest activity or want tighter service intervals—near woods/water,
+            heavy landscaping, or a history of issues.
           </p>
-          <ul className="list-disc list-inside space-y-1 mt-2">
-            <li>Everything in Quarterly</li>
-            <li>Monthly exterior service</li>
-            <li>Rodent/IPM monitoring upgrades</li>
+          <ul className="mt-3 list-disc list-inside space-y-1 text-sm">
+            <li>Everything in Quarterly Protection</li>
+            <li>Exterior service every month</li>
+            <li>Rodent/IPM monitoring stations with refreshes</li>
+            <li>Interior service on request, no extra charge</li>
           </ul>
+          <p className="mt-3 text-sm italic">
+            Ideal for: wooded lots, lake/creek proximity, heavy shrubbery, or high-traffic garages &amp; pet areas.
+          </p>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
   );
 }

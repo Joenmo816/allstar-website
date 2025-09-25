@@ -1,11 +1,1 @@
-export default function Footer() {
-  const year = new Date().getFullYear();
-  return (
-    <footer style={{ borderTop: "1px solid #eee", marginTop: 40 }}>
-      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "24px" }}>
-        <div>© {year} All Star Pest Solutions. All rights reserved.</div>
-        <div>210 W. Cleveland St, Cleveland, MO 64734 • (913) 738-7827 • allstarpestkc.com</div>
-      </div>
-    </footer>
-  );
-}
+export default function Footer() {  return (    <footer className="border-t">      <div className="container flex flex-col gap-2 py-6 text-sm md:flex-row md:items-center md:justify-between">        <p>© 2025 All Star Pest Solutions. All rights reserved.</p>        <p className="opacity-80">Guaranteed Service, Guaranteed Results.</p>      </div>    </footer>  );}

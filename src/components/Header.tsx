@@ -1,46 +1,17 @@
-"use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-
-const links = [
-  { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
-  // Intentionally not listing /pests in main nav
-];
 
 export default function Header() {
-  const pathname = usePathname();
   return (
-    <header className="bg-white/80 backdrop-blur border-b">
-      {/* Top bar emphasis */}
-      <div className="bg-emerald-700 text-white text-xs sm:text-sm py-1">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          KC’s Bugman — Over 28 Years of Local Experience
-        </div>
-      </div>
-
-      {/* Main nav */}
-      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        <Link href="/" className="font-extrabold text-xl text-emerald-700">
-          All Star Pest Solutions
-        </Link>
-        <nav className="flex gap-6">
-          {links.map((l) => {
-            const active = pathname === l.href;
-            return (
-              <Link
-                key={l.href}
-                href={l.href}
-                className={`text-sm font-medium hover:text-emerald-700 ${
-                  active ? "text-emerald-700" : "text-gray-700"
-                }`}
-              >
-                {l.label}
-              </Link>
-            );
-          })}
+    <header className="border-b">
+      <div className="mx-auto max-w-6xl px-4 flex h-16 items-center justify-between">
+        <Link href="/" className="text-lg font-semibold">All Star Pest Solutions</Link>
+        <nav className="flex gap-6 text-sm">
+          <Link href="/services" className="hover:underline">Services</Link>
+          <Link href="/pests" className="hover:underline">Pest Library</Link>
+          <Link href="/bbb" className="hover:underline">BBB</Link>
+          <a href="tel:+19137387827" className="inline-flex items-center justify-center rounded-2xl border px-4 py-2 text-sm font-medium shadow-sm bg-green-500 text-white border-transparent hover:opacity-90">
+            Call (913) 738-STAR
+          </a>
         </nav>
       </div>
     </header>
