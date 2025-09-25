@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function HomePage() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
@@ -6,7 +7,7 @@ export default function HomePage() {
         Your Next.js app is rendering. From here we can re-enable header, hero, badges, etc.
       </p>
       <p className="mt-4">
-        Go to <a href="/bbb" className="text-emerald-700 underline">/bbb</a> to preview the BBB seal size.
+        Go to <Link href="/bbb">/bbb</Link> to preview the BBB seal size.
       </p>
     </main>
   );

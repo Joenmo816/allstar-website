@@ -25,7 +25,7 @@ export default function LearnPage() {
       </div>
 
       <p className="text-gray-600 text-sm mt-8">
-        Want something explained? <a href="/contact" className="text-emerald-700 underline">Ask KC’s Bugman</a> and we’ll add it here.
+        Want something explained? <Link href="/contact">Ask KC’s Bugman</Link> and we’ll add it here.
       </p>
     </main>
   );

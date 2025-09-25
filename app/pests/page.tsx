@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 // Seed list; add and rename as you add images
@@ -16,7 +17,7 @@ export default function PestsIndex() {
         {pests.map((p) => (
           <li key={p.slug} className="card">
             <div className="aspect-[4/3] overflow-hidden rounded-xl border bg-zinc-100">
-              <img src={p.image} alt={p.name} className="h-full w-full object-cover" />
+              <Image src={p.image} alt={p.name} className="h-full w-full object-cover" width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} />
             </div>
             <h2 className="mt-3 text-lg font-semibold">{p.name}</h2>
             <Link href={`/pests/${p.slug}`} className="mt-3 inline-block btn-outline">Learn More</Link>

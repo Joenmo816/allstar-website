@@ -1,3 +1,4 @@
+import Link from "next/link";
 import CompareTable from "@/components/CompareTable";
 
 export default function ServicesPage() {
@@ -327,20 +328,15 @@ function CTASection() {
       <h3 className="text-2xl font-bold">Ready to be pest-free?</h3>
       <p className="text-gray-600">Call (913) 738-STAR or request a free estimate today.</p>
       <div className="flex items-center justify-center gap-3">
-        <a
-          href="/contact"
-          className="rounded-xl border px-4 py-2 font-medium hover:bg-gray-50"
-        >
+        <Link href="/contact">
           Free Estimate
-        </a>
-        <a
-          href="/book"
-          className="rounded-xl border px-4 py-2 font-medium hover:bg-gray-50"
-        >
+        </Link>
+        <Link href="/book">
           Book Online
-        </a>
+        </Link>
       </div>
     </section>
   );
 }
+
 

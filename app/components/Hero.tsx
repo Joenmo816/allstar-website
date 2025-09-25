@@ -1,3 +1,5 @@
+import Link from "next/link";
+import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
@@ -11,15 +13,17 @@ export default function Hero() {
             Residential & commercial programs with environmentally friendly, children- and pet-safe options. Local service. Guaranteed results.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a href="/contact" className="btn-primary">Get a Quote</a>
-            <a href="/services" className="btn-outline">See Services</a>
+            <Link href="/contact">Get a Quote</Link>
+            <Link href="/services">See Services</Link>
           </div>
           <p className="mt-3 text-xs text-zinc-500">Proudly serving the Kansas City metro.</p>
         </div>
         <div className="relative">
-          <img src="/images/kc-family-owned.jpg" alt="KC family owned" className="rounded-2xl border w-full object-cover" />
+          <Image src="/images/kc-family-owned.jpg" alt="KC family owned" className="rounded-2xl border w-full object-cover" width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} />
         </div>
       </div>
     </section>
   );
 }
+
+
