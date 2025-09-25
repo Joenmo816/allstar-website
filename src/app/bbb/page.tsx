@@ -1,16 +1,19 @@
-import BbbSeal from "@/components/BbbSeal";
+"use client";
+import { useState } from "react";
 
-export default function BbbPreviewPage() {
+export default function BBBSealPreview() {
+  const [size, setSize] = useState(120);
   return (
-    <main className="max-w-3xl mx-auto px-6 py-12">
-      <h1 className="text-3xl font-bold mb-4">BBB Seal Preview</h1>
-      <div className="flex items-center gap-6">
-        <BbbSeal width={340} height={136} />
-        <div className="text-sm text-gray-600">
-          <div>Shown here at <strong>340×136</strong>.</div>
-          <div className="mt-2">Adjust anywhere via props, e.g. {'<BbbSeal width={360} height={144} />'}.</div>
-        </div>
+    <section>
+      <h1 style={{ fontSize: 28, marginBottom: 16 }}>BBB Seal Preview</h1>
+      <p>Drag the slider to test visual size for headers/footers.</p>
+      <input type="range" min={60} max={240} value={size} onChange={e => setSize(parseInt(e.target.value))}/>
+      <div style={{ marginTop: 20 }}>
+        <img src="/images/bbb-seal.png" alt="BBB Accredited Business" style={{ width: size, height: "auto" }} />
       </div>
-    </main>
+      <pre style={{ marginTop: 16, background: "#f6f6f6", padding: 12 }}>
+        {`<img src="/images/bbb-seal.png" alt="BBB Accredited Business" width="${size}" />`}
+      </pre>
+    </section>
   );
 }
