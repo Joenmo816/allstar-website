@@ -1,49 +1,26 @@
-export default function ServicesPage() {
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Services — All Star Pest Solutions"
+};
+
+export default function Services() {
   return (
-    <div className="space-y-10">
-      <header className="space-y-2">
-        <h1 className="text-3xl font-bold">Service Plans</h1>
-        <p className="text-gray-700">
-          Certified in KS & MO • No mandatory contracts • Veteran & senior discounts
-        </p>
-      </header>
-
-      <div className="grid gap-6 md:grid-cols-2">
-        <div className="card">
-          <h2 className="text-xl font-semibold">
-            Quarterly Protection <span className="text-xs text-allstarGreen">(Most Popular)</span>
-          </h2>
-          <p className="mt-2 text-gray-700">
-            Year-round protection with proactive exterior service and free between-visit re-services.
-          </p>
-          <ul className="mt-3 list-disc list-inside space-y-1 text-sm">
-            <li>Initial interior &amp; exterior service</li>
-            <li>Exterior barrier each season + web/wasp sweep</li>
-            <li>Free re-service if pests return</li>
-          </ul>
-          <p className="mt-3 text-sm italic">Great fit: most single-family homes &amp; townhomes.</p>
-        </div>
-
-        <div className="card">
-          <h2 className="text-xl font-semibold">
-            Monthly Pro Care <span className="text-xs text-gray-500">High-Activity Homes</span>
-          </h2>
-          <p className="mt-2 text-gray-700">
-            For homes that see more frequent pest activity or want tighter service intervals—near woods/water,
-            heavy landscaping, or a history of issues.
-          </p>
-          <ul className="mt-3 list-disc list-inside space-y-1 text-sm">
-            <li>Everything in Quarterly Protection</li>
-            <li>Exterior service every month</li>
-            <li>Rodent/IPM monitoring stations with refreshes</li>
-            <li>Interior service on request, no extra charge</li>
-          </ul>
-          <p className="mt-3 text-sm italic">
-            Ideal for: wooded lots, lake/creek proximity, heavy shrubbery, or high-traffic garages &amp; pet areas.
-          </p>
-        </div>
-      </div>
-    </div>
+    <main className="max-w-6xl mx-auto px-4 py-10">
+      <h1 className="text-3xl font-bold mb-6">Services</h1>
+      <ul className="grid gap-4 md:grid-cols-2">
+        <li className="border rounded-2xl p-6">
+          <h2 className="text-xl font-semibold mb-2">General Pest Control</h2>
+          <p className="text-gray-700 mb-3">Quarterly & one-time treatments for ants, spiders, roaches and more.</p>
+          <Link className="text-brandBlue font-semibold" href="/services/general-pest">Learn more →</Link>
+        </li>
+        <li className="border rounded-2xl p-6">
+          <h2 className="text-xl font-semibold mb-2">Termite Inspections & Treatments</h2>
+          <p className="text-gray-700 mb-3">Certified inspections and proven treatment options.</p>
+          <Link className="text-brandBlue font-semibold" href="/contact">Ask about termites →</Link>
+        </li>
+      </ul>
+    </main>
   );
 }
-

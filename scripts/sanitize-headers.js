@@ -1,26 +1,34 @@
 const fs = require("fs");
-const path = require("path");
+const cp = require("child_process");
 
-const exts = new Set([".ts",".tsx",".js",".jsx",".css",".md",".json"]);
-const headerRE = /^[A-Za-z]:\\[^\r\n]*(\r?\n)?/;
+process.chdir(cp.execSync("git rev-parse --show-toplevel").toString().trim());
 
-function stagedFiles() {
-  const out = require("child_process").execSync('git diff --cached --name-only', {encoding:"utf8"});
-  return out.split(/\r?\n/).filter(Boolean);
+const patterns = [
+  /^[A-Za-z]:\\[^\r\n]*(\r?\n)?/m,                                    // stray absolute path
+  /^\s*\/\/\s*File:\s*.*$/m,                                         // "// File: C:\..."
+  /^\s*import\s+\*\s+as\s+entry\s+from\s+["'][^"']*\/src\/app\/[^"']*(?:page|layout|route)\.js["']\s*;?\s*$/m,
+  /^\s*import\s+type\s+\{[^}]*\}\s+from\s+["']next\/dist\/lib\/metadata\/types\/metadata-interface\.js["']\s*;?\s*$/m,
+  /^\s*type\s+TEntry\s*=\s*typeof\s+import\(\s*["'][^"']*\/src\/app\/[^"']*(?:page|layout|route)\.js["']\s*\)\s*;?\s*$/m,
+  /^\s*check\w*Fields<[\s\S]*?>\(\)\s*;?\s*$/m
+];
+
+function staged() {
+  return cp.execSync("git diff --cached --name-only", { encoding: "utf8" })
+    .split(/\r?\n/).filter(Boolean)
+    .filter(f => /^(src[\/\\]app).*\.(ts|tsx)$/.test(f));
 }
 
 let cleaned = 0;
-for (const f of stagedFiles()) {
-  const ext = path.extname(f).toLowerCase();
-  if (!exts.has(ext)) continue;
+for (const f of staged()) {
   if (!fs.existsSync(f)) continue;
   let txt = fs.readFileSync(f, "utf8");
-  if (headerRE.test(txt)) {
-    txt = txt.replace(headerRE, "");
+  const orig = txt;
+  for (const re of patterns) txt = txt.replace(re, "");
+  if (txt !== orig) {
     fs.writeFileSync(f, txt, "utf8");
-    require("child_process").execSync(`git add ${JSON.stringify(f)}`);
-    cleaned++;
+    cp.execSync(`git add ${JSON.stringify(f)}`);
     console.log("sanitized:", f);
+    cleaned++;
   }
 }
 if (cleaned) console.log(`✅ sanitized ${cleaned} file(s)`);
