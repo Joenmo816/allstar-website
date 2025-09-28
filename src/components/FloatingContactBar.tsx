@@ -1,1 +1,0 @@
-"use client";export default function FloatingContactBar(){  return (    <div className="fixed right-4 bottom-4 flex flex-col gap-3 items-end">      <a href="tel:+1-000-000-0000" className="btn-brand">Call Now</a>      <a href="/contact" className="btn-brand bg-brand-blue hover:bg-sky-800">Get a Quote</a>    </div>  );}
