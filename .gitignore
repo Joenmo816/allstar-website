@@ -31,3 +31,11 @@ Thumbs.db
 # package-lock.json
 # yarn.lock
 # pnpm-lock.yaml
+src/app/pests.zip
+git
+add
+.gitignore
+git
+commit
+-m
+Ignore pests.zip

@@ -10,3 +10,5 @@ export type Pest = {
 
 export const pests: Pest[] = [];
 
+
+export const getPest = (slug: string) => pests.find(p => p.slug === slug);
