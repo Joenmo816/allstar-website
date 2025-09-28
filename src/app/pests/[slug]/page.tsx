@@ -1,26 +1,36 @@
-import Image from "next/image";
-import { pests } from "@/data/pests";
+import { notFound } from 'next/navigation';
+import Image from 'next/image';
+import { getPest, DESCRIPTIONS } from '@/data/pests';
 
-export async function generateStaticParams() {
-  return pests.map(p => ({ slug: p.slug }));
-}
+type Params = { slug: string };
 
-export default function PestDetail({ params }: { params: { slug: string } }) {
-  const pest = pests.find(p => p.slug === params.slug);
-  if (!pest) return <div className="p-6">Pest not found.</div>;
+export default function PestPage({ params }: { params: Params }) {
+  const pest = getPest(params.slug);
+  if (!pest) return notFound();
+  const d = DESCRIPTIONS[pest.slug] || {};
+
+  const Field = ({ label, value }: { label: string; value?: string }) =>
+    value ? <p className='mb-2'><span className='font-semibold'>{label}:</span> {value}</p> : null;
 
   return (
-    <div className="container mx-auto px-4 py-10 grid md:grid-cols-2 gap-6">
-      <div className="relative h-72 md:h-[420px] rounded-lg overflow-hidden border">
-        <Image src={pest.image} alt={pest.alt} fill className="object-cover" />
+    <main className='max-w-5xl mx-auto p-6'>
+      <h1 className='text-3xl font-bold mb-4'>{pest.name}</h1>
+
+      <div className='relative w-full max-w-3xl aspect-[16/9] mb-6'>
+        <Image src={pest.image} alt={pest.name} fill sizes='100vw' className='object-cover rounded-xl' />
       </div>
-      <div>
-        <h1 className="text-3xl font-extrabold text-brand-blue">{pest.commonName}</h1>
-        {pest.scientificName && (
-          <div className="mt-1 text-sm text-gray-600 italic">{pest.scientificName}</div>
-        )}
-        {pest.description && <p className="mt-4">{pest.description}</p>}
+
+      <div className='space-y-1 text-lg'>
+        <Field label='Scientific name' value={d.scientificName} />
+        <Field label='Biology'         value={d.biology} />
+        <Field label='Life cycle'      value={d.lifeCycle} />
+        <Field label='Behavior'        value={d.behavior} />
+        <Field label='Size'            value={d.size} />
       </div>
-    </div>
+
+      {(!d.scientificName && !d.biology && !d.lifeCycle && !d.behavior && !d.size) && (
+        <p className='text-lg mt-4'>Info coming soon.</p>
+      )}
+    </main>
   );
 }

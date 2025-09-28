@@ -1,34 +1,29 @@
 import Link from "next/link";
-import type { Metadata } from "next";
-import { getAllPests } from "./lib";
-
-export const metadata: Metadata = {
-  title: "Pest Library — All Star Pest Solutions",
-  description: "Browse common Kansas City pests and learn signs, risks, and treatment options.",
-};
+import { pests } from "../../data/pests.generated";
 
 export default function PestLibraryPage() {
-  const pests = getAllPests();
-
   return (
-    <main className="max-w-5xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold mb-6">Pest Library</h1>
-      <p className="text-gray-700 mb-8">
-        Explore common pests in the KC metro. Click any pest for biology, habitat, and treatment tips.
-      </p>
-
-      <ul className="grid gap-3 sm:grid-cols-2 md:grid-cols-3">
-        {pests.map(({ slug, name }) => (
-          <li key={slug}>
-            <Link
-              href={`/pests/${slug}`}
-              className="block rounded-xl border p-4 hover:shadow-md focus:outline-none focus:ring"
-            >
-              <span className="font-medium">{name}</span>
+    <section className="py-16 bg-gray-50">
+      <div className="max-w-6xl mx-auto px-6">
+        <h1 className="text-4xl font-bold text-center mb-10">Pest Library</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {pests.map((pest) => (
+            <Link key={pest.slug} href={`/pests/${pest.slug}`}>
+              <div className="border rounded-lg shadow hover:shadow-lg p-6 bg-white cursor-pointer">
+                <img
+                  src={pest.image}
+                  alt={pest.name}
+                  className="h-32 w-auto mx-auto mb-4"
+                />
+                <h2 className="text-xl font-semibold mb-2 text-center">{pest.name}</h2>
+                <p className="text-gray-600 text-sm text-center">
+                  {pest.description || "Learn more about this pest"}
+                </p>
+              </div>
             </Link>
-          </li>
-        ))}
-      </ul>
-    </main>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }

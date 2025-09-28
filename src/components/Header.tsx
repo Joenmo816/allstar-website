@@ -43,6 +43,8 @@ export default function Header() {
 
         {/* NAV: bold blue + larger */}
         <nav className="hidden items-center gap-6 md:flex">
+        <Link href='/' className='hover:underline'>Home</Link>
+        <Link href='/' className='hover:underline'>Home</Link>
           {NAV.map((i) => (
             <Link
               key={i.href}
