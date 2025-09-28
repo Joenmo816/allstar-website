@@ -2,17 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Base typography/layout helpers */
-html, body { min-height: 100%; }
-body { color: #0A0A0A; background: #ffffff; }
-.container { @apply mx-auto max-w-6xl px-4; }
-.btn {
-  @apply inline-flex items-center justify-center rounded-2xl border px-4 py-2 text-sm font-medium shadow-sm;
+@layer components {
+  .btn-primary {
+    @apply bg-allstarGreen text-white border-transparent hover:opacity-90;
+  }
+
+  .btn-outline {
+    @apply border border-allstarGreen text-allstarGreen hover:bg-allstarGreen hover:text-white;
+  }
+
+  .btn-secondary {
+    @apply bg-allstarBlue text-white hover:opacity-90;
+  }
 }
-.btn-primary {
-  @apply bg-allstarGreen text-white border-transparent hover:opacity-90;
-}
-.btn-outline {
-  @apply border-gray-300 hover:bg-gray-50;
-}
-.card { @apply rounded-2xl border p-6 shadow-sm; }

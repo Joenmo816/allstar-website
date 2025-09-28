@@ -1,4 +1,4 @@
-import fs from "fs";
+﻿import fs from "fs";
 import path from "path";
 
 /** Returns "/images/<name>" if it exists in public/images, else null. */
@@ -9,4 +9,3 @@ export function resolvePublicImageUrl(names: string[]): string | null {
   }
   return null;
 }
-

@@ -1,1 +1,21 @@
-export type PestDetails = {  biology?: string;  lifeCycle?: string;  habitat?: string;  behavior?: string;};export const DESCRIPTIONS: Record<string, PestDetails> = {  "brown-recluse": {    biology: "Small, light-to-dark brown spider with violin marking.",    lifeCycle: "Eggs hatch in ~30 days; maturity ~1 year.",    habitat: "Dry, undisturbed areas like closets, attics, basements.",    behavior: "Reclusive; bites are uncommon and typically accidental.",  },  "german-cockroach": {    biology: "Light brown roach with two dark stripes; common indoors.",    lifeCycle: "Fast reproduction; ootheca carries 20–40 nymphs.",    habitat: "Warm, humid spots near food/water (kitchens, baths).",    behavior: "Nocturnal scavenger; can spread allergens and pathogens.",  },};
+﻿export type PestDetails = {
+  biology?: string;
+  lifeCycle?: string;
+  habitat?: string;
+  behavior?: string;
+};
+
+export const DESCRIPTIONS: Record<string, PestDetails> = {
+  "brown-recluse": {
+    biology: "Small, light-to-dark brown spider with violin marking.",
+    lifeCycle: "Eggs hatch in ~30 days; maturity ~1 year.",
+    habitat: "Dry, undisturbed areas like closets, attics, basements.",
+    behavior: "Reclusive; bites are uncommon and typically accidental."
+  },
+  "german-cockroach": {
+    biology: "Light brown roach with two dark stripes; common indoors.",
+    lifeCycle: "Fast reproduction; ootheca carries 20–40 nymphs.",
+    habitat: "Warm, humid spots near food/water (kitchens, baths).",
+    behavior: "Nocturnal scavenger; can spread allergens and pathogens."
+  }
+};
