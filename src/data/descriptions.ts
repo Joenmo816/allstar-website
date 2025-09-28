@@ -1,11 +1,14 @@
 export type PestDetails = {
-  scientificName?: string;
+  description?: string;
   biology?: string;
   lifeCycle?: string;
+  habitat?: string;
   behavior?: string;
-  size?: string;
+  diyTips?: string[];
+  professionalTreatments?: string[];
+  whenToCallPro?: string;
+  funFact?: string;
 };
-
 export const DESCRIPTIONS: Record<string, PestDetails> = {
   'acrobat-ant': {
     scientificName: 'Crematogaster spp.',
