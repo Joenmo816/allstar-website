@@ -1,5 +1,6 @@
 export type PestDetails = {
   description?: string;
+  scientificName?: string;
   biology?: string;
   lifeCycle?: string;
   habitat?: string;
@@ -8,6 +9,7 @@ export type PestDetails = {
   professionalTreatments?: string[];
   whenToCallPro?: string;
   funFact?: string;
+
 };
 export const DESCRIPTIONS: Record<string, PestDetails> = {
   'acrobat-ant': {
