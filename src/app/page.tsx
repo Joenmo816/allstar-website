@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { resolvePublicImageUrl } from "@/lib/publicImage";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "All Star Pest Solutions | KC Pest Control Experts - Safe & Guaranteed",
+  description: "KC's Bugman! Offering family and pet-friendly eco-smart treatments for homes and businesses. BBB accredited, state-certified, trusted in Kansas City for over 25 years."
+};
 
 const bgUrl = resolvePublicImageUrl(["kc-bg.webp", "kc-bg.jpg", "kc-bg.png"]);
 const logoHeroUrl =
@@ -15,42 +21,46 @@ const logoHeroUrl =
 export default function HomePage() {
   return (
     <section className="relative isolate overflow-hidden rounded-2xl">
-      {bgUrl ? (
-        <Image
-          src={bgUrl}
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="absolute inset-0 -z-10 object-cover opacity-25"
-        />
-      ) : null}
+      {/* Background Image */}
+      {bgUrl && (
+        <div className="absolute inset-0 -z-10 opacity-25">
+          <Image
+            src={bgUrl}
+            alt="Kansas City skyline background for pest control site"
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
+        </div>
+      )}
       <div className="absolute inset-0 -z-20 bg-gradient-to-b from-white to-gray-50" />
 
       <div className="grid gap-8 py-8 md:grid-cols-2 md:items-center">
+        {/* Left Side: Logo, Text, CTA */}
         <div className="space-y-5">
-          {/* BIG company logo on the homepage */}
           {logoHeroUrl && (
             <div className="mb-2">
               <Image
                 src={logoHeroUrl}
-                alt="All Star Pest logo"
+                alt="All Star Pest Solutions company logo"
                 width={360}
                 height={100}
                 priority
-                className="h-auto w-auto"
               />
             </div>
           )}
 
           <h1 className="text-4xl font-bold leading-tight md:text-5xl">
-            Guaranteed Service, <span className="text-green-700">Guaranteed Results.</span>
+            Kansas City Pest Control Experts{" "}
+            <span className="text-green-700">With Guaranteed Results</span>
           </h1>
 
-          {/* Middle paragraph: make it blue */}
+          <h2 className="text-xl text-blue-900 font-semibold">
+            Safe for Kids & Pets · Family Owned · Serving KC Metro Over 25 Years
+          </h2>
+
           <p className="text-lg text-blue-800">
-            KC&apos;s Bugman! Family-owned and operated pest control serving the Kansas City
-            metro with eco-smart treatments safe for kids &amp; pets.
+            KC&apos;s Bugman! Trusted local pest control using eco-smart treatments to protect homes and businesses in Kansas & Missouri.
           </p>
 
           <div className="flex gap-3">
@@ -66,16 +76,16 @@ export default function HomePage() {
           </div>
         </div>
 
+        {/* Right Side: Key Benefits */}
         <div className="rounded-2xl border p-6">
-  <ul className="grid grid-cols-2 gap-3 text-lg md:text-xl font-semibold text-green-800">
-    <li>State-Certified (KS/MO)</li>
-    <li>Eco-Smart Treatments</li>
-    <li>BBB Accredited</li>
-    <li>No Mandatory Contracts</li>
-  </ul>
-</div>
+          <ul className="grid grid-cols-2 gap-3 text-lg md:text-xl font-semibold text-green-800">
+            <li>State-Certified (KS/MO)</li>
+            <li>Eco-Smart Treatments</li>
+            <li>BBB Accredited</li>
+            <li>No Mandatory Contracts</li>
+          </ul>
+        </div>
       </div>
     </section>
   );
 }
-          
