@@ -1,3 +1,4 @@
+import Footer from "@/app/components/Footer";
 // src/app/layout.tsx
 import "./globals.css";
 import type { Metadata } from "next";
@@ -16,9 +17,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="bg-white text-gray-900">
         {children}
-      </body>
+          <Footer />`r`n  </body>
     </html>
   );
 }
+
+
+
 
 
