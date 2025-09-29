@@ -1,4 +1,5 @@
 export type Pest = {
+  description?: string;
   slug: string;
   name: string;
   image: string;
