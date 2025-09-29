@@ -1,25 +1,38 @@
 export const SERVICE_AREAS: string[] = [
   // Edit this list anytime. It renders alphabetically.
+  "Archie, MO"
+  "Aubry, KS", 
   "Belton, MO",
   "Bucyrus, KS",
+  "Cass County MO",
   "Cleveland, MO",
   "De Soto, KS",
   "Drexel, MO",
+  "Freeman, MO",
+  "Garden City, MO",
   "Gardner, KS",
   "Grandview, MO",
   "Harrisonville, MO",
   "Kansas City (South), MO",
+  "La Cygne, KS",
   "Lenexa, KS",
   "Leawood, KS",
+  "Lees Summit",
+  "Loch Lloyd",
   "Louisburg, KS",
+  "Martin City, MO", 
   "Miami County, KS (select areas)",
+  "Mission Hills, KS",
   "Olathe, KS",
   "Overland Park, KS",
+  "Osawatomie, KS, "
   "Paola, KS",
   "Peculiar, MO",
+  "Pleasant Hill, MO",
+  "Prairie Village, KS",
   "Raymore, MO",
   "Spring Hill, KS",
   "Stanley, KS",
   "Stilwell, KS",
-  // add more…
+  
 ];
