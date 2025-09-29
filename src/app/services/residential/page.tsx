@@ -1,16 +1,16 @@
+import Link from "next/link";
+
 export default function ResidentialServicesPage() {
   return (
     <main className="max-w-5xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold mb-4">Residential Pest Control</h1>
-      <p className="text-gray-700 mb-6">
-        Guaranteed Service, Guaranteed Results. Year-round protection with eco-smart treatments.
+      <h1 className="text-4xl font-bold text-green-800 mb-6">
+        Residential Pest Control in Kansas City
+      </h1>
+
+      <p className="text-lg text-gray-700 mb-6">
+        Protect your home and loved ones year-round with eco-smart pest control from All Star Pest Solutions. Our family-safe methods are trusted by Kansas City homeowners for over 25 years.
       </p>
-      <ul className="list-disc pl-5 space-y-1 text-gray-800">
-        <li>Quarterly exterior protection with free call-backs</li>
-        <li>Interior service on request</li>
-        <li>Spider web & wasp nest removal at eaves</li>
-        <li>Rodent/IPM monitoring upgrades available</li>
-      </ul>
-    </main>
-  );
-}
+
+      <section className="mb-8">
+        <h2
+
