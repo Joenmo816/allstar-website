@@ -5,11 +5,11 @@ export type PestDetails = {
   lifeCycle?: string;
   habitat?: string;
   behavior?: string;
+  size?: string; // ✅ Add this line
   diyTips?: string[];
   professionalTreatments?: string[];
   whenToCallPro?: string;
   funFact?: string;
-
 };
 export const DESCRIPTIONS: Record<string, PestDetails> = {
   'acrobat-ant': {
