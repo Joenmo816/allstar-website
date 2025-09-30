@@ -2,14 +2,26 @@ import Link from "next/link";
 import Image from "next/image";
 import { resolvePublicImageUrl } from "@/lib/publicImage";
 
+/**
+ * Nav order mirrors big-brand IA:
+ * - About near Home (owner request)
+ * - Service Area (like "Locations")
+ * - Residential / Commercial (primary conversions)
+ * - Pest Library (research intent)
+ * - Pricing + Plans (transactional)
+ * - Guarantee + Contact (trust + action)
+ */
 const NAV = [
   { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
+  { href: "/about", label: "About" },
+  { href: "/why-choose-us", label: "Why Choose Us" },
+  { href: "/service-area", label: "Service Area" },
+  { href: "/services/residential", label: "Residential" },
+  { href: "/services/commercial", label: "Commercial" },
   { href: "/pests", label: "Pest Library" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/service-area", label: "Service Area" },
+  { href: "/plans", label: "Plans" },
   { href: "/guarantee", label: "Guarantee" },
-  { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -27,7 +39,7 @@ export default function Header() {
   return (
     <header className="border-b bg-white/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-3">
-        {/* Logo / Branding */}
+        {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           {logoUrl ? (
             <Image
@@ -45,7 +57,7 @@ export default function Header() {
           )}
         </Link>
 
-        {/* Main Navigation */}
+        {/* Navigation */}
         <nav className="hidden items-center gap-6 md:flex">
           {NAV.map((item) => (
             <Link
@@ -58,7 +70,7 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Call-to-Action */}
+        {/* Call to Action */}
         <a
           href="tel:+19137387827"
           className="rounded-full bg-green-600 px-5 py-2 text-sm md:text-base font-semibold text-white hover:bg-green-700 transition-colors"
@@ -69,3 +81,5 @@ export default function Header() {
     </header>
   );
 }
+
+

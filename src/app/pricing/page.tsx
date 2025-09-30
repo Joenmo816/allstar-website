@@ -45,7 +45,8 @@ export default function PricingPage() {
             <li>Guaranteed Results</li>
           </ul>
           <p className="text-lg font-bold text-center text-green-700 mb-4">
-            Inspections: $85 <br /> Treatment: Custom Quote
+            FHA/VA/Refinance Inspection: $85
+            <span className="block">Treatment: Custom Quote</span>
           </p>
         </div>
 
@@ -79,3 +80,4 @@ export default function PricingPage() {
     </main>
   );
 }
+

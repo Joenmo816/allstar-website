@@ -17,7 +17,6 @@ export default function Footer() {
         <nav className="grid gap-2 text-sm">
           <h4 className="text-base font-semibold text-gray-900">Quick Links</h4>
           <Link href="/" className="text-gray-700 hover:text-blue-700">Home</Link>
-          <Link href="/services" className="text-gray-700 hover:text-blue-700">Services</Link>
           <Link href="/services/residential" className="text-gray-700 hover:text-blue-700">Residential</Link>
           <Link href="/services/commercial" className="text-gray-700 hover:text-blue-700">Commercial</Link>
           <Link href="/pests" className="text-gray-700 hover:text-blue-700">Pest Library</Link>
@@ -35,7 +34,7 @@ export default function Footer() {
             Email: <a href="mailto:info@allstarpestkc.com" className="text-blue-700 hover:text-blue-800">info@allstarpestkc.com</a><br />
             Web: <a href="https://allstarpestkc.com" className="text-blue-700 hover:text-blue-800" target="_blank">allstarpestkc.com</a>
           </p>
-          <p className="mt-3 text-gray-700">210 W. Cleveland St<br />Cleveland, MO 64734</p>
+          
           <p className="mt-3 text-gray-700">KS &amp; MO State-Certified • Fully Insured</p>
         </div>
 
@@ -63,3 +62,4 @@ export default function Footer() {
     </footer>
   );
 }
+
