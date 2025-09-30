@@ -15,7 +15,7 @@ export default function HomePage() {
         />
         <div className="relative z-10 max-w-3xl px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Local Service. Guaranteed Results.
+            Guaranteed Service, Guaranteed Results.
           </h1>
           <p className="text-lg md:text-xl mb-8">
             Serving Kansas City homes and businesses with safe, eco-friendly pest control.
@@ -50,3 +50,4 @@ export default function HomePage() {
     </main>
   );
 }
+
