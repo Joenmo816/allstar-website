@@ -1,69 +1,130 @@
-import Image from "next/image";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-export default function WhyChooseUsPage() {
-  return (
-    <main className="max-w-6xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold text-green-800 mb-8 text-center">
-        Why Choose All Star Pest Solutions?
-      </h1>
+/* =========================================
+   ALL STAR PEST SOLUTIONS GLOBAL STYLES
+   Modern Power Brand System
+========================================= */
 
-      <p className="text-lg text-gray-700 mb-12 text-center">
-        For over 28 years, families and businesses across Kansas City have trusted
-        us to deliver safe, effective pest control with guaranteed results.
-      </p>
+/* ---------- BRAND COLORS ---------- */
+:root {
+  --as-yellow: #ffd100;
+  --as-red: #c1121f;
+  --as-black: #000000;
+  --as-dark: #111111;
+  --as-light-gray: #f5f5f5;
+}
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-        {/* Eco-Smart */}
-        <div className="flex flex-col items-center">
-          <Image
-            src="/images/eco-smart.png"
-            alt="Eco-Smart Treatments"
-            width={100}
-            height={100}
-            className="mb-4"
-          />
-          <h3 className="text-xl font-semibold text-blue-800 mb-2">
-            Eco-Smart Solutions
-          </h3>
-          <p className="text-gray-600">
-            Child- and pet-safe treatments that are tough on pests but gentle on the environment.
-          </p>
-        </div>
+/* ---------- BASE ---------- */
+html,
+body {
+  height: 100%;
+}
 
-        {/* Family-Owned */}
-        <div className="flex flex-col items-center">
-          <Image
-            src="/images/family-owned.png"
-            alt="Family-Owned"
-            width={100}
-            height={100}
-            className="mb-4"
-          />
-          <h3 className="text-xl font-semibold text-blue-800 mb-2">
-            Family-Owned & Operated
-          </h3>
-          <p className="text-gray-600">
-            Proudly serving Kansas City as a local business — our neighborhoods are your neighborhoods.
-          </p>
-        </div>
+body {
+  background: #ffffff;
+  color: #111111;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
 
-        {/* Experience */}
-        <div className="flex flex-col items-center">
-          <Image
-            src="/images/experience.png"
-            alt="Experience"
-            width={100}
-            height={100}
-            className="mb-4"
-          />
-          <h3 className="text-xl font-semibold text-blue-800 mb-2">
-            28+ Years Experience
-          </h3>
-          <p className="text-gray-600">
-            Decades of proven expertise and customer satisfaction in pest control.
-          </p>
-        </div>
-      </div>
-    </main>
-  );
+/* =========================================
+   WORDMARK SYSTEM
+   Usage:
+   <span class="as-wordmark as-wordmark--header">
+     <span class="as-wordmark__primary">ALL STAR</span>
+     <span class="as-wordmark__secondary">PEST SOLUTIONS</span>
+   </span>
+========================================= */
+
+.as-wordmark {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+/* ALL STAR (yellow fill, black outline, thin red outer accent) */
+.as-wordmark__primary {
+  font-family: "Bebas Neue", "Oswald", "Impact", "Arial Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  color: var(--as-yellow);
+
+  /* Black outline */
+  -webkit-text-stroke: 3px var(--as-black);
+
+  /* Thin red outer accent (subtle) */
+  text-shadow:
+    1px 0 0 var(--as-red),
+    -1px 0 0 var(--as-red),
+    0 1px 0 var(--as-red),
+    0 -1px 0 var(--as-red);
+}
+
+/* PEST SOLUTIONS (red fill, thin black outline) */
+.as-wordmark__secondary {
+  margin-top: 2px;
+  font-family: "Bebas Neue", "Oswald", "Impact", "Arial Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--as-red);
+
+  /* Thin black outline */
+  -webkit-text-stroke: 1.5px var(--as-black);
+}
+
+/* Size variants */
+.as-wordmark--header .as-wordmark__primary {
+  font-size: 34px;
+}
+.as-wordmark--header .as-wordmark__secondary {
+  font-size: 16px;
+}
+
+.as-wordmark--hero .as-wordmark__primary {
+  font-size: clamp(52px, 6vw, 86px);
+}
+.as-wordmark--hero .as-wordmark__secondary {
+  font-size: clamp(20px, 2vw, 30px);
+}
+
+.as-wordmark--small .as-wordmark__primary {
+  font-size: 28px;
+}
+.as-wordmark--small .as-wordmark__secondary {
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+/* =========================================
+   OPTIONAL: BUTTON UTILITY CLASSES
+========================================= */
+
+.as-btn-primary {
+  background: var(--as-red);
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: background-color 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+.as-btn-primary:hover {
+  background: #a60f19;
+}
+
+.as-btn-secondary {
+  background: var(--as-yellow);
+  color: #000000;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: filter 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+.as-btn-secondary:hover {
+  filter: brightness(0.95);
 }

@@ -1,39 +1,70 @@
+import fs from "fs";
+import path from "path";
 import Link from "next/link";
 import Image from "next/image";
-import { pests } from "../../data/pests.generated";
 
-export default function PestLibraryPage() {
-  return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
-        <h1 className="text-4xl font-bold text-center mb-10">Pest Library</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {pests.map((pest) => {
-            const imageSrc = pest.image || "/images/pests/placeholder.png";
+function getPests() {
+  const directory = path.join(process.cwd(), "public/images/pests");
+  const files = fs.readdirSync(directory);
 
-            return (
-              <Link key={pest.slug} href={`/pests/${pest.slug}`}>
-                <div className="border rounded-lg shadow hover:shadow-lg p-6 bg-white cursor-pointer">
-                  <Image
-                    src={imageSrc}
-                    alt={pest.name}
-                    width={128}
-                    height={128}
-                    className="h-32 w-auto mx-auto mb-4"
-                  />
-                  <h2 className="text-xl font-semibold mb-2 text-center">
-                    {pest.name}
-                  </h2>
-                  <p className="text-gray-600 text-sm text-center">
-                    {pest.description || "Learn more about this pest"}
-                  </p>
-                </div>
-              </Link>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-  );
+  return files
+    .filter((file) => /\.(jpg|jpeg|png)$/i.test(file))
+    .map((file) => {
+      const slug = file
+        .replace(/\.(jpg|jpeg|png)$/i, "")
+        .toLowerCase();
+
+      const name = slug
+        .split("-")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+
+      return { slug, name, file };
+    })
+    .sort((a, b) => a.name.localeCompare(b.name));
 }
 
+export const metadata = {
+  title: "Pest Identification Library | Kansas City",
+  description:
+    "Browse our Kansas City pest identification library including rodents, termites, cockroaches, spiders and stinging insects.",
+};
+
+export default function PestLibraryPage() {
+  const pests = getPests();
+
+  return (
+    <main className="pt-32 bg-white min-h-screen">
+      <section className="max-w-6xl mx-auto px-6 py-20">
+
+        <h1 className="text-4xl font-bold mb-10">Pest Library</h1>
+
+        <div className="grid md:grid-cols-3 gap-10">
+          {pests.map((pest) => (
+            <Link
+              key={pest.slug}
+              href={`/pests/${pest.slug}`}
+              className="group border rounded-lg overflow-hidden shadow hover:shadow-lg transition"
+            >
+              <div className="relative h-48">
+                <Image
+                  src={`/images/pests/${pest.file}`}
+                  alt={pest.name}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="p-4">
+                <h2 className="font-semibold text-lg">
+                  {pest.name}
+                </h2>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+      </section>
+    </main>
+  );
+}

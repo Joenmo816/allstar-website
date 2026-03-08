@@ -1,43 +1,34 @@
 import { MetadataRoute } from "next";
+import fs from "fs";
+import path from "path";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.allstarpestkc.com";
 
-  const routes = [
-    "",
-    "/services",
-    "/service-area",
-    "/pricing",
-    "/plans",
-    "/pests",
-    "/about",
-    "/contact",
-    "/why-choose-us",
-    "/kansas-city",
-    "/overland-park",
-    "/olathe",
-    "/lenexa",
-    "/leawood",
-    "/raymore",
-    "/belton",
-    "/spring-hill",
-    "/stillwell",
-    "/grandview",
-    "/harrisonville",
-    "/louisburg",
-    "/paola",
-    "/osawatomie",
-    "/cleveland",
-    "/drexel",
-    "/peculiar",
-    "/freeman",
-    "/loch-lloyd"
-  ];
+  const pestsDir = path.join(process.cwd(), "public/images/pests");
+  const pestFiles = fs.readdirSync(pestsDir);
 
-  return routes.map((route) => ({
-    url: `${baseUrl}${route}`,
+  const pestUrls = pestFiles.map((file) => ({
+    url: `https://www.allstarpestkc.com/pests/${file.replace(/\.(jpg|jpeg|png)$/i, "")}`,
     lastModified: new Date(),
-    changeFrequency: route === "" ? "weekly" : "monthly",
-    priority: route === "" ? 1.0 : 0.8,
   }));
+
+  return [
+    {
+      url: "https://www.allstarpestkc.com",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://www.allstarpestkc.com/residential",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://www.allstarpestkc.com/commercial",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://www.allstarpestkc.com/termite-services",
+      lastModified: new Date(),
+    },
+    ...pestUrls,
+  ];
 }
