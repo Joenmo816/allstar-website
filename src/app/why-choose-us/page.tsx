@@ -1,130 +1,81 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+import Image from "next/image";
+import Link from "next/link";
 
-/* =========================================
-   ALL STAR PEST SOLUTIONS GLOBAL STYLES
-   Modern Power Brand System
-========================================= */
+export const metadata = {
+  title: "Why Choose All Star Pest Solutions | Kansas City Pest Experts",
+  description:
+    "With over 25 years of experience, All Star Pest Solutions delivers reliable pest control and termite services across the Kansas City metro area.",
+};
 
-/* ---------- BRAND COLORS ---------- */
-:root {
-  --as-yellow: #ffd100;
-  --as-red: #c1121f;
-  --as-black: #000000;
-  --as-dark: #111111;
-  --as-light-gray: #f5f5f5;
-}
+export default function WhyChooseUsPage() {
+  return (
+    <main className="bg-white text-gray-900">
 
-/* ---------- BASE ---------- */
-html,
-body {
-  height: 100%;
-}
+      {/* HERO */}
+      <section className="relative h-[420px] w-full">
+        <Image
+          src="/kc-skyline.jpg"
+          alt="Kansas City skyline"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center text-white px-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            Why Choose All Star Pest Solutions
+          </h1>
+          <p className="text-xl max-w-2xl">
+            Guaranteed Service. Guaranteed Results.
+          </p>
+        </div>
+      </section>
 
-body {
-  background: #ffffff;
-  color: #111111;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
+      {/* CONTENT */}
+      <section className="max-w-6xl mx-auto py-16 px-6 grid md:grid-cols-3 gap-10">
 
-/* =========================================
-   WORDMARK SYSTEM
-   Usage:
-   <span class="as-wordmark as-wordmark--header">
-     <span class="as-wordmark__primary">ALL STAR</span>
-     <span class="as-wordmark__secondary">PEST SOLUTIONS</span>
-   </span>
-========================================= */
+        <div className="text-center">
+          <h2 className="text-2xl font-bold mb-3">25+ Years Experience</h2>
+          <p>
+            With more than two decades in the pest control industry, we know
+            exactly how to eliminate pests safely and effectively.
+          </p>
+        </div>
 
-.as-wordmark {
-  display: inline-flex;
-  flex-direction: column;
-  line-height: 1;
-}
+        <div className="text-center">
+          <h2 className="text-2xl font-bold mb-3">Locally Owned</h2>
+          <p>
+            We are a Kansas City locally owned company that understands the
+            pests that affect homes and businesses in our region.
+          </p>
+        </div>
 
-/* ALL STAR (yellow fill, black outline, thin red outer accent) */
-.as-wordmark__primary {
-  font-family: "Bebas Neue", "Oswald", "Impact", "Arial Black", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: -0.5px;
-  color: var(--as-yellow);
+        <div className="text-center">
+          <h2 className="text-2xl font-bold mb-3">Certified Applicators</h2>
+          <p>
+            Every technician is a certified commercial applicator in both
+            Kansas and Missouri.
+          </p>
+        </div>
 
-  /* Black outline */
-  -webkit-text-stroke: 3px var(--as-black);
+      </section>
 
-  /* Thin red outer accent (subtle) */
-  text-shadow:
-    1px 0 0 var(--as-red),
-    -1px 0 0 var(--as-red),
-    0 1px 0 var(--as-red),
-    0 -1px 0 var(--as-red);
-}
+      {/* CTA */}
+      <section className="bg-red-600 text-white py-14 text-center">
+        <h2 className="text-3xl font-bold mb-4">
+          Ready to Protect Your Home or Business?
+        </h2>
+        <p className="mb-6">
+          Call today for professional pest solutions in the Kansas City metro.
+        </p>
 
-/* PEST SOLUTIONS (red fill, thin black outline) */
-.as-wordmark__secondary {
-  margin-top: 2px;
-  font-family: "Bebas Neue", "Oswald", "Impact", "Arial Black", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  color: var(--as-red);
+        <Link
+          href="/contact"
+          className="bg-yellow-400 text-black px-6 py-3 font-bold rounded-lg hover:bg-yellow-300 transition"
+        >
+          Schedule Service
+        </Link>
+      </section>
 
-  /* Thin black outline */
-  -webkit-text-stroke: 1.5px var(--as-black);
-}
-
-/* Size variants */
-.as-wordmark--header .as-wordmark__primary {
-  font-size: 34px;
-}
-.as-wordmark--header .as-wordmark__secondary {
-  font-size: 16px;
-}
-
-.as-wordmark--hero .as-wordmark__primary {
-  font-size: clamp(52px, 6vw, 86px);
-}
-.as-wordmark--hero .as-wordmark__secondary {
-  font-size: clamp(20px, 2vw, 30px);
-}
-
-.as-wordmark--small .as-wordmark__primary {
-  font-size: 28px;
-}
-.as-wordmark--small .as-wordmark__secondary {
-  font-size: 14px;
-  letter-spacing: 3px;
-}
-
-/* =========================================
-   OPTIONAL: BUTTON UTILITY CLASSES
-========================================= */
-
-.as-btn-primary {
-  background: var(--as-red);
-  color: #ffffff;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: 700;
-  transition: background-color 0.2s ease;
-  display: inline-block;
-  text-decoration: none;
-}
-.as-btn-primary:hover {
-  background: #a60f19;
-}
-
-.as-btn-secondary {
-  background: var(--as-yellow);
-  color: #000000;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: 700;
-  transition: filter 0.2s ease;
-  display: inline-block;
-  text-decoration: none;
-}
-.as-btn-secondary:hover {
-  filter: brightness(0.95);
+    </main>
+  );
 }
