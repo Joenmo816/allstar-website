@@ -7,7 +7,7 @@ return (
 <div className="max-w-5xl mx-auto px-6 py-16">
 
 <h1 className="text-4xl font-bold text-red-600 mb-6">
-acrobat-ant in freeman
+acrobat-ant in freeman, mo
 </h1>
 
 <Image
