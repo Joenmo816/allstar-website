@@ -69,12 +69,6 @@ All Star Pest Solutions
 
 </div>
 
-</div>
-
-)
-}
-
-
 <h2 className='text-2xl font-bold mt-12'>
 Other Cities We Service
 </h2>
@@ -98,7 +92,9 @@ Other Cities We Service
 <li><a href='/acrobat-belton-mo'>acrobat in belton-mo</a></li>
 <li><a href='/acrobat-raymore-mo'>acrobat in raymore-mo</a></li>
 <li><a href='/acrobat-grandview-mo'>acrobat in grandview-mo</a></li>
-
 </ul>
 
+</div>
 
+)
+}
