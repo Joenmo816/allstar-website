@@ -37,8 +37,7 @@ export default function ServiceAreaPage() {
 
 
 <h2 className='text-2xl font-bold mt-12'>
-Other Cities We Service
-</h2>
+<h2 className="text-3xl font-bold mb-6 text-center">Other Cities We Service</h2>
 
 <ul>
 <li><a href='/service-louisburg-ks'>service in louisburg-ks</a></li>
@@ -61,5 +60,6 @@ Other Cities We Service
 <li><a href='/service-grandview-mo'>service in grandview-mo</a></li>
 
 </ul>
+
 
 

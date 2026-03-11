@@ -50,8 +50,7 @@ export default function ContactPage() {
 
     </div>
    className='text-2xl font-bold mt-12'>
-Other Cities We Service
-</h2>
+<h2 className="text-3xl font-bold mb-6 text-center">Other Cities We Service</h2>
 
 <ul>
 <li><a href='/contact-louisburg-ks'>contact in louisburg-ks</a></li>
@@ -79,3 +78,4 @@ Other Cities We Service
 
 )
 }
+
