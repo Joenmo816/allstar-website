@@ -126,3 +126,31 @@ export default function Page() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/peculiar-louisburg-ks'>peculiar in louisburg-ks</a></li>
+<li><a href='/peculiar-paola-ks'>peculiar in paola-ks</a></li>
+<li><a href='/peculiar-osawatomie-ks'>peculiar in osawatomie-ks</a></li>
+<li><a href='/peculiar-spring-hill-ks'>peculiar in spring-hill-ks</a></li>
+<li><a href='/peculiar-stilwell-ks'>peculiar in stilwell-ks</a></li>
+<li><a href='/peculiar-overland-park-ks'>peculiar in overland-park-ks</a></li>
+<li><a href='/peculiar-olathe-ks'>peculiar in olathe-ks</a></li>
+<li><a href='/peculiar-prairie-village-ks'>peculiar in prairie-village-ks</a></li>
+<li><a href='/peculiar-leawood-ks'>peculiar in leawood-ks</a></li>
+<li><a href='/peculiar-peculiar-mo'>peculiar in peculiar-mo</a></li>
+<li><a href='/peculiar-freeman-mo'>peculiar in freeman-mo</a></li>
+<li><a href='/peculiar-harrisonville-mo'>peculiar in harrisonville-mo</a></li>
+<li><a href='/peculiar-drexel-mo'>peculiar in drexel-mo</a></li>
+<li><a href='/peculiar-cleveland-mo'>peculiar in cleveland-mo</a></li>
+<li><a href='/peculiar-loch-lloyd-mo'>peculiar in loch-lloyd-mo</a></li>
+<li><a href='/peculiar-belton-mo'>peculiar in belton-mo</a></li>
+<li><a href='/peculiar-raymore-mo'>peculiar in raymore-mo</a></li>
+<li><a href='/peculiar-grandview-mo'>peculiar in grandview-mo</a></li>
+
+</ul>
+
+

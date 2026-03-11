@@ -141,3 +141,31 @@ export default function Page() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/loch-louisburg-ks'>loch in louisburg-ks</a></li>
+<li><a href='/loch-paola-ks'>loch in paola-ks</a></li>
+<li><a href='/loch-osawatomie-ks'>loch in osawatomie-ks</a></li>
+<li><a href='/loch-spring-hill-ks'>loch in spring-hill-ks</a></li>
+<li><a href='/loch-stilwell-ks'>loch in stilwell-ks</a></li>
+<li><a href='/loch-overland-park-ks'>loch in overland-park-ks</a></li>
+<li><a href='/loch-olathe-ks'>loch in olathe-ks</a></li>
+<li><a href='/loch-prairie-village-ks'>loch in prairie-village-ks</a></li>
+<li><a href='/loch-leawood-ks'>loch in leawood-ks</a></li>
+<li><a href='/loch-peculiar-mo'>loch in peculiar-mo</a></li>
+<li><a href='/loch-freeman-mo'>loch in freeman-mo</a></li>
+<li><a href='/loch-harrisonville-mo'>loch in harrisonville-mo</a></li>
+<li><a href='/loch-drexel-mo'>loch in drexel-mo</a></li>
+<li><a href='/loch-cleveland-mo'>loch in cleveland-mo</a></li>
+<li><a href='/loch-loch-lloyd-mo'>loch in loch-lloyd-mo</a></li>
+<li><a href='/loch-belton-mo'>loch in belton-mo</a></li>
+<li><a href='/loch-raymore-mo'>loch in raymore-mo</a></li>
+<li><a href='/loch-grandview-mo'>loch in grandview-mo</a></li>
+
+</ul>
+
+

@@ -20,3 +20,32 @@ export default function GuaranteePage() {
     </section>
   );
 }
+
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/guarantee-louisburg-ks'>guarantee in louisburg-ks</a></li>
+<li><a href='/guarantee-paola-ks'>guarantee in paola-ks</a></li>
+<li><a href='/guarantee-osawatomie-ks'>guarantee in osawatomie-ks</a></li>
+<li><a href='/guarantee-spring-hill-ks'>guarantee in spring-hill-ks</a></li>
+<li><a href='/guarantee-stilwell-ks'>guarantee in stilwell-ks</a></li>
+<li><a href='/guarantee-overland-park-ks'>guarantee in overland-park-ks</a></li>
+<li><a href='/guarantee-olathe-ks'>guarantee in olathe-ks</a></li>
+<li><a href='/guarantee-prairie-village-ks'>guarantee in prairie-village-ks</a></li>
+<li><a href='/guarantee-leawood-ks'>guarantee in leawood-ks</a></li>
+<li><a href='/guarantee-peculiar-mo'>guarantee in peculiar-mo</a></li>
+<li><a href='/guarantee-freeman-mo'>guarantee in freeman-mo</a></li>
+<li><a href='/guarantee-harrisonville-mo'>guarantee in harrisonville-mo</a></li>
+<li><a href='/guarantee-drexel-mo'>guarantee in drexel-mo</a></li>
+<li><a href='/guarantee-cleveland-mo'>guarantee in cleveland-mo</a></li>
+<li><a href='/guarantee-loch-lloyd-mo'>guarantee in loch-lloyd-mo</a></li>
+<li><a href='/guarantee-belton-mo'>guarantee in belton-mo</a></li>
+<li><a href='/guarantee-raymore-mo'>guarantee in raymore-mo</a></li>
+<li><a href='/guarantee-grandview-mo'>guarantee in grandview-mo</a></li>
+
+</ul>
+
+

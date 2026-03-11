@@ -1,65 +1,100 @@
 import Link from "next/link";
 
 export default function Footer() {
-  const year = new Date().getFullYear();
-
   return (
-    <footer className="border-t bg-gray-50">
-      <div className="mx-auto max-w-7xl px-4 py-10 grid gap-8 md:grid-cols-4">
+    <footer className="bg-gray-100 border-t mt-20">
+
+      <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-10">
+
+        {/* Company Info */}
         <div>
-          <h3 className="text-xl font-extrabold text-blue-800">All Star Pest Solutions</h3>
-          <p className="mt-2 text-sm text-gray-700">
-            Local experts delivering eco-friendly, child &amp; pet-safe treatments—backed by our promise:
-            <span className="block font-semibold">“Guaranteed Service. Guaranteed Results.”</span>
+          <h3 className="text-xl font-bold text-red-700 mb-4">
+            All Star Pest Solutions
+          </h3>
+
+          <p className="text-gray-700">
+            Local pest professionals serving South Kansas City and surrounding
+            communities with safe, effective pest solutions.
+          </p>
+
+          <p className="font-semibold mt-3">
+            Guaranteed Service. Guaranteed Results.
           </p>
         </div>
 
-        <nav className="grid gap-2 text-sm">
-          <h4 className="text-base font-semibold text-gray-900">Quick Links</h4>
-          <Link href="/" className="text-gray-700 hover:text-blue-700">Home</Link>
-          <Link href="/services/residential" className="text-gray-700 hover:text-blue-700">Residential</Link>
-          <Link href="/services/commercial" className="text-gray-700 hover:text-blue-700">Commercial</Link>
-          <Link href="/pests" className="text-gray-700 hover:text-blue-700">Pest Library</Link>
-          <Link href="/pricing" className="text-gray-700 hover:text-blue-700">Pricing</Link>
-          <Link href="/service-area" className="text-gray-700 hover:text-blue-700">Service Area</Link>
-          <Link href="/guarantee" className="text-gray-700 hover:text-blue-700">Guarantee</Link>
-          <Link href="/about" className="text-gray-700 hover:text-blue-700">About</Link>
-          <Link href="/contact" className="text-gray-700 hover:text-blue-700">Contact</Link>
-        </nav>
+        {/* Quick Links */}
+        <div>
+          <h3 className="font-bold text-lg mb-4">Quick Links</h3>
 
-        <div className="text-sm">
-          <h4 className="text-base font-semibold text-gray-900">Contact</h4>
-          <p className="mt-2 text-gray-700">
-            Phone: <a href="tel:+19137387827" className="font-semibold text-green-700 hover:text-green-800">(913) 738-STAR</a><br />
-            Email: <a href="mailto:info@allstarpestkc.com" className="text-blue-700 hover:text-blue-800">info@allstarpestkc.com</a><br />
-            Web: <a href="https://allstarpestkc.com" className="text-blue-700 hover:text-blue-800" target="_blank">allstarpestkc.com</a>
-          </p>
-          
-          <p className="mt-3 text-gray-700">KS &amp; MO State-Certified • Fully Insured</p>
+          <div className="grid grid-cols-2 gap-x-10 gap-y-2 text-gray-700">
+
+            <Link href="/">Home</Link>
+            <Link href="/contact">Contact</Link>
+
+            <Link href="/residential">Residential</Link>
+            <Link href="/commercial">Commercial</Link>
+
+            <Link href="/termite-services">Termite</Link>
+            <Link href="/pest-library">Pest Library</Link>
+
+            <Link href="/ant-control">Ant Control</Link>
+            <Link href="/cockroach-control">Cockroach Control</Link>
+
+          </div>
         </div>
 
-        <div className="text-sm">
-          <h4 className="text-base font-semibold text-gray-900">Service Area</h4>
-          <p className="mt-2 text-gray-700">
-            Kansas: Johnson &amp; Miami Counties<br />
-            Missouri: Cass &amp; Jackson Counties
+        {/* Contact */}
+        <div>
+          <h3 className="font-bold text-lg mb-4">Contact</h3>
+
+          <p>
+            Phone:{" "}
+            <a
+              href="tel:19137387827"
+              className="text-green-600 font-semibold"
+            >
+              (913) 738-STAR
+            </a>
           </p>
+
+          <p>Email: info@allstarpestkc.com</p>
+
+          <p className="mt-3">
+            Licensed in Kansas & Missouri
+          </p>
+
+          <p>30+ Years Industry Experience</p>
+        </div>
+
+        {/* Service Area */}
+        <div>
+          <h3 className="font-bold text-lg mb-4">Service Area</h3>
+
+          <p>Kansas</p>
+          <p className="text-gray-700">
+            Johnson County • Miami County
+          </p>
+
+          <p className="mt-2">Missouri</p>
+          <p className="text-gray-700">
+            Cass County • Jackson County
+          </p>
+
           <a
-            href="tel:+19137387827"
-            className="mt-4 inline-flex items-center justify-center rounded-full bg-green-600 px-5 py-2 font-semibold text-white hover:bg-green-700 transition"
+            href="tel:19137387827"
+            className="inline-block mt-5 bg-red-700 text-yellow-400 px-5 py-2 rounded-md font-bold"
           >
             Call (913) 738-STAR
           </a>
         </div>
+
       </div>
 
-      <div className="border-t">
-        <div className="mx-auto max-w-7xl px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-gray-600">&copy; {year} All Star Pest Solutions • Local Service. Guaranteed Results.</p>
-          <p className="text-xs text-gray-500">Respect for beneficial species • Eco-friendly + family-safe treatments</p>
-        </div>
+      {/* Bottom Bar */}
+      <div className="border-t py-4 text-center text-sm text-gray-600">
+        © {new Date().getFullYear()} All Star Pest Solutions • South Kansas City Pest Experts
       </div>
+
     </footer>
   );
 }
-

@@ -126,3 +126,31 @@ export default function Page() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/grandview-louisburg-ks'>grandview in louisburg-ks</a></li>
+<li><a href='/grandview-paola-ks'>grandview in paola-ks</a></li>
+<li><a href='/grandview-osawatomie-ks'>grandview in osawatomie-ks</a></li>
+<li><a href='/grandview-spring-hill-ks'>grandview in spring-hill-ks</a></li>
+<li><a href='/grandview-stilwell-ks'>grandview in stilwell-ks</a></li>
+<li><a href='/grandview-overland-park-ks'>grandview in overland-park-ks</a></li>
+<li><a href='/grandview-olathe-ks'>grandview in olathe-ks</a></li>
+<li><a href='/grandview-prairie-village-ks'>grandview in prairie-village-ks</a></li>
+<li><a href='/grandview-leawood-ks'>grandview in leawood-ks</a></li>
+<li><a href='/grandview-peculiar-mo'>grandview in peculiar-mo</a></li>
+<li><a href='/grandview-freeman-mo'>grandview in freeman-mo</a></li>
+<li><a href='/grandview-harrisonville-mo'>grandview in harrisonville-mo</a></li>
+<li><a href='/grandview-drexel-mo'>grandview in drexel-mo</a></li>
+<li><a href='/grandview-cleveland-mo'>grandview in cleveland-mo</a></li>
+<li><a href='/grandview-loch-lloyd-mo'>grandview in loch-lloyd-mo</a></li>
+<li><a href='/grandview-belton-mo'>grandview in belton-mo</a></li>
+<li><a href='/grandview-raymore-mo'>grandview in raymore-mo</a></li>
+<li><a href='/grandview-grandview-mo'>grandview in grandview-mo</a></li>
+
+</ul>
+
+

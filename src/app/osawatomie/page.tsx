@@ -126,3 +126,31 @@ export default function Page() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/osawatomie-louisburg-ks'>osawatomie in louisburg-ks</a></li>
+<li><a href='/osawatomie-paola-ks'>osawatomie in paola-ks</a></li>
+<li><a href='/osawatomie-osawatomie-ks'>osawatomie in osawatomie-ks</a></li>
+<li><a href='/osawatomie-spring-hill-ks'>osawatomie in spring-hill-ks</a></li>
+<li><a href='/osawatomie-stilwell-ks'>osawatomie in stilwell-ks</a></li>
+<li><a href='/osawatomie-overland-park-ks'>osawatomie in overland-park-ks</a></li>
+<li><a href='/osawatomie-olathe-ks'>osawatomie in olathe-ks</a></li>
+<li><a href='/osawatomie-prairie-village-ks'>osawatomie in prairie-village-ks</a></li>
+<li><a href='/osawatomie-leawood-ks'>osawatomie in leawood-ks</a></li>
+<li><a href='/osawatomie-peculiar-mo'>osawatomie in peculiar-mo</a></li>
+<li><a href='/osawatomie-freeman-mo'>osawatomie in freeman-mo</a></li>
+<li><a href='/osawatomie-harrisonville-mo'>osawatomie in harrisonville-mo</a></li>
+<li><a href='/osawatomie-drexel-mo'>osawatomie in drexel-mo</a></li>
+<li><a href='/osawatomie-cleveland-mo'>osawatomie in cleveland-mo</a></li>
+<li><a href='/osawatomie-loch-lloyd-mo'>osawatomie in loch-lloyd-mo</a></li>
+<li><a href='/osawatomie-belton-mo'>osawatomie in belton-mo</a></li>
+<li><a href='/osawatomie-raymore-mo'>osawatomie in raymore-mo</a></li>
+<li><a href='/osawatomie-grandview-mo'>osawatomie in grandview-mo</a></li>
+
+</ul>
+
+

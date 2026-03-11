@@ -127,3 +127,31 @@ export default function Page() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/paola-louisburg-ks'>paola in louisburg-ks</a></li>
+<li><a href='/paola-paola-ks'>paola in paola-ks</a></li>
+<li><a href='/paola-osawatomie-ks'>paola in osawatomie-ks</a></li>
+<li><a href='/paola-spring-hill-ks'>paola in spring-hill-ks</a></li>
+<li><a href='/paola-stilwell-ks'>paola in stilwell-ks</a></li>
+<li><a href='/paola-overland-park-ks'>paola in overland-park-ks</a></li>
+<li><a href='/paola-olathe-ks'>paola in olathe-ks</a></li>
+<li><a href='/paola-prairie-village-ks'>paola in prairie-village-ks</a></li>
+<li><a href='/paola-leawood-ks'>paola in leawood-ks</a></li>
+<li><a href='/paola-peculiar-mo'>paola in peculiar-mo</a></li>
+<li><a href='/paola-freeman-mo'>paola in freeman-mo</a></li>
+<li><a href='/paola-harrisonville-mo'>paola in harrisonville-mo</a></li>
+<li><a href='/paola-drexel-mo'>paola in drexel-mo</a></li>
+<li><a href='/paola-cleveland-mo'>paola in cleveland-mo</a></li>
+<li><a href='/paola-loch-lloyd-mo'>paola in loch-lloyd-mo</a></li>
+<li><a href='/paola-belton-mo'>paola in belton-mo</a></li>
+<li><a href='/paola-raymore-mo'>paola in raymore-mo</a></li>
+<li><a href='/paola-grandview-mo'>paola in grandview-mo</a></li>
+
+</ul>
+
+

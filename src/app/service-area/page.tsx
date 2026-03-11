@@ -34,3 +34,32 @@ export default function ServiceAreaPage() {
     </main>
   );
 }
+
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/service-louisburg-ks'>service in louisburg-ks</a></li>
+<li><a href='/service-paola-ks'>service in paola-ks</a></li>
+<li><a href='/service-osawatomie-ks'>service in osawatomie-ks</a></li>
+<li><a href='/service-spring-hill-ks'>service in spring-hill-ks</a></li>
+<li><a href='/service-stilwell-ks'>service in stilwell-ks</a></li>
+<li><a href='/service-overland-park-ks'>service in overland-park-ks</a></li>
+<li><a href='/service-olathe-ks'>service in olathe-ks</a></li>
+<li><a href='/service-prairie-village-ks'>service in prairie-village-ks</a></li>
+<li><a href='/service-leawood-ks'>service in leawood-ks</a></li>
+<li><a href='/service-peculiar-mo'>service in peculiar-mo</a></li>
+<li><a href='/service-freeman-mo'>service in freeman-mo</a></li>
+<li><a href='/service-harrisonville-mo'>service in harrisonville-mo</a></li>
+<li><a href='/service-drexel-mo'>service in drexel-mo</a></li>
+<li><a href='/service-cleveland-mo'>service in cleveland-mo</a></li>
+<li><a href='/service-loch-lloyd-mo'>service in loch-lloyd-mo</a></li>
+<li><a href='/service-belton-mo'>service in belton-mo</a></li>
+<li><a href='/service-raymore-mo'>service in raymore-mo</a></li>
+<li><a href='/service-grandview-mo'>service in grandview-mo</a></li>
+
+</ul>
+
+

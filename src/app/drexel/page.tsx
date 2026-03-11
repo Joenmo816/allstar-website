@@ -126,3 +126,31 @@ export default function Page() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/drexel-louisburg-ks'>drexel in louisburg-ks</a></li>
+<li><a href='/drexel-paola-ks'>drexel in paola-ks</a></li>
+<li><a href='/drexel-osawatomie-ks'>drexel in osawatomie-ks</a></li>
+<li><a href='/drexel-spring-hill-ks'>drexel in spring-hill-ks</a></li>
+<li><a href='/drexel-stilwell-ks'>drexel in stilwell-ks</a></li>
+<li><a href='/drexel-overland-park-ks'>drexel in overland-park-ks</a></li>
+<li><a href='/drexel-olathe-ks'>drexel in olathe-ks</a></li>
+<li><a href='/drexel-prairie-village-ks'>drexel in prairie-village-ks</a></li>
+<li><a href='/drexel-leawood-ks'>drexel in leawood-ks</a></li>
+<li><a href='/drexel-peculiar-mo'>drexel in peculiar-mo</a></li>
+<li><a href='/drexel-freeman-mo'>drexel in freeman-mo</a></li>
+<li><a href='/drexel-harrisonville-mo'>drexel in harrisonville-mo</a></li>
+<li><a href='/drexel-drexel-mo'>drexel in drexel-mo</a></li>
+<li><a href='/drexel-cleveland-mo'>drexel in cleveland-mo</a></li>
+<li><a href='/drexel-loch-lloyd-mo'>drexel in loch-lloyd-mo</a></li>
+<li><a href='/drexel-belton-mo'>drexel in belton-mo</a></li>
+<li><a href='/drexel-raymore-mo'>drexel in raymore-mo</a></li>
+<li><a href='/drexel-grandview-mo'>drexel in grandview-mo</a></li>
+
+</ul>
+
+

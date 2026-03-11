@@ -127,3 +127,31 @@ export default function Page() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/belton-louisburg-ks'>belton in louisburg-ks</a></li>
+<li><a href='/belton-paola-ks'>belton in paola-ks</a></li>
+<li><a href='/belton-osawatomie-ks'>belton in osawatomie-ks</a></li>
+<li><a href='/belton-spring-hill-ks'>belton in spring-hill-ks</a></li>
+<li><a href='/belton-stilwell-ks'>belton in stilwell-ks</a></li>
+<li><a href='/belton-overland-park-ks'>belton in overland-park-ks</a></li>
+<li><a href='/belton-olathe-ks'>belton in olathe-ks</a></li>
+<li><a href='/belton-prairie-village-ks'>belton in prairie-village-ks</a></li>
+<li><a href='/belton-leawood-ks'>belton in leawood-ks</a></li>
+<li><a href='/belton-peculiar-mo'>belton in peculiar-mo</a></li>
+<li><a href='/belton-freeman-mo'>belton in freeman-mo</a></li>
+<li><a href='/belton-harrisonville-mo'>belton in harrisonville-mo</a></li>
+<li><a href='/belton-drexel-mo'>belton in drexel-mo</a></li>
+<li><a href='/belton-cleveland-mo'>belton in cleveland-mo</a></li>
+<li><a href='/belton-loch-lloyd-mo'>belton in loch-lloyd-mo</a></li>
+<li><a href='/belton-belton-mo'>belton in belton-mo</a></li>
+<li><a href='/belton-raymore-mo'>belton in raymore-mo</a></li>
+<li><a href='/belton-grandview-mo'>belton in grandview-mo</a></li>
+
+</ul>
+
+

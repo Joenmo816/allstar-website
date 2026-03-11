@@ -126,3 +126,31 @@ export default function Page() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/louisburg-louisburg-ks'>louisburg in louisburg-ks</a></li>
+<li><a href='/louisburg-paola-ks'>louisburg in paola-ks</a></li>
+<li><a href='/louisburg-osawatomie-ks'>louisburg in osawatomie-ks</a></li>
+<li><a href='/louisburg-spring-hill-ks'>louisburg in spring-hill-ks</a></li>
+<li><a href='/louisburg-stilwell-ks'>louisburg in stilwell-ks</a></li>
+<li><a href='/louisburg-overland-park-ks'>louisburg in overland-park-ks</a></li>
+<li><a href='/louisburg-olathe-ks'>louisburg in olathe-ks</a></li>
+<li><a href='/louisburg-prairie-village-ks'>louisburg in prairie-village-ks</a></li>
+<li><a href='/louisburg-leawood-ks'>louisburg in leawood-ks</a></li>
+<li><a href='/louisburg-peculiar-mo'>louisburg in peculiar-mo</a></li>
+<li><a href='/louisburg-freeman-mo'>louisburg in freeman-mo</a></li>
+<li><a href='/louisburg-harrisonville-mo'>louisburg in harrisonville-mo</a></li>
+<li><a href='/louisburg-drexel-mo'>louisburg in drexel-mo</a></li>
+<li><a href='/louisburg-cleveland-mo'>louisburg in cleveland-mo</a></li>
+<li><a href='/louisburg-loch-lloyd-mo'>louisburg in loch-lloyd-mo</a></li>
+<li><a href='/louisburg-belton-mo'>louisburg in belton-mo</a></li>
+<li><a href='/louisburg-raymore-mo'>louisburg in raymore-mo</a></li>
+<li><a href='/louisburg-grandview-mo'>louisburg in grandview-mo</a></li>
+
+</ul>
+
+

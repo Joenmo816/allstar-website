@@ -126,3 +126,31 @@ export default function Page() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/lenexa-louisburg-ks'>lenexa in louisburg-ks</a></li>
+<li><a href='/lenexa-paola-ks'>lenexa in paola-ks</a></li>
+<li><a href='/lenexa-osawatomie-ks'>lenexa in osawatomie-ks</a></li>
+<li><a href='/lenexa-spring-hill-ks'>lenexa in spring-hill-ks</a></li>
+<li><a href='/lenexa-stilwell-ks'>lenexa in stilwell-ks</a></li>
+<li><a href='/lenexa-overland-park-ks'>lenexa in overland-park-ks</a></li>
+<li><a href='/lenexa-olathe-ks'>lenexa in olathe-ks</a></li>
+<li><a href='/lenexa-prairie-village-ks'>lenexa in prairie-village-ks</a></li>
+<li><a href='/lenexa-leawood-ks'>lenexa in leawood-ks</a></li>
+<li><a href='/lenexa-peculiar-mo'>lenexa in peculiar-mo</a></li>
+<li><a href='/lenexa-freeman-mo'>lenexa in freeman-mo</a></li>
+<li><a href='/lenexa-harrisonville-mo'>lenexa in harrisonville-mo</a></li>
+<li><a href='/lenexa-drexel-mo'>lenexa in drexel-mo</a></li>
+<li><a href='/lenexa-cleveland-mo'>lenexa in cleveland-mo</a></li>
+<li><a href='/lenexa-loch-lloyd-mo'>lenexa in loch-lloyd-mo</a></li>
+<li><a href='/lenexa-belton-mo'>lenexa in belton-mo</a></li>
+<li><a href='/lenexa-raymore-mo'>lenexa in raymore-mo</a></li>
+<li><a href='/lenexa-grandview-mo'>lenexa in grandview-mo</a></li>
+
+</ul>
+
+

@@ -107,3 +107,31 @@ export default function JohnsonCountyPage() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/johnson-louisburg-ks'>johnson in louisburg-ks</a></li>
+<li><a href='/johnson-paola-ks'>johnson in paola-ks</a></li>
+<li><a href='/johnson-osawatomie-ks'>johnson in osawatomie-ks</a></li>
+<li><a href='/johnson-spring-hill-ks'>johnson in spring-hill-ks</a></li>
+<li><a href='/johnson-stilwell-ks'>johnson in stilwell-ks</a></li>
+<li><a href='/johnson-overland-park-ks'>johnson in overland-park-ks</a></li>
+<li><a href='/johnson-olathe-ks'>johnson in olathe-ks</a></li>
+<li><a href='/johnson-prairie-village-ks'>johnson in prairie-village-ks</a></li>
+<li><a href='/johnson-leawood-ks'>johnson in leawood-ks</a></li>
+<li><a href='/johnson-peculiar-mo'>johnson in peculiar-mo</a></li>
+<li><a href='/johnson-freeman-mo'>johnson in freeman-mo</a></li>
+<li><a href='/johnson-harrisonville-mo'>johnson in harrisonville-mo</a></li>
+<li><a href='/johnson-drexel-mo'>johnson in drexel-mo</a></li>
+<li><a href='/johnson-cleveland-mo'>johnson in cleveland-mo</a></li>
+<li><a href='/johnson-loch-lloyd-mo'>johnson in loch-lloyd-mo</a></li>
+<li><a href='/johnson-belton-mo'>johnson in belton-mo</a></li>
+<li><a href='/johnson-raymore-mo'>johnson in raymore-mo</a></li>
+<li><a href='/johnson-grandview-mo'>johnson in grandview-mo</a></li>
+
+</ul>
+
+

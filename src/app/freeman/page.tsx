@@ -126,3 +126,31 @@ export default function Page() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/freeman-louisburg-ks'>freeman in louisburg-ks</a></li>
+<li><a href='/freeman-paola-ks'>freeman in paola-ks</a></li>
+<li><a href='/freeman-osawatomie-ks'>freeman in osawatomie-ks</a></li>
+<li><a href='/freeman-spring-hill-ks'>freeman in spring-hill-ks</a></li>
+<li><a href='/freeman-stilwell-ks'>freeman in stilwell-ks</a></li>
+<li><a href='/freeman-overland-park-ks'>freeman in overland-park-ks</a></li>
+<li><a href='/freeman-olathe-ks'>freeman in olathe-ks</a></li>
+<li><a href='/freeman-prairie-village-ks'>freeman in prairie-village-ks</a></li>
+<li><a href='/freeman-leawood-ks'>freeman in leawood-ks</a></li>
+<li><a href='/freeman-peculiar-mo'>freeman in peculiar-mo</a></li>
+<li><a href='/freeman-freeman-mo'>freeman in freeman-mo</a></li>
+<li><a href='/freeman-harrisonville-mo'>freeman in harrisonville-mo</a></li>
+<li><a href='/freeman-drexel-mo'>freeman in drexel-mo</a></li>
+<li><a href='/freeman-cleveland-mo'>freeman in cleveland-mo</a></li>
+<li><a href='/freeman-loch-lloyd-mo'>freeman in loch-lloyd-mo</a></li>
+<li><a href='/freeman-belton-mo'>freeman in belton-mo</a></li>
+<li><a href='/freeman-raymore-mo'>freeman in raymore-mo</a></li>
+<li><a href='/freeman-grandview-mo'>freeman in grandview-mo</a></li>
+
+</ul>
+
+

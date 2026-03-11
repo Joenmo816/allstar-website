@@ -126,3 +126,31 @@ export default function Page() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/cleveland-louisburg-ks'>cleveland in louisburg-ks</a></li>
+<li><a href='/cleveland-paola-ks'>cleveland in paola-ks</a></li>
+<li><a href='/cleveland-osawatomie-ks'>cleveland in osawatomie-ks</a></li>
+<li><a href='/cleveland-spring-hill-ks'>cleveland in spring-hill-ks</a></li>
+<li><a href='/cleveland-stilwell-ks'>cleveland in stilwell-ks</a></li>
+<li><a href='/cleveland-overland-park-ks'>cleveland in overland-park-ks</a></li>
+<li><a href='/cleveland-olathe-ks'>cleveland in olathe-ks</a></li>
+<li><a href='/cleveland-prairie-village-ks'>cleveland in prairie-village-ks</a></li>
+<li><a href='/cleveland-leawood-ks'>cleveland in leawood-ks</a></li>
+<li><a href='/cleveland-peculiar-mo'>cleveland in peculiar-mo</a></li>
+<li><a href='/cleveland-freeman-mo'>cleveland in freeman-mo</a></li>
+<li><a href='/cleveland-harrisonville-mo'>cleveland in harrisonville-mo</a></li>
+<li><a href='/cleveland-drexel-mo'>cleveland in drexel-mo</a></li>
+<li><a href='/cleveland-cleveland-mo'>cleveland in cleveland-mo</a></li>
+<li><a href='/cleveland-loch-lloyd-mo'>cleveland in loch-lloyd-mo</a></li>
+<li><a href='/cleveland-belton-mo'>cleveland in belton-mo</a></li>
+<li><a href='/cleveland-raymore-mo'>cleveland in raymore-mo</a></li>
+<li><a href='/cleveland-grandview-mo'>cleveland in grandview-mo</a></li>
+
+</ul>
+
+

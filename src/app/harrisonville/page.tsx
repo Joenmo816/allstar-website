@@ -126,3 +126,31 @@ export default function Page() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/harrisonville-louisburg-ks'>harrisonville in louisburg-ks</a></li>
+<li><a href='/harrisonville-paola-ks'>harrisonville in paola-ks</a></li>
+<li><a href='/harrisonville-osawatomie-ks'>harrisonville in osawatomie-ks</a></li>
+<li><a href='/harrisonville-spring-hill-ks'>harrisonville in spring-hill-ks</a></li>
+<li><a href='/harrisonville-stilwell-ks'>harrisonville in stilwell-ks</a></li>
+<li><a href='/harrisonville-overland-park-ks'>harrisonville in overland-park-ks</a></li>
+<li><a href='/harrisonville-olathe-ks'>harrisonville in olathe-ks</a></li>
+<li><a href='/harrisonville-prairie-village-ks'>harrisonville in prairie-village-ks</a></li>
+<li><a href='/harrisonville-leawood-ks'>harrisonville in leawood-ks</a></li>
+<li><a href='/harrisonville-peculiar-mo'>harrisonville in peculiar-mo</a></li>
+<li><a href='/harrisonville-freeman-mo'>harrisonville in freeman-mo</a></li>
+<li><a href='/harrisonville-harrisonville-mo'>harrisonville in harrisonville-mo</a></li>
+<li><a href='/harrisonville-drexel-mo'>harrisonville in drexel-mo</a></li>
+<li><a href='/harrisonville-cleveland-mo'>harrisonville in cleveland-mo</a></li>
+<li><a href='/harrisonville-loch-lloyd-mo'>harrisonville in loch-lloyd-mo</a></li>
+<li><a href='/harrisonville-belton-mo'>harrisonville in belton-mo</a></li>
+<li><a href='/harrisonville-raymore-mo'>harrisonville in raymore-mo</a></li>
+<li><a href='/harrisonville-grandview-mo'>harrisonville in grandview-mo</a></li>
+
+</ul>
+
+

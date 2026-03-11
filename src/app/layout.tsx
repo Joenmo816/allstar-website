@@ -41,7 +41,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-white">
+
+        {/* Local Business Review Schema */}
         <Script
           id="review-schema"
           type="application/ld+json"
@@ -50,6 +52,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "All Star Pest Solutions",
+              url: "https://www.allstarpestkc.com",
+              telephone: "+1-913-738-7827",
               aggregateRating: {
                 "@type": "AggregateRating",
                 ratingValue: "5",
@@ -58,9 +62,24 @@ export default function RootLayout({
             }),
           }}
         />
+
+        {/* Header */}
         <SiteHeader />
-        {children}
+
+        {/* Main Page Content */}
+        <main>{children}</main>
+
+        {/* Footer */}
         <Footer />
+
+        {/* Floating Phone Button */}
+        <a
+          href="tel:19137387827"
+          className="fixed bottom-6 right-6 bg-yellow-400 text-red-700 font-bold px-6 py-3 rounded-full shadow-lg z-50 hover:scale-105 transition"
+        >
+          Call (913) 738-STAR
+        </a>
+
       </body>
     </html>
   );

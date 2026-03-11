@@ -126,3 +126,31 @@ export default function Page() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/olathe-louisburg-ks'>olathe in louisburg-ks</a></li>
+<li><a href='/olathe-paola-ks'>olathe in paola-ks</a></li>
+<li><a href='/olathe-osawatomie-ks'>olathe in osawatomie-ks</a></li>
+<li><a href='/olathe-spring-hill-ks'>olathe in spring-hill-ks</a></li>
+<li><a href='/olathe-stilwell-ks'>olathe in stilwell-ks</a></li>
+<li><a href='/olathe-overland-park-ks'>olathe in overland-park-ks</a></li>
+<li><a href='/olathe-olathe-ks'>olathe in olathe-ks</a></li>
+<li><a href='/olathe-prairie-village-ks'>olathe in prairie-village-ks</a></li>
+<li><a href='/olathe-leawood-ks'>olathe in leawood-ks</a></li>
+<li><a href='/olathe-peculiar-mo'>olathe in peculiar-mo</a></li>
+<li><a href='/olathe-freeman-mo'>olathe in freeman-mo</a></li>
+<li><a href='/olathe-harrisonville-mo'>olathe in harrisonville-mo</a></li>
+<li><a href='/olathe-drexel-mo'>olathe in drexel-mo</a></li>
+<li><a href='/olathe-cleveland-mo'>olathe in cleveland-mo</a></li>
+<li><a href='/olathe-loch-lloyd-mo'>olathe in loch-lloyd-mo</a></li>
+<li><a href='/olathe-belton-mo'>olathe in belton-mo</a></li>
+<li><a href='/olathe-raymore-mo'>olathe in raymore-mo</a></li>
+<li><a href='/olathe-grandview-mo'>olathe in grandview-mo</a></li>
+
+</ul>
+
+

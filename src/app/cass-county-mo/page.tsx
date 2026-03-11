@@ -129,3 +129,31 @@ export default function CassCountyPage() {
     </>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/cass-louisburg-ks'>cass in louisburg-ks</a></li>
+<li><a href='/cass-paola-ks'>cass in paola-ks</a></li>
+<li><a href='/cass-osawatomie-ks'>cass in osawatomie-ks</a></li>
+<li><a href='/cass-spring-hill-ks'>cass in spring-hill-ks</a></li>
+<li><a href='/cass-stilwell-ks'>cass in stilwell-ks</a></li>
+<li><a href='/cass-overland-park-ks'>cass in overland-park-ks</a></li>
+<li><a href='/cass-olathe-ks'>cass in olathe-ks</a></li>
+<li><a href='/cass-prairie-village-ks'>cass in prairie-village-ks</a></li>
+<li><a href='/cass-leawood-ks'>cass in leawood-ks</a></li>
+<li><a href='/cass-peculiar-mo'>cass in peculiar-mo</a></li>
+<li><a href='/cass-freeman-mo'>cass in freeman-mo</a></li>
+<li><a href='/cass-harrisonville-mo'>cass in harrisonville-mo</a></li>
+<li><a href='/cass-drexel-mo'>cass in drexel-mo</a></li>
+<li><a href='/cass-cleveland-mo'>cass in cleveland-mo</a></li>
+<li><a href='/cass-loch-lloyd-mo'>cass in loch-lloyd-mo</a></li>
+<li><a href='/cass-belton-mo'>cass in belton-mo</a></li>
+<li><a href='/cass-raymore-mo'>cass in raymore-mo</a></li>
+<li><a href='/cass-grandview-mo'>cass in grandview-mo</a></li>
+
+</ul>
+
+

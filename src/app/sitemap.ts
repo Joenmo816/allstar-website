@@ -1,34 +1,35 @@
-import { MetadataRoute } from "next";
-import fs from "fs";
-import path from "path";
+import { pests } from "@/data/pests";
+import { cities } from "@/data/cities";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default function sitemap() {
 
-  const pestsDir = path.join(process.cwd(), "public/images/pests");
-  const pestFiles = fs.readdirSync(pestsDir);
+const baseUrl = "https://www.allstarpestkc.com";
 
-  const pestUrls = pestFiles.map((file) => ({
-    url: `https://www.allstarpestkc.com/pests/${file.replace(/\.(jpg|jpeg|png)$/i, "")}`,
-    lastModified: new Date(),
-  }));
+const pages = [];
 
-  return [
-    {
-      url: "https://www.allstarpestkc.com",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://www.allstarpestkc.com/residential",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://www.allstarpestkc.com/commercial",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://www.allstarpestkc.com/termite-services",
-      lastModified: new Date(),
-    },
-    ...pestUrls,
-  ];
+// Homepage
+pages.push({
+url: `${baseUrl}`,
+lastModified: new Date(),
+});
+
+// Pest library index
+pages.push({
+url: `${baseUrl}/pest-library`,
+lastModified: new Date(),
+});
+
+// Pest + City pages
+for (const pest of pests) {
+for (const city of cities) {
+
+pages.push({
+url: `${baseUrl}/pest-library/${pest}/${city}`,
+lastModified: new Date(),
+});
+
+}
+}
+
+return pages;
 }

@@ -79,3 +79,31 @@ export default function WhyChooseUsPage() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/why-louisburg-ks'>why in louisburg-ks</a></li>
+<li><a href='/why-paola-ks'>why in paola-ks</a></li>
+<li><a href='/why-osawatomie-ks'>why in osawatomie-ks</a></li>
+<li><a href='/why-spring-hill-ks'>why in spring-hill-ks</a></li>
+<li><a href='/why-stilwell-ks'>why in stilwell-ks</a></li>
+<li><a href='/why-overland-park-ks'>why in overland-park-ks</a></li>
+<li><a href='/why-olathe-ks'>why in olathe-ks</a></li>
+<li><a href='/why-prairie-village-ks'>why in prairie-village-ks</a></li>
+<li><a href='/why-leawood-ks'>why in leawood-ks</a></li>
+<li><a href='/why-peculiar-mo'>why in peculiar-mo</a></li>
+<li><a href='/why-freeman-mo'>why in freeman-mo</a></li>
+<li><a href='/why-harrisonville-mo'>why in harrisonville-mo</a></li>
+<li><a href='/why-drexel-mo'>why in drexel-mo</a></li>
+<li><a href='/why-cleveland-mo'>why in cleveland-mo</a></li>
+<li><a href='/why-loch-lloyd-mo'>why in loch-lloyd-mo</a></li>
+<li><a href='/why-belton-mo'>why in belton-mo</a></li>
+<li><a href='/why-raymore-mo'>why in raymore-mo</a></li>
+<li><a href='/why-grandview-mo'>why in grandview-mo</a></li>
+
+</ul>
+
+

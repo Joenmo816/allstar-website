@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 
 export default function PricingPage() {
   return (
@@ -80,4 +80,33 @@ export default function PricingPage() {
     </main>
   );
 }
+
+
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/pricing-louisburg-ks'>pricing in louisburg-ks</a></li>
+<li><a href='/pricing-paola-ks'>pricing in paola-ks</a></li>
+<li><a href='/pricing-osawatomie-ks'>pricing in osawatomie-ks</a></li>
+<li><a href='/pricing-spring-hill-ks'>pricing in spring-hill-ks</a></li>
+<li><a href='/pricing-stilwell-ks'>pricing in stilwell-ks</a></li>
+<li><a href='/pricing-overland-park-ks'>pricing in overland-park-ks</a></li>
+<li><a href='/pricing-olathe-ks'>pricing in olathe-ks</a></li>
+<li><a href='/pricing-prairie-village-ks'>pricing in prairie-village-ks</a></li>
+<li><a href='/pricing-leawood-ks'>pricing in leawood-ks</a></li>
+<li><a href='/pricing-peculiar-mo'>pricing in peculiar-mo</a></li>
+<li><a href='/pricing-freeman-mo'>pricing in freeman-mo</a></li>
+<li><a href='/pricing-harrisonville-mo'>pricing in harrisonville-mo</a></li>
+<li><a href='/pricing-drexel-mo'>pricing in drexel-mo</a></li>
+<li><a href='/pricing-cleveland-mo'>pricing in cleveland-mo</a></li>
+<li><a href='/pricing-loch-lloyd-mo'>pricing in loch-lloyd-mo</a></li>
+<li><a href='/pricing-belton-mo'>pricing in belton-mo</a></li>
+<li><a href='/pricing-raymore-mo'>pricing in raymore-mo</a></li>
+<li><a href='/pricing-grandview-mo'>pricing in grandview-mo</a></li>
+
+</ul>
+
 

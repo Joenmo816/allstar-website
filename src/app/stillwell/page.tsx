@@ -126,3 +126,31 @@ export default function Page() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/stillwell-louisburg-ks'>stillwell in louisburg-ks</a></li>
+<li><a href='/stillwell-paola-ks'>stillwell in paola-ks</a></li>
+<li><a href='/stillwell-osawatomie-ks'>stillwell in osawatomie-ks</a></li>
+<li><a href='/stillwell-spring-hill-ks'>stillwell in spring-hill-ks</a></li>
+<li><a href='/stillwell-stilwell-ks'>stillwell in stilwell-ks</a></li>
+<li><a href='/stillwell-overland-park-ks'>stillwell in overland-park-ks</a></li>
+<li><a href='/stillwell-olathe-ks'>stillwell in olathe-ks</a></li>
+<li><a href='/stillwell-prairie-village-ks'>stillwell in prairie-village-ks</a></li>
+<li><a href='/stillwell-leawood-ks'>stillwell in leawood-ks</a></li>
+<li><a href='/stillwell-peculiar-mo'>stillwell in peculiar-mo</a></li>
+<li><a href='/stillwell-freeman-mo'>stillwell in freeman-mo</a></li>
+<li><a href='/stillwell-harrisonville-mo'>stillwell in harrisonville-mo</a></li>
+<li><a href='/stillwell-drexel-mo'>stillwell in drexel-mo</a></li>
+<li><a href='/stillwell-cleveland-mo'>stillwell in cleveland-mo</a></li>
+<li><a href='/stillwell-loch-lloyd-mo'>stillwell in loch-lloyd-mo</a></li>
+<li><a href='/stillwell-belton-mo'>stillwell in belton-mo</a></li>
+<li><a href='/stillwell-raymore-mo'>stillwell in raymore-mo</a></li>
+<li><a href='/stillwell-grandview-mo'>stillwell in grandview-mo</a></li>
+
+</ul>
+
+

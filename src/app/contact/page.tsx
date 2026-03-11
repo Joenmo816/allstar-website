@@ -51,3 +51,31 @@ export default function ContactPage() {
     </div>
   )
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/contact-louisburg-ks'>contact in louisburg-ks</a></li>
+<li><a href='/contact-paola-ks'>contact in paola-ks</a></li>
+<li><a href='/contact-osawatomie-ks'>contact in osawatomie-ks</a></li>
+<li><a href='/contact-spring-hill-ks'>contact in spring-hill-ks</a></li>
+<li><a href='/contact-stilwell-ks'>contact in stilwell-ks</a></li>
+<li><a href='/contact-overland-park-ks'>contact in overland-park-ks</a></li>
+<li><a href='/contact-olathe-ks'>contact in olathe-ks</a></li>
+<li><a href='/contact-prairie-village-ks'>contact in prairie-village-ks</a></li>
+<li><a href='/contact-leawood-ks'>contact in leawood-ks</a></li>
+<li><a href='/contact-peculiar-mo'>contact in peculiar-mo</a></li>
+<li><a href='/contact-freeman-mo'>contact in freeman-mo</a></li>
+<li><a href='/contact-harrisonville-mo'>contact in harrisonville-mo</a></li>
+<li><a href='/contact-drexel-mo'>contact in drexel-mo</a></li>
+<li><a href='/contact-cleveland-mo'>contact in cleveland-mo</a></li>
+<li><a href='/contact-loch-lloyd-mo'>contact in loch-lloyd-mo</a></li>
+<li><a href='/contact-belton-mo'>contact in belton-mo</a></li>
+<li><a href='/contact-raymore-mo'>contact in raymore-mo</a></li>
+<li><a href='/contact-grandview-mo'>contact in grandview-mo</a></li>
+
+</ul>
+
+

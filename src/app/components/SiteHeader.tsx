@@ -1,90 +1,65 @@
-"use client";
-
 import Link from "next/link";
-import Image from "next/image";
-import { useEffect, useState } from "react";
 
 export default function SiteHeader() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-red-700 shadow-lg" : "bg-red-600"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <header className="bg-red-700 shadow-md sticky top-0 z-50">
 
-        {/* LOGO IMAGE */}
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/logo.png"
-            alt="All Star Pest Solutions Logo"
-            width={180}
-            height={60}
-            priority
-            className="h-auto w-auto"
-          />
+      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+
+        {/* Company Name */}
+        <Link
+          href="/"
+          className="text-yellow-400 text-xl font-bold tracking-wide uppercase"
+        >
+          ALL STAR PEST SOLUTIONS
         </Link>
 
-        {/* NAVIGATION */}
-        <nav className="hidden md:flex space-x-8 text-lg font-semibold">
+        {/* Navigation */}
+        <nav className="flex gap-8 text-yellow-400 text-sm font-bold uppercase">
 
-          <Link
-            href="/residential"
-            className="text-yellow-300 hover:text-white transition"
-          >
-            Residential Solutions
+          <Link href="/residential" className="hover:text-white">
+            Residential
           </Link>
 
-          <Link
-            href="/commercial"
-            className="text-yellow-300 hover:text-white transition"
-          >
-            Commercial Solutions
+          <Link href="/commercial" className="hover:text-white">
+            Commercial
           </Link>
 
-          <Link
-            href="/termite-services"
-            className="text-yellow-300 hover:text-white transition"
-          >
-            Termite Services
+          <Link href="/termite-services" className="hover:text-white">
+            Termite
           </Link>
 
-          <Link
-            href="/pests"
-            className="text-yellow-300 hover:text-white transition"
-          >
+          <Link href="/pest-library" className="hover:text-white">
             Pest Library
           </Link>
 
-          <Link
-            href="/contact"
-            className="text-yellow-300 hover:text-white transition"
-          >
+          <Link href="/contact" className="hover:text-white">
             Contact
           </Link>
 
         </nav>
 
-        {/* CALL BUTTON */}
-        <a
-          href="tel:9137387827"
-          className="hidden md:inline-block bg-yellow-400 text-black px-5 py-2 rounded-md font-bold hover:bg-yellow-300 transition"
-        >
-          (913) 738-7827
-        </a>
+        {/* Buttons */}
+        <div className="flex gap-3">
+
+          <Link
+            href="/contact"
+            className="bg-white text-red-700 font-bold px-4 py-2 rounded-md text-sm"
+          >
+            Free Inspection
+          </Link>
+
+          <a
+            href="tel:19137387827"
+            className="bg-yellow-400 text-red-700 font-bold px-4 py-2 rounded-md text-sm"
+          >
+            (913) 738-7827
+          </a>
+
+        </div>
 
       </div>
+
     </header>
   );
 }

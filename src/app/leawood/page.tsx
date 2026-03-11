@@ -126,3 +126,31 @@ export default function Page() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/leawood-louisburg-ks'>leawood in louisburg-ks</a></li>
+<li><a href='/leawood-paola-ks'>leawood in paola-ks</a></li>
+<li><a href='/leawood-osawatomie-ks'>leawood in osawatomie-ks</a></li>
+<li><a href='/leawood-spring-hill-ks'>leawood in spring-hill-ks</a></li>
+<li><a href='/leawood-stilwell-ks'>leawood in stilwell-ks</a></li>
+<li><a href='/leawood-overland-park-ks'>leawood in overland-park-ks</a></li>
+<li><a href='/leawood-olathe-ks'>leawood in olathe-ks</a></li>
+<li><a href='/leawood-prairie-village-ks'>leawood in prairie-village-ks</a></li>
+<li><a href='/leawood-leawood-ks'>leawood in leawood-ks</a></li>
+<li><a href='/leawood-peculiar-mo'>leawood in peculiar-mo</a></li>
+<li><a href='/leawood-freeman-mo'>leawood in freeman-mo</a></li>
+<li><a href='/leawood-harrisonville-mo'>leawood in harrisonville-mo</a></li>
+<li><a href='/leawood-drexel-mo'>leawood in drexel-mo</a></li>
+<li><a href='/leawood-cleveland-mo'>leawood in cleveland-mo</a></li>
+<li><a href='/leawood-loch-lloyd-mo'>leawood in loch-lloyd-mo</a></li>
+<li><a href='/leawood-belton-mo'>leawood in belton-mo</a></li>
+<li><a href='/leawood-raymore-mo'>leawood in raymore-mo</a></li>
+<li><a href='/leawood-grandview-mo'>leawood in grandview-mo</a></li>
+
+</ul>
+
+

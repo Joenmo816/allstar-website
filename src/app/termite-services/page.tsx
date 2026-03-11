@@ -298,3 +298,31 @@ export default function TermiteServicesPage() {
     </>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/termite-louisburg-ks'>termite in louisburg-ks</a></li>
+<li><a href='/termite-paola-ks'>termite in paola-ks</a></li>
+<li><a href='/termite-osawatomie-ks'>termite in osawatomie-ks</a></li>
+<li><a href='/termite-spring-hill-ks'>termite in spring-hill-ks</a></li>
+<li><a href='/termite-stilwell-ks'>termite in stilwell-ks</a></li>
+<li><a href='/termite-overland-park-ks'>termite in overland-park-ks</a></li>
+<li><a href='/termite-olathe-ks'>termite in olathe-ks</a></li>
+<li><a href='/termite-prairie-village-ks'>termite in prairie-village-ks</a></li>
+<li><a href='/termite-leawood-ks'>termite in leawood-ks</a></li>
+<li><a href='/termite-peculiar-mo'>termite in peculiar-mo</a></li>
+<li><a href='/termite-freeman-mo'>termite in freeman-mo</a></li>
+<li><a href='/termite-harrisonville-mo'>termite in harrisonville-mo</a></li>
+<li><a href='/termite-drexel-mo'>termite in drexel-mo</a></li>
+<li><a href='/termite-cleveland-mo'>termite in cleveland-mo</a></li>
+<li><a href='/termite-loch-lloyd-mo'>termite in loch-lloyd-mo</a></li>
+<li><a href='/termite-belton-mo'>termite in belton-mo</a></li>
+<li><a href='/termite-raymore-mo'>termite in raymore-mo</a></li>
+<li><a href='/termite-grandview-mo'>termite in grandview-mo</a></li>
+
+</ul>
+
+

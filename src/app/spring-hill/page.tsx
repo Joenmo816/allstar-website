@@ -126,3 +126,31 @@ export default function Page() {
     </main>
   );
 }
+
+<h2 className='text-2xl font-bold mt-12'>
+Other Cities We Service
+</h2>
+
+<ul>
+<li><a href='/spring-louisburg-ks'>spring in louisburg-ks</a></li>
+<li><a href='/spring-paola-ks'>spring in paola-ks</a></li>
+<li><a href='/spring-osawatomie-ks'>spring in osawatomie-ks</a></li>
+<li><a href='/spring-spring-hill-ks'>spring in spring-hill-ks</a></li>
+<li><a href='/spring-stilwell-ks'>spring in stilwell-ks</a></li>
+<li><a href='/spring-overland-park-ks'>spring in overland-park-ks</a></li>
+<li><a href='/spring-olathe-ks'>spring in olathe-ks</a></li>
+<li><a href='/spring-prairie-village-ks'>spring in prairie-village-ks</a></li>
+<li><a href='/spring-leawood-ks'>spring in leawood-ks</a></li>
+<li><a href='/spring-peculiar-mo'>spring in peculiar-mo</a></li>
+<li><a href='/spring-freeman-mo'>spring in freeman-mo</a></li>
+<li><a href='/spring-harrisonville-mo'>spring in harrisonville-mo</a></li>
+<li><a href='/spring-drexel-mo'>spring in drexel-mo</a></li>
+<li><a href='/spring-cleveland-mo'>spring in cleveland-mo</a></li>
+<li><a href='/spring-loch-lloyd-mo'>spring in loch-lloyd-mo</a></li>
+<li><a href='/spring-belton-mo'>spring in belton-mo</a></li>
+<li><a href='/spring-raymore-mo'>spring in raymore-mo</a></li>
+<li><a href='/spring-grandview-mo'>spring in grandview-mo</a></li>
+
+</ul>
+
+
