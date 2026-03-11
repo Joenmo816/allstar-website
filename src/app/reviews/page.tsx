@@ -4,10 +4,7 @@ export default function ReviewsPage() {
       <h1 className="text-4xl font-bold mb-6">Customer Reviews</h1>
       <p>Our 5-star reputation will go here.</p>
     </div>
-  )
-}
-
-<h2 className='text-2xl font-bold mt-12'>
+   className='text-2xl font-bold mt-12'>
 Other Cities We Service
 </h2>
 
@@ -33,4 +30,7 @@ Other Cities We Service
 
 </ul>
 
+</div>
 
+)
+}

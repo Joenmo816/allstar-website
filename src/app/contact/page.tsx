@@ -49,10 +49,7 @@ export default function ContactPage() {
       </div>
 
     </div>
-  )
-}
-
-<h2 className='text-2xl font-bold mt-12'>
+   className='text-2xl font-bold mt-12'>
 Other Cities We Service
 </h2>
 
@@ -78,4 +75,7 @@ Other Cities We Service
 
 </ul>
 
+</div>
 
+)
+}
