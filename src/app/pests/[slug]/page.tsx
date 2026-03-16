@@ -1,60 +1,69 @@
-import fs from "fs";
-import path from "path";
-import { notFound } from "next/navigation";
-import Image from "next/image";
-import type { Metadata } from "next";
+import Image from "next/image"
+import { pests } from "@/lib/pests"
+import { notFound } from "next/navigation"
 
-function getPests() {
-  const directory = path.join(process.cwd(), "public/images/pests");
-  const files = fs.readdirSync(directory);
+export default function PestPage({ params }: { params: { slug: string } }) {
+  const pest = pests.find((p) => p.slug === params.slug)
 
-  return files
-    .filter((file) => /\.(jpg|jpeg|png)$/i.test(file))
-    .map((file) => ({
-      slug: file.replace(/\.(jpg|jpeg|png)$/i, "").toLowerCase(),
-      file,
-    }));
-}
-
-export async function generateStaticParams() {
-  return getPests().map((pest) => ({
-    slug: pest.slug,
-  }));
-}
-
-export async function generateMetadata({ params }: any): Promise<Metadata> {
-  const name = params.slug.replace(/-/g, " ");
-  return {
-    title: `${name} Control in Kansas City`,
-    description: `Professional ${name} solutions throughout South Kansas City.`,
-  };
-}
-
-export default function PestPage({ params }: any) {
-  const pests = getPests();
-  const pest = pests.find((p) => p.slug === params.slug);
-  if (!pest) return notFound();
-
-  const name = params.slug.replace(/-/g, " ");
+  if (!pest) return notFound()
 
   return (
-    <main className="pt-32 bg-white min-h-screen">
-      <section className="max-w-4xl mx-auto px-6 py-16">
-        <h1 className="text-4xl font-bold mb-8 capitalize">{name}</h1>
+    <div className="bg-white py-16">
+      <div className="max-w-5xl mx-auto px-6">
 
-        <Image
-          src={`/images/pests/${pest.file}`}
-          alt={name}
-          width={900}
-          height={600}
-          className="rounded-lg mb-10"
-        />
+        <h1 className="text-4xl font-bold text-red-700 mb-6">
+          {pest.name}
+        </h1>
 
-        <p className="text-gray-700 leading-relaxed">
-          {name} are common throughout South Kansas City including Overland Park,
-          Olathe, Belton and Raymore.
-        </p>
-      </section>
-    </main>
-  );
+        <div className="relative w-full h-96 mb-10">
+          <Image
+            src={`/images/pests/${pest.slug}.jpg`}
+            alt={pest.name}
+            fill
+            className="object-cover rounded-xl"
+          />
+        </div>
+
+        <div className="space-y-6 text-lg text-gray-800">
+
+          <div>
+            <h2 className="text-2xl font-semibold text-red-700">
+              Scientific Name
+            </h2>
+            <p className="italic">{pest.scientificName}</p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold text-red-700">
+              Habitat
+            </h2>
+            <p>{pest.habitat}</p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold text-red-700">
+              Biology
+            </h2>
+            <p>{pest.biology}</p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold text-red-700">
+              Behavior
+            </h2>
+            <p>{pest.behavior}</p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold text-red-700">
+              Risk
+            </h2>
+            <p>{pest.risk}</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  )
 }

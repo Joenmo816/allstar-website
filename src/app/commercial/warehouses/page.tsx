@@ -1,3 +1,4 @@
+import Hero from "../../components/Hero";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
@@ -14,26 +15,26 @@ export default function WarehousePage() {
             {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "name": "All Star Pest Solutions",
-              "telephone": "+1-913-738-7827",
-              "url": "https://www.allstarpestkc.com",
-              "areaServed": [
+              name: "All Star Pest Solutions",
+              telephone: "+1-913-738-7827",
+              url: "https://www.allstarpestkc.com",
+              areaServed: [
                 "Johnson County KS",
                 "Miami County KS",
                 "Cass County MO",
                 "Jackson County MO"
               ],
-              "geo": {
+              geo: {
                 "@type": "GeoCoordinates",
-                "latitude": "38.8200",
-                "longitude": "-94.5300"
+                latitude: "38.8200",
+                longitude: "-94.5300"
               }
             },
             {
               "@context": "https://schema.org",
               "@type": "Service",
-              "serviceType": "Warehouse Pest Solutions",
-              "areaServed": [
+              serviceType: "Warehouse Pest Solutions",
+              areaServed: [
                 "Kansas City Metro South",
                 "Johnson County KS",
                 "Miami County KS",
@@ -48,50 +49,11 @@ export default function WarehousePage() {
       <main className="pt-32 bg-white">
 
         {/* ================= HERO ================= */}
-        <section className="relative w-full h-[650px]">
-          <Image
-            src="/images/mouse.png"
-            alt="Mouse standing in large warehouse facility"
-            fill
-            priority
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-black/70" />
-
-          <div className="relative z-10 max-w-6xl mx-auto px-6 h-full flex items-center">
-            <div className="max-w-3xl text-white">
-
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Warehouse Pest Control in Kansas & Missouri
-              </h1>
-
-              <p className="text-lg text-gray-200 mb-8">
-                Rodent control, stored product pest management, and industrial
-                pest solutions for warehouses, distribution centers,
-                logistics hubs, and manufacturing facilities in
-                Johnson County KS, Miami County KS,
-                Cass County MO, and Jackson County MO.
-              </p>
-
-              <div className="flex gap-4">
-                <Link
-                  href="/contact"
-                  className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-300 transition"
-                >
-                  Request Warehouse Inspection
-                </Link>
-
-                <a
-                  href="tel:9137387827"
-                  className="bg-white text-black font-semibold px-6 py-3 rounded-md hover:bg-gray-200 transition"
-                >
-                  Call (913) 738-7827
-                </a>
-              </div>
-
-            </div>
-          </div>
-        </section>
+        <Hero showMascot={false}
+          title="Warehouse Pest Control in Kansas & Missouri"
+          subtitle="Rodent control, stored product pest management, and industrial pest solutions for warehouses, distribution centers, logistics hubs, and manufacturing facilities throughout the Kansas City metro."
+          background="/images/warehouse.png"
+        />
 
         {/* ================= PROBLEM SECTION ================= */}
         <section className="py-20">

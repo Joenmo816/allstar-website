@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 
 export default function PricingPage() {
   return (
@@ -19,7 +19,7 @@ export default function PricingPage() {
             General Pest Control
           </h2>
           <p className="text-gray-600 mb-4 text-center">
-            Protection against ants, spiders, roaches, crickets, and more.
+            Protection against ants, bed bugs,cockroaches, crickets, fleas, rodents, spiders and more.
           </p>
           <ul className="list-disc list-inside text-gray-600 mb-4">
             <li>Interior + Exterior Treatment</li>
@@ -80,4 +80,6 @@ export default function PricingPage() {
     </main>
   );
 }
+
+
 

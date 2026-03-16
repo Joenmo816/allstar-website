@@ -1,221 +1,338 @@
 export const metadata = {
-  title: "South Kansas City Pest Solutions | 30 Years Experience",
+  title: "All Star Pest Solutions | 30 Years Experience",
   description:
-    "Locally owned pest solutions company serving Johnson and Miami counties in Kansas and Cass and Jackson counties in Missouri.",
+    "Locally owned pest solutions company serving Johnson County KS, Miami County KS, Cass County MO and Jackson County MO.",
 };
+
 import Image from "next/image";
 import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <div className="bg-white">
+    <div className="bg-white font-bold">
 
-      {/* ================= HERO ================= */}
-      <section className="relative">
-        <div className="relative h-[640px] w-full overflow-hidden">
 
-          <Image
-            src="/kc-background.jpg"
-            alt="South Kansas City Service Area"
-            fill
-            priority
-            className="object-cover"
-          />
+{/* ================= HERO ================= */}
 
-          <div className="absolute inset-0 bg-black/45" />
+<section className="relative">
 
-          <div className="relative max-w-7xl mx-auto h-full px-6 flex items-center">
+<div className="relative min-h-[820px] w-full overflow-hidden">
 
-            <div className="w-full md:w-[60%] relative z-10">
+<Image
+src="/kc-background.jpg"
+alt="Kansas City Pest Solutions"
+fill
+priority
+className="object-cover"
+/>
 
-              {/* Main Promise */}
-              <div className="inline-block bg-red-700 px-6 py-3 rounded-md shadow-lg">
-                <h1 className="text-yellow-400 font-extrabold text-2xl md:text-3xl whitespace-nowrap">
-                  Guaranteed Service. Guaranteed Results.
-                </h1>
-              </div>
+<div className="absolute inset-0 bg-black/60" />
 
-              {/* Authority Line */}
-              <p className="mt-6 text-white text-lg font-semibold">
-                Locally owned. Certified in Kansas & Missouri.
-                Professional pest solutions done right.
-              </p>
+<div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 items-center gap-12 pt-28 pb-24">
 
-              {/* Service Area */}
-              <div className="mt-8 inline-block bg-blue-700 px-6 py-4 rounded-md shadow-xl">
-                <p className="text-white text-lg font-bold">
-                  Serving Johnson & Miami Counties (KS)
-                </p>
-                <p className="text-white text-lg font-bold mt-1">
-                  And Cass & Jackson Counties (MO)
-                </p>
-              </div>
+{/* LEFT SIDE */}
 
-              {/* Credibility Badges */}
-              <div className="mt-6 flex flex-wrap gap-4 text-white text-sm font-bold">
-                <span className="bg-black/40 px-4 py-2 rounded-md">
-                  Locally Owned & Operated
-                </span>
-                <span className="bg-black/40 px-4 py-2 rounded-md">
-                  Focused on Non-Target Species Protection
-                </span>
-                <span className="bg-black/40 px-4 py-2 rounded-md">
-                  Safe for Children & Pets
-                </span>
-              </div>
+<div className="text-white">
 
-              {/* CTA Buttons */}
-              <div className="mt-8 flex gap-4">
-                <Link
-                  href="/contact"
-                  className="bg-yellow-400 text-black font-bold px-6 py-3 rounded-md"
-                >
-                  Free Inspection
-                </Link>
+<Image
+src="/logo.png"
+alt="All Star Pest Solutions"
+width={3480}
+height={3480}
+className="w-[720px] mb-10 drop-shadow-xl"
+/>
 
-                <Link
-                  href="tel:19137387827"
-                  className="bg-white text-black font-bold px-6 py-3 rounded-md"
-                >
-                  Call (913) 738-7827
-                </Link>
-              </div>
+<h1 className="text-5xl md:text-6xl font-black text-yellow-400 mb-6">
+Guaranteed Service. Guaranteed Results.
+</h1>
 
-            </div>
+<p className="text-2xl mb-2">
+Talk directly with the owner — not a call center overseas.
+</p>
 
-            {/* Mascot */}
-            <div className="hidden md:block flex-1 relative h-full">
-              <Image
-                src="/mascot.png"
-                alt="All Star Pest Solutions Mascot"
-                width={760}
-                height={760}
-                priority
-                className="absolute right-0 bottom-0 drop-shadow-2xl"
-              />
-            </div>
+<p className="text-3xl font-black text-yellow-300 mb-3">
+Call (913) 738-STAR
+</p>
 
-          </div>
-        </div>
-      </section>
+<p className="text-xl mb-6">
+No Contracts Required.
+</p>
 
-      {/* ================= TRUST / EXPERIENCE ================= */}
-      <section className="bg-white py-16">
-        <div className="max-w-6xl mx-auto px-6 text-center">
+<div className="flex gap-6 flex-wrap">
 
-          <h2 className="text-3xl md:text-4xl font-extrabold">
-            Experience Makes the Difference
-          </h2>
+<Link
+href="/contact"
+className="bg-yellow-400 text-black font-black px-8 py-4 rounded-md text-xl hover:bg-yellow-300"
+>
+FREE INSPECTION
+</Link>
 
-          <p className="mt-6 text-lg font-semibold text-black/80 max-w-4xl mx-auto">
-            With over three decades of hands-on field experience,
-            inspections are thorough, treatments are precise,
-            and long-term prevention is always the goal.
-            You’re not getting a rushed route technician —
-            you’re getting seasoned professional judgment.
-          </p>
+<a
+href="tel:19137387827"
+className="bg-white text-black font-black px-8 py-4 rounded-md text-xl hover:bg-gray-200"
+>
+Call (913) 738-STAR
+</a>
 
-          <div className="mt-12 grid md:grid-cols-3 gap-8 text-left">
+</div>
 
-            <div className="bg-zinc-50 p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-extrabold mb-4">
-                Protection of Beneficial Species
-              </h3>
-              <p className="font-semibold text-black/75">
-                We deliberately avoid unnecessary exposure to pollinators
-                such as honey bees, bumblebees, butterflies, and other
-                beneficial insects. Applications are targeted and strategic —
-                never careless.
-              </p>
-            </div>
+{/* review stars */}
 
-            <div className="bg-zinc-50 p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-extrabold mb-4">
-                Family & Pet Conscious Treatments
-              </h3>
-              <p className="font-semibold text-black/75">
-                Products are selected and applied according to label
-                directions with safety in mind. Many active ingredients
-                used professionally are also found in regulated
-                flea and tick treatments applied directly to pets.
-              </p>
-            </div>
+<div className="mt-8 text-yellow-400 text-2xl">
+★★★★★
+</div>
 
-            <div className="bg-zinc-50 p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-extrabold mb-4">
-                Precision Over Volume
-              </h3>
-              <p className="font-semibold text-black/75">
-                Large national companies often prioritize route speed.
-                We prioritize accuracy, accountability, and long-term results.
-                That difference shows in the outcome.
-              </p>
-            </div>
+<p className="text-lg mt-2">
+5-Star Rated Kansas City Pest Solutions
+</p>
 
-          </div>
+</div>
 
-        </div>
-      </section>
 
-      {/* ================= OUR PROCESS ================= */}
-      <section className="bg-zinc-50 py-16">
-        <div className="max-w-7xl mx-auto px-6 text-center">
+{/* MASCOT */}
 
-          <h2 className="text-3xl font-extrabold">
-            Our Process
-          </h2>
+<div className="flex justify-center lg:justify-end">
 
-          <div className="mt-12 grid md:grid-cols-3 gap-8">
+<Image
+src="/mascot.png"
+alt="All Star Pest Mascot"
+width={520}
+height={520}
+className="drop-shadow-2xl"
+/>
 
-            <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="text-xl font-extrabold">Inspect</div>
-              <p className="mt-4 font-semibold text-black/75">
-                Identify the source before recommending a solution.
-              </p>
-            </div>
+</div>
 
-            <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="text-xl font-extrabold">Target</div>
-              <p className="mt-4 font-semibold text-black/75">
-                Treat only where necessary — no blanket applications.
-              </p>
-            </div>
+</div>
+</div>
 
-            <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="text-xl font-extrabold">Protect</div>
-              <p className="mt-4 font-semibold text-black/75">
-                Implement long-term prevention strategies.
-              </p>
-            </div>
+</section>
 
-          </div>
 
-        </div>
-      </section>
+{/* ================= SERVICE AREA ================= */}
 
-      {/* ================= FINAL CTA ================= */}
-      <section className="bg-red-700 py-16 text-center">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-yellow-400">
-            South Kansas City’s Trusted Pest Solutions Provider
-          </h2>
+<section className="py-20 bg-gradient-to-b from-yellow-50 to-white text-center">
 
-          <p className="mt-6 text-white text-lg font-semibold">
-            Serving Johnson, Miami, Cass, and Jackson Counties
-            with professionalism, precision, and integrity.
-          </p>
+<div className="max-w-5xl mx-auto px-6">
 
-          <div className="mt-8">
-            <Link
-              href="/contact"
-              className="bg-yellow-400 text-black font-bold px-8 py-4 rounded-md text-lg"
-            >
-              Schedule Your Free Inspection
-            </Link>
-          </div>
-        </div>
-      </section>
+<h2 className="text-4xl font-black text-red-700 mb-6">
+Serving South Kansas City & Surrounding Communities
+</h2>
 
-    </div>
-  );
+<p className="text-xl text-zinc-800">
+Providing residential and commercial pest solutions
+throughout Johnson County and Miami County in Kansas
+along with Cass County and Jackson County in Missouri.
+</p>
+
+</div>
+
+</section>
+
+
+
+{/* ================= SERVICES ================= */}
+
+<section className="py-24 bg-white">
+
+<div className="max-w-6xl mx-auto px-6 text-center">
+
+<h2 className="text-4xl font-black text-red-700 mb-14">
+Professional Pest Solutions
+</h2>
+
+<div className="grid md:grid-cols-3 gap-10">
+
+<div className="bg-yellow-50 p-10 rounded-xl shadow-md border-t-4 border-red-700">
+
+<h3 className="text-2xl font-black mb-4">
+Residential Pest Solutions
+</h3>
+
+<p className="text-xl text-zinc-800 mb-6">
+Protect your home from ants, spiders, rodents,
+cockroaches and other nuisance pests with
+safe and effective treatments.
+</p>
+
+<Link
+href="/residential"
+className="bg-red-700 text-white px-6 py-3 rounded-md text-lg"
+>
+Learn More
+</Link>
+
+</div>
+
+
+<div className="bg-yellow-50 p-10 rounded-xl shadow-md border-t-4 border-yellow-500">
+
+<h3 className="text-2xl font-black mb-4">
+Commercial Pest Solutions
+</h3>
+
+<p className="text-xl text-zinc-800 mb-6">
+Protect your business, employees and customers
+with professional pest management solutions.
+</p>
+
+<Link
+href="/commercial"
+className="bg-red-700 text-white px-6 py-3 rounded-md text-lg"
+>
+Learn More
+</Link>
+
+</div>
+
+
+<div className="bg-yellow-50 p-10 rounded-xl shadow-md border-t-4 border-red-700">
+
+<h3 className="text-2xl font-black mb-4">
+Termite Inspections & Treatments
+</h3>
+
+<p className="text-xl text-zinc-800 mb-6">
+Subterranean termites can cause serious structural damage.
+Protect your home with professional termite inspections.
+</p>
+
+<Link
+href="/termite-services"
+className="bg-red-700 text-white px-6 py-3 rounded-md text-lg"
+>
+Learn More
+</Link>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+{/* ================= EXPERIENCE ================= */}
+
+<section className="py-24 bg-stone-100 text-center">
+
+<div className="max-w-5xl mx-auto px-6">
+
+<h2 className="text-4xl font-black text-red-700 mb-6">
+Over 30 Years of Experience
+</h2>
+
+<p className="text-xl text-zinc-800">
+Every inspection and treatment is performed by an
+experienced licensed applicator who understands the
+pest problems commonly found in Kansas City homes
+and businesses.
+</p>
+
+</div>
+
+</section>
+
+
+
+{/* ================= ENVIRONMENT ================= */}
+
+<section className="py-24 bg-green-100 text-center">
+
+<div className="max-w-5xl mx-auto px-6">
+
+<h2 className="text-4xl font-black text-green-800 mb-6">
+Protecting Beneficial Species & Wildlife
+</h2>
+
+<p className="text-xl text-zinc-900">
+Our pest solutions focus on eliminating nuisance pests
+while protecting beneficial species such as bees,
+butterflies, ladybugs, birds, squirrels and other wildlife
+whenever possible.
+</p>
+
+</div>
+
+</section>
+
+
+
+{/* ================= CALL OWNER CTA ================= */}
+
+<section className="py-24 bg-red-700 text-center text-white">
+
+<h2 className="text-4xl font-black mb-6">
+Talk Directly With the Owner
+</h2>
+
+<p className="text-xl mb-10">
+Call (913) 738-STAR and speak directly with the owner.
+No call centers. No contracts.
+</p>
+
+<a
+href="tel:19137387827"
+className="bg-yellow-400 text-black px-8 py-4 rounded-md text-xl font-black"
+>
+Call (913) 738-STAR
+</a>
+
+</section>
+
+
+
+{/* ================= QUOTE FORM ================= */}
+
+<section className="py-24 bg-white">
+
+<div className="max-w-5xl mx-auto px-6">
+
+<h2 className="text-4xl font-black text-center mb-8">
+Request Your Free Pest Inspection
+</h2>
+
+<form className="grid md:grid-cols-2 gap-6 text-xl">
+
+<input type="text" placeholder="Full Name" className="border p-4 rounded-md"/>
+
+<input type="tel" placeholder="Phone Number" className="border p-4 rounded-md"/>
+
+<input type="email" placeholder="Email Address" className="border p-4 rounded-md"/>
+
+<input type="text" placeholder="Service Address" className="border p-4 rounded-md"/>
+
+<select className="border p-4 rounded-md md:col-span-2">
+<option>Pest Problem</option>
+<option>Ants</option>
+<option>Spiders</option>
+<option>Rodents</option>
+<option>Cockroaches</option>
+<option>Termites</option>
+<option>Other</option>
+</select>
+
+<textarea
+placeholder="Tell us what you're seeing..."
+className="border p-4 rounded-md md:col-span-2"
+rows={4}
+/>
+
+<button
+type="submit"
+className="bg-red-700 text-white py-4 rounded-md md:col-span-2"
+>
+Request Inspection
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+</div>
+);
 }

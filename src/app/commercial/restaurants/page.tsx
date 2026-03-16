@@ -1,3 +1,4 @@
+import Hero from "../../components/Hero";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
@@ -14,18 +15,18 @@ export default function RestaurantPage() {
             {
               "@context": "https://schema.org",
               "@type": "Service",
-              "serviceType": "Restaurant Pest Solutions",
-              "areaServed": [
+              serviceType: "Restaurant Pest Solutions",
+              areaServed: [
                 "Johnson County KS",
                 "Miami County KS",
                 "Cass County MO",
                 "Jackson County MO"
               ],
-              "provider": {
+              provider: {
                 "@type": "LocalBusiness",
-                "name": "All Star Pest Solutions",
-                "telephone": "+1-913-738-7827",
-                "url": "https://www.allstarpestkc.com"
+                name: "All Star Pest Solutions",
+                telephone: "+1-913-738-7827",
+                url: "https://www.allstarpestkc.com"
               }
             }
           ])
@@ -35,48 +36,11 @@ export default function RestaurantPage() {
       <main className="pt-32 bg-white">
 
         {/* ================= HERO SECTION ================= */}
-        <section className="relative w-full h-[650px]">
-          <Image
-            src="/images/kitchen.png"
-            alt="German cockroach silhouette in commercial kitchen"
-            fill
-            priority
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-black/70" />
-
-          <div className="relative z-10 max-w-6xl mx-auto px-6 h-full flex items-center">
-            <div className="max-w-3xl text-white">
-
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Restaurant Pest Solutions in the Kansas City Metro
-              </h1>
-
-              <p className="text-lg text-gray-200 mb-8">
-                Protect your restaurant from cockroaches, rodents, ants, and flies
-                with compliance-driven pest management programs built for
-                health inspections, food safety, and brand reputation protection.
-              </p>
-
-              <div className="flex gap-4">
-                <Link
-                  href="/contact"
-                  className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-300 transition"
-                >
-                  Schedule a Restaurant Inspection
-                </Link>
-
-                <a
-                  href="tel:9137387827"
-                  className="bg-white text-black font-semibold px-6 py-3 rounded-md hover:bg-gray-200 transition"
-                >
-                  Call (913) 738-7827
-                </a>
-              </div>
-
-            </div>
-          </div>
-        </section>
+        <Hero showMascot={false}
+          title="Restaurant Pest Solutions in the Kansas City Metro"
+          subtitle="Protect your restaurant from cockroaches, rodents, ants, and flies with compliance-driven pest management programs built for health inspections, food safety, and brand reputation protection."
+          background="/images/restaurant-pest-control.png"
+        />
 
         {/* ================= PROBLEM SECTION ================= */}
         <section className="py-20">

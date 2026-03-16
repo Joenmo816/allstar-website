@@ -4,21 +4,28 @@ export const metadata = {
     "Commercial pest solutions for schools, daycares, and churches in South Kansas City. Discreet service, safety-first approach, and proactive prevention.",
 };
 
+import Hero from "../../components/Hero";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function SchoolsChurchesPage() {
   return (
-    <main className="mx-auto max-w-6xl px-4 py-10">
-      {/* Hero */}
-      <section className="grid gap-8 md:grid-cols-2 md:items-center">
+    <main className="pt-32 mx-auto max-w-6xl px-4 py-10">
+
+      {/* HERO */}
+      <Hero showMascot={false}
+        title="Schools & Churches Pest Control"
+        subtitle="High-traffic facilities need a prevention-first plan. We help keep classrooms, kitchens, fellowship halls, and offices protected with practical, safety-minded pest solutions."
+        background="/images/commercial-schools-churches.svg"
+      />
+
+      {/* HERO CONTENT BLOCK */}
+      <section className="grid gap-8 md:grid-cols-2 md:items-center mt-12">
         <div>
           <p className="text-sm font-semibold tracking-wide text-red-700">
             Commercial Solutions
           </p>
-          <h1 className="mt-2 text-4xl font-extrabold tracking-tight md:text-5xl">
-            Schools & Churches Pest Control
-          </h1>
+
           <p className="mt-4 text-lg text-slate-700">
             High-traffic facilities need a prevention-first plan. We help keep classrooms,
             kitchens, fellowship halls, and offices protected with practical, safety-minded service.
@@ -31,6 +38,7 @@ export default function SchoolsChurchesPage() {
             >
               Call (913) 738-7827
             </a>
+
             <Link
               href="/commercial"
               className="inline-flex items-center justify-center rounded-lg border border-slate-300 px-5 py-3 font-semibold hover:bg-slate-50"
@@ -59,8 +67,9 @@ export default function SchoolsChurchesPage() {
         </div>
       </section>
 
-      {/* Content */}
+      {/* CONTENT */}
       <section className="mt-12 grid gap-6 md:grid-cols-3">
+
         <div className="rounded-2xl border border-slate-200 p-6">
           <h2 className="text-xl font-bold">Safety-Minded</h2>
           <p className="mt-2 text-slate-700">
@@ -81,16 +90,20 @@ export default function SchoolsChurchesPage() {
             Routine service + quick response when something pops up.
           </p>
         </div>
+
       </section>
 
       {/* CTA */}
       <section className="mt-12 rounded-2xl bg-slate-900 p-8 text-white">
+
         <h2 className="text-2xl font-extrabold">
           Need a plan that protects people and your building?
         </h2>
+
         <p className="mt-2 text-white/80">
           Call now and we’ll build the right schedule for your school or church.
         </p>
+
         <div className="mt-6 flex flex-wrap gap-3">
           <a
             href="tel:+19137387827"
@@ -98,6 +111,7 @@ export default function SchoolsChurchesPage() {
           >
             Call (913) 738-7827
           </a>
+
           <Link
             href="/pests"
             className="inline-flex items-center justify-center rounded-lg border border-white/25 px-5 py-3 font-semibold hover:bg-white/10"
@@ -105,7 +119,9 @@ export default function SchoolsChurchesPage() {
             Browse Pest Library
           </Link>
         </div>
+
       </section>
+
     </main>
   );
 }
