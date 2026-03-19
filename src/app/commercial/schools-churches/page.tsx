@@ -13,7 +13,10 @@ export default function SchoolsChurchesPage() {
     <main className="pt-32 mx-auto max-w-6xl px-4 py-10">
 
       {/* HERO */}
-      <Hero showMascot={false}
+      <Hero
+        showMascot={false}
+        logoSrc=""
+        mascotSrc=""
         title="Schools & Churches Pest Control"
         subtitle="High-traffic facilities need a prevention-first plan. We help keep classrooms, kitchens, fellowship halls, and offices protected with practical, safety-minded pest solutions."
         background="/images/commercial-schools-churches.svg"

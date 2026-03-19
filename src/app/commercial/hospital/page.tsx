@@ -13,7 +13,10 @@ export default function HospitalPage() {
     <main className="pt-32 mx-auto max-w-6xl px-4 py-10">
 
       {/* HERO */}
-      <Hero showMascot={false}
+      <Hero
+        showMascot={false}
+        logoSrc=""
+        mascotSrc=""
         title="Hospital & Healthcare Pest Control"
         subtitle="Discreet pest management designed for hospitals, clinics, and healthcare facilities where sanitation, safety, and compliance matter most."
         background="/images/commercial-hospital.svg"

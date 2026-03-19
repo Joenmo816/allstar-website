@@ -49,7 +49,10 @@ export default function WarehousePage() {
       <main className="pt-32 bg-white">
 
         {/* ================= HERO ================= */}
-        <Hero showMascot={false}
+        <Hero
+          showMascot={false}
+          logoSrc=""
+          mascotSrc=""
           title="Warehouse Pest Control in Kansas & Missouri"
           subtitle="Rodent control, stored product pest management, and industrial pest solutions for warehouses, distribution centers, logistics hubs, and manufacturing facilities throughout the Kansas City metro."
           background="/images/warehouse.png"

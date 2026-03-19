@@ -36,7 +36,10 @@ export default function RestaurantPage() {
       <main className="pt-32 bg-white">
 
         {/* ================= HERO SECTION ================= */}
-        <Hero showMascot={false}
+        <Hero
+          showMascot={false}
+          logoSrc=""
+          mascotSrc=""
           title="Restaurant Pest Solutions in the Kansas City Metro"
           subtitle="Protect your restaurant from cockroaches, rodents, ants, and flies with compliance-driven pest management programs built for health inspections, food safety, and brand reputation protection."
           background="/images/restaurant-pest-control.png"

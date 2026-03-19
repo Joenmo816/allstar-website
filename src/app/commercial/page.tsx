@@ -14,6 +14,8 @@ export default function CommercialPage() {
 
       {/* HERO */}
       <Hero
+        logoSrc=""
+        mascotSrc=""
         title="Commercial Pest Solutions"
         subtitle="Professional pest solutions protecting Kansas City businesses for over 30 years."
         background="/images/commercial-building-pest-control.png"
