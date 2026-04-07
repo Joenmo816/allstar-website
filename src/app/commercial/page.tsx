@@ -1,251 +1,135 @@
-import Hero from "../components/Hero";
-import Image from "next/image";
+import type { Metadata } from "next";
 import Link from "next/link";
+import Hero from "../components/Hero";
 
-export const metadata = {
-  title: "Commercial Pest Solutions | Kansas City | All Star Pest Solutions",
+export const metadata: Metadata = {
+  title: "Commercial Pest Solutions | All Star Pest Solutions",
   description:
-    "Commercial pest solutions for restaurants, warehouses, healthcare facilities, schools and businesses throughout the Kansas City metro.",
+    "Professional commercial pest solutions for Kansas City area businesses. Protect your property with effective service, modern methods, and over 30 years of experience.",
 };
+
+const commercialTypes = [
+  {
+    title: "Property Management",
+    href: "/commercial/property-management",
+    description:
+      "Reliable service for apartments, duplexes, HOA communities, and multi-tenant properties.",
+  },
+  {
+    title: "Hospital & Healthcare",
+    href: "/commercial/hospital",
+    description:
+      "Discreet pest management for healthcare facilities where sanitation and compliance matter most.",
+  },
+  {
+    title: "Schools & Churches",
+    href: "/commercial/schools-churches",
+    description:
+      "Safety-minded pest solutions for schools, churches, daycares, and other high-traffic facilities.",
+  },
+  {
+    title: "Warehouses & Industrial",
+    href: "/commercial/warehouses",
+    description:
+      "Targeted pest solutions for warehouses, logistics spaces, and industrial environments.",
+  },
+  {
+    title: "Restaurants & Food Service",
+    href: "/commercial/restaurants",
+    description:
+      "Protect your reputation with service designed for sanitation-sensitive environments.",
+  },
+  {
+    title: "Office Buildings",
+    href: "/commercial/offices",
+    description:
+      "Professional, low-disruption service for offices, common spaces, and employee areas.",
+  },
+];
 
 export default function CommercialPage() {
   return (
-    <main className="pt-32 bg-white text-gray-900 font-bold">
-
-      {/* HERO */}
+    <main className="pb-16">
       <Hero
-        logoSrc=""
-        mascotSrc=""
+        eyebrow="State-Certified Commercial Applicator (KS & MO)"
         title="Commercial Pest Solutions"
-        subtitle="Professional pest solutions protecting Kansas City businesses for over 30 years."
-        background="/images/commercial-building-pest-control.png"
+        description="Professional pest solutions protecting Kansas City businesses with modern methods, responsive service, and over 30 years of industry experience."
+        primaryCtaText="Call (913) 738-7827"
+        primaryCtaHref="tel:+19137387827"
+        secondaryCtaText="Free Quote"
+        secondaryCtaHref="/free-inspection"
+        logoSrc="/logo.png"
+        heroImageSrc="/images/commercial-building-pest-control.png"
+        heroImageAlt="Commercial strip mall property"
+        mascotSrc="/mascot.png"
+        showMascot={true}
       />
 
-      {/* INTRO */}
-      <section className="max-w-6xl mx-auto py-20 px-6 text-center">
-        <h2 className="text-4xl font-black text-red-700 mb-8">
-          Protect Your Business From Pest Problems
-        </h2>
+      <section className="mx-auto max-w-6xl px-4 py-12">
+        <div className="max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-wide text-red-700">
+            Business Protection That Works
+          </p>
 
-        <p className="text-xl text-gray-800 mb-6">
-          Pest infestations can damage your reputation, threaten food safety,
-          and create serious health risks for customers and employees.
-          Businesses throughout the Kansas City metro rely on All Star Pest
-          Solutions to protect their facilities from nuisance pests.
-        </p>
-
-        <p className="text-xl text-gray-800">
-          Our commercial pest solutions focus on inspection, targeted
-          treatments, sanitation recommendations and long-term prevention
-          designed specifically for each facility.
-        </p>
-      </section>
-
-      {/* WHY BUSINESSES CHOOSE US */}
-      <section className="py-24 bg-yellow-50">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-black text-red-700 mb-12">
-            Why Kansas City Businesses Choose All Star Pest Solutions
+          <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900">
+            Pest solutions tailored for commercial properties
           </h2>
 
-          <div className="grid md:grid-cols-4 gap-8 text-left">
-            <div className="bg-white p-8 rounded-xl shadow-md border-t-4 border-red-700">
-              <h3 className="text-xl font-black mb-3">
-                30+ Years Experience
-              </h3>
-              <p>
-                Decades of real-world pest management experience protecting
-                Kansas City businesses.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-md border-t-4 border-yellow-500">
-              <h3 className="text-xl font-black mb-3">
-                Detailed Inspections
-              </h3>
-              <p>
-                Every program begins with a thorough facility inspection.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-md border-t-4 border-red-700">
-              <h3 className="text-xl font-black mb-3">
-                Targeted Treatments
-              </h3>
-              <p>
-                Treatments focus precisely where pests live instead of
-                unnecessary spraying.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-md border-t-4 border-yellow-500">
-              <h3 className="text-xl font-black mb-3">
-                Long-Term Prevention
-              </h3>
-              <p>
-                Our goal is eliminating the source of pest problems and
-                preventing them from returning.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* INDUSTRIES */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-black text-red-700 text-center mb-16">
-            Industries We Serve
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-14">
-            <Link href="/commercial/restaurants" className="group block">
-              <Image
-                src="/images/restaurant-pest-control.png"
-                alt="Restaurant pest solutions Kansas City"
-                width={900}
-                height={600}
-                className="rounded-xl shadow-xl mb-4"
-              />
-              <h3 className="text-2xl font-black group-hover:text-red-700">
-                Restaurants & Food Service
-              </h3>
-            </Link>
-
-            <Link href="/commercial/warehouses" className="group block">
-              <Image
-                src="/images/warehouse.png"
-                alt="Warehouse pest solutions Kansas City"
-                width={900}
-                height={600}
-                className="rounded-xl shadow-xl mb-4"
-              />
-              <h3 className="text-2xl font-black group-hover:text-red-700">
-                Warehouses & Distribution
-              </h3>
-            </Link>
-
-            <Link href="/commercial/hospital" className="group block">
-              <Image
-                src="/images/healthcare-facility-pest-control-kansas-city.jpg"
-                alt="Healthcare facility pest solutions Kansas City"
-                width={900}
-                height={600}
-                className="rounded-xl shadow-xl mb-4"
-              />
-              <h3 className="text-2xl font-black group-hover:text-red-700">
-                Healthcare Facilities
-              </h3>
-            </Link>
-
-            <Link href="/commercial/schools-churches" className="group block">
-              <Image
-                src="/images/prairie-view-elementary-school-hallway.png"
-                alt="School pest solutions Kansas City"
-                width={900}
-                height={600}
-                className="rounded-xl shadow-xl mb-4"
-              />
-              <h3 className="text-2xl font-black group-hover:text-red-700">
-                Schools & Educational Facilities
-              </h3>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ENVIRONMENTAL */}
-      <section className="py-24 bg-green-100 text-center">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-4xl font-black text-green-800 mb-6">
-            Protecting Beneficial Species & Wildlife
-          </h2>
-
-          <p className="text-xl">
-            Our pest solutions focus on eliminating nuisance pests while
-            protecting beneficial species such as bees, butterflies,
-            ladybugs, birds, squirrels and other wildlife whenever possible.
+          <p className="mt-4 text-lg leading-8 text-slate-700">
+            Every commercial property has different risks. Restaurants, offices,
+            warehouses, healthcare facilities, schools, churches, and
+            multi-family properties all require a professional approach that
+            protects people, property, and reputation. All Star Pest Solutions
+            delivers practical service plans built around your business.
           </p>
         </div>
-      </section>
 
-      {/* CTA */}
-      <section className="bg-red-700 text-white py-20 text-center">
-        <h2 className="text-4xl font-black mb-6">
-          Speak Directly With The Owner
-        </h2>
-
-        <p className="text-xl mb-10">
-          Call (913) 738-STAR for experienced commercial pest solutions.
-          No call centers. No contracts required.
-        </p>
-
-        <a
-          href="tel:19137387827"
-          className="bg-yellow-400 text-black px-8 py-4 rounded-md text-xl font-black"
-        >
-          Call (913) 738-STAR
-        </a>
-      </section>
-
-      {/* QUOTE FORM */}
-      <section className="bg-gray-50 py-24">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-4xl font-black text-center mb-8">
-            Request a Commercial Pest Inspection
-          </h2>
-
-          <form className="grid md:grid-cols-2 gap-6 text-lg">
-            <input
-              type="text"
-              placeholder="Full Name"
-              className="border p-4 rounded-md"
-            />
-
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              className="border p-4 rounded-md"
-            />
-
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="border p-4 rounded-md"
-            />
-
-            <input
-              type="text"
-              placeholder="Business Address"
-              className="border p-4 rounded-md"
-            />
-
-            <select className="border p-4 rounded-md md:col-span-2">
-              <option>Type of Business</option>
-              <option>Restaurant</option>
-              <option>Warehouse</option>
-              <option>Healthcare Facility</option>
-              <option>School / Church</option>
-              <option>Office / Retail</option>
-              <option>Other</option>
-            </select>
-
-            <textarea
-              placeholder="Describe the pest issue..."
-              className="border p-4 rounded-md md:col-span-2"
-              rows={4}
-            />
-
-            <button
-              type="submit"
-              className="bg-red-700 text-white font-black py-4 rounded-md hover:bg-red-800 md:col-span-2"
+        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {commercialTypes.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-red-300 hover:shadow-md"
             >
-              Request Inspection
-            </button>
-          </form>
+              <h3 className="text-xl font-bold text-slate-900">{item.title}</h3>
+              <p className="mt-3 leading-7 text-slate-700">
+                {item.description}
+              </p>
+              <div className="mt-5 font-semibold text-red-700">Learn more →</div>
+            </Link>
+          ))}
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-4">
+        <div className="rounded-2xl bg-slate-900 p-8 text-white md:p-10">
+          <h2 className="text-2xl font-extrabold md:text-3xl">
+            Need a commercial pest partner you can count on?
+          </h2>
+
+          <p className="mt-3 max-w-3xl text-white/80">
+            We help Kansas City area businesses stay ahead of pest activity with
+            practical service, modern treatment methods, and a prevention-first
+            mindset.
+          </p>
+
+          <div className="mt-6 flex flex-wrap gap-3">
+            <a
+              href="tel:+19137387827"
+              className="inline-flex items-center justify-center rounded-lg bg-yellow-400 px-5 py-3 font-extrabold text-slate-900 transition hover:bg-yellow-300"
+            >
+              Call (913) 738-7827
+            </a>
+
+            <Link
+              href="/free-inspection"
+              className="inline-flex items-center justify-center rounded-lg border border-white/20 px-5 py-3 font-semibold transition hover:bg-white/10"
+            >
+              Request Free Quote
+            </Link>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

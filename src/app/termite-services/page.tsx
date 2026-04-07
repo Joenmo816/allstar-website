@@ -1,12 +1,14 @@
-export const metadata = {
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import Script from "next/script";
+import Hero from "@/app/components/Hero";
+
+export const metadata: Metadata = {
   title: "Termite Treatment & Termidor Experts in Kansas City",
   description:
     "Subterranean termite inspections and Termidor treatments in South Kansas City. Protect your home from costly hidden termite damage.",
 };
-
-import Image from "next/image";
-import Link from "next/link";
-import Script from "next/script";
 
 export default function TermiteServicesPage() {
   const basfPledge =
@@ -14,7 +16,6 @@ export default function TermiteServicesPage() {
 
   return (
     <>
-      {/* ================= STRUCTURED DATA ================= */}
       <Script
         id="termite-schema"
         type="application/ld+json"
@@ -93,120 +94,67 @@ export default function TermiteServicesPage() {
         }}
       />
 
-      <main className="pt-32 bg-white">
+      <main className="bg-white pb-16">
+        <Hero
+          eyebrow="Protect Your Home from Hidden Structural Damage"
+          title="Termite Inspections & Treatment"
+          description="Professional termite inspections and treatment throughout the south Kansas City metro. We help protect homes in Kansas and Missouri from costly subterranean termite damage."
+          primaryCtaText="Schedule Inspection"
+          primaryCtaHref="/contact"
+          secondaryCtaText="Call (913) 738-7827"
+          secondaryCtaHref="tel:+19137387827"
+          logoSrc="/logo.png"
+          heroImageSrc="/images/termiterun.png"
+          heroImageAlt="Termite mud tube on home foundation"
+          mascotSrc="/mascot.png"
+          showMascot={true}
+        />
 
-        {/* ================= HERO (UPDATED WITH MASCOT) ================= */}
-        <section className="relative w-full h-[650px]">
-          <Image
-            src="/images/termiterun.png"
-            alt="Termite mud tube on home foundation"
-            fill
-            priority
-            className="object-cover"
-          />
-
-          <div className="absolute inset-0 bg-black/60" />
-
-          <div className="relative z-10 max-w-7xl mx-auto px-6 h-full grid md:grid-cols-2 items-center">
-
-            {/* LEFT TEXT */}
-            <div className="text-white max-w-2xl">
-
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Termite Inspections & Treatment in the South KC Metro
-              </h1>
-
-              <p className="text-lg text-gray-200 mb-8">
-                Protect your home from silent structural destruction.
-                We provide professional termite inspections and treatment
-                throughout Johnson, Miami, Cass, and Jackson Counties.
-              </p>
-
-              <div className="flex flex-wrap gap-4">
-
-                <Link
-                  href="/contact"
-                  className="bg-yellow-400 text-black px-6 py-3 rounded-md font-semibold hover:bg-yellow-300 transition"
-                >
-                  Schedule Inspection
-                </Link>
-
-                <a
-                  href="tel:9137387827"
-                  className="bg-white text-black px-6 py-3 rounded-md font-semibold hover:bg-gray-200 transition"
-                >
-                  Call (913) 738-7827
-                </a>
-
-              </div>
-
-            </div>
-
-            {/* RIGHT MASCOT */}
-            <div className="flex justify-center md:justify-end">
-              <Image
-                src="/mascot.png"
-                alt="All Star Pest Solutions Mascot"
-                width={420}
-                height={420}
-                priority
-                className="drop-shadow-2xl"
-              />
-            </div>
-
-          </div>
-        </section>
-
-        {/* ================= DAMAGE FACTS ================= */}
-        <section className="py-20 bg-gray-50">
-          <div className="max-w-5xl mx-auto px-6 text-center">
-            <h2 className="text-3xl font-bold mb-6">
+        <section className="bg-gray-50 py-20">
+          <div className="mx-auto max-w-5xl px-6 text-center">
+            <h2 className="mb-6 text-3xl font-bold">
               Termites Cause Billions in Damage Every Year
             </h2>
 
             <p className="text-gray-700">
-              In the United States, termites are estimated to cause
-              $5–6.4 billion in structural damage annually.
-              Unlike storms or fires, termite destruction happens quietly,
-              24/7, often without visible warning.
+              In the United States, termites are estimated to cause billions in
+              structural damage annually. Unlike storms or fires, termite
+              destruction happens quietly, around the clock, often without
+              visible warning until serious damage is already done.
             </p>
           </div>
         </section>
 
-        {/* ================= KC TERMITE PROBLEM ================= */}
         <section className="py-20">
-          <div className="max-w-5xl mx-auto px-6">
-            <h2 className="text-3xl font-bold text-center mb-6">
+          <div className="mx-auto max-w-5xl px-6">
+            <h2 className="mb-6 text-center text-3xl font-bold">
               Why Termites Are Common in Kansas City Homes
             </h2>
 
-            <p className="text-gray-700 mb-6">
-              The Kansas City metro area sits directly in the range of the
-              Eastern Subterranean Termite — the most destructive termite
-              species in North America. These termites thrive in the soil
-              and moisture conditions found throughout Johnson County,
-              Miami County, Cass County, and Jackson County.
+            <p className="mb-6 text-gray-700">
+              The Kansas City metro sits directly in the range of the Eastern
+              Subterranean Termite, the most destructive termite species in
+              North America. These termites thrive in the soil and moisture
+              conditions found throughout Johnson County, Miami County, Cass
+              County, and Jackson County.
             </p>
 
-            <p className="text-gray-700 mb-6">
-              Subterranean termites live underground and build mud tunnels
-              to travel from their colony to wood inside structures. Because
-              they work inside walls, crawlspaces, and foundations, damage
-              often goes unnoticed until it becomes severe.
+            <p className="mb-6 text-gray-700">
+              Subterranean termites live underground and build mud tunnels to
+              travel from their colony to wood inside structures. Because they
+              work inside walls, crawlspaces, and foundations, damage often goes
+              unnoticed until it becomes severe.
             </p>
 
             <p className="text-gray-700">
-              Regular professional inspections are the best way to detect
+              Regular professional inspections are one of the best ways to catch
               termite activity early and prevent expensive structural damage.
             </p>
           </div>
         </section>
 
-        {/* ALL OTHER SECTIONS REMAIN EXACTLY THE SAME */}
-
-        {/* ================= TERMITE IDENTIFICATION ================= */}
         <section className="py-20">
-          <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+          <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 md:grid-cols-2">
             <Image
               src="/images/termites.png"
               alt="Termite workers and soldiers in damaged wood"
@@ -216,10 +164,11 @@ export default function TermiteServicesPage() {
             />
 
             <div>
-              <h2 className="text-3xl font-bold mb-6">
+              <h2 className="mb-6 text-3xl font-bold">
                 Signs of Termite Activity
               </h2>
-              <ul className="list-disc pl-6 text-gray-700 space-y-3">
+
+              <ul className="list-disc space-y-3 pl-6 text-gray-700">
                 <li>Mud tubes along foundations</li>
                 <li>Hollow or brittle wood</li>
                 <li>Discarded wings near windows or lights</li>
@@ -229,8 +178,44 @@ export default function TermiteServicesPage() {
           </div>
         </section>
 
-        {/* (everything else unchanged) */}
+        <section className="bg-slate-900 px-6 py-16 text-white">
+          <div className="mx-auto max-w-6xl">
+            <h2 className="text-3xl font-extrabold">
+              Ask about the BASF Termidor 10-Year Pledge
+            </h2>
 
+            <p className="mt-4 max-w-3xl text-white/80">
+              Termidor is one of the most trusted names in termite control. If
+              you want strong long-term protection, ask us about qualifying
+              treatment options and the BASF Termidor pledge.
+            </p>
+
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a
+                href="tel:+19137387827"
+                className="inline-flex items-center justify-center rounded-lg bg-yellow-400 px-5 py-3 font-extrabold text-slate-900 hover:bg-yellow-300"
+              >
+                Call (913) 738-7827
+              </a>
+
+              <a
+                href={basfPledge}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center rounded-lg border border-white/20 px-5 py-3 font-semibold hover:bg-white/10"
+              >
+                View BASF Pledge
+              </a>
+
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-lg border border-white/20 px-5 py-3 font-semibold hover:bg-white/10"
+              >
+                Request Inspection
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );

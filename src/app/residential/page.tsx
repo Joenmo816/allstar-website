@@ -1,12 +1,18 @@
-import Image from "next/image";
+import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
-import EcoCommitment from "@/app/components/EcoCommitment"; // ✅ ADDED
+import Hero from "@/app/components/Hero";
+import EcoCommitment from "@/app/components/EcoCommitment";
+
+export const metadata: Metadata = {
+  title: "Residential Pest Solutions | All Star Pest Solutions",
+  description:
+    "Residential pest solutions for Kansas City homes. Safe, eco-friendly service for families, children, and pets with modern methods and over 30 years of experience.",
+};
 
 export default function ResidentialPage() {
   return (
     <>
-      {/* ================= STRUCTURED DATA ================= */}
       <Script
         id="residential-schema"
         type="application/ld+json"
@@ -23,157 +29,99 @@ export default function ResidentialPage() {
                 "Johnson County KS",
                 "Miami County KS",
                 "Cass County MO",
-                "Jackson County MO"
-              ]
-            }
-          })
+                "Jackson County MO",
+              ],
+            },
+          }),
         }}
       />
 
-      <main className="pt-32 bg-white font-bold">
+      <main className="bg-white pb-16">
+        <Hero
+          eyebrow="Safe for Children, Pets & the Environment"
+          title="Residential Pest Solutions"
+          description="Get the All Star Treatment. We treat your home as if it were our own with eco-friendly, family-conscious pest solutions designed for Kansas City area homes."
+          primaryCtaText="Free Home Inspection"
+          primaryCtaHref="/contact"
+          secondaryCtaText="Call (913) 738-STAR"
+          secondaryCtaHref="tel:+19137387827"
+          logoSrc="/logo.png"
+          heroImageSrc="/images/house.png"
+          heroImageAlt="Kansas City residential pest solutions"
+          mascotSrc="/mascot.png"
+          showMascot={true}
+        />
 
-        {/* ================= HERO ================= */}
-        <section className="relative h-[720px] w-full">
-
-          <Image
-            src="/images/house.png"
-            alt="Kansas City Residential Pest Solutions"
-            fill
-            priority
-            className="object-cover"
-          />
-
-          <div className="absolute inset-0 bg-black/60" />
-
-          <div className="relative z-10 max-w-7xl mx-auto px-6 h-full grid md:grid-cols-2 items-center">
-
-            <div className="text-white">
-
-              <h1 className="text-5xl md:text-6xl font-black mb-6">
-                Residential <span className="text-yellow-400">Pest Solutions</span>
-              </h1>
-
-              <p className="text-xl mb-8">
-                Get the All Star Treatment! We treat your home as if it were our own. Services that are
-                safe for children and pets! All products we use are eco-friendly and safe for the enviroment.
-                These are our neighborhoods too!
-              </p>
-
-              <div className="flex gap-4 flex-wrap">
-
-                <Link
-                  href="/contact"
-                  className="bg-yellow-400 text-black px-6 py-3 rounded-md"
-                >
-                  Free Home Inspection
-                </Link>
-
-                <a
-                  href="tel:9137387827"
-                  className="bg-white text-black px-6 py-3 rounded-md"
-                >
-                  Call (913) 738-STAR
-                </a>
-
-              </div>
-
-            </div>
-
-            <div className="flex justify-center md:justify-end">
-
-              <Image
-                src="/mascot.png"
-                alt="All Star Pest Mascot"
-                width={420}
-                height={420}
-                priority
-                className="drop-shadow-2xl"
-              />
-
-            </div>
-
-          </div>
-
-        </section>
-
-        {/* ✅ ECO SECTION ADDED HERE */}
         <EcoCommitment />
 
-
-        {/* ================= INTRO ================= */}
-        <section className="py-24 max-w-6xl mx-auto px-6">
-
-          <h2 className="text-4xl font-black text-red-700 text-center mb-8">
+        <section className="mx-auto max-w-6xl px-6 py-24">
+          <h2 className="mb-8 text-center text-4xl font-black text-red-700">
             Residential Pest Solutions for Kansas City Homes
           </h2>
 
-          <p className="text-xl mb-6">
+          <p className="mb-6 text-xl text-slate-800">
             Homes throughout the Kansas City metro area experience pest
             problems year-round. Seasonal weather changes, landscaping,
-            wooded areas and moisture conditions attract insects and
-            rodents searching for food, water and shelter.
+            wooded areas, and moisture conditions attract insects and
+            rodents searching for food, water, and shelter.
           </p>
 
-          <p className="text-xl mb-6">
-            All Star Pest Solutions prides ourselves in providing the best service
+          <p className="mb-6 text-xl text-slate-800">
+            All Star Pest Solutions takes pride in delivering the kind of
+            service homeowners can trust. We focus on real solutions,
+            clear communication, and long-term results.
           </p>
 
-          <p className="text-xl">
+          <p className="text-xl text-slate-800">
             Our approach focuses on identifying the source of pest
-            activity, eliminating current infestations and preventing
-            future pest problems from returning. We provide solutions, not excuses!
+            activity, eliminating current infestations, and helping
+            prevent future pest problems from coming back. We provide
+            solutions, not excuses.
           </p>
-
         </section>
 
-        {/* ================= COMMON PESTS ================= */}
-        <section className="py-24 bg-yellow-50">
-          <div className="max-w-6xl mx-auto px-6 text-center">
-            <h2 className="text-4xl font-black text-red-700 mb-12">
+        <section className="bg-yellow-50 py-24">
+          <div className="mx-auto max-w-6xl px-6 text-center">
+            <h2 className="mb-12 text-4xl font-black text-red-700">
               Common Pests Found in Kansas City Homes
             </h2>
 
-            <div className="grid md:grid-cols-4 gap-10">
-
-              <div className="bg-white border-2 border-red-600 p-10 rounded-xl shadow-lg">
-                <h3 className="text-2xl font-black mb-3">Ants</h3>
-                <p className="text-lg">
-                  Pavement ants, odorous house ants and carpenter ants
+            <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-4">
+              <div className="rounded-xl border-2 border-red-600 bg-white p-10 shadow-lg">
+                <h3 className="mb-3 text-2xl font-black">Ants</h3>
+                <p className="text-lg text-slate-700">
+                  Pavement ants, odorous house ants, and carpenter ants
                   frequently invade homes searching for food and moisture.
                 </p>
               </div>
 
-              <div className="bg-white border-2 border-yellow-500 p-10 rounded-xl shadow-lg">
-                <h3 className="text-2xl font-black mb-3">Spiders</h3>
-                <p className="text-lg">
+              <div className="rounded-xl border-2 border-yellow-500 bg-white p-10 shadow-lg">
+                <h3 className="mb-3 text-2xl font-black">Spiders</h3>
+                <p className="text-lg text-slate-700">
                   Kansas City homes commonly encounter wolf spiders,
-                  cellar spiders and occasionally brown recluse spiders.
+                  cellar spiders, and occasionally brown recluse spiders.
                 </p>
               </div>
 
-              <div className="bg-white border-2 border-red-600 p-10 rounded-xl shadow-lg">
-                <h3 className="text-2xl font-black mb-3">Rodents</h3>
-                <p className="text-lg">
+              <div className="rounded-xl border-2 border-red-600 bg-white p-10 shadow-lg">
+                <h3 className="mb-3 text-2xl font-black">Rodents</h3>
+                <p className="text-lg text-slate-700">
                   Mice and rats can enter homes through extremely small
                   openings and quickly create sanitation and property
                   damage issues.
                 </p>
               </div>
 
-              <div className="bg-white border-2 border-yellow-500 p-10 rounded-xl shadow-lg">
-                <h3 className="text-2xl font-black mb-3">Cockroaches</h3>
-                <p className="text-lg">
+              <div className="rounded-xl border-2 border-yellow-500 bg-white p-10 shadow-lg">
+                <h3 className="mb-3 text-2xl font-black">Cockroaches</h3>
+                <p className="text-lg text-slate-700">
                   Cockroaches are persistent household pests that can
                   contaminate food and surfaces while spreading bacteria.
                 </p>
               </div>
-
             </div>
           </div>
         </section>
-
-        {/* (rest unchanged) */}
-
       </main>
     </>
   );

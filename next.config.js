@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
+
   async redirects() {
     return [
       {
@@ -8,6 +10,17 @@ const nextConfig = {
         permanent: false,
       },
     ];
+  },
+
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: '/:city/pest-library/:slug',
+          destination: '/city-pest/:city/:slug',
+        },
+      ],
+    };
   },
 };
 

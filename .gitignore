@@ -12,7 +12,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Local env files
+# Environment variables
 .env
 .env.local
 .env.development
@@ -27,15 +27,10 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Optional lockfiles (if you don’t want to commit them)
+# Zip files (IMPORTANT)
+*.zip
+
+# Optional lockfiles (keep commented unless needed)
 # package-lock.json
 # yarn.lock
 # pnpm-lock.yaml
-src/app/pests.zip
-git
-add
-.gitignore
-git
-commit
--m
-Ignore pests.zip
