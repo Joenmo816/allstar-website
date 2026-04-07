@@ -4,14 +4,16 @@ import "./globals.css";
 import SiteHeader from "./components/SiteHeader";
 import Footer from "./components/Footer";
 
+const siteUrl = "https://allstarpestkc.com";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.allstarpestkc.com"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "All Star Pest Solutions | South Kansas City Experts",
     template: "%s | All Star Pest Solutions",
   },
   description:
-    "All Star Pest Solutions provides residential, commercial and termite services throughout South Kansas City. 30+ years experience. Licensed in Kansas and Missouri.",
+    "All Star Pest Solutions provides residential, commercial, and termite services throughout the South Kansas City Metro Area. Over 30 years of experience. Licensed in Kansas and Missouri.",
   robots: {
     index: true,
     follow: true,
@@ -19,8 +21,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "All Star Pest Solutions",
     description:
-      "South Kansas City's trusted pest solutions provider with 30+ years experience.",
-    url: "https://www.allstarpestkc.com",
+      "Serving the South Kansas City Metro Area with residential, commercial, and termite services backed by over 30 years of experience.",
+    url: siteUrl,
     siteName: "All Star Pest Solutions",
     images: [
       {
@@ -40,25 +42,25 @@ const sitewideStructuredData = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://www.allstarpestkc.com/#organization",
+      "@id": `${siteUrl}/#organization`,
       name: "All Star Pest Solutions",
-      url: "https://www.allstarpestkc.com",
-      logo: "https://www.allstarpestkc.com/logo.png",
-      image: "https://www.allstarpestkc.com/logo.png",
+      url: siteUrl,
+      logo: `${siteUrl}/logo.png`,
+      image: `${siteUrl}/logo.png`,
       email: "info@allstarpestkc.com",
       telephone: "+1-913-738-7827",
     },
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.allstarpestkc.com/#localbusiness",
+      "@id": `${siteUrl}/#localbusiness`,
       name: "All Star Pest Solutions",
-      url: "https://www.allstarpestkc.com",
-      image: "https://www.allstarpestkc.com/logo.png",
+      url: siteUrl,
+      image: `${siteUrl}/logo.png`,
       email: "info@allstarpestkc.com",
       telephone: "+1-913-738-7827",
       priceRange: "$$",
       description:
-        "All Star Pest Solutions is a locally owned pest solutions company serving South Kansas City and surrounding communities with residential, commercial, and termite services.",
+        "All Star Pest Solutions is a locally owned pest solutions company serving the South Kansas City Metro Area with residential, commercial, and termite services.",
       address: {
         "@type": "PostalAddress",
         streetAddress: "210 W. Cleveland St",
@@ -83,16 +85,16 @@ const sitewideStructuredData = {
         },
       ],
       parentOrganization: {
-        "@id": "https://www.allstarpestkc.com/#organization",
+        "@id": `${siteUrl}/#organization`,
       },
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.allstarpestkc.com/#website",
-      url: "https://www.allstarpestkc.com",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
       name: "All Star Pest Solutions",
       publisher: {
-        "@id": "https://www.allstarpestkc.com/#organization",
+        "@id": `${siteUrl}/#organization`,
       },
     },
   ],
