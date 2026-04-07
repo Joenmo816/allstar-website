@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   },
   description:
     "All Star Pest Solutions provides residential, commercial, and termite services throughout the South Kansas City Metro Area. Over 30 years of experience. Licensed in Kansas and Missouri.",
+  alternates: {
+    canonical: "/",
+  },
   robots: {
     index: true,
     follow: true,
@@ -27,7 +30,7 @@ export const metadata: Metadata = {
     siteName: "All Star Pest Solutions",
     images: [
       {
-        url: "/logo.png",
+        url: `${siteUrl}/logo.png`,
         width: 1200,
         height: 630,
         alt: "All Star Pest Solutions logo",
@@ -35,6 +38,13 @@ export const metadata: Metadata = {
     ],
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "All Star Pest Solutions",
+    description:
+      "Serving the South Kansas City Metro Area with residential, commercial, and termite services backed by over 30 years of experience.",
+    images: [`${siteUrl}/logo.png`],
   },
 };
 
