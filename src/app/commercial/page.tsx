@@ -58,7 +58,7 @@ export default function CommercialPage() {
         primaryCtaHref="tel:+19137387827"
         secondaryCtaText="Free Quote"
         secondaryCtaHref="/free-inspection"
-        logoSrc="/logo.png"
+        logoSrc="/logo-header-v2.png"
         heroImageSrc="/images/commercial-building-pest-control.png"
         heroImageAlt="Commercial strip mall property"
         mascotSrc="/mascot.png"
@@ -116,7 +116,7 @@ export default function CommercialPage() {
           <div className="mt-6 flex flex-wrap gap-3">
             <a
               href="tel:+19137387827"
-              className="inline-flex items-center justify-center rounded-lg bg-yellow-400 px-5 py-3 font-extrabold text-slate-900 transition hover:bg-yellow-300"
+              className="inline-flex items-center justify-center rounded-lg bg-allstarBlueLight px-5 py-3 font-extrabold text-slate-900 transition hover:bg-allstarBlueLight"
             >
               Call (913) 738-7827
             </a>
@@ -133,3 +133,4 @@ export default function CommercialPage() {
     </main>
   );
 }
+

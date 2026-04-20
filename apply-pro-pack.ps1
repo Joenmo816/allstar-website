@@ -9,7 +9,7 @@ foreach ($p in @($public,$components,$appDir,$stylesDir)) { if (!(Test-Path $p))
 
 # ---------- Assets sanity ----------
 if (!(Test-Path (Join-Path $public "star.png")))  { Write-Warning "Missing public\star.png (favicons)."; }
-if (!(Test-Path (Join-Path $public "logo.png")))  { Write-Warning "Missing public\logo.png (header logo)."; }
+if (!(Test-Path (Join-Path $public "logo-header-v2.png")))  { Write-Warning "Missing public\public/logo-header-v2.png (header logo)."; }
 if (!(Test-Path (Join-Path $public "images\kc.jpg"))) { Write-Warning "Missing public\images\kc.jpg (hero image)."; }
 
 # Generate favicons from star.png if present

@@ -243,7 +243,7 @@ export default async function PestDetailPage({ params }: PageProps) {
               </div>
             )}
 
-            <h1 className="mb-4 text-4xl font-black leading-tight text-yellow-400 md:text-6xl">
+            <h1 className="mb-4 text-4xl font-black leading-tight text-white md:text-6xl">
               {pluralName} in Kansas City
             </h1>
 
@@ -252,14 +252,14 @@ export default async function PestDetailPage({ params }: PageProps) {
               how to protect your home throughout the Kansas City metro.
             </p>
 
-            <p className="mb-6 text-3xl font-black text-yellow-300">
+            <p className="mb-6 text-3xl font-black text-white">
               Call (913) 738-STAR
             </p>
 
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/contact"
-                className="rounded-md bg-yellow-400 px-8 py-4 font-black text-black transition hover:bg-yellow-300"
+                className="rounded-md bg-allstarBlueLight px-8 py-4 font-black text-black transition hover:bg-allstarBlueLight"
               >
                 FREE INSPECTION
               </Link>
@@ -307,7 +307,7 @@ export default async function PestDetailPage({ params }: PageProps) {
 
               <a
                 href="tel:19137387827"
-                className="rounded-md bg-black px-6 py-3 font-black text-yellow-400 transition hover:bg-zinc-900"
+                className="rounded-md bg-black px-6 py-3 font-black text-white transition hover:bg-zinc-900"
               >
                 Call (913) 738-STAR
               </a>
@@ -358,7 +358,7 @@ export default async function PestDetailPage({ params }: PageProps) {
         </section>
       )}
 
-      <section className="bg-gradient-to-b from-white via-yellow-50 to-white py-14">
+      <section className="bg-zinc-50 py-14">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mb-8 text-center">
             <h2 className="text-3xl font-black text-red-700 md:text-4xl">
@@ -375,7 +375,7 @@ export default async function PestDetailPage({ params }: PageProps) {
             {factSections.map((section) => (
               <div
                 key={section.title}
-                className="group rounded-3xl border border-red-200 bg-gradient-to-br from-white to-yellow-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+                className="group rounded-3xl border border-red-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
               >
                 <div className="mb-4 inline-flex rounded-full bg-red-700 px-3 py-1 text-xs font-black uppercase tracking-wide text-white">
                   {section.title}
@@ -396,7 +396,7 @@ export default async function PestDetailPage({ params }: PageProps) {
 
       <section className="bg-black py-16 text-center text-white">
         <div className="mx-auto max-w-4xl px-6">
-          <h2 className="mb-4 text-3xl font-black text-yellow-400 md:text-4xl">
+          <h2 className="mb-4 text-3xl font-black text-white md:text-4xl">
             Seeing {pluralName} in Your Home?
           </h2>
 
@@ -409,7 +409,7 @@ export default async function PestDetailPage({ params }: PageProps) {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/contact"
-              className="rounded-md bg-yellow-400 px-6 py-3 font-black text-black transition hover:bg-yellow-300"
+              className="rounded-md bg-allstarBlueLight px-6 py-3 font-black text-black transition hover:bg-allstarBlueLight"
             >
               FREE INSPECTION
             </Link>

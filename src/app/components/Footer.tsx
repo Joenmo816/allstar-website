@@ -4,63 +4,51 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t bg-gray-50">
-
-      <div className="mx-auto max-w-7xl px-6 py-12 grid gap-10 md:grid-cols-4">
-
-        {/* COMPANY INFO */}
+    <footer className="border-t border-allstarBlue/10 bg-allstarCloud">
+      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 md:grid-cols-4 lg:px-8">
         <div>
-          <h3 className="text-2xl font-black text-red-700 [text-shadow:2px_2px_0_black]">
+          <h3 className="text-2xl font-black text-allstarRed">
             All Star Pest Solutions
           </h3>
 
-          <p className="mt-3 text-base text-zinc-700 leading-relaxed">
-            Local experts delivering eco-friendly, child & pet-safe treatments backed by our promise:
+          <p className="mt-3 text-base leading-relaxed text-allstarSlate">
+            Local experts delivering eco-friendly, family-conscious treatments
+            backed by over 30 years of real-world experience.
           </p>
 
-          <p className="mt-2 font-bold text-zinc-900">
-            “Guaranteed Service. Guaranteed Results.”
+          <p className="mt-3 font-bold text-allstarInk">
+            Guaranteed Service. Guaranteed Results.
           </p>
         </div>
 
-
-        {/* QUICK LINKS */}
         <nav>
-          <h4 className="text-lg font-black text-zinc-900 mb-3">
+          <h4 className="mb-3 text-lg font-black text-allstarInk">
             Quick Links
           </h4>
 
           <div className="grid grid-cols-2 gap-x-6 gap-y-2 text-base">
+            <Link href="/" className="brand-link font-bold">Home</Link>
+            <Link href="/residential" className="brand-link font-bold">Residential</Link>
 
-            <Link href="/" className="font-bold text-blue-700 hover:text-red-700">Home</Link>
-            <Link href="/services/residential" className="font-bold text-blue-700 hover:text-red-700">Residential</Link>
+            <Link href="/commercial" className="brand-link font-bold">Commercial</Link>
+            <Link href="/pest-library" className="brand-link font-bold">Pest Library</Link>
 
-            <Link href="/services/commercial" className="font-bold text-blue-700 hover:text-red-700">Commercial</Link>
-            <Link href="/pests" className="font-bold text-blue-700 hover:text-red-700">Pest Library</Link>
+            <Link href="/termite-services" className="brand-link font-bold">Termite Services</Link>
+            <Link href="/service-area" className="brand-link font-bold">Service Area</Link>
 
-            <Link href="/pricing" className="font-bold text-blue-700 hover:text-red-700">Pricing</Link>
-            <Link href="/service-area" className="font-bold text-blue-700 hover:text-red-700">Service Area</Link>
-
-            <Link href="/guarantee" className="font-bold text-blue-700 hover:text-red-700">Guarantee</Link>
-            <Link href="/about" className="font-bold text-blue-700 hover:text-red-700">About</Link>
-
-            <Link href="/contact" className="font-bold text-blue-700 hover:text-red-700">Contact</Link>
-
+            <Link href="/about" className="brand-link font-bold">About</Link>
+            <Link href="/contact" className="brand-link font-bold">Contact</Link>
           </div>
         </nav>
 
-
-        {/* CONTACT */}
         <div className="text-base">
-          <h4 className="text-lg font-black text-zinc-900">
-            Contact
-          </h4>
+          <h4 className="text-lg font-black text-allstarInk">Contact</h4>
 
-          <p className="mt-3 text-zinc-700 leading-relaxed">
+          <p className="mt-3 leading-relaxed text-allstarSlate">
             Phone:{" "}
             <a
               href="tel:+19137387827"
-              className="font-bold text-red-700 hover:text-red-800"
+              className="font-bold text-allstarRed transition hover:text-allstarRedDark"
             >
               (913) 738-STAR
             </a>
@@ -70,7 +58,7 @@ export default function Footer() {
             Email:{" "}
             <a
               href="mailto:info@allstarpestkc.com"
-              className="text-red-700 hover:text-red-800"
+              className="text-allstarRed transition hover:text-allstarRedDark"
             >
               info@allstarpestkc.com
             </a>
@@ -80,58 +68,48 @@ export default function Footer() {
             Web:{" "}
             <a
               href="https://allstarpestkc.com"
-              className="text-red-700 hover:text-red-800"
+              className="text-allstarBlue transition hover:text-allstarRed"
               target="_blank"
             >
               allstarpestkc.com
             </a>
           </p>
 
-          <p className="mt-3 text-zinc-700">
+          <p className="mt-3 text-allstarSlate">
             KS & MO State-Certified • Fully Insured
           </p>
         </div>
 
-
-        {/* SERVICE AREA */}
         <div className="text-base">
-          <h4 className="text-lg font-black text-zinc-900">
-            Service Area
-          </h4>
+          <h4 className="text-lg font-black text-allstarInk">Service Area</h4>
 
-          <p className="mt-3 text-zinc-700 leading-relaxed">
-            Kansas: Johnson & Miami Counties<br />
+          <p className="mt-3 leading-relaxed text-allstarSlate">
+            Kansas: Johnson & Miami Counties
+            <br />
             Missouri: Cass & Jackson Counties
           </p>
 
           <a
             href="tel:+19137387827"
-            className="mt-5 inline-flex items-center justify-center rounded-full bg-red-700 px-6 py-3 font-bold text-white hover:bg-red-800 transition"
+            className="mt-5 inline-flex items-center justify-center rounded-xl bg-allstarBlue px-6 py-3 font-extrabold text-white transition hover:bg-allstarBlueDark"
           >
             Call (913) 738-STAR
           </a>
         </div>
-
       </div>
 
-
-      {/* BOTTOM BAR */}
-      <div className="border-t">
-
-        <div className="mx-auto max-w-7xl px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-
-          <p className="text-sm text-zinc-600">
+      <div className="border-t border-allstarBlue/10">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-4 text-center sm:flex-row sm:text-left lg:px-8">
+          <p className="text-sm text-allstarSlate">
             © {year} All Star Pest Solutions • Local Service. Guaranteed Results.
           </p>
 
-          <p className="text-sm text-zinc-500">
-            Respect for beneficial species • Eco-friendly & family-safe treatments
+          <p className="text-sm text-allstarSlate">
+            Respect for beneficial species • Eco-friendly & family-conscious treatments
           </p>
-
         </div>
-
       </div>
-
     </footer>
   );
 }
+

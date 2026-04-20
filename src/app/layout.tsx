@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: "All Star Pest Solutions",
     images: [
       {
-        url: `${siteUrl}/logo.png`,
+        url: `${siteUrl}/logo-header-v2.png`,
         width: 1200,
         height: 630,
         alt: "All Star Pest Solutions logo",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "All Star Pest Solutions",
     description:
       "Serving the South Kansas City Metro Area with residential, commercial, and termite services backed by over 30 years of experience.",
-    images: [`${siteUrl}/logo.png`],
+    images: [`${siteUrl}/logo-header-v2.png`],
   },
 };
 
@@ -56,8 +56,8 @@ const sitewideStructuredData = {
       "@id": `${siteUrl}/#organization`,
       name: "All Star Pest Solutions",
       url: siteUrl,
-      logo: `${siteUrl}/logo.png`,
-      image: `${siteUrl}/logo.png`,
+      logo: `${siteUrl}/logo-header-v2.png`,
+      image: `${siteUrl}/logo-header-v2.png`,
       email: "info@allstarpestkc.com",
       telephone: "+1-913-738-7827",
     },
@@ -66,7 +66,7 @@ const sitewideStructuredData = {
       "@id": `${siteUrl}/#localbusiness`,
       name: "All Star Pest Solutions",
       url: siteUrl,
-      image: `${siteUrl}/logo.png`,
+      image: `${siteUrl}/logo-header-v2.png`,
       email: "info@allstarpestkc.com",
       telephone: "+1-913-738-7827",
       priceRange: "$$",
@@ -134,3 +134,4 @@ export default function RootLayout({
     </html>
   );
 }
+

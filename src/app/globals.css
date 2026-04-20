@@ -2,16 +2,132 @@
 @tailwind components;
 @tailwind utilities;
 
+/* =========================
+   BASE STYLES
+========================= */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-allstarWhite text-allstarInk antialiased;
+  }
+
+  ::selection {
+    @apply bg-allstarBlue text-white;
+  }
+}
+
+/* =========================
+   COMPONENT SYSTEM
+========================= */
 @layer components {
+
+  /* PRIMARY BUTTON (RED CTA) */
   .btn-primary {
-    @apply bg-allstarGreen text-white border-transparent hover:opacity-90;
+    @apply inline-flex items-center justify-center rounded-xl 
+    bg-allstarRed px-6 py-3 font-extrabold text-white 
+    transition hover:bg-allstarRedDark;
   }
 
-  .btn-outline {
-    @apply border border-allstarGreen text-allstarGreen hover:bg-allstarGreen hover:text-white;
-  }
-
+  /* SECONDARY BUTTON (BLUE CTA) */
   .btn-secondary {
-    @apply bg-allstarBlue text-white hover:opacity-90;
+    @apply inline-flex items-center justify-center rounded-xl 
+    bg-allstarBlue px-6 py-3 font-extrabold text-white 
+    transition hover:bg-allstarBlueDark;
+  }
+
+  /* ACCENT BUTTON (WHITE CTA — replaces old gold) */
+  .btn-accent {
+    @apply inline-flex items-center justify-center rounded-xl 
+    bg-white px-6 py-3 font-extrabold text-allstarBlueDark 
+    transition hover:bg-allstarBlueLight;
+  }
+
+  /* OUTLINE BUTTON */
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-xl 
+    border-2 border-white/30 px-6 py-3 font-extrabold text-white 
+    transition hover:bg-white hover:text-allstarBlueDark;
+  }
+
+  /* =========================
+     LAYOUT HELPERS
+  ========================= */
+
+  .section-shell {
+    @apply mx-auto max-w-7xl px-6 lg:px-8;
+  }
+
+  .section-light {
+    @apply bg-white;
+  }
+
+  .section-soft {
+    @apply bg-allstarCloud;
+  }
+
+  .section-blue {
+    @apply bg-allstarBlue text-white;
+  }
+
+  /* =========================
+     CARDS
+  ========================= */
+
+  .brand-card {
+    @apply rounded-3xl border border-slate-200 bg-white shadow-brand;
+  }
+
+  .brand-card-blue {
+    @apply rounded-3xl border border-allstarBlue/20 bg-allstarBlueLight shadow-brand;
+  }
+
+  .brand-card-red {
+    @apply rounded-3xl border border-allstarRed/20 bg-allstarRedLight shadow-brand;
+  }
+
+  /* =========================
+     TYPOGRAPHY
+  ========================= */
+
+  .brand-heading {
+    @apply font-black tracking-tight text-allstarRed;
+  }
+
+  .brand-subheading {
+    @apply font-bold text-allstarBlue;
+  }
+
+  .brand-text {
+    @apply text-allstarSlate;
+  }
+
+  .brand-link {
+    @apply text-allstarBlue transition hover:text-allstarRed;
+  }
+
+  /* =========================
+     BADGES / TAGS
+  ========================= */
+
+  .badge {
+    @apply inline-flex items-center rounded-md 
+    border border-white/20 bg-white/10 px-4 py-2 
+    text-sm font-black uppercase tracking-wide text-white;
+  }
+
+  /* =========================
+     HERO HELPERS
+  ========================= */
+
+  .hero-overlay {
+    @apply absolute inset-0 
+    bg-[linear-gradient(135deg,rgba(15,23,42,0.88)_0%,rgba(30,79,175,0.72)_50%,rgba(198,40,40,0.30)_100%)];
+  }
+
+  .hero-fade {
+    @apply absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent;
   }
 }

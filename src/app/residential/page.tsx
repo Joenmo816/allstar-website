@@ -45,7 +45,7 @@ export default function ResidentialPage() {
           primaryCtaHref="/contact"
           secondaryCtaText="Call (913) 738-STAR"
           secondaryCtaHref="tel:+19137387827"
-          logoSrc="/logo.png"
+          logoSrc="/logo-header-v2.png"
           heroImageSrc="/images/house.png"
           heroImageAlt="Kansas City residential pest solutions"
           mascotSrc="/mascot.png"
@@ -80,7 +80,7 @@ export default function ResidentialPage() {
           </p>
         </section>
 
-        <section className="bg-yellow-50 py-24">
+        <section className="bg-allstarBlueLight py-24">
           <div className="mx-auto max-w-6xl px-6 text-center">
             <h2 className="mb-12 text-4xl font-black text-red-700">
               Common Pests Found in Kansas City Homes
@@ -126,3 +126,4 @@ export default function ResidentialPage() {
     </>
   );
 }
+

@@ -20,7 +20,7 @@ export default function PropertyManagementPage() {
         primaryCtaHref="tel:+19137387827"
         secondaryCtaText="Free Quote"
         secondaryCtaHref="/free-inspection"
-        logoSrc="/images/allstar-logo.png"
+        logoSrc="/images/allstar-logo-header-v2.png"
         heroImageSrc="/images/commercial-property-management.svg"
         mascotSrc="/images/allstar-mascot.png"
         showMascot={false}
@@ -114,7 +114,7 @@ export default function PropertyManagementPage() {
         <div className="mt-6 flex flex-wrap gap-3">
           <a
             href="tel:+19137387827"
-            className="inline-flex items-center justify-center rounded-lg bg-yellow-400 px-5 py-3 font-extrabold text-slate-900 hover:bg-yellow-300"
+            className="inline-flex items-center justify-center rounded-lg bg-allstarBlueLight px-5 py-3 font-extrabold text-slate-900 hover:bg-allstarBlueLight"
           >
             Call (913) 738-7827
           </a>
@@ -130,3 +130,4 @@ export default function PropertyManagementPage() {
     </main>
   );
 }
+

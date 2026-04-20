@@ -27,3 +27,4 @@ export const cities: CityEntry[] = [
   { slug: "raymore", name: "Raymore", state: "MO", county: "Cass County" },
   { slug: "spring-hill", name: "Spring Hill", state: "KS", county: "Johnson County" },
 ];
+

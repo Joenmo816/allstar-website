@@ -480,3 +480,4 @@ export const DESCRIPTIONS: Record<string, PestDetails> = {
   },
   'yellowjacket': { scientificName: '', biology: '', lifeCycle: '', behavior: '', size: '' },
 };
+

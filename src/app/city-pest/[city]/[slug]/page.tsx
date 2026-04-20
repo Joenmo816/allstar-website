@@ -314,7 +314,7 @@ export default async function CityPestPage({ params }: PageProps) {
             "@type": "ListItem",
             position: 3,
             name: "Pest Library",
-            item: `https://allstarpestkc.com/pest-library`,
+            item: "https://allstarpestkc.com/pest-library",
           },
           {
             "@type": "ListItem",
@@ -354,7 +354,7 @@ export default async function CityPestPage({ params }: PageProps) {
   };
 
   return (
-    <main className="bg-white text-zinc-900">
+    <main className="bg-white text-black">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -365,7 +365,7 @@ export default async function CityPestPage({ params }: PageProps) {
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-[1.1fr_0.9fr] md:items-center lg:px-8 lg:py-24">
           <div className="relative z-10">
             <div className="mb-4 flex flex-wrap items-center gap-3">
-              <span className="rounded-full border border-yellow-400/40 bg-yellow-400/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-yellow-300">
+              <span className="rounded-full border border-yellow-400/40 bg-allstarBlueLight/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-white">
                 {cityData.name}, {cityData.state}
               </span>
 
@@ -380,14 +380,14 @@ export default async function CityPestPage({ params }: PageProps) {
               {pluralName} in {cityData.name}, {cityData.state}
             </h1>
 
-            <p className="mt-6 max-w-3xl text-base leading-7 text-zinc-200 sm:text-lg">
+            <p className="mt-6 max-w-3xl text-lg font-medium leading-8 text-white sm:text-xl">
               {description}
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-xl bg-yellow-400 px-6 py-3 text-sm font-black uppercase tracking-[0.16em] text-black transition hover:-translate-y-0.5 hover:bg-yellow-300"
+                className="inline-flex items-center justify-center rounded-xl bg-allstarBlueLight px-6 py-3 text-sm font-black uppercase tracking-[0.16em] text-black transition hover:-translate-y-0.5 hover:bg-allstarBlueLight"
               >
                 Get a Free Inspection
               </Link>
@@ -420,13 +420,16 @@ export default async function CityPestPage({ params }: PageProps) {
       <section className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm">
-            <h2 className="text-2xl font-black tracking-tight text-zinc-950">
+            <h2 className="text-2xl font-black tracking-tight text-black">
               About {pluralName} in {cityData.name}
             </h2>
-            <p className="mt-4 text-base leading-8 text-zinc-700">{aboutText}</p>
+
+            <p className="mt-4 text-lg font-medium leading-8 text-gray-900">
+              {aboutText}
+            </p>
 
             {!beneficial && (
-              <p className="mt-4 text-base leading-8 text-zinc-700">
+              <p className="mt-4 text-lg font-medium leading-8 text-gray-900">
                 In {cityData.name}, {cityData.state}, seasonal activity, moisture, food sources,
                 landscaping, crawl spaces, garages, attics, and structural gaps can all contribute
                 to recurring pest pressure. Proper identification and a targeted plan make a big
@@ -435,7 +438,7 @@ export default async function CityPestPage({ params }: PageProps) {
             )}
 
             {beneficial && (
-              <p className="mt-4 text-base leading-8 text-zinc-700">
+              <p className="mt-4 text-lg font-medium leading-8 text-gray-900">
                 When {pluralName.toLowerCase()} are active near a home in {cityData.name}, it is
                 important to separate beneficial pollinator activity from a true structural pest
                 issue. Safe relocation is usually the best path when human contact is the concern.
@@ -444,10 +447,11 @@ export default async function CityPestPage({ params }: PageProps) {
           </div>
 
           <div className="rounded-3xl border border-red-200 bg-gradient-to-br from-red-50 via-white to-yellow-50 p-8 shadow-sm">
-            <h2 className="text-2xl font-black tracking-tight text-zinc-950">
+            <h2 className="text-2xl font-black tracking-tight text-black">
               Need Help in {cityData.name}?
             </h2>
-            <p className="mt-4 text-base leading-8 text-zinc-700">
+
+            <p className="mt-4 text-lg font-medium leading-8 text-gray-900">
               All Star Pest Solutions proudly serves {cityData.name}, {cityData.state} and the
               surrounding Kansas City metro with safe, modern, effective pest solutions.
             </p>
@@ -462,7 +466,7 @@ export default async function CityPestPage({ params }: PageProps) {
 
               <Link
                 href="/contact"
-                className="block rounded-2xl border border-zinc-300 px-5 py-4 text-center text-sm font-black uppercase tracking-[0.16em] text-zinc-950 transition hover:border-red-500 hover:text-red-700"
+                className="block rounded-2xl border border-zinc-300 px-5 py-4 text-center text-sm font-black uppercase tracking-[0.16em] text-black transition hover:border-red-500 hover:text-red-700"
               >
                 Request Service
               </Link>
@@ -474,10 +478,10 @@ export default async function CityPestPage({ params }: PageProps) {
       <section className="mx-auto max-w-7xl px-6 pb-12 lg:px-8">
         <div className="mb-6 flex items-end justify-between gap-4">
           <div>
-            <h2 className="text-2xl font-black tracking-tight text-zinc-950">
+            <h2 className="text-2xl font-black tracking-tight text-black">
               Quick Facts About {pluralName}
             </h2>
-            <p className="mt-2 text-sm text-zinc-600">
+            <p className="mt-2 text-base font-medium text-gray-800">
               What homeowners in {cityData.name}, {cityData.state} should know.
             </p>
           </div>
@@ -488,38 +492,39 @@ export default async function CityPestPage({ params }: PageProps) {
             <h3 className="text-sm font-black uppercase tracking-[0.18em] text-red-700">
               Biology / ID
             </h3>
-            <p className="mt-3 text-sm leading-7 text-zinc-700">{biology}</p>
+            <p className="mt-3 text-base font-medium leading-8 text-gray-900">{biology}</p>
           </article>
 
           <article className="rounded-3xl border border-red-200 bg-gradient-to-br from-white via-red-50 to-yellow-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <h3 className="text-sm font-black uppercase tracking-[0.18em] text-red-700">
               Behavior
             </h3>
-            <p className="mt-3 text-sm leading-7 text-zinc-700">{behavior}</p>
+            <p className="mt-3 text-base font-medium leading-8 text-gray-900">{behavior}</p>
           </article>
 
           <article className="rounded-3xl border border-red-200 bg-gradient-to-br from-white via-red-50 to-yellow-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <h3 className="text-sm font-black uppercase tracking-[0.18em] text-red-700">
               Habitat
             </h3>
-            <p className="mt-3 text-sm leading-7 text-zinc-700">{habitat}</p>
+            <p className="mt-3 text-base font-medium leading-8 text-gray-900">{habitat}</p>
           </article>
 
           <article className="rounded-3xl border border-red-200 bg-gradient-to-br from-white via-red-50 to-yellow-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <h3 className="text-sm font-black uppercase tracking-[0.18em] text-red-700">
               Main Concern
             </h3>
-            <p className="mt-3 text-sm leading-7 text-zinc-700">{risk}</p>
+            <p className="mt-3 text-base font-medium leading-8 text-gray-900">{risk}</p>
           </article>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 pb-12 lg:px-8">
         <div className="rounded-3xl border border-zinc-200 bg-zinc-50 p-8">
-          <h2 className="text-2xl font-black tracking-tight text-zinc-950">
+          <h2 className="text-2xl font-black tracking-tight text-black">
             {pluralName} Are Common Across the KC Metro
           </h2>
-          <p className="mt-4 max-w-4xl text-base leading-8 text-zinc-700">
+
+          <p className="mt-4 max-w-4xl text-lg font-medium leading-8 text-gray-900">
             Looking for information about {pluralName.toLowerCase()} in nearby areas? Browse
             city-specific pages below to find the same pest in surrounding service areas.
           </p>
@@ -529,7 +534,7 @@ export default async function CityPestPage({ params }: PageProps) {
               <Link
                 key={link.href}
                 href={link.href}
-                className="rounded-full border border-zinc-300 bg-white px-4 py-2 text-sm font-bold text-zinc-800 transition hover:border-red-500 hover:text-red-700"
+                className="rounded-full border border-zinc-300 bg-white px-4 py-2 text-sm font-bold text-black transition hover:border-red-500 hover:text-red-700"
               >
                 {link.label}
               </Link>
@@ -542,10 +547,11 @@ export default async function CityPestPage({ params }: PageProps) {
         <div className="rounded-3xl bg-zinc-950 px-8 py-10 text-white">
           <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr] md:items-center">
             <div>
-              <h2 className="text-3xl font-black tracking-tight">
+              <h2 className="text-3xl font-black tracking-tight text-white">
                 Seeing {pluralName} in Your Home or Around Your Property?
               </h2>
-              <p className="mt-4 max-w-3xl text-base leading-8 text-zinc-300">
+
+              <p className="mt-4 max-w-3xl text-lg font-medium leading-8 text-white/90">
                 {beneficial
                   ? `If ${pluralName.toLowerCase()} are creating a concern near entry points, patios, decks, or other living areas in ${cityData.name}, the safest next step is correct identification and guidance on live relocation options.`
                   : `If you are dealing with ${pluralName.toLowerCase()} in ${cityData.name}, ${cityData.state}, All Star Pest Solutions can inspect the issue, identify the source, and recommend the right solution for your home or business.`}
@@ -555,7 +561,7 @@ export default async function CityPestPage({ params }: PageProps) {
             <div className="flex flex-col gap-3">
               <a
                 href="tel:+19137387827"
-                className="rounded-2xl bg-yellow-400 px-6 py-4 text-center text-sm font-black uppercase tracking-[0.16em] text-black transition hover:bg-yellow-300"
+                className="rounded-2xl bg-allstarBlueLight px-6 py-4 text-center text-sm font-black uppercase tracking-[0.16em] text-black transition hover:bg-allstarBlueLight"
               >
                 Call (913) 738-7827
               </a>

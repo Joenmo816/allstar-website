@@ -21,7 +21,7 @@ export default function PestLibraryPage() {
         primaryCtaHref="tel:+19137387827"
         secondaryCtaText="Free Inspection"
         secondaryCtaHref="/contact"
-        logoSrc="/logo.png"
+        logoSrc="/logo-header-v2.png"
         heroImageSrc="/images/pest-control-hero.jpg"
         heroImageAlt="Pest control inspection"
         mascotSrc="/mascot.png"
@@ -58,3 +58,4 @@ export default function PestLibraryPage() {
     </main>
   );
 }
+

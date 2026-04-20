@@ -1,21 +1,21 @@
 export default function EcoCommitment() {
   return (
-    <section className="w-full bg-green-800 py-16 px-6 md:px-12">
+    <section className="w-full bg-allstarBlue py-16 px-6 md:px-12">
       <div className="max-w-6xl mx-auto text-center text-white">
 
         <h2 className="text-4xl md:text-5xl font-black mb-6">
           We Protect More Than Just Your Home
         </h2>
 
-        <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto text-green-100">
+        <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto text-allstarBlueLight">
           Our treatments eliminate harmful pests while protecting beneficial insects,
           pets, and the local environment.
         </p>
 
         <div className="grid md:grid-cols-3 gap-8 text-left">
 
-          <div className="bg-white text-black p-8 rounded-xl shadow-lg">
-            <h3 className="text-xl font-black mb-3 text-green-800">
+          <div className="bg-white text-allstarInk p-8 rounded-xl shadow-brand">
+            <h3 className="text-xl font-black mb-3 text-allstarRed">
               Protect Pollinators
             </h3>
             <p>
@@ -23,8 +23,8 @@ export default function EcoCommitment() {
             </p>
           </div>
 
-          <div className="bg-white text-black p-8 rounded-xl shadow-lg">
-            <h3 className="text-xl font-black mb-3 text-green-800">
+          <div className="bg-white text-allstarInk p-8 rounded-xl shadow-brand">
+            <h3 className="text-xl font-black mb-3 text-allstarRed">
               Safe for Families & Pets
             </h3>
             <p>
@@ -32,8 +32,8 @@ export default function EcoCommitment() {
             </p>
           </div>
 
-          <div className="bg-white text-black p-8 rounded-xl shadow-lg">
-            <h3 className="text-xl font-black mb-3 text-green-800">
+          <div className="bg-white text-allstarInk p-8 rounded-xl shadow-brand">
+            <h3 className="text-xl font-black mb-3 text-allstarRed">
               Targeted Pest Control
             </h3>
             <p>
@@ -42,8 +42,8 @@ export default function EcoCommitment() {
           </div>
 
         </div>
-
       </div>
     </section>
   );
 }
+

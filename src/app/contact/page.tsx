@@ -40,7 +40,7 @@ export default function ContactPage() {
         primaryCtaHref="tel:+19137387827"
         secondaryCtaText="View Pest Library"
         secondaryCtaHref="/pest-library"
-        logoSrc="/logo.png"
+        logoSrc="/logo-header-v2.png"
         heroImageSrc="/images/contact-hero.jpg"
         heroImageAlt="All Star Pest Solutions contact page hero"
         mascotSrc="/mascot.png"
@@ -100,3 +100,4 @@ export default function ContactPage() {
     </main>
   );
 }
+

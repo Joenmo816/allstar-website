@@ -70,7 +70,7 @@ export default function WhyChooseUsPage() {
 
         <Link
           href="/contact"
-          className="bg-yellow-400 text-black px-6 py-3 font-bold rounded-lg hover:bg-yellow-300 transition"
+          className="bg-allstarBlueLight text-black px-6 py-3 font-bold rounded-lg hover:bg-allstarBlueLight transition"
         >
           Schedule Service
         </Link>
@@ -79,4 +79,5 @@ export default function WhyChooseUsPage() {
     </main>
   );
 }
+
 

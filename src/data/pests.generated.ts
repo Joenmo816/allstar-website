@@ -1493,3 +1493,4 @@ export const pests: Pest[] = [
 export function getPest(slug: string): Pest | undefined {
   return pests.find(p => p.slug === slug);
 }
+
