@@ -11,17 +11,6 @@ const nextConfig = {
       },
     ];
   },
-
-  async rewrites() {
-    return {
-      beforeFiles: [
-        {
-          source: '/:city/pest-library/:slug',
-          destination: '/city-pest/:city/:slug',
-        },
-      ],
-    };
-  },
 };
 
 module.exports = nextConfig;

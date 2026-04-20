@@ -1,14 +1,8 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import type { Metadata } from "next";
-
 import { cities } from "@/data/cities";
-
-type CityRecord = {
-  slug: string;
-  name: string;
-  state: string;
-};
+import { pests } from "@/data/pests.generated";
 
 type PageProps = {
   params: Promise<{
@@ -16,116 +10,68 @@ type PageProps = {
   }>;
 };
 
-const DEFAULT_SERVICES = [
-  {
-    label: "General Pest Control",
-    href: "/residential",
-  },
-  {
-    label: "Ant Control",
-    href: "/pest-library/ants",
-  },
-  {
-    label: "Spider Control",
-    href: "/pest-library/spiders",
-  },
-  {
-    label: "Roach Control",
-    href: "/pest-library/cockroaches",
-  },
-  {
-    label: "Rodent Control",
-    href: "/pest-library/rodents",
-  },
-  {
-    label: "Wasp & Hornet Treatment",
-    href: "/pest-library/wasps",
-  },
-  {
-    label: "Termite Inspections",
-    href: "/termite-services",
-  },
-  {
-    label: "Quarterly Pest Protection",
-    href: "/plans",
-  },
-];
-
-const CITY_CONTENT: Record<
-  string,
-  {
-    heroTitle?: string;
-    heroText?: string;
-    introTitle?: string;
-    introText?: string;
-    serviceTitle?: string;
-    serviceIntro?: string;
-    nearbyTitle?: string;
-    nearbyIntro?: string;
-  }
-> = {
-  "overland-park": {
-    heroTitle: "Professional Pest Control in Overland Park, KS",
-  },
-  "paola": {
-    heroTitle: "Pest Control in Paola, KS",
-  },
-  "leawood": {
-    heroTitle: "Pest Control in Leawood, KS",
-  },
+type PestRecord = {
+  slug: string;
+  name?: string;
+  description?: string;
+  shortDescription?: string;
+  summary?: string;
+  overview?: string;
 };
 
-function getCityData(citySlug: string) {
-  return (cities as CityRecord[]).find((entry) => entry.slug === citySlug);
+const siteUrl = "https://allstarpestkc.com";
+
+function titleCase(input: string) {
+  return input.replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
-function getNearbyCities(currentCitySlug: string, currentState: string) {
-  const sameState = (cities as CityRecord[]).filter(
-    (entry) => entry.slug !== currentCitySlug && entry.state === currentState
-  );
-
-  const fallback = (cities as CityRecord[]).filter(
-    (entry) => entry.slug !== currentCitySlug
-  );
-
-  return (sameState.length ? sameState : fallback).slice(0, 8);
+function getPestName(pest: PestRecord) {
+  return pest.name?.trim() || titleCase(pest.slug.replace(/-/g, " "));
 }
 
-function getCityContent(city: CityRecord) {
-  const override = CITY_CONTENT[city.slug] ?? {};
+function getPestSummary(pest: PestRecord, cityName: string, cityState: string) {
+  const pestName = getPestName(pest);
+  const raw =
+    pest.description ||
+    pest.shortDescription ||
+    pest.summary ||
+    pest.overview ||
+    `${pestName} can become a problem in and around homes and businesses.`;
 
-  return {
-    heroTitle: override.heroTitle ?? `Pest Control in ${city.name}, ${city.state}`,
-    heroText:
-      override.heroText ??
-      `All Star Pest Solutions provides safe, effective pest control in ${city.name}, ${city.state}. We handle ants, spiders, roaches, rodents, wasps, and more with real experience, modern treatment methods, and service built around protecting your home, family, pets, and property.`,
-    introTitle:
-      override.introTitle ?? `Experienced Pest Control in ${city.name}, ${city.state}`,
-    introText:
-      override.introText ??
-      `If you are dealing with recurring pest problems in ${city.name}, you need more than guesswork. With over 30 years of experience, All Star Pest Solutions delivers targeted treatments, honest recommendations, and dependable service for homes and businesses across the Kansas City metro.`,
-    serviceTitle: override.serviceTitle ?? `Our Pest Control Services in ${city.name}`,
-    serviceIntro:
-      override.serviceIntro ??
-      `We provide practical, professional pest solutions tailored to the pest pressure common in ${city.name}, ${city.state}.`,
-    nearbyTitle: override.nearbyTitle ?? "Nearby Service Areas",
-    nearbyIntro:
-      override.nearbyIntro ??
-      `We also provide pest control service in nearby communities throughout ${city.state}.`,
-  };
+  return `${raw} In ${cityName}, ${cityState}, issues are often tied to weather, moisture, landscaping, and structural entry points.`;
+}
+
+function getFeaturedPests() {
+  const preferred = [
+    "ants",
+    "spiders",
+    "rodents",
+    "cockroaches",
+    "termites",
+    "wasps",
+    "mosquitoes",
+    "fleas",
+  ];
+
+  const pestMap = new Map((pests as PestRecord[]).map((pest) => [pest.slug, pest]));
+  const ordered = preferred
+    .map((slug) => pestMap.get(slug))
+    .filter(Boolean) as PestRecord[];
+
+  const fallback = (pests as PestRecord[]).filter((pest) => !preferred.includes(pest.slug));
+
+  return [...ordered, ...fallback].slice(0, 8);
 }
 
 export async function generateStaticParams() {
-  return (cities as CityRecord[]).map((city) => ({
+  return cities.map((city) => ({
     city: city.slug,
   }));
 }
 
-export async function generateMetadata({
-  params,
-}: PageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { city } = await params;
-  const cityData = getCityData(city);
+  const cityData = cities.find((entry) => entry.slug === city);
 
   if (!cityData) {
     return {
@@ -133,208 +79,159 @@ export async function generateMetadata({
     };
   }
 
-  const content = getCityContent(cityData);
-  const canonical = `https://www.allstarpestkc.com/${cityData.slug}`;
+  const title = `Pest Control in ${cityData.name}, ${cityData.state} | All Star Pest Solutions`;
+  const description = `Need pest control in ${cityData.name}, ${cityData.state}? All Star Pest Solutions provides safe, effective service for ants, spiders, rodents, termites, and more. 30+ years experience. No contracts.`;
 
   return {
-    title: `${content.heroTitle} | All Star Pest Solutions`,
-    description: `Need pest control in ${cityData.name}, ${cityData.state}? All Star Pest Solutions provides safe, effective service backed by over 30 years of experience.`,
+    title,
+    description,
     alternates: {
-      canonical,
-    },
-    openGraph: {
-      title: `${content.heroTitle} | All Star Pest Solutions`,
-      description: `Need pest control in ${cityData.name}, ${cityData.state}? All Star Pest Solutions provides safe, effective service backed by over 30 years of experience.`,
-      url: canonical,
-      siteName: "All Star Pest Solutions",
-      type: "website",
+      canonical: `${siteUrl}/${cityData.slug}`,
     },
   };
 }
 
 export default async function CityPage({ params }: PageProps) {
   const { city } = await params;
-  const cityData = getCityData(city);
+  const cityData = cities.find((entry) => entry.slug === city);
 
   if (!cityData) {
     notFound();
   }
 
-  const content = getCityContent(cityData);
-  const nearbyCities = getNearbyCities(cityData.slug, cityData.state);
-
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            name: "Home",
-            item: "https://www.allstarpestkc.com",
-          },
-          {
-            "@type": "ListItem",
-            position: 2,
-            name: cityData.name,
-            item: `https://www.allstarpestkc.com/${cityData.slug}`,
-          },
-        ],
-      },
-      {
-        "@type": "Service",
-        name: `Pest Control in ${cityData.name}, ${cityData.state}`,
-        serviceType: "Pest Control",
-        provider: {
-          "@id": "https://www.allstarpestkc.com/#localbusiness",
-        },
-        areaServed: {
-          "@type": "City",
-          name: `${cityData.name}, ${cityData.state}`,
-        },
-        description: content.heroText,
-      },
-    ],
-  };
+  const featuredPests = getFeaturedPests();
 
   return (
     <main className="bg-white text-black">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-
-      <section className="bg-white">
-        <div className="mx-auto max-w-6xl px-6 py-14 md:py-16">
-          <div className="mx-auto max-w-4xl text-center">
-            <div className="inline-flex rounded-full border border-red-200 bg-red-50 px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-red-700 sm:text-sm">
-              {cityData.name}, {cityData.state}
+      <section className="bg-gradient-to-br from-black via-zinc-950 to-red-950 text-white">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
+          <div className="max-w-4xl">
+            <div className="mb-4 flex flex-wrap gap-3">
+              <span className="rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-white">
+                {cityData.name}, {cityData.state}
+              </span>
+              <span className="rounded-full border border-yellow-400/30 bg-yellow-400/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-yellow-200">
+                30+ Years Experience
+              </span>
+              <span className="rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-emerald-200">
+                No Contracts
+              </span>
             </div>
 
-            <h1 className="mt-6 text-4xl font-black tracking-tight text-black md:text-5xl lg:text-6xl">
-              {content.heroTitle}
+            <h1 className="text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">
+              Pest Control in {cityData.name}, {cityData.state}
             </h1>
 
-            <p className="mx-auto mt-5 max-w-4xl text-lg font-medium leading-8 text-black md:text-xl md:leading-9">
-              {content.heroText}
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-white/90 sm:text-xl">
+              All Star Pest Solutions provides safe, effective pest control in {cityData.name}, {cityData.state} for ants, spiders, rodents, termites, and more. Locally owned service backed by over 30 years of real experience.
             </p>
 
-            <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center rounded-xl bg-red-600 px-8 py-4 text-base font-black uppercase tracking-[0.08em] text-white transition hover:bg-red-700"
-              >
-                Free Inspection
-              </Link>
-
+            <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="tel:+19137387827"
-                className="inline-flex items-center justify-center rounded-xl border-2 border-black px-8 py-4 text-base font-black uppercase tracking-[0.08em] text-black transition hover:bg-black hover:text-white"
+                className="inline-flex items-center justify-center rounded-xl bg-red-600 px-6 py-3 text-sm font-black uppercase tracking-[0.16em] text-white transition hover:bg-red-700"
               >
                 Call (913) 738-7827
               </a>
+
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-xl border border-white/20 bg-white/10 px-6 py-3 text-sm font-black uppercase tracking-[0.16em] text-white transition hover:bg-white/15"
+              >
+                Get a Free Inspection
+              </Link>
             </div>
-
-            <p className="mt-6 text-lg font-bold text-black md:text-xl">
-              30+ Years of Experience — Not 30 Days of Guesswork
-            </p>
           </div>
         </div>
       </section>
 
-      <section className="border-t border-zinc-200 bg-white">
-        <div className="mx-auto max-w-6xl px-6 py-14">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl font-black tracking-tight text-black md:text-4xl">
-              {content.introTitle}
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+        <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm">
+            <h2 className="text-2xl font-black tracking-tight text-black">
+              Local Pest Control in {cityData.name}
             </h2>
 
-            <p className="mt-5 text-lg font-medium leading-8 text-black md:text-xl md:leading-9">
-              {content.introText}
+            <p className="mt-4 text-lg leading-8 text-gray-900">
+              Homes and businesses in {cityData.name}, {cityData.state} can deal with ants, spiders, rodents, termites, and other pest issues throughout the year depending on weather, moisture, food sources, landscaping, and structural conditions.
             </p>
-          </div>
-        </div>
-      </section>
 
-      <section className="border-t border-zinc-200 bg-zinc-50">
-        <div className="mx-auto max-w-6xl px-6 py-14">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl font-black tracking-tight text-black md:text-4xl">
-              {content.serviceTitle}
-            </h2>
+            <p className="mt-4 text-lg leading-8 text-gray-900">
+              Proper identification matters. The right solution depends on the pest, where activity is happening, what is attracting it, and how long the issue has been building.
+            </p>
 
-            <p className="mt-5 text-lg font-medium leading-8 text-black md:text-xl md:leading-9">
-              {content.serviceIntro}
+            <p className="mt-4 text-lg leading-8 text-gray-900">
+              We provide direct owner-level service, modern treatment methods, and real-world experience without locking customers into mandatory contracts.
             </p>
           </div>
 
-          <div className="mx-auto mt-10 grid max-w-5xl gap-4 md:grid-cols-2">
-            {DEFAULT_SERVICES.map((service) => (
-              <Link
-                key={service.label}
-                href={service.href}
-                className="rounded-2xl border border-zinc-200 bg-white px-6 py-5 text-xl font-bold text-black shadow-sm transition hover:-translate-y-0.5 hover:border-red-500 hover:text-red-700 hover:shadow-md"
+          <div className="rounded-3xl border border-red-200 bg-gradient-to-br from-red-50 via-white to-yellow-50 p-8 shadow-sm">
+            <h2 className="text-2xl font-black tracking-tight text-black">
+              Why All Star Pest Solutions?
+            </h2>
+
+            <ul className="mt-5 space-y-3 text-base font-semibold leading-7 text-gray-900">
+              <li>• Over 30 years of real pest control experience</li>
+              <li>• No mandatory contracts</li>
+              <li>• Locally owned and operated</li>
+              <li>• Kansas &amp; Missouri licensed</li>
+              <li>• Safe, modern treatment methods</li>
+              <li>• You talk directly to the owner/technician</li>
+            </ul>
+
+            <div className="mt-6 space-y-3">
+              <a
+                href="tel:+19137387827"
+                className="block rounded-2xl bg-zinc-950 px-5 py-4 text-center text-sm font-black uppercase tracking-[0.16em] text-white transition hover:bg-red-700"
               >
-                {service.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+                Call Now
+              </a>
 
-      <section className="border-t border-zinc-200 bg-white">
-        <div className="mx-auto max-w-6xl px-6 py-14">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl font-black tracking-tight text-black md:text-4xl">
-              {content.nearbyTitle}
-            </h2>
-
-            <p className="mt-5 text-lg font-medium leading-8 text-black md:text-xl md:leading-9">
-              {content.nearbyIntro}
-            </p>
-          </div>
-
-          <div className="mx-auto mt-10 flex max-w-5xl flex-wrap justify-center gap-3">
-            {nearbyCities.map((nearbyCity) => (
               <Link
-                key={nearbyCity.slug}
-                href={`/${nearbyCity.slug}`}
-                className="rounded-full border-2 border-zinc-300 bg-white px-5 py-3 text-base font-bold text-black transition hover:border-red-600 hover:text-red-700"
+                href="/contact"
+                className="block rounded-2xl border border-zinc-300 px-5 py-4 text-center text-sm font-black uppercase tracking-[0.16em] text-black transition hover:border-red-500 hover:text-red-700"
               >
-                {nearbyCity.name}, {nearbyCity.state}
+                Request Service
               </Link>
-            ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-black text-white">
-        <div className="mx-auto max-w-5xl px-6 py-14 text-center">
-          <h2 className="text-3xl font-black tracking-tight text-white md:text-4xl">
-            Need Pest Control in {cityData.name}?
+      <section className="mx-auto max-w-7xl px-6 pb-12 lg:px-8">
+        <div className="mb-6">
+          <h2 className="text-2xl font-black tracking-tight text-black">
+            Common Pests in {cityData.name}, {cityData.state}
           </h2>
-
-          <p className="mx-auto mt-5 max-w-4xl text-lg font-medium leading-8 text-white/90 md:text-xl md:leading-9">
-            Get experienced service, honest recommendations, and results you can trust.
+          <p className="mt-2 text-base font-medium text-gray-800">
+            Browse city-specific pest pages below.
           </p>
+        </div>
 
-          <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-            <a
-              href="tel:+19137387827"
-              className="inline-flex items-center justify-center rounded-xl bg-red-600 px-8 py-4 text-base font-black uppercase tracking-[0.08em] text-white transition hover:bg-red-700"
-            >
-              Call Now
-            </a>
+        <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+          {featuredPests.map((pest) => {
+            const pestName = getPestName(pest);
 
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-xl border-2 border-white px-8 py-4 text-base font-black uppercase tracking-[0.08em] text-white transition hover:bg-white hover:text-black"
-            >
-              Request Service
-            </Link>
-          </div>
+            return (
+              <Link
+                key={pest.slug}
+                href={`/${cityData.slug}/pest-library/${pest.slug}`}
+                className="group rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-red-300 hover:shadow-lg"
+              >
+                <h3 className="text-xl font-black tracking-tight text-black group-hover:text-red-700">
+                  {pestName}
+                </h3>
+
+                <p className="mt-3 text-sm leading-7 text-gray-800">
+                  {getPestSummary(pest, cityData.name, cityData.state)}
+                </p>
+
+                <div className="mt-4 text-sm font-black uppercase tracking-[0.16em] text-red-700">
+                  Learn More
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </section>
     </main>
