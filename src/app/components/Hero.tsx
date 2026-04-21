@@ -43,94 +43,101 @@ export default function Hero({
   const showMascotFinal = showMascot && hasImageSrc(mascotSrc);
 
   return (
-    <section className="relative flex min-h-[760px] w-full items-center overflow-hidden text-white">
+    <section className="relative flex min-h-[560px] w-full items-center overflow-hidden text-white">
       {showBg ? (
         <Image
           src={heroImageSrc}
           alt={heroImageAlt}
           fill
           priority
-          className="object-cover"
+          className="object-cover object-center"
         />
       ) : (
         <div className="absolute inset-0 bg-black" />
       )}
 
-      <div className="absolute inset-0 bg-black/72" />
+      <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(6,18,45,0.82)_0%,rgba(14,53,136,0.66)_50%,rgba(12,37,93,0.56)_100%)]" />
+      <div className="absolute inset-0 bg-black/18" />
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-16 text-center lg:px-8">
-        {showLogo && (
-          <div className="mb-6 flex justify-center">
-            <Image
-              src={logoSrc}
-              alt={logoAlt}
-              width={2200}
-              height={700}
-              className="w-full max-w-[950px] md:max-w-[1200px] lg:max-w-[1450px] xl:max-w-[1650px]"
-              priority
-              unoptimized
-            />
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-14 lg:px-8">
+        <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_260px] xl:grid-cols-[minmax(0,1fr)_300px]">
+          <div className="text-left">
+            {showLogo && (
+              <div className="mb-6">
+                <Image
+                  src={logoSrc}
+                  alt={logoAlt}
+                  width={1800}
+                  height={620}
+                  priority
+                  unoptimized
+                  className="h-auto w-full max-w-[300px] sm:max-w-[380px] md:max-w-[460px] lg:max-w-[560px] xl:max-w-[640px]"
+                />
+              </div>
+            )}
+
+            {eyebrow && (
+              <div className="mb-4 inline-flex rounded-md border border-white/20 bg-white/10 px-4 py-2 text-xs font-black uppercase tracking-[0.16em] text-white shadow sm:text-sm">
+                {eyebrow}
+              </div>
+            )}
+
+            <h1 className="max-w-4xl text-4xl font-black leading-[0.95] tracking-tight text-white sm:text-5xl lg:text-6xl">
+              {title}
+            </h1>
+
+            <p className="mt-4 text-xl font-black leading-tight text-white sm:text-2xl">
+              30+ Years of Experience — Not 30 Days of Guesswork
+            </p>
+
+            <p className="mt-2 text-lg font-black leading-tight text-white sm:text-xl">
+              Guaranteed Service. Guaranteed Results.
+            </p>
+
+            <p className="mt-5 max-w-3xl text-lg leading-8 text-white/95 sm:text-xl">
+              {description}
+            </p>
+
+            <p className="mt-6 text-2xl font-black leading-none text-white sm:text-3xl lg:text-4xl">
+              Call (913) 738-STAR
+            </p>
+
+            {(primaryCtaText || secondaryCtaText) && (
+              <div className="mt-7 flex flex-col gap-4 sm:flex-row">
+                {primaryCtaText && (
+                  <Link
+                    href={primaryCtaHref || "#"}
+                    className="inline-flex min-h-[56px] items-center justify-center rounded-xl bg-white px-7 py-4 text-base font-black text-allstarBlueDark shadow-xl transition hover:bg-slate-100 sm:text-lg"
+                  >
+                    {primaryCtaText}
+                  </Link>
+                )}
+
+                {secondaryCtaText && (
+                  <Link
+                    href={secondaryCtaHref || "#"}
+                    className="inline-flex min-h-[56px] items-center justify-center rounded-xl bg-red-600 px-7 py-4 text-base font-black text-white shadow-xl transition hover:bg-red-700 sm:text-lg"
+                  >
+                    {secondaryCtaText}
+                  </Link>
+                )}
+              </div>
+            )}
           </div>
-        )}
 
-        {eyebrow && (
-          <div className="mb-4 text-sm font-bold uppercase tracking-widest text-white/80 md:text-base">
-            {eyebrow}
-          </div>
-        )}
-
-        <h1 className="mx-auto max-w-4xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl xl:text-7xl">
-          {title}
-        </h1>
-
-        <p className="mx-auto mt-4 max-w-3xl text-lg sm:text-xl lg:text-2xl">
-          {description}
-        </p>
-
-        <p className="mt-5 text-xl font-bold sm:text-2xl">
-          30+ Years Experience • No Contracts
-        </p>
-
-        <p className="mt-2 text-lg font-bold sm:text-xl">
-          Guaranteed Service. Guaranteed Results.
-        </p>
-
-        <p className="mt-5 text-2xl font-black sm:text-3xl lg:text-4xl">
-          Call (913) 738-STAR
-        </p>
-
-        <div className="mt-7 flex flex-wrap justify-center gap-4">
-          {primaryCtaText && (
-            <Link
-              href={primaryCtaHref || "#"}
-              className="rounded-xl bg-red-600 px-7 py-3 text-base font-bold text-white transition hover:bg-red-700 sm:px-8 sm:py-4 sm:text-lg"
-            >
-              {primaryCtaText}
-            </Link>
-          )}
-
-          {secondaryCtaText && (
-            <Link
-              href={secondaryCtaHref || "#"}
-              className="rounded-xl border border-white px-7 py-3 text-base font-bold text-white transition hover:bg-white hover:text-black sm:px-8 sm:py-4 sm:text-lg"
-            >
-              {secondaryCtaText}
-            </Link>
+          {showMascotFinal && (
+            <div className="relative mx-auto hidden h-[280px] w-[210px] lg:block xl:h-[340px] xl:w-[260px]">
+              <Image
+                src={mascotSrc!}
+                alt={mascotAlt}
+                fill
+                className="object-contain object-right-bottom drop-shadow-[0_18px_36px_rgba(0,0,0,0.45)]"
+                unoptimized
+              />
+            </div>
           )}
         </div>
       </div>
-
-      {showMascotFinal && (
-        <div className="absolute bottom-0 right-6 hidden h-[320px] w-[240px] lg:block xl:h-[380px] xl:w-[290px]">
-          <Image
-            src={mascotSrc!}
-            alt={mascotAlt}
-            fill
-            className="object-contain"
-            unoptimized
-          />
-        </div>
-      )}
     </section>
   );
 }
