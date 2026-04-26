@@ -54,6 +54,40 @@ type PageProps = {
 
 const siteUrl = "https://allstarpestkc.com";
 
+
+function pluralizePestName(name: string) {
+  const special: Record<string, string> = {
+    "Brown Banded Cockroach": "Brown-Banded Cockroaches",
+    "American Cockroach": "American Cockroaches",
+    "German Cockroach": "German Cockroaches",
+    "Oriental Cockroach": "Oriental Cockroaches",
+    "Smoky Brown Cockroach": "Smokybrown Cockroaches",
+    "Subterranean Termite": "Subterranean Termites",
+    "Termite Swarmer": "Termite Swarmers",
+    "Bald Faced Hornet": "Bald-Faced Hornets",
+    "Yellowjacket": "Yellowjackets",
+    "Honey Bee": "Honey Bees",
+    "Bumble Bee": "Bumble Bees",
+    "Carpenter Bee": "Carpenter Bees",
+    "Mason Bee": "Mason Bees",
+    "Leaf Cutter Bee": "Leafcutter Bees",
+    "Sweat Bee": "Sweat Bees",
+    "Lady Bug": "Ladybugs",
+    "Black Widow": "Black Widows",
+    "Brown Widow": "Brown Widows",
+    "Daddy Longlegs": "Daddy Longlegs"
+  };
+
+  if (special[name]) return special[name];
+  if (name.endsWith("roach")) return `${name}es`;
+  if (name.endsWith("sh")) return `${name}es`;
+  if (name.endsWith("ch")) return `${name}es`;
+  if (name.endsWith("x")) return `${name}es`;
+  if (name.endsWith("s")) return name;
+  if (name.endsWith("y")) return `${name.slice(0, -1)}ies`;
+  return `${name}s`;
+}
+
 function titleCase(input: string) {
   return input.replace(/\b\w/g, (char) => char.toUpperCase());
 }
@@ -95,15 +129,64 @@ function singularizeWord(word: string) {
 }
 
 function pluralizeName(name: string) {
+  const special: Record<string, string> = {
+    "Brown Banded Cockroach": "Brown-Banded Cockroaches",
+    "American Cockroach": "American Cockroaches",
+    "German Cockroach": "German Cockroaches",
+    "Oriental Cockroach": "Oriental Cockroaches",
+    "Smoky Brown Cockroach": "Smokybrown Cockroaches",
+
+    "Subterranean Termite": "Subterranean Termites",
+    "Termite Swarmer": "Termite Swarmers",
+
+    "Bald Faced Hornet": "Bald-Faced Hornets",
+    "European Hornet": "European Hornets",
+    "Paper Wasp": "Paper Wasps",
+    "Red Wasp": "Red Wasps",
+    "Yellowjacket": "Yellowjackets",
+    "Mud Dauber": "Mud Daubers",
+    "Blue Mud Dauber": "Blue Mud Daubers",
+    "Cicada Killer": "Cicada Killers",
+
+    "Honey Bee": "Honey Bees",
+    "Bumble Bee": "Bumble Bees",
+    "Carpenter Bee": "Carpenter Bees",
+    "Mason Bee": "Mason Bees",
+    "Leaf Cutter Bee": "Leafcutter Bees",
+    "Sweat Bee": "Sweat Bees",
+
+    "Lady Bug": "Ladybugs",
+    "Black Widow": "Black Widows",
+    "Brown Widow": "Brown Widows",
+    "Brown Recluse Spider": "Brown Recluse Spiders",
+    "Daddy Longlegs": "Daddy Longlegs",
+
+    "House Mouse": "House Mice",
+    "Deer Mouse": "Deer Mice",
+    "Norway Rat": "Norway Rats",
+    "Roof Rat": "Roof Rats",
+  };
+
   const trimmed = name.trim();
-  const parts = trimmed.split(" ");
 
-  if (parts.length === 0) return trimmed;
+  if (special[trimmed]) return special[trimmed];
 
-  const last = parts[parts.length - 1];
-  parts[parts.length - 1] = titleCase(pluralizeWord(last));
+  if (trimmed.endsWith("Cockroach")) {
+    return trimmed.replace(/Cockroach$/, "Cockroaches");
+  }
 
-  return parts.join(" ");
+  if (trimmed.endsWith("Mouse")) {
+    return trimmed.replace(/Mouse$/, "Mice");
+  }
+
+  if (trimmed.endsWith("roach")) return `${trimmed}es`;
+  if (trimmed.endsWith("sh")) return `${trimmed}es`;
+  if (trimmed.endsWith("ch")) return `${trimmed}es`;
+  if (trimmed.endsWith("x")) return `${trimmed}es`;
+  if (trimmed.endsWith("s")) return trimmed;
+  if (trimmed.endsWith("y")) return `${trimmed.slice(0, -1)}ies`;
+
+  return `${trimmed}s`;
 }
 
 function slugToWords(slug: string) {

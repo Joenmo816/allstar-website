@@ -31,7 +31,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/acrobat-ant.jpg",
     "group": "Ant",
     "risk": "Low",
-    "description": "Acrobat Ants can trail into homes through cracks, foundations, windows, doors, utility lines, and moisture-prone areas while searching for food, water, or nesting sites.",
+    "description": "Acrobat Ant is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Acrobat Ant lives in colonies with workers, brood, and reproductives. Colony growth is influenced by food, moisture, and shelter availability.",
       "behavior": "Acrobat Ant commonly forages in trails and may invade structures while searching for food or moisture.",
@@ -50,7 +50,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/American-Cockroach.jpg",
     "group": "Roach",
     "risk": "Medium",
-    "description": "American cockroaches are indoor pests that can spread through kitchens, bathrooms, cabinets, wall voids, appliances, and other protected areas if the problem is not handled correctly.",
+    "description": "American Cockroach is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "American Cockroach reproduces through egg cases and immature nymph stages before becoming an adult. Roaches thrive where food, water, and shelter are available.",
       "behavior": "American Cockroach is usually active at night and hides in cracks, voids, appliances, drains, and secluded harborages during the day.",
@@ -69,7 +69,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/american-house-spider.jpg",
     "group": "Spider",
     "risk": "Low",
-    "description": "American House Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
+    "description": "American House Spider is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "American House Spider develops from egg sacs into juvenile spiders before reaching adulthood. Most species prefer quiet undisturbed areas.",
       "behavior": "American House Spider may hide in corners, storage areas, basements, garages, and other low-traffic areas.",
@@ -88,7 +88,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/argentine-ant.jpg",
     "group": "Ant",
     "risk": "Low",
-    "description": "Argentine Ants can trail into homes through cracks, foundations, windows, doors, utility lines, and moisture-prone areas while searching for food, water, or nesting sites.",
+    "description": "Argentine Ant is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Argentine Ant lives in colonies with workers, brood, and reproductives. Colony growth is influenced by food, moisture, and shelter availability.",
       "behavior": "Argentine Ant commonly forages in trails and may invade structures while searching for food or moisture.",
@@ -107,7 +107,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/asian-beetle.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Asian Beetles may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
+    "description": "Asian Beetle is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Asian Beetle develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Asian Beetle may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -126,7 +126,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/assassin-bug.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Assassin Bugs can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Assassin Bug is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Assassin Bug follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Assassin Bug may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -145,7 +145,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Bald-Faced-Hornet.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Bald-faced hornets can become a concern when nests are built near doors, decks, porches, playgrounds, rooflines, wall voids, or other high-traffic areas around the home.",
+    "description": "Bald Faced Hornet is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Bald Faced Hornet develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Bald Faced Hornet may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -164,7 +164,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/barn-spider.jpg",
     "group": "Spider",
     "risk": "Low",
-    "description": "Barn Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
+    "description": "Barn Spider is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Barn Spider develops from egg sacs into juvenile spiders before reaching adulthood. Most species prefer quiet undisturbed areas.",
       "behavior": "Barn Spider may hide in corners, storage areas, basements, garages, and other low-traffic areas.",
@@ -183,7 +183,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/bat-bug.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Bat Bugs can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Bat Bug is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Bat Bug follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Bat Bug may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -202,7 +202,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Bed-Bug.jpg",
     "group": "Other",
     "risk": "High",
-    "description": "Bed Bugs can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Bed Bug is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Bed Bug follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Bed Bug may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -221,7 +221,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/black-widow.jpg",
     "group": "Spider",
     "risk": "High",
-    "description": "Black widows are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
+    "description": "Black Widow is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Black Widow develops from egg sacs into juvenile spiders before reaching adulthood. Most species prefer quiet undisturbed areas.",
       "behavior": "Black Widow may hide in corners, storage areas, basements, garages, and other low-traffic areas.",
@@ -240,7 +240,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/blue-mud-dauber.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Blue Mud Daubers can become a concern when nests are built near doors, decks, porches, playgrounds, rooflines, wall voids, or other high-traffic areas around the home.",
+    "description": "Blue Mud Dauber is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Blue Mud Dauber develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Blue Mud Dauber may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -259,7 +259,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/bold-jumping-spider.jpg",
     "group": "Spider",
     "risk": "Low",
-    "description": "Bold Jumping Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
+    "description": "Bold Jumping Spider is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Bold Jumping Spider develops from egg sacs into juvenile spiders before reaching adulthood. Most species prefer quiet undisturbed areas.",
       "behavior": "Bold Jumping Spider may hide in corners, storage areas, basements, garages, and other low-traffic areas.",
@@ -278,7 +278,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Boxelder-Bug.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Boxelder Bugs can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Boxelder Bug is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Boxelder Bug follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Boxelder Bug may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -316,7 +316,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/brown-recluse.jpg",
     "group": "Spider",
     "risk": "High",
-    "description": "Brown Recluse Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
+    "description": "Brown Recluse Spider is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Brown Recluse Spider develops from egg sacs into juvenile spiders before reaching adulthood. Most species prefer quiet undisturbed areas.",
       "behavior": "Brown Recluse Spider may hide in corners, storage areas, basements, garages, and other low-traffic areas.",
@@ -335,7 +335,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/brown-widow.jpg",
     "group": "Spider",
     "risk": "Low",
-    "description": "Brown widows are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
+    "description": "Brown Widow is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Brown Widow develops from egg sacs into juvenile spiders before reaching adulthood. Most species prefer quiet undisturbed areas.",
       "behavior": "Brown Widow may hide in corners, storage areas, basements, garages, and other low-traffic areas.",
@@ -354,7 +354,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Bumble-Bee.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Bumble bees may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
+    "description": "Bumble Bee is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Bumble Bee develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Bumble Bee may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -373,7 +373,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/carpenter-ant.jpg",
     "group": "Ant",
     "risk": "Low",
-    "description": "Carpenter Ants can trail into homes through cracks, foundations, windows, doors, utility lines, and moisture-prone areas while searching for food, water, or nesting sites.",
+    "description": "Carpenter Ant is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Carpenter Ant lives in colonies with workers, brood, and reproductives. Colony growth is influenced by food, moisture, and shelter availability.",
       "behavior": "Carpenter Ant commonly forages in trails and may invade structures while searching for food or moisture.",
@@ -392,7 +392,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Carpenter-Bee.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Carpenter bees may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
+    "description": "Carpenter Bee is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Carpenter Bee develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Carpenter Bee may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -411,7 +411,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Carpet-Beetle.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Carpet Beetles may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
+    "description": "Carpet Beetle is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Carpet Beetle develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Carpet Beetle may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -430,7 +430,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/cave-cricket.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Cave Crickets can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Cave Cricket is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Cave Cricket follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Cave Cricket may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -449,7 +449,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/cellar-spider.jpg",
     "group": "Spider",
     "risk": "Low",
-    "description": "Cellar Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
+    "description": "Cellar Spider is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Cellar Spider develops from egg sacs into juvenile spiders before reaching adulthood. Most species prefer quiet undisturbed areas.",
       "behavior": "Cellar Spider may hide in corners, storage areas, basements, garages, and other low-traffic areas.",
@@ -468,7 +468,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Cicada-Killer.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Cicada Killers can become a concern when nests are built near doors, decks, porches, playgrounds, rooflines, wall voids, or other high-traffic areas around the home.",
+    "description": "Cicada Killer is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Cicada Killer follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Cicada Killer may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -487,7 +487,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Cicada.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Cicadas can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Cicada is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Cicada follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Cicada may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -506,7 +506,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/clothes-moth.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Clothes Moths can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Clothes Moth is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Clothes Moth follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Clothes Moth may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -525,7 +525,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Clover-Mite.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Clover Mites can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Clover Mite is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Clover Mite follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Clover Mite may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -544,7 +544,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/common-house-spider.jpg",
     "group": "Spider",
     "risk": "Low",
-    "description": "Common House Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
+    "description": "Common House Spider is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Common House Spider develops from egg sacs into juvenile spiders before reaching adulthood. Most species prefer quiet undisturbed areas.",
       "behavior": "Common House Spider may hide in corners, storage areas, basements, garages, and other low-traffic areas.",
@@ -563,7 +563,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/daddy-longlegs.jpg",
     "group": "Spider",
     "risk": "Low",
-    "description": "Daddy longlegs can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Daddy Longlegs is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Daddy Longlegs develops from egg sacs into juvenile spiders before reaching adulthood. Most species prefer quiet undisturbed areas.",
       "behavior": "Daddy Longlegs may hide in corners, storage areas, basements, garages, and other low-traffic areas.",
@@ -582,7 +582,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Deer-Mouse.jpg",
     "group": "Rodent",
     "risk": "High",
-    "description": "Deer Mouses can enter through small gaps around foundations, garage doors, utility penetrations, crawlspaces, and rooflines while searching for food, warmth, and shelter.",
+    "description": "Deer Mouse is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Deer Mouse reproduces quickly when food, water, and shelter are available. Rodents can establish persistent indoor populations if entry points remain open.",
       "behavior": "Deer Mouse often travels along edges and concealed routes and may nest in attics, basements, garages, crawl spaces, and wall voids.",
@@ -601,7 +601,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/digger-wasp.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Digger Wasps can become a concern when nests are built near doors, decks, porches, playgrounds, rooflines, wall voids, or other high-traffic areas around the home.",
+    "description": "Digger Wasp is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Digger Wasp develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Digger Wasp may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -620,7 +620,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Drugstore-Beetle.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Drugstore Beetles may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
+    "description": "Drugstore Beetle is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Drugstore Beetle develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Drugstore Beetle may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -639,7 +639,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Earwig.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Earwigs can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Earwig is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Earwig follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Earwig may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -658,7 +658,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/European-Hornet.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "European Hornets can become a concern when nests are built near doors, decks, porches, playgrounds, rooflines, wall voids, or other high-traffic areas around the home.",
+    "description": "European Hornet is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "European Hornet develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "European Hornet may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -677,7 +677,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Flea.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Fleas can create biting pest issues around people, pets, yards, shaded areas, tall grass, and places where moisture or wildlife activity is present.",
+    "description": "Flea is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Flea follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Flea may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -696,7 +696,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Flour-Beetle.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Flour Beetles may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
+    "description": "Flour Beetle is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Flour Beetle develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Flour Beetle may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -715,7 +715,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/funnel-spider.jpg",
     "group": "Spider",
     "risk": "Low",
-    "description": "Funnel Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
+    "description": "Funnel Spider is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Funnel Spider develops from egg sacs into juvenile spiders before reaching adulthood. Most species prefer quiet undisturbed areas.",
       "behavior": "Funnel Spider may hide in corners, storage areas, basements, garages, and other low-traffic areas.",
@@ -734,7 +734,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/garden-spider.jpg",
     "group": "Spider",
     "risk": "Low",
-    "description": "Garden Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
+    "description": "Garden Spider is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Garden Spider develops from egg sacs into juvenile spiders before reaching adulthood. Most species prefer quiet undisturbed areas.",
       "behavior": "Garden Spider may hide in corners, storage areas, basements, garages, and other low-traffic areas.",
@@ -753,7 +753,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/German-Cockroach.jpg",
     "group": "Roach",
     "risk": "High",
-    "description": "German cockroaches are indoor pests that can spread through kitchens, bathrooms, cabinets, wall voids, appliances, and other protected areas if the problem is not handled correctly.",
+    "description": "German Cockroach is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "German Cockroach reproduces through egg cases and immature nymph stages before becoming an adult. Roaches thrive where food, water, and shelter are available.",
       "behavior": "German Cockroach is usually active at night and hides in cracks, voids, appliances, drains, and secluded harborages during the day.",
@@ -772,7 +772,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Grain-Beetle.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Grain Beetles may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
+    "description": "Grain Beetle is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Grain Beetle develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Grain Beetle may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -791,7 +791,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/grass-spider.jpg",
     "group": "Spider",
     "risk": "Low",
-    "description": "Grass Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
+    "description": "Grass Spider is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Grass Spider develops from egg sacs into juvenile spiders before reaching adulthood. Most species prefer quiet undisturbed areas.",
       "behavior": "Grass Spider may hide in corners, storage areas, basements, garages, and other low-traffic areas.",
@@ -810,7 +810,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Honey-Bee.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Honey bees may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
+    "description": "Honey Bee is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Honey Bee develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Honey Bee may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -829,7 +829,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/House-Centipede.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "House Centipedes can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "House Centipede is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "House Centipede follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "House Centipede may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -848,7 +848,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/House-Mouse.jpg",
     "group": "Rodent",
     "risk": "High",
-    "description": "House Mouses can enter through small gaps around foundations, garage doors, utility penetrations, crawlspaces, and rooflines while searching for food, warmth, and shelter.",
+    "description": "House Mouse is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "House Mouse reproduces quickly when food, water, and shelter are available. Rodents can establish persistent indoor populations if entry points remain open.",
       "behavior": "House Mouse often travels along edges and concealed routes and may nest in attics, basements, garages, crawl spaces, and wall voids.",
@@ -867,7 +867,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Indian-Meal-Moth.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Indian Meal Moths can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Indian Meal Moth is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Indian Meal Moth follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Indian Meal Moth may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -886,7 +886,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Japanese-Beetle.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Japanese Beetles may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
+    "description": "Japanese Beetle is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Japanese Beetle develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Japanese Beetle may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -905,7 +905,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Lady-Bug.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Ladybugs can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Lady Bug is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Lady Bug follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Lady Bug may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -924,7 +924,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Leaf-Cutter-Bee.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Leafcutter bees may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
+    "description": "Leaf Cutter Bee is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Leaf Cutter Bee develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Leaf Cutter Bee may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -943,7 +943,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/longjawed-spider.jpg",
     "group": "Spider",
     "risk": "Low",
-    "description": "Longjawed Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
+    "description": "Longjawed Spider is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Longjawed Spider develops from egg sacs into juvenile spiders before reaching adulthood. Most species prefer quiet undisturbed areas.",
       "behavior": "Longjawed Spider may hide in corners, storage areas, basements, garages, and other low-traffic areas.",
@@ -962,7 +962,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Mason-Bee.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Mason bees may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
+    "description": "Mason Bee is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Mason Bee develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Mason Bee may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -981,7 +981,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Millipede.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Millipedes can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Millipede is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Millipede follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Millipede may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -1000,7 +1000,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Mosquito.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Mosquitos can create biting pest issues around people, pets, yards, shaded areas, tall grass, and places where moisture or wildlife activity is present.",
+    "description": "Mosquito is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Mosquito follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Mosquito may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -1019,7 +1019,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Mud-Dauber.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Mud Daubers can become a concern when nests are built near doors, decks, porches, playgrounds, rooflines, wall voids, or other high-traffic areas around the home.",
+    "description": "Mud Dauber is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Mud Dauber develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Mud Dauber may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -1038,7 +1038,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Norway-Rat.jpg",
     "group": "Rodent",
     "risk": "High",
-    "description": "Norway Rats can enter through small gaps around foundations, garage doors, utility penetrations, crawlspaces, and rooflines while searching for food, warmth, and shelter.",
+    "description": "Norway Rat is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Norway Rat reproduces quickly when food, water, and shelter are available. Rodents can establish persistent indoor populations if entry points remain open.",
       "behavior": "Norway Rat often travels along edges and concealed routes and may nest in attics, basements, garages, crawl spaces, and wall voids.",
@@ -1057,7 +1057,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/odorous-house-ant.jpg",
     "group": "Ant",
     "risk": "Low",
-    "description": "Odorous House Ants can trail into homes through cracks, foundations, windows, doors, utility lines, and moisture-prone areas while searching for food, water, or nesting sites.",
+    "description": "Odorous House Ant is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Odorous House Ant lives in colonies with workers, brood, and reproductives. Colony growth is influenced by food, moisture, and shelter availability.",
       "behavior": "Odorous House Ant commonly forages in trails and may invade structures while searching for food or moisture.",
@@ -1076,7 +1076,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Oriental-Cockroach.jpg",
     "group": "Roach",
     "risk": "Medium",
-    "description": "Oriental cockroaches are indoor pests that can spread through kitchens, bathrooms, cabinets, wall voids, appliances, and other protected areas if the problem is not handled correctly.",
+    "description": "Oriental Cockroach is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Oriental Cockroach reproduces through egg cases and immature nymph stages before becoming an adult. Roaches thrive where food, water, and shelter are available.",
       "behavior": "Oriental Cockroach is usually active at night and hides in cracks, voids, appliances, drains, and secluded harborages during the day.",
@@ -1095,7 +1095,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/paper-wasp.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Paper Wasps can become a concern when nests are built near doors, decks, porches, playgrounds, rooflines, wall voids, or other high-traffic areas around the home.",
+    "description": "Paper Wasp is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Paper Wasp develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Paper Wasp may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -1114,7 +1114,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/pavement-ant.jpg",
     "group": "Ant",
     "risk": "Low",
-    "description": "Pavement Ants can trail into homes through cracks, foundations, windows, doors, utility lines, and moisture-prone areas while searching for food, water, or nesting sites.",
+    "description": "Pavement Ant is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Pavement Ant lives in colonies with workers, brood, and reproductives. Colony growth is influenced by food, moisture, and shelter availability.",
       "behavior": "Pavement Ant commonly forages in trails and may invade structures while searching for food or moisture.",
@@ -1133,7 +1133,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Pill-Bug.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Pill Bugs can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Pill Bug is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Pill Bug follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Pill Bug may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -1152,7 +1152,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Praying-Mantis.jpg",
     "group": "Ant",
     "risk": "Low",
-    "description": "Praying Mantis can trail into homes through cracks, foundations, windows, doors, utility lines, and moisture-prone areas while searching for food, water, or nesting sites.",
+    "description": "Praying Mantis is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Praying Mantis lives in colonies with workers, brood, and reproductives. Colony growth is influenced by food, moisture, and shelter availability.",
       "behavior": "Praying Mantis commonly forages in trails and may invade structures while searching for food or moisture.",
@@ -1171,7 +1171,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Rat.jpg",
     "group": "Rodent",
     "risk": "High",
-    "description": "Rats can enter through small gaps around foundations, garage doors, utility penetrations, crawlspaces, and rooflines while searching for food, warmth, and shelter.",
+    "description": "Rat is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Rat reproduces quickly when food, water, and shelter are available. Rodents can establish persistent indoor populations if entry points remain open.",
       "behavior": "Rat often travels along edges and concealed routes and may nest in attics, basements, garages, crawl spaces, and wall voids.",
@@ -1190,7 +1190,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/red-wasp.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Red Wasps can become a concern when nests are built near doors, decks, porches, playgrounds, rooflines, wall voids, or other high-traffic areas around the home.",
+    "description": "Red Wasp is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Red Wasp develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Red Wasp may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -1209,7 +1209,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Roof-Rat.jpg",
     "group": "Rodent",
     "risk": "High",
-    "description": "Roof Rats can enter through small gaps around foundations, garage doors, utility penetrations, crawlspaces, and rooflines while searching for food, warmth, and shelter.",
+    "description": "Roof Rat is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Roof Rat reproduces quickly when food, water, and shelter are available. Rodents can establish persistent indoor populations if entry points remain open.",
       "behavior": "Roof Rat often travels along edges and concealed routes and may nest in attics, basements, garages, crawl spaces, and wall voids.",
@@ -1228,7 +1228,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/sawtooth-beetle.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Sawtooth Beetles may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
+    "description": "Sawtooth Beetle is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Sawtooth Beetle develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Sawtooth Beetle may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -1247,7 +1247,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Silverfish.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Silverfishes can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Silverfish is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Silverfish follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Silverfish may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -1266,7 +1266,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/smoky-brown-cockroach.jpg",
     "group": "Roach",
     "risk": "Medium",
-    "description": "Smokybrown cockroaches are indoor pests that can spread through kitchens, bathrooms, cabinets, wall voids, appliances, and other protected areas if the problem is not handled correctly.",
+    "description": "Smoky Brown Cockroach is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Smoky Brown Cockroach reproduces through egg cases and immature nymph stages before becoming an adult. Roaches thrive where food, water, and shelter are available.",
       "behavior": "Smoky Brown Cockroach is usually active at night and hides in cracks, voids, appliances, drains, and secluded harborages during the day.",
@@ -1285,7 +1285,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Springtail.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Springtails can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Springtail is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Springtail follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Springtail may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -1304,7 +1304,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Stink-Bug.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Stink Bugs can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Stink Bug is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Stink Bug follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Stink Bug may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -1323,7 +1323,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Subterranean-Termite.jpg",
     "group": "Termite",
     "risk": "High",
-    "description": "Subterranean termites are wood-destroying insects that can stay hidden for long periods, which makes proper identification and a thorough termite inspection important.",
+    "description": "Subterranean Termite is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Subterranean Termite lives in colonies with workers, soldiers, and reproductives. Colonies can remain hidden while feeding on cellulose materials.",
       "behavior": "Subterranean Termite typically remains concealed in soil, wood, or mud tubes while foraging for structural cellulose.",
@@ -1342,7 +1342,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Sweat-Bee.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Sweat bees may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
+    "description": "Sweat Bee is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Sweat Bee develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Sweat Bee may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",
@@ -1361,7 +1361,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Termite-Swarmer.jpg",
     "group": "Termite",
     "risk": "High",
-    "description": "Termite swarmers are wood-destroying insects that can stay hidden for long periods, which makes proper identification and a thorough termite inspection important.",
+    "description": "Termite Swarmer is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Termite Swarmer lives in colonies with workers, soldiers, and reproductives. Colonies can remain hidden while feeding on cellulose materials.",
       "behavior": "Termite Swarmer typically remains concealed in soil, wood, or mud tubes while foraging for structural cellulose.",
@@ -1380,7 +1380,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Tick.jpg",
     "group": "Other",
     "risk": "High",
-    "description": "Ticks can create biting pest issues around people, pets, yards, shaded areas, tall grass, and places where moisture or wildlife activity is present.",
+    "description": "Tick is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Tick follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Tick may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -1399,7 +1399,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/velvet-ant.jpg",
     "group": "Ant",
     "risk": "Low",
-    "description": "Velvet Ants can trail into homes through cracks, foundations, windows, doors, utility lines, and moisture-prone areas while searching for food, water, or nesting sites.",
+    "description": "Velvet Ant is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Velvet Ant lives in colonies with workers, brood, and reproductives. Colony growth is influenced by food, moisture, and shelter availability.",
       "behavior": "Velvet Ant commonly forages in trails and may invade structures while searching for food or moisture.",
@@ -1418,7 +1418,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/walking-stick.jpg",
     "group": "Other",
     "risk": "High",
-    "description": "Walking Sticks can create biting pest issues around people, pets, yards, shaded areas, tall grass, and places where moisture or wildlife activity is present.",
+    "description": "Walking Stick is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Walking Stick follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Walking Stick may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",
@@ -1437,7 +1437,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/wolf-spider.jpg",
     "group": "Spider",
     "risk": "Low",
-    "description": "Wolf Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
+    "description": "Wolf Spider is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Wolf Spider develops from egg sacs into juvenile spiders before reaching adulthood. Most species prefer quiet undisturbed areas.",
       "behavior": "Wolf Spider may hide in corners, storage areas, basements, garages, and other low-traffic areas.",
@@ -1456,7 +1456,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/yellow-sac-spider.jpg",
     "group": "Spider",
     "risk": "Low",
-    "description": "Yellow Sac Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
+    "description": "Yellow Sac Spider is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Yellow Sac Spider develops from egg sacs into juvenile spiders before reaching adulthood. Most species prefer quiet undisturbed areas.",
       "behavior": "Yellow Sac Spider may hide in corners, storage areas, basements, garages, and other low-traffic areas.",
@@ -1475,7 +1475,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/yellowjacket.jpg",
     "group": "Wasp/Hornet",
     "risk": "Medium",
-    "description": "Yellowjackets can become a concern when nests are built near doors, decks, porches, playgrounds, rooflines, wall voids, or other high-traffic areas around the home.",
+    "description": "Yellowjacket is a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
     "facts": {
       "biology": "Yellowjacket develops from egg to larva to pupa to adult. Colonies are usually seasonal, with worker populations increasing during warmer months.",
       "behavior": "Yellowjacket may build nests around eaves, voids, shrubs, trees, wall cavities, or ground locations depending on species.",

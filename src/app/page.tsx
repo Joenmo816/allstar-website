@@ -345,7 +345,30 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-    </main>
+    
+      {/* CHARTS SECTION */}
+      <section className="bg-allstarCloud py-16">
+        <div className="section-shell text-center">
+          <h2 className="text-4xl font-black text-allstarRed">
+            Free Pest Identification Charts
+          </h2>
+
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-allstarSlate">
+            Not sure what you’re dealing with? Download our free charts to identify ants, spiders, bees, and more.
+          </p>
+
+          <div className="mt-8 flex justify-center">
+            <a
+              href="/charts"
+              className="rounded-xl bg-allstarBlue px-8 py-4 text-lg font-black text-white transition hover:bg-allstarBlueDark"
+            >
+              View & Download Charts
+            </a>
+          </div>
+        </div>
+      </section>
+
+</main>
   );
 }
 

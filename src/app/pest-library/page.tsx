@@ -21,6 +21,9 @@ function pluralizePestName(name: string) {
 
     "German Cockroach": "German Cockroaches",
     "American Cockroach": "American Cockroaches",
+    "Brown Banded Cockroach": "Brown-Banded Cockroaches",
+    "Oriental Cockroach": "Oriental Cockroaches",
+    "Smoky Brown Cockroach": "Smokybrown Cockroaches",
 
     "Brown Recluse Spider": "Brown Recluse Spiders",
     "Black Widow Spider": "Black Widow Spiders",
