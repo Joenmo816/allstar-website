@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import EcoCommitment from "@/app/components/EcoCommitment";
+import BBBSeal from "@/app/components/BBBSeal";
 import QuickLeadForm from "@/app/components/QuickLeadForm";
 import { serviceCities, featuredCities } from "@/data/service-cities";
 
@@ -164,6 +165,7 @@ export default function HomePage() {
       </section>
 
       <EcoCommitment />
+      <BBBSeal />
 
       <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
@@ -346,3 +348,4 @@ export default function HomePage() {
     </main>
   );
 }
+

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BBBSeal from "./BBBSeal";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -109,7 +110,11 @@ export default function Footer() {
           </p>
         </div>
       </div>
+          <div className="mt-6">
+        <BBBSeal />
+      </div>
     </footer>
   );
 }
+
 
