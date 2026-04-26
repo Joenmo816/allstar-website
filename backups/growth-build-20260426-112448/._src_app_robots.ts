@@ -1,13 +1,12 @@
-import type { MetadataRoute } from "next";
+import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const siteUrl = "https://allstarpestkc.com";
-
   return {
     rules: {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: `${siteUrl}/sitemap.xml`,
+    sitemap: "https://www.allstarpestkc.com/sitemap.xml",
   };
 }
+

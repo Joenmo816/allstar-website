@@ -4,8 +4,6 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import SiteHeader from "./components/SiteHeader";
 import Footer from "./components/Footer";
-import DesktopCallBar from "./components/DesktopCallBar";
-import { smsHref } from "@/data/business-links";
 
 const siteUrl = "https://allstarpestkc.com";
 const googleAnalyticsId = "G-GR320GYWQM";
@@ -13,11 +11,11 @@ const googleAnalyticsId = "G-GR320GYWQM";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "All Star Pest Solutions | South Kansas City Pest Control",
+    default: "All Star Pest Solutions | South Kansas City Experts",
     template: "%s | All Star Pest Solutions",
   },
   description:
-    "Owner-operated pest solutions in the South Kansas City metro. Free inspections, no contracts, starting at $89, guaranteed re-service, and 30+ years of experience.",
+    "All Star Pest Solutions provides residential, commercial, and termite services throughout the South Kansas City Metro Area. Over 30 years of experience. Licensed in Kansas and Missouri.",
   alternates: {
     canonical: "/",
   },
@@ -26,14 +24,17 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon.png", type: "image/png" },
+    ],
     shortcut: ["/favicon.ico"],
     apple: [{ url: "/apple-icon.png", type: "image/png" }],
   },
   openGraph: {
     title: "All Star Pest Solutions",
     description:
-      "Free inspections, no contracts, guaranteed re-service, and owner-operated pest solutions across the South Kansas City metro.",
+      "Serving the South Kansas City Metro Area with residential, commercial, and termite services backed by over 30 years of experience.",
     url: siteUrl,
     siteName: "All Star Pest Solutions",
     images: [
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "All Star Pest Solutions",
     description:
-      "Owner-operated pest solutions serving Kansas and Missouri with free inspections, no contracts, and guaranteed results.",
+      "Serving the South Kansas City Metro Area with residential, commercial, and termite services backed by over 30 years of experience.",
     images: [`${siteUrl}/logo-header-v2.png`],
   },
 };
@@ -79,7 +80,7 @@ const sitewideStructuredData = {
       telephone: "+1-913-738-7827",
       priceRange: "$$",
       description:
-        "All Star Pest Solutions is an owner-operated pest solutions company serving Johnson County, Miami County, Cass County, and Jackson County with residential, commercial, termite, rodent, ant, spider, cockroach, mosquito, and real estate termite inspection services.",
+        "All Star Pest Solutions is a locally owned pest solutions company serving the South Kansas City Metro Area with residential, commercial, and termite services.",
       address: {
         "@type": "PostalAddress",
         streetAddress: "210 W. Cleveland St",
@@ -89,42 +90,10 @@ const sitewideStructuredData = {
         addressCountry: "US",
       },
       areaServed: [
-        { "@type": "City", name: "Belton, MO" },
-        { "@type": "City", name: "Bucyrus, KS" },
-        { "@type": "City", name: "Cleveland, MO" },
-        { "@type": "City", name: "Drexel, MO" },
-        { "@type": "City", name: "Freeman, MO" },
-        { "@type": "City", name: "Grandview, MO" },
-        { "@type": "City", name: "Harrisonville, MO" },
-        { "@type": "City", name: "Leawood, KS" },
-        { "@type": "City", name: "Loch Lloyd, MO" },
-        { "@type": "City", name: "Louisburg, KS" },
-        { "@type": "City", name: "Olathe, KS" },
-        { "@type": "City", name: "Overland Park, KS" },
-        { "@type": "City", name: "Paola, KS" },
-        { "@type": "City", name: "Peculiar, MO" },
-        { "@type": "City", name: "Raymore, MO" },
-        { "@type": "City", name: "South Kansas City, MO" },
-        { "@type": "City", name: "Spring Hill, KS" },
         { "@type": "AdministrativeArea", name: "Johnson County, KS" },
         { "@type": "AdministrativeArea", name: "Miami County, KS" },
         { "@type": "AdministrativeArea", name: "Cass County, MO" },
         { "@type": "AdministrativeArea", name: "Jackson County, MO" },
-      ],
-      openingHoursSpecification: [
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-          ],
-          opens: "08:00",
-          closes: "18:00",
-        },
       ],
       contactPoint: [
         {
@@ -151,33 +120,6 @@ const sitewideStructuredData = {
   ],
 };
 
-function StickyMobileCta() {
-  return (
-    <div className="fixed inset-x-0 bottom-0 z-[60] grid grid-cols-3 border-t border-white/20 bg-allstarInk text-center shadow-2xl md:hidden">
-      <a
-        href="tel:+19137387827"
-        className="px-2 py-3 text-sm font-black text-white"
-      >
-        Call Now
-      </a>
-
-      <a
-        href={smsHref}
-        className="border-x border-white/20 px-2 py-3 text-sm font-black text-white"
-      >
-        Text Photo
-      </a>
-
-      <a
-        href="/contact"
-        className="px-2 py-3 text-sm font-black text-white"
-      >
-        Free Quote
-      </a>
-    </div>
-  );
-}
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -190,7 +132,6 @@ export default function RootLayout({
           src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
           strategy="afterInteractive"
         />
-
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -200,8 +141,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-
-      <body className="pb-12 md:pb-0">
+      <body>
         <Script
           id="sitewide-identity-schema"
           type="application/ld+json"
@@ -209,14 +149,9 @@ export default function RootLayout({
             __html: JSON.stringify(sitewideStructuredData),
           }}
         />
-
-        <DesktopCallBar />
         <SiteHeader />
-
         {children}
-
         <Footer />
-        <StickyMobileCta />
         <Analytics />
       </body>
     </html>

@@ -2,14 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import QuickLeadForm from "@/app/components/QuickLeadForm";
-import TrustProof from "@/app/components/TrustProof";
-import GuaranteeBox from "@/app/components/GuaranteeBox";
-import OfferBlock from "@/app/components/OfferBlock";
-import ReviewProof from "@/app/components/ReviewProof";
-import ReviewSection from "@/app/components/ReviewSection";
 import { getCityBySlug, serviceCities } from "@/data/service-cities";
-import { getCityLandmarks } from "@/data/city-landmarks";
-import { smsHref } from "@/data/business-links";
 
 const siteUrl = "https://allstarpestkc.com";
 
@@ -37,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: `Pest Control in ${cityData.name}, ${cityData.state} | Free Inspection`,
-    description: `Owner-operated ${cityData.primaryKeyword}. Free inspection, no contracts, starting at $89, guaranteed re-service, and 30+ years of experience.`,
+    description: `Owner-operated pest control in ${cityData.name}, ${cityData.state}. Free inspection, no contracts, starting at $89, guaranteed re-service, and 30+ years of experience.`,
     alternates: {
       canonical: `/${cityData.slug}`,
     },
@@ -56,73 +49,39 @@ export default async function CityPage({ params }: PageProps) {
 
   if (!cityData) return notFound();
 
-  const { landmarks } = getCityLandmarks(cityData.slug);
   const cityLabel = `${cityData.name}, ${cityData.state}`;
 
   const citySchema = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Service",
-        name: `Pest Control in ${cityLabel}`,
-        provider: {
-          "@type": "LocalBusiness",
-          name: "All Star Pest Solutions",
-          telephone: "+1-913-738-7827",
-          url: siteUrl,
-        },
-        areaServed: {
-          "@type": "City",
-          name: cityLabel,
-        },
-        serviceType: [
-          "Residential pest control",
-          "Commercial pest control",
-          "Termite inspections",
-          "Ant control",
-          "Spider control",
-          "Rodent control",
-          "Cockroach control",
-          "Mosquito service",
-          "Wasps and stinging insect service"
-        ],
-        offers: {
-          "@type": "Offer",
-          priceCurrency: "USD",
-          price: "89",
-          description: "Pest solutions starting at $89. Free inspection available."
-        }
-      },
-      {
-        "@type": "FAQPage",
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: `Do you offer free inspections in ${cityData.name}?`,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: `Yes. All Star Pest Solutions offers free inspections and clear recommendations for pest issues in ${cityData.name}.`
-            }
-          },
-          {
-            "@type": "Question",
-            name: "Do I have to sign a contract?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "No. Recurring service is available, but mandatory contracts are not required."
-            }
-          },
-          {
-            "@type": "Question",
-            name: "What does service start at?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "General pest solutions start at $89. Final pricing depends on the pest issue, structure, and treatment needs."
-            }
-          }
-        ]
-      }
-    ]
+    "@type": "Service",
+    name: `Pest Control in ${cityLabel}`,
+    provider: {
+      "@type": "LocalBusiness",
+      name: "All Star Pest Solutions",
+      telephone: "+1-913-738-7827",
+      url: siteUrl,
+    },
+    areaServed: {
+      "@type": "City",
+      name: cityLabel,
+    },
+    serviceType: [
+      "Residential pest control",
+      "Commercial pest control",
+      "Termite inspections",
+      "Ant control",
+      "Spider control",
+      "Rodent control",
+      "Cockroach control",
+      "Mosquito service",
+      "Wasps and stinging insect service",
+    ],
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "USD",
+      price: "89",
+      description: "Pest solutions starting at $89. Free inspection available.",
+    },
   };
 
   return (
@@ -142,7 +101,7 @@ export default async function CityPage({ params }: PageProps) {
             </p>
 
             <h1 className="mt-6 text-5xl font-black leading-tight md:text-6xl">
-              Pest Control in {cityLabel} Without the Contract Runaround
+              Pest Control in {cityLabel}
             </h1>
 
             <p className="mt-6 max-w-3xl text-xl leading-relaxed text-white/95 md:text-2xl">
@@ -150,7 +109,7 @@ export default async function CityPage({ params }: PageProps) {
             </p>
 
             <p className="mt-5 text-2xl font-black text-red-200">
-              {cityData.localProof}
+              {cityData.angle.charAt(0).toUpperCase() + cityData.angle.slice(1)}.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -158,13 +117,9 @@ export default async function CityPage({ params }: PageProps) {
                 CALL (913) 738-STAR
               </a>
 
-              <a href={smsHref} className="rounded-xl bg-white px-8 py-4 text-center text-lg font-black text-allstarBlueDark transition hover:bg-slate-100">
-                TEXT A PEST PICTURE
-              </a>
-            </div>
-
-            <div className="mt-6 max-w-2xl">
-              <GuaranteeBox city={cityData.name} />
+              <Link href="/contact" className="rounded-xl bg-white px-8 py-4 text-center text-lg font-black text-black transition hover:bg-slate-100">
+                FREE INSPECTION
+              </Link>
             </div>
           </div>
 
@@ -172,40 +127,11 @@ export default async function CityPage({ params }: PageProps) {
         </div>
       </section>
 
-      <TrustProof />
-      <OfferBlock city={cityData.name} />
-
-      <section className="bg-white py-16">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-4xl font-black text-red-700 md:text-5xl">
-            Local Pest Service Near {cityData.name} Landmarks
-          </h2>
-
-          <p className="mx-auto mt-5 max-w-4xl text-center text-xl leading-relaxed text-allstarSlate">
-            We serve homes and businesses throughout {cityData.name} and nearby areas. Local relevance matters because pest pressure changes by neighborhood, moisture, landscaping, structure age, and entry points.
-          </p>
-
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-            {landmarks.map((landmark) => (
-              <div key={landmark} className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-center shadow-sm">
-                <p className="text-lg font-black text-allstarInk">{landmark}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <ReviewSection />
-
       <section className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-4xl font-black text-red-700 md:text-5xl">
             Why {cityData.name} Homeowners Choose All Star
           </h2>
-
-          <p className="mx-auto mt-5 max-w-4xl text-center text-xl leading-relaxed text-allstarSlate">
-            {cityData.pestPressure}
-          </p>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {[
@@ -214,7 +140,7 @@ export default async function CityPage({ params }: PageProps) {
               ["Guaranteed Re-Service", "If pests come back between scheduled visits, we come back and make it right."],
               ["Direct Owner Contact", "You talk to the person responsible for solving the problem."],
               ["Family-Conscious Treatments", "Modern treatment methods with respect for families, pets, pollinators, and wildlife."],
-              ["Clear Pricing Direction", `General pest solutions start at $89, with clear recommendations for ${cityData.name} homes.`],
+              ["Fast Local Help", `Clear next steps for ants, spiders, rodents, roaches, termites, and other pests in ${cityData.name}.`],
             ].map(([title, description]) => (
               <div key={title} className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm">
                 <h3 className="text-2xl font-black text-allstarRed">{title}</h3>
@@ -237,25 +163,11 @@ export default async function CityPage({ params }: PageProps) {
             </p>
 
             <p className="mt-5 text-xl font-black text-red-700">
-              If ants are showing up inside walls, the smart move is a termite inspection before repair bills grow.
+              If ants are showing up inside walls, the smart move is a termite inspection.
             </p>
-
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Link href="/termite-services" className="btn-primary">
-                Termite Services
-              </Link>
-              <Link href="/pricing" className="btn-secondary">
-                View Pricing
-              </Link>
-              <a href={smsHref} className="rounded-xl border-2 border-allstarRed bg-white px-6 py-3 text-center font-black text-allstarRed transition hover:bg-red-50">
-                Text a Pest Picture
-              </a>
-            </div>
           </div>
         </div>
       </section>
-
-      <ReviewProof city={cityData.name} />
 
       <section className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -323,7 +235,7 @@ export default async function CityPage({ params }: PageProps) {
           </h2>
 
           <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-white/95">
-            The longer pests go untreated, the worse it gets. Call now, or text a photo and ask what you are dealing with.
+            The longer pests go untreated, the worse it gets. Call now and talk directly to the owner.
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
@@ -331,9 +243,9 @@ export default async function CityPage({ params }: PageProps) {
               CALL NOW
             </a>
 
-            <a href={smsHref} className="rounded-xl bg-white px-10 py-5 text-xl font-black text-black transition hover:bg-slate-100">
-              TEXT PEST PHOTO
-            </a>
+            <Link href="/service-area" className="rounded-xl bg-white px-10 py-5 text-xl font-black text-black transition hover:bg-slate-100">
+              VIEW OTHER CITIES
+            </Link>
           </div>
         </div>
       </section>

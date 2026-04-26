@@ -13,7 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/service-area",
     "/about",
     "/contact",
-    "/review",
     "/pricing",
     "/guarantee",
   ];
@@ -33,4 +32,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 }
-

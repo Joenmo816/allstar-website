@@ -4,8 +4,6 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import SiteHeader from "./components/SiteHeader";
 import Footer from "./components/Footer";
-import DesktopCallBar from "./components/DesktopCallBar";
-import { smsHref } from "@/data/business-links";
 
 const siteUrl = "https://allstarpestkc.com";
 const googleAnalyticsId = "G-GR320GYWQM";
@@ -90,41 +88,15 @@ const sitewideStructuredData = {
       },
       areaServed: [
         { "@type": "City", name: "Belton, MO" },
-        { "@type": "City", name: "Bucyrus, KS" },
-        { "@type": "City", name: "Cleveland, MO" },
-        { "@type": "City", name: "Drexel, MO" },
-        { "@type": "City", name: "Freeman, MO" },
-        { "@type": "City", name: "Grandview, MO" },
-        { "@type": "City", name: "Harrisonville, MO" },
+        { "@type": "City", name: "Raymore, MO" },
+        { "@type": "City", name: "Louisburg, KS" },
+        { "@type": "City", name: "Overland Park, KS" },
         { "@type": "City", name: "Leawood, KS" },
         { "@type": "City", name: "Loch Lloyd, MO" },
-        { "@type": "City", name: "Louisburg, KS" },
-        { "@type": "City", name: "Olathe, KS" },
-        { "@type": "City", name: "Overland Park, KS" },
-        { "@type": "City", name: "Paola, KS" },
-        { "@type": "City", name: "Peculiar, MO" },
-        { "@type": "City", name: "Raymore, MO" },
-        { "@type": "City", name: "South Kansas City, MO" },
-        { "@type": "City", name: "Spring Hill, KS" },
         { "@type": "AdministrativeArea", name: "Johnson County, KS" },
         { "@type": "AdministrativeArea", name: "Miami County, KS" },
         { "@type": "AdministrativeArea", name: "Cass County, MO" },
-        { "@type": "AdministrativeArea", name: "Jackson County, MO" },
-      ],
-      openingHoursSpecification: [
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-          ],
-          opens: "08:00",
-          closes: "18:00",
-        },
+        { "@type": "AdministrativeArea", name: "Jackson County, MO" }
       ],
       contactPoint: [
         {
@@ -132,12 +104,12 @@ const sitewideStructuredData = {
           contactType: "customer service",
           telephone: "+1-913-738-7827",
           areaServed: ["KS", "MO"],
-          availableLanguage: ["English"],
-        },
+          availableLanguage: ["English"]
+        }
       ],
       parentOrganization: {
-        "@id": `${siteUrl}/#organization`,
-      },
+        "@id": `${siteUrl}/#organization`
+      }
     },
     {
       "@type": "WebSite",
@@ -145,33 +117,22 @@ const sitewideStructuredData = {
       url: siteUrl,
       name: "All Star Pest Solutions",
       publisher: {
-        "@id": `${siteUrl}/#organization`,
-      },
-    },
-  ],
+        "@id": `${siteUrl}/#organization`
+      }
+    }
+  ]
 };
 
 function StickyMobileCta() {
   return (
     <div className="fixed inset-x-0 bottom-0 z-[60] grid grid-cols-3 border-t border-white/20 bg-allstarInk text-center shadow-2xl md:hidden">
-      <a
-        href="tel:+19137387827"
-        className="px-2 py-3 text-sm font-black text-white"
-      >
+      <a href="tel:+19137387827" className="px-2 py-3 text-sm font-black text-white">
         Call Now
       </a>
-
-      <a
-        href={smsHref}
-        className="border-x border-white/20 px-2 py-3 text-sm font-black text-white"
-      >
+      <a href="sms:+19137387827" className="border-x border-white/20 px-2 py-3 text-sm font-black text-white">
         Text Photo
       </a>
-
-      <a
-        href="/contact"
-        className="px-2 py-3 text-sm font-black text-white"
-      >
+      <a href="/contact" className="px-2 py-3 text-sm font-black text-white">
         Free Quote
       </a>
     </div>
@@ -186,11 +147,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
-          strategy="afterInteractive"
-        />
-
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`} strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -200,7 +157,6 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-
       <body className="pb-12 md:pb-0">
         <Script
           id="sitewide-identity-schema"
@@ -209,12 +165,8 @@ export default function RootLayout({
             __html: JSON.stringify(sitewideStructuredData),
           }}
         />
-
-        <DesktopCallBar />
         <SiteHeader />
-
         {children}
-
         <Footer />
         <StickyMobileCta />
         <Analytics />
