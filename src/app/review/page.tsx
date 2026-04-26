@@ -2,10 +2,39 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { googleReviewUrl } from "@/data/business-links";
 
+const siteUrl = "https://allstarpestkc.com";
+
 export const metadata: Metadata = {
   title: "Leave a Review | All Star Pest Solutions",
   description:
     "Leave a review for All Star Pest Solutions. Your feedback helps local homeowners choose a pest company they can trust.",
+  alternates: {
+    canonical: "/review",
+  },
+  openGraph: {
+    title: "Review All Star Pest Solutions",
+    description:
+      "Your review helps local homeowners know who they can trust for pest, termite, rodent, ant, spider, and cockroach service.",
+    url: `${siteUrl}/review`,
+    siteName: "All Star Pest Solutions",
+    images: [
+      {
+        url: `${siteUrl}/social-review.png`,
+        width: 1200,
+        height: 630,
+        alt: "Review All Star Pest Solutions",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Review All Star Pest Solutions",
+    description:
+      "Your review helps local homeowners know who they can trust.",
+    images: [`${siteUrl}/social-review.png`],
+  },
 };
 
 export default function ReviewPage() {
@@ -22,7 +51,8 @@ export default function ReviewPage() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-white/95">
-            If All Star Pest Solutions helped solve your pest problem, a quick Google review helps other families know who they can trust.
+            If All Star Pest Solutions helped solve your pest problem, a quick
+            Google review helps other families know who they can trust.
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
@@ -49,7 +79,7 @@ export default function ReviewPage() {
         <div className="mx-auto max-w-5xl px-6">
           <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
             <h2 className="text-3xl font-black text-allstarRed">
-              What to mention in your review
+              What to Mention in Your Review
             </h2>
 
             <ul className="mt-6 space-y-3 text-lg font-semibold text-allstarSlate">
@@ -60,7 +90,8 @@ export default function ReviewPage() {
             </ul>
 
             <p className="mt-6 text-lg leading-relaxed text-allstarSlate">
-              Honest reviews matter. They help small local companies compete against big companies with massive advertising budgets.
+              Honest reviews matter. They help small local companies compete
+              against big companies with massive advertising budgets.
             </p>
           </div>
         </div>
