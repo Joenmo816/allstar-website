@@ -582,7 +582,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Deer-Mouse.jpg",
     "group": "Rodent",
     "risk": "High",
-    "description": "Deer Mouses can enter through small gaps around foundations, garage doors, utility penetrations, crawlspaces, and rooflines while searching for food, warmth, and shelter.",
+    "description": "Deer Mice can enter through small gaps around foundations, garage doors, utility penetrations, crawlspaces, and rooflines while searching for food, warmth, and shelter.",
     "facts": {
       "biology": "Deer Mouse reproduces quickly when food, water, and shelter are available. Rodents can establish persistent indoor populations if entry points remain open.",
       "behavior": "Deer Mouse often travels along edges and concealed routes and may nest in attics, basements, garages, crawl spaces, and wall voids.",
@@ -848,7 +848,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/House-Mouse.jpg",
     "group": "Rodent",
     "risk": "High",
-    "description": "House Mouses can enter through small gaps around foundations, garage doors, utility penetrations, crawlspaces, and rooflines while searching for food, warmth, and shelter.",
+    "description": "House Mice can enter through small gaps around foundations, garage doors, utility penetrations, crawlspaces, and rooflines while searching for food, warmth, and shelter.",
     "facts": {
       "biology": "House Mouse reproduces quickly when food, water, and shelter are available. Rodents can establish persistent indoor populations if entry points remain open.",
       "behavior": "House Mouse often travels along edges and concealed routes and may nest in attics, basements, garages, crawl spaces, and wall voids.",
@@ -1247,7 +1247,7 @@ export const pests: Pest[] = [
     "image": "/images/pests/Silverfish.jpg",
     "group": "Other",
     "risk": "Low",
-    "description": "Silverfishes can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
+    "description": "Silverfish can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
     "facts": {
       "biology": "Silverfish follows a life cycle and survival pattern that depends on access to food, moisture, shelter, and favorable environmental conditions.",
       "behavior": "Silverfish may become a nuisance indoors or around the structure depending on season, harborage, and available resources.",

@@ -23,30 +23,60 @@ function safeText(value?: string) {
 }
 
 function pluralizePestName(name: string) {
-  const overrides: Record<string, string> = {
-    "Carpenter Ant": "Carpenter Ants",
-    "Acrobat Ant": "Acrobat Ants",
-    "German Cockroach": "German Cockroaches",
-    "American Cockroach": "American Cockroaches",
+  const trimmed = name.trim();
+
+  const special: Record<string, string> = {
+    "Silverfish": "Silverfish",
+    "House Mouse": "House Mice",
+    "Deer Mouse": "Deer Mice",
+    "Mouse": "Mice",
+
     "Brown Banded Cockroach": "Brown-Banded Cockroaches",
+    "American Cockroach": "American Cockroaches",
+    "German Cockroach": "German Cockroaches",
     "Oriental Cockroach": "Oriental Cockroaches",
     "Smoky Brown Cockroach": "Smokybrown Cockroaches",
+
+    "Subterranean Termite": "Subterranean Termites",
+    "Termite Swarmer": "Termite Swarmers",
+
+    "Bald Faced Hornet": "Bald-Faced Hornets",
+    "European Hornet": "European Hornets",
+    "Paper Wasp": "Paper Wasps",
+    "Red Wasp": "Red Wasps",
+    "Yellowjacket": "Yellowjackets",
+    "Mud Dauber": "Mud Daubers",
+    "Blue Mud Dauber": "Blue Mud Daubers",
+    "Cicada Killer": "Cicada Killers",
+
+    "Honey Bee": "Honey Bees",
+    "Bumble Bee": "Bumble Bees",
+    "Carpenter Bee": "Carpenter Bees",
+    "Mason Bee": "Mason Bees",
+    "Leaf Cutter Bee": "Leafcutter Bees",
+    "Sweat Bee": "Sweat Bees",
+
+    "Lady Bug": "Ladybugs",
+    "Black Widow": "Black Widows",
+    "Brown Widow": "Brown Widows",
     "Brown Recluse Spider": "Brown Recluse Spiders",
-    "Black Widow Spider": "Black Widow Spiders",
-    "Bed Bug": "Bed Bugs",
-    Termite: "Termites",
-    Mouse: "Mice",
-    Rat: "Rats",
-    Mosquito: "Mosquitoes",
+    "Daddy Longlegs": "Daddy Longlegs"
   };
 
-  if (overrides[name]) return overrides[name];
+  if (special[trimmed]) return special[trimmed];
 
-  if (name.endsWith("y") && !/[aeiou]y$/i.test(name)) {
-    return `${name.slice(0, -1)}ies`;
-  }
+  if (trimmed.endsWith(" Mouse")) return trimmed.replace(/ Mouse$/, " Mice");
+  if (trimmed.endsWith(" mouse")) return trimmed.replace(/ mouse$/, " mice");
+  if (trimmed.endsWith("Cockroach")) return trimmed.replace(/Cockroach$/, "Cockroaches");
+  if (trimmed.endsWith("cockroach")) return trimmed.replace(/cockroach$/, "cockroaches");
 
-  return `${name}s`;
+  if (trimmed.endsWith("sh")) return `${trimmed}es`;
+  if (trimmed.endsWith("ch")) return `${trimmed}es`;
+  if (trimmed.endsWith("x")) return `${trimmed}es`;
+  if (trimmed.endsWith("s")) return trimmed;
+  if (trimmed.endsWith("y")) return `${trimmed.slice(0, -1)}ies`;
+
+  return `${trimmed}s`;
 }
 
 function getDisplayRisk(slug: string): RiskLevel {
