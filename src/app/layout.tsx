@@ -26,9 +26,14 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
-    shortcut: ["/favicon.ico"],
-    apple: [{ url: "/apple-icon.png", type: "image/png" }],
+    icon: [
+      { url: "/favicon-v2.ico" },
+      { url: "/icon-v2.png", type: "image/png", sizes: "32x32" },
+    ],
+    shortcut: ["/favicon-v2.ico"],
+    apple: [
+      { url: "/apple-icon-v2.png", type: "image/png", sizes: "180x180" },
+    ],
   },
   openGraph: {
     title: "All Star Pest Solutions",
@@ -38,10 +43,10 @@ export const metadata: Metadata = {
     siteName: "All Star Pest Solutions",
     images: [
       {
-        url: `${siteUrl}/logo-header-v2.png`,
+        url: `${siteUrl}/social-review.png`,
         width: 1200,
         height: 630,
-        alt: "All Star Pest Solutions logo",
+        alt: "All Star Pest Solutions",
       },
     ],
     locale: "en_US",
@@ -52,7 +57,7 @@ export const metadata: Metadata = {
     title: "All Star Pest Solutions",
     description:
       "Owner-operated pest solutions serving Kansas and Missouri with free inspections, no contracts, and guaranteed results.",
-    images: [`${siteUrl}/logo-header-v2.png`],
+    images: [`${siteUrl}/social-review.png`],
   },
 };
 
@@ -64,8 +69,8 @@ const sitewideStructuredData = {
       "@id": `${siteUrl}/#organization`,
       name: "All Star Pest Solutions",
       url: siteUrl,
-      logo: `${siteUrl}/logo-header-v2.png`,
-      image: `${siteUrl}/logo-header-v2.png`,
+      logo: `${siteUrl}/social-review.png`,
+      image: `${siteUrl}/social-review.png`,
       email: "info@allstarpestkc.com",
       telephone: "+1-913-738-7827",
     },
@@ -74,7 +79,7 @@ const sitewideStructuredData = {
       "@id": `${siteUrl}/#localbusiness`,
       name: "All Star Pest Solutions",
       url: siteUrl,
-      image: `${siteUrl}/logo-header-v2.png`,
+      image: `${siteUrl}/social-review.png`,
       email: "info@allstarpestkc.com",
       telephone: "+1-913-738-7827",
       priceRange: "$$",
@@ -154,24 +159,15 @@ const sitewideStructuredData = {
 function StickyMobileCta() {
   return (
     <div className="fixed inset-x-0 bottom-0 z-[60] grid grid-cols-3 border-t border-white/20 bg-allstarInk text-center shadow-2xl md:hidden">
-      <a
-        href="tel:+19137387827"
-        className="px-2 py-3 text-sm font-black text-white"
-      >
+      <a href="tel:+19137387827" className="px-2 py-3 text-sm font-black text-white">
         Call Now
       </a>
 
-      <a
-        href={smsHref}
-        className="border-x border-white/20 px-2 py-3 text-sm font-black text-white"
-      >
+      <a href={smsHref} className="border-x border-white/20 px-2 py-3 text-sm font-black text-white">
         Text Photo
       </a>
 
-      <a
-        href="/contact"
-        className="px-2 py-3 text-sm font-black text-white"
-      >
+      <a href="/contact" className="px-2 py-3 text-sm font-black text-white">
         Free Quote
       </a>
     </div>
