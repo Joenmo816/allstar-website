@@ -30,7 +30,7 @@ export default function SiteHeader() {
         >
           <div className="relative h-[72px] w-[72px] shrink-0 sm:h-[84px] sm:w-[84px] md:h-[96px] md:w-[96px]">
             <Image
-              src="/star.png"
+              src="/star.webp"
               alt="All Star Pest Solutions logo"
               fill
               priority

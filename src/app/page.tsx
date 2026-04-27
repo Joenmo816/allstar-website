@@ -81,7 +81,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden">
         <div className="relative min-h-[820px] w-full">
           <Image
-            src="/kc-background.jpg"
+            src="/kc-background.webp"
             alt="South Kansas City Metro skyline"
             fill
             priority
@@ -94,7 +94,7 @@ export default function HomePage() {
           <div className="relative mx-auto grid min-h-[820px] max-w-7xl items-center gap-10 px-6 pb-16 pt-16 lg:grid-cols-[minmax(0,1fr)_430px] lg:px-8">
             <div className="max-w-4xl text-white">
               <Image
-                src="/logo-header-v2.png"
+                src="/logo-header-v2.webp"
                 alt="All Star Pest Solutions logo"
                 width={1600}
                 height={500}
@@ -152,7 +152,7 @@ export default function HomePage() {
 
               <div className="relative hidden h-[300px] lg:block">
                 <Image
-                  src="/mascot.png"
+                  src="/mascot.webp"
                   alt="All Star mascot"
                   fill
                   className="object-contain object-bottom drop-shadow-[0_25px_60px_rgba(0,0,0,0.6)]"
