@@ -79,35 +79,25 @@ export default function HomePage() {
   return (
     <main className="bg-white text-allstarInk">
       <section className="relative overflow-hidden">
-        <div className="relative min-h-[680px] lg:min-h-[820px] w-full bg-[linear-gradient(135deg,#07183d_0%,#123f9d_55%,#b91c1c_100%)]">
-          <Image
-            src="/kc-background.webp"
-            alt="South Kansas City Metro skyline"
-            fill
-            priority
-            sizes="100vw"
-            quality={70}
-            className="hidden object-cover object-center lg:block"
-          />
-
-          <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(8,22,56,0.97)_0%,rgba(16,61,156,0.84)_48%,rgba(198,40,40,0.42)_100%)]" />
+        <div className="relative min-h-[640px] lg:min-h-[760px] w-full bg-[linear-gradient(135deg,#07183d_0%,#123f9d_55%,#b91c1c_100%)]">
+<div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(8,22,56,0.97)_0%,rgba(16,61,156,0.84)_48%,rgba(198,40,40,0.42)_100%)]" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent" />
 
-          <div className="relative mx-auto grid min-h-[680px] lg:min-h-[820px] max-w-7xl items-center gap-10 px-6 pb-16 pt-16 lg:grid-cols-[minmax(0,1fr)_430px] lg:px-8">
+          <div className="relative mx-auto grid min-h-[640px] lg:min-h-[760px] max-w-7xl items-center gap-10 px-6 pb-16 pt-16 lg:grid-cols-[minmax(0,1fr)_430px] lg:px-8">
             <div className="max-w-4xl text-white">
               <Image
                 src="/logo-header-v2.webp"
                 alt="All Star Pest Solutions logo"
                 width={600}
                 height={200}
-                className="mb-6 h-auto w-full max-w-[340px] sm:max-w-[460px] md:max-w-[600px]"
+                className="mb-6 h-auto w-full max-w-[280px] sm:max-w-[420px] md:max-w-[560px]"
               />
 
               <p className="mb-4 inline-flex rounded-full border border-white/25 bg-white/10 px-4 py-2 text-sm font-black uppercase tracking-[0.14em] text-white">
                 KS & MO Certified • Fully Insured • Owner-Operated
               </p>
 
-              <h1 className="text-4xl font-black leading-[1.04] sm:text-5xl lg:text-7xl">
+              <h1 className="text-3xl font-black leading-[1.05] sm:text-5xl lg:text-7xl">
                 Talk Directly to the Owner Before the Pest Problem Gets Worse
               </h1>
 
