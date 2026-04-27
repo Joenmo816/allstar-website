@@ -28,7 +28,7 @@ export const pests: Pest[] = [
   {
     "name": "Acrobat Ant",
     "slug": "acrobat-ant",
-    "image": "/images/pests/acrobat-ant.jpg",
+    "image": "/images/pests/acrobat-ant.webp",
     "group": "Ant",
     "risk": "Low",
     "description": "Acrobat Ants can trail into homes through cracks, foundations, windows, doors, utility lines, and moisture-prone areas while searching for food, water, or nesting sites.",
@@ -47,7 +47,7 @@ export const pests: Pest[] = [
   {
     "name": "American Cockroach",
     "slug": "american-cockroach",
-    "image": "/images/pests/American-Cockroach.jpg",
+    "image": "/images/pests/American-Cockroach.webp",
     "group": "Roach",
     "risk": "Medium",
     "description": "American cockroaches are indoor pests that can spread through kitchens, bathrooms, cabinets, wall voids, appliances, and other protected areas if the problem is not handled correctly.",
@@ -66,7 +66,7 @@ export const pests: Pest[] = [
   {
     "name": "American House Spider",
     "slug": "american-house-spider",
-    "image": "/images/pests/american-house-spider.jpg",
+    "image": "/images/pests/american-house-spider.webp",
     "group": "Spider",
     "risk": "Low",
     "description": "American House Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
@@ -85,7 +85,7 @@ export const pests: Pest[] = [
   {
     "name": "Argentine Ant",
     "slug": "argentine-ant",
-    "image": "/images/pests/argentine-ant.jpg",
+    "image": "/images/pests/argentine-ant.webp",
     "group": "Ant",
     "risk": "Low",
     "description": "Argentine Ants can trail into homes through cracks, foundations, windows, doors, utility lines, and moisture-prone areas while searching for food, water, or nesting sites.",
@@ -104,7 +104,7 @@ export const pests: Pest[] = [
   {
     "name": "Asian Beetle",
     "slug": "asian-beetle",
-    "image": "/images/pests/asian-beetle.jpg",
+    "image": "/images/pests/asian-beetle.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Asian Beetles may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
@@ -123,7 +123,7 @@ export const pests: Pest[] = [
   {
     "name": "Assassin Bug",
     "slug": "assassin-bug",
-    "image": "/images/pests/assassin-bug.jpg",
+    "image": "/images/pests/assassin-bug.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Assassin Bugs can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
@@ -142,7 +142,7 @@ export const pests: Pest[] = [
   {
     "name": "Bald Faced Hornet",
     "slug": "bald-faced-hornet",
-    "image": "/images/pests/Bald-Faced-Hornet.jpg",
+    "image": "/images/pests/Bald-Faced-Hornet.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Bald-faced hornets can become a concern when nests are built near doors, decks, porches, playgrounds, rooflines, wall voids, or other high-traffic areas around the home.",
@@ -161,7 +161,7 @@ export const pests: Pest[] = [
   {
     "name": "Barn Spider",
     "slug": "barn-spider",
-    "image": "/images/pests/barn-spider.jpg",
+    "image": "/images/pests/barn-spider.webp",
     "group": "Spider",
     "risk": "Low",
     "description": "Barn Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
@@ -180,7 +180,7 @@ export const pests: Pest[] = [
   {
     "name": "Bat Bug",
     "slug": "bat-bug",
-    "image": "/images/pests/bat-bug.jpg",
+    "image": "/images/pests/bat-bug.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Bat Bugs can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
@@ -199,7 +199,7 @@ export const pests: Pest[] = [
   {
     "name": "Bed Bug",
     "slug": "bed-bug",
-    "image": "/images/pests/Bed-Bug.jpg",
+    "image": "/images/pests/Bed-Bug.webp",
     "group": "Other",
     "risk": "High",
     "description": "Bed Bugs can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
@@ -218,7 +218,7 @@ export const pests: Pest[] = [
   {
     "name": "Black Widow",
     "slug": "black-widow",
-    "image": "/images/pests/black-widow.jpg",
+    "image": "/images/pests/black-widow.webp",
     "group": "Spider",
     "risk": "High",
     "description": "Black widows are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
@@ -256,7 +256,7 @@ export const pests: Pest[] = [
   {
     "name": "Bold Jumping Spider",
     "slug": "bold-jumping-spider",
-    "image": "/images/pests/bold-jumping-spider.jpg",
+    "image": "/images/pests/bold-jumping-spider.webp",
     "group": "Spider",
     "risk": "Low",
     "description": "Bold Jumping Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
@@ -275,7 +275,7 @@ export const pests: Pest[] = [
   {
     "name": "Boxelder Bug",
     "slug": "boxelder-bug",
-    "image": "/images/pests/Boxelder-Bug.jpg",
+    "image": "/images/pests/Boxelder-Bug.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Boxelder Bugs can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
@@ -294,7 +294,7 @@ export const pests: Pest[] = [
   {
     "name": "Brown Banded Cockroaches",
     "slug": "brown-banded-cockroaches",
-    "image": "/images/pests/brown-banded-cockroach.jpg",
+    "image": "/images/pests/brown-banded-cockroach.webp",
     "group": "Roach",
     "risk": "Medium",
     "description": "Brown Banded Cockroaches are a pest that may be encountered in and around homes or structures and should be identified correctly so the right control strategy can be used.",
@@ -313,7 +313,7 @@ export const pests: Pest[] = [
   {
     "name": "Brown Recluse Spider",
     "slug": "brown-recluse",
-    "image": "/images/pests/brown-recluse.jpg",
+    "image": "/images/pests/brown-recluse.webp",
     "group": "Spider",
     "risk": "High",
     "description": "Brown Recluse Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
@@ -332,7 +332,7 @@ export const pests: Pest[] = [
   {
     "name": "Brown Widow",
     "slug": "brown-widow",
-    "image": "/images/pests/brown-widow.jpg",
+    "image": "/images/pests/brown-widow.webp",
     "group": "Spider",
     "risk": "Low",
     "description": "Brown widows are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
@@ -351,7 +351,7 @@ export const pests: Pest[] = [
   {
     "name": "Bumble Bee",
     "slug": "bumble-bee",
-    "image": "/images/pests/Bumble-Bee.jpg",
+    "image": "/images/pests/Bumble-Bee.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Bumble bees may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
@@ -370,7 +370,7 @@ export const pests: Pest[] = [
   {
     "name": "Carpenter Ant",
     "slug": "carpenter-ant",
-    "image": "/images/pests/carpenter-ant.jpg",
+    "image": "/images/pests/carpenter-ant.webp",
     "group": "Ant",
     "risk": "Low",
     "description": "Carpenter Ants can trail into homes through cracks, foundations, windows, doors, utility lines, and moisture-prone areas while searching for food, water, or nesting sites.",
@@ -389,7 +389,7 @@ export const pests: Pest[] = [
   {
     "name": "Carpenter Bee",
     "slug": "carpenter-bee",
-    "image": "/images/pests/Carpenter-Bee.jpg",
+    "image": "/images/pests/Carpenter-Bee.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Carpenter bees may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
@@ -408,7 +408,7 @@ export const pests: Pest[] = [
   {
     "name": "Carpet Beetle",
     "slug": "carpet-beetle",
-    "image": "/images/pests/Carpet-Beetle.jpg",
+    "image": "/images/pests/Carpet-Beetle.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Carpet Beetles may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
@@ -427,7 +427,7 @@ export const pests: Pest[] = [
   {
     "name": "Cave Cricket",
     "slug": "cave-cricket",
-    "image": "/images/pests/cave-cricket.jpg",
+    "image": "/images/pests/cave-cricket.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Cave Crickets can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
@@ -446,7 +446,7 @@ export const pests: Pest[] = [
   {
     "name": "Cellar Spider",
     "slug": "cellar-spider",
-    "image": "/images/pests/cellar-spider.jpg",
+    "image": "/images/pests/cellar-spider.webp",
     "group": "Spider",
     "risk": "Low",
     "description": "Cellar Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
@@ -465,7 +465,7 @@ export const pests: Pest[] = [
   {
     "name": "Cicada Killer",
     "slug": "cicada-killer",
-    "image": "/images/pests/Cicada-Killer.jpg",
+    "image": "/images/pests/Cicada-Killer.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Cicada Killers can become a concern when nests are built near doors, decks, porches, playgrounds, rooflines, wall voids, or other high-traffic areas around the home.",
@@ -484,7 +484,7 @@ export const pests: Pest[] = [
   {
     "name": "Cicada",
     "slug": "cicada",
-    "image": "/images/pests/Cicada.jpg",
+    "image": "/images/pests/Cicada.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Cicadas can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
@@ -503,7 +503,7 @@ export const pests: Pest[] = [
   {
     "name": "Clothes Moth",
     "slug": "clothes-moth",
-    "image": "/images/pests/clothes-moth.jpg",
+    "image": "/images/pests/clothes-moth.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Clothes Moths can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
@@ -522,7 +522,7 @@ export const pests: Pest[] = [
   {
     "name": "Clover Mite",
     "slug": "clover-mite",
-    "image": "/images/pests/Clover-Mite.jpg",
+    "image": "/images/pests/Clover-Mite.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Clover Mites can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
@@ -541,7 +541,7 @@ export const pests: Pest[] = [
   {
     "name": "Common House Spider",
     "slug": "common-house-spider",
-    "image": "/images/pests/common-house-spider.jpg",
+    "image": "/images/pests/common-house-spider.webp",
     "group": "Spider",
     "risk": "Low",
     "description": "Common House Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
@@ -579,7 +579,7 @@ export const pests: Pest[] = [
   {
     "name": "Deer Mouse",
     "slug": "deer-mouse",
-    "image": "/images/pests/Deer-Mouse.jpg",
+    "image": "/images/pests/Deer-Mouse.webp",
     "group": "Rodent",
     "risk": "High",
     "description": "Deer Mice can enter through small gaps around foundations, garage doors, utility penetrations, crawlspaces, and rooflines while searching for food, warmth, and shelter.",
@@ -598,7 +598,7 @@ export const pests: Pest[] = [
   {
     "name": "Digger Wasp",
     "slug": "digger-wasp",
-    "image": "/images/pests/digger-wasp.jpg",
+    "image": "/images/pests/digger-wasp.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Digger Wasps can become a concern when nests are built near doors, decks, porches, playgrounds, rooflines, wall voids, or other high-traffic areas around the home.",
@@ -617,7 +617,7 @@ export const pests: Pest[] = [
   {
     "name": "Drugstore Beetle",
     "slug": "drugstore-beetle",
-    "image": "/images/pests/Drugstore-Beetle.jpg",
+    "image": "/images/pests/Drugstore-Beetle.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Drugstore Beetles may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
@@ -636,7 +636,7 @@ export const pests: Pest[] = [
   {
     "name": "Earwig",
     "slug": "earwig",
-    "image": "/images/pests/Earwig.jpg",
+    "image": "/images/pests/Earwig.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Earwigs can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
@@ -655,7 +655,7 @@ export const pests: Pest[] = [
   {
     "name": "European Hornet",
     "slug": "european-hornet",
-    "image": "/images/pests/European-Hornet.jpg",
+    "image": "/images/pests/European-Hornet.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "European Hornets can become a concern when nests are built near doors, decks, porches, playgrounds, rooflines, wall voids, or other high-traffic areas around the home.",
@@ -674,7 +674,7 @@ export const pests: Pest[] = [
   {
     "name": "Flea",
     "slug": "flea",
-    "image": "/images/pests/Flea.jpg",
+    "image": "/images/pests/Flea.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Fleas can create biting pest issues around people, pets, yards, shaded areas, tall grass, and places where moisture or wildlife activity is present.",
@@ -693,7 +693,7 @@ export const pests: Pest[] = [
   {
     "name": "Flour Beetle",
     "slug": "flour-beetle",
-    "image": "/images/pests/Flour-Beetle.jpg",
+    "image": "/images/pests/Flour-Beetle.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Flour Beetles may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
@@ -712,7 +712,7 @@ export const pests: Pest[] = [
   {
     "name": "Funnel Spider",
     "slug": "funnel-spider",
-    "image": "/images/pests/funnel-spider.jpg",
+    "image": "/images/pests/funnel-spider.webp",
     "group": "Spider",
     "risk": "Low",
     "description": "Funnel Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
@@ -731,7 +731,7 @@ export const pests: Pest[] = [
   {
     "name": "Garden Spider",
     "slug": "garden-spider",
-    "image": "/images/pests/garden-spider.jpg",
+    "image": "/images/pests/garden-spider.webp",
     "group": "Spider",
     "risk": "Low",
     "description": "Garden Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
@@ -750,7 +750,7 @@ export const pests: Pest[] = [
   {
     "name": "German Cockroach",
     "slug": "german-cockroach",
-    "image": "/images/pests/German-Cockroach.jpg",
+    "image": "/images/pests/German-Cockroach.webp",
     "group": "Roach",
     "risk": "High",
     "description": "German cockroaches are indoor pests that can spread through kitchens, bathrooms, cabinets, wall voids, appliances, and other protected areas if the problem is not handled correctly.",
@@ -769,7 +769,7 @@ export const pests: Pest[] = [
   {
     "name": "Grain Beetle",
     "slug": "grain-beetle",
-    "image": "/images/pests/Grain-Beetle.jpg",
+    "image": "/images/pests/Grain-Beetle.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Grain Beetles may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
@@ -788,7 +788,7 @@ export const pests: Pest[] = [
   {
     "name": "Grass Spider",
     "slug": "grass-spider",
-    "image": "/images/pests/grass-spider.jpg",
+    "image": "/images/pests/grass-spider.webp",
     "group": "Spider",
     "risk": "Low",
     "description": "Grass Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
@@ -807,7 +807,7 @@ export const pests: Pest[] = [
   {
     "name": "Honey Bee",
     "slug": "honey-bee",
-    "image": "/images/pests/Honey-Bee.jpg",
+    "image": "/images/pests/Honey-Bee.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Honey bees may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
@@ -826,7 +826,7 @@ export const pests: Pest[] = [
   {
     "name": "House Centipede",
     "slug": "house-centipede",
-    "image": "/images/pests/House-Centipede.jpg",
+    "image": "/images/pests/House-Centipede.webp",
     "group": "Other",
     "risk": "Low",
     "description": "House Centipedes can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
@@ -845,7 +845,7 @@ export const pests: Pest[] = [
   {
     "name": "House Mouse",
     "slug": "house-mouse",
-    "image": "/images/pests/House-Mouse.jpg",
+    "image": "/images/pests/House-Mouse.webp",
     "group": "Rodent",
     "risk": "High",
     "description": "House Mice can enter through small gaps around foundations, garage doors, utility penetrations, crawlspaces, and rooflines while searching for food, warmth, and shelter.",
@@ -864,7 +864,7 @@ export const pests: Pest[] = [
   {
     "name": "Indian Meal Moth",
     "slug": "indian-meal-moth",
-    "image": "/images/pests/Indian-Meal-Moth.jpg",
+    "image": "/images/pests/Indian-Meal-Moth.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Indian Meal Moths can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
@@ -883,7 +883,7 @@ export const pests: Pest[] = [
   {
     "name": "Japanese Beetle",
     "slug": "japanese-beetle",
-    "image": "/images/pests/Japanese-Beetle.jpg",
+    "image": "/images/pests/Japanese-Beetle.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Japanese Beetles may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
@@ -902,7 +902,7 @@ export const pests: Pest[] = [
   {
     "name": "Lady Bug",
     "slug": "lady-bug",
-    "image": "/images/pests/Lady-Bug.jpg",
+    "image": "/images/pests/Lady-Bug.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Ladybugs can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
@@ -921,7 +921,7 @@ export const pests: Pest[] = [
   {
     "name": "Leaf Cutter Bee",
     "slug": "leaf-cutter-bee",
-    "image": "/images/pests/Leaf-Cutter-Bee.jpg",
+    "image": "/images/pests/Leaf-Cutter-Bee.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Leafcutter bees may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
@@ -940,7 +940,7 @@ export const pests: Pest[] = [
   {
     "name": "Longjawed Spider",
     "slug": "longjawed-spider",
-    "image": "/images/pests/longjawed-spider.jpg",
+    "image": "/images/pests/longjawed-spider.webp",
     "group": "Spider",
     "risk": "Low",
     "description": "Longjawed Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
@@ -959,7 +959,7 @@ export const pests: Pest[] = [
   {
     "name": "Mason Bee",
     "slug": "mason-bee",
-    "image": "/images/pests/Mason-Bee.jpg",
+    "image": "/images/pests/Mason-Bee.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Mason bees may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
@@ -978,7 +978,7 @@ export const pests: Pest[] = [
   {
     "name": "Millipede",
     "slug": "millipede",
-    "image": "/images/pests/Millipede.jpg",
+    "image": "/images/pests/Millipede.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Millipedes can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
@@ -997,7 +997,7 @@ export const pests: Pest[] = [
   {
     "name": "Mosquito",
     "slug": "mosquito",
-    "image": "/images/pests/Mosquito.jpg",
+    "image": "/images/pests/Mosquito.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Mosquitos can create biting pest issues around people, pets, yards, shaded areas, tall grass, and places where moisture or wildlife activity is present.",
@@ -1016,7 +1016,7 @@ export const pests: Pest[] = [
   {
     "name": "Mud Dauber",
     "slug": "mud-dauber",
-    "image": "/images/pests/Mud-Dauber.jpg",
+    "image": "/images/pests/Mud-Dauber.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Mud Daubers can become a concern when nests are built near doors, decks, porches, playgrounds, rooflines, wall voids, or other high-traffic areas around the home.",
@@ -1054,7 +1054,7 @@ export const pests: Pest[] = [
   {
     "name": "Odorous House Ant",
     "slug": "odorous-house-ant",
-    "image": "/images/pests/odorous-house-ant.jpg",
+    "image": "/images/pests/odorous-house-ant.webp",
     "group": "Ant",
     "risk": "Low",
     "description": "Odorous House Ants can trail into homes through cracks, foundations, windows, doors, utility lines, and moisture-prone areas while searching for food, water, or nesting sites.",
@@ -1073,7 +1073,7 @@ export const pests: Pest[] = [
   {
     "name": "Oriental Cockroach",
     "slug": "oriental-cockroach",
-    "image": "/images/pests/Oriental-Cockroach.jpg",
+    "image": "/images/pests/Oriental-Cockroach.webp",
     "group": "Roach",
     "risk": "Medium",
     "description": "Oriental cockroaches are indoor pests that can spread through kitchens, bathrooms, cabinets, wall voids, appliances, and other protected areas if the problem is not handled correctly.",
@@ -1092,7 +1092,7 @@ export const pests: Pest[] = [
   {
     "name": "Paper Wasp",
     "slug": "paper-wasp",
-    "image": "/images/pests/paper-wasp.jpg",
+    "image": "/images/pests/paper-wasp.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Paper Wasps can become a concern when nests are built near doors, decks, porches, playgrounds, rooflines, wall voids, or other high-traffic areas around the home.",
@@ -1111,7 +1111,7 @@ export const pests: Pest[] = [
   {
     "name": "Pavement Ant",
     "slug": "pavement-ant",
-    "image": "/images/pests/pavement-ant.jpg",
+    "image": "/images/pests/pavement-ant.webp",
     "group": "Ant",
     "risk": "Low",
     "description": "Pavement Ants can trail into homes through cracks, foundations, windows, doors, utility lines, and moisture-prone areas while searching for food, water, or nesting sites.",
@@ -1130,7 +1130,7 @@ export const pests: Pest[] = [
   {
     "name": "Pill Bug",
     "slug": "pill-bug",
-    "image": "/images/pests/Pill-Bug.jpg",
+    "image": "/images/pests/Pill-Bug.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Pill Bugs can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
@@ -1149,7 +1149,7 @@ export const pests: Pest[] = [
   {
     "name": "Praying Mantis",
     "slug": "praying-mantis",
-    "image": "/images/pests/Praying-Mantis.jpg",
+    "image": "/images/pests/Praying-Mantis.webp",
     "group": "Ant",
     "risk": "Low",
     "description": "Praying Mantis can trail into homes through cracks, foundations, windows, doors, utility lines, and moisture-prone areas while searching for food, water, or nesting sites.",
@@ -1168,7 +1168,7 @@ export const pests: Pest[] = [
   {
     "name": "Rat",
     "slug": "rat",
-    "image": "/images/pests/Rat.jpg",
+    "image": "/images/pests/Rat.webp",
     "group": "Rodent",
     "risk": "High",
     "description": "Rats can enter through small gaps around foundations, garage doors, utility penetrations, crawlspaces, and rooflines while searching for food, warmth, and shelter.",
@@ -1187,7 +1187,7 @@ export const pests: Pest[] = [
   {
     "name": "Red Wasp",
     "slug": "red-wasp",
-    "image": "/images/pests/red-wasp.jpg",
+    "image": "/images/pests/red-wasp.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Red Wasps can become a concern when nests are built near doors, decks, porches, playgrounds, rooflines, wall voids, or other high-traffic areas around the home.",
@@ -1206,7 +1206,7 @@ export const pests: Pest[] = [
   {
     "name": "Roof Rat",
     "slug": "roof-rat",
-    "image": "/images/pests/Roof-Rat.jpg",
+    "image": "/images/pests/Roof-Rat.webp",
     "group": "Rodent",
     "risk": "High",
     "description": "Roof Rats can enter through small gaps around foundations, garage doors, utility penetrations, crawlspaces, and rooflines while searching for food, warmth, and shelter.",
@@ -1225,7 +1225,7 @@ export const pests: Pest[] = [
   {
     "name": "Sawtooth Beetle",
     "slug": "sawtooth-beetle",
-    "image": "/images/pests/sawtooth-beetle.jpg",
+    "image": "/images/pests/sawtooth-beetle.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Sawtooth Beetles may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
@@ -1244,7 +1244,7 @@ export const pests: Pest[] = [
   {
     "name": "Silverfish",
     "slug": "silverfish",
-    "image": "/images/pests/Silverfish.jpg",
+    "image": "/images/pests/Silverfish.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Silverfish can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
@@ -1263,7 +1263,7 @@ export const pests: Pest[] = [
   {
     "name": "Smoky Brown Cockroach",
     "slug": "smoky-brown-cockroach",
-    "image": "/images/pests/smoky-brown-cockroach.jpg",
+    "image": "/images/pests/smoky-brown-cockroach.webp",
     "group": "Roach",
     "risk": "Medium",
     "description": "Smokybrown cockroaches are indoor pests that can spread through kitchens, bathrooms, cabinets, wall voids, appliances, and other protected areas if the problem is not handled correctly.",
@@ -1282,7 +1282,7 @@ export const pests: Pest[] = [
   {
     "name": "Springtail",
     "slug": "springtail",
-    "image": "/images/pests/Springtail.jpg",
+    "image": "/images/pests/Springtail.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Springtails can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
@@ -1301,7 +1301,7 @@ export const pests: Pest[] = [
   {
     "name": "Stink Bug",
     "slug": "stink-bug",
-    "image": "/images/pests/Stink-Bug.jpg",
+    "image": "/images/pests/Stink-Bug.webp",
     "group": "Other",
     "risk": "Low",
     "description": "Stink Bugs can become a nuisance around homes, yards, garages, crawlspaces, basements, and other areas when conditions allow them to move in or build up.",
@@ -1320,7 +1320,7 @@ export const pests: Pest[] = [
   {
     "name": "Subterranean Termite",
     "slug": "subterranean-termite",
-    "image": "/images/pests/Subterranean-Termite.jpg",
+    "image": "/images/pests/Subterranean-Termite.webp",
     "group": "Termite",
     "risk": "High",
     "description": "Subterranean termites are wood-destroying insects that can stay hidden for long periods, which makes proper identification and a thorough termite inspection important.",
@@ -1339,7 +1339,7 @@ export const pests: Pest[] = [
   {
     "name": "Sweat Bee",
     "slug": "sweat-bee",
-    "image": "/images/pests/Sweat-Bee.jpg",
+    "image": "/images/pests/Sweat-Bee.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Sweat bees may be found around homes, decks, sheds, gardens, trees, rooflines, or wall voids. Some bees are beneficial pollinators, so proper identification matters before any treatment decision is made.",
@@ -1358,7 +1358,7 @@ export const pests: Pest[] = [
   {
     "name": "Termite Swarmer",
     "slug": "termite-swarmer",
-    "image": "/images/pests/Termite-Swarmer.jpg",
+    "image": "/images/pests/Termite-Swarmer.webp",
     "group": "Termite",
     "risk": "High",
     "description": "Termite swarmers are wood-destroying insects that can stay hidden for long periods, which makes proper identification and a thorough termite inspection important.",
@@ -1377,7 +1377,7 @@ export const pests: Pest[] = [
   {
     "name": "Tick",
     "slug": "tick",
-    "image": "/images/pests/Tick.jpg",
+    "image": "/images/pests/Tick.webp",
     "group": "Other",
     "risk": "High",
     "description": "Ticks can create biting pest issues around people, pets, yards, shaded areas, tall grass, and places where moisture or wildlife activity is present.",
@@ -1396,7 +1396,7 @@ export const pests: Pest[] = [
   {
     "name": "Velvet Ant",
     "slug": "velvet-ant",
-    "image": "/images/pests/velvet-ant.jpg",
+    "image": "/images/pests/velvet-ant.webp",
     "group": "Ant",
     "risk": "Low",
     "description": "Velvet Ants can trail into homes through cracks, foundations, windows, doors, utility lines, and moisture-prone areas while searching for food, water, or nesting sites.",
@@ -1415,7 +1415,7 @@ export const pests: Pest[] = [
   {
     "name": "Walking Stick",
     "slug": "walking-stick",
-    "image": "/images/pests/walking-stick.jpg",
+    "image": "/images/pests/walking-stick.webp",
     "group": "Other",
     "risk": "High",
     "description": "Walking Sticks can create biting pest issues around people, pets, yards, shaded areas, tall grass, and places where moisture or wildlife activity is present.",
@@ -1434,7 +1434,7 @@ export const pests: Pest[] = [
   {
     "name": "Wolf Spider",
     "slug": "wolf-spider",
-    "image": "/images/pests/wolf-spider.jpg",
+    "image": "/images/pests/wolf-spider.webp",
     "group": "Spider",
     "risk": "Low",
     "description": "Wolf Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
@@ -1453,7 +1453,7 @@ export const pests: Pest[] = [
   {
     "name": "Yellow Sac Spider",
     "slug": "yellow-sac-spider",
-    "image": "/images/pests/yellow-sac-spider.jpg",
+    "image": "/images/pests/yellow-sac-spider.webp",
     "group": "Spider",
     "risk": "Low",
     "description": "Yellow Sac Spiders are commonly found around garages, basements, crawlspaces, storage areas, landscaping, and other places where insects are available as food.",
@@ -1472,7 +1472,7 @@ export const pests: Pest[] = [
   {
     "name": "Yellowjacket",
     "slug": "yellowjacket",
-    "image": "/images/pests/yellowjacket.jpg",
+    "image": "/images/pests/yellowjacket.webp",
     "group": "Wasp/Hornet",
     "risk": "Medium",
     "description": "Yellowjackets can become a concern when nests are built near doors, decks, porches, playgrounds, rooflines, wall voids, or other high-traffic areas around the home.",

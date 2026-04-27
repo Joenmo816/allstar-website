@@ -119,7 +119,7 @@ export default function TermiteServicesPage() {
         <section className="relative overflow-hidden">
           <div className="relative min-h-[760px] w-full">
             <Image
-              src="/images/termiterun.png"
+              src="/images/termiterun.webp"
               alt="Termite mud tube on home foundation"
               fill
               priority
@@ -332,7 +332,7 @@ export default function TermiteServicesPage() {
         <section className="py-20">
           <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 md:grid-cols-2">
             <Image
-              src="/images/termites.png"
+              src="/images/termites.webp"
               alt="Termite workers and soldiers in damaged wood"
               width={900}
               height={700}

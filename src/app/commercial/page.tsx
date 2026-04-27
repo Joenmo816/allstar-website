@@ -59,7 +59,7 @@ export default function CommercialPage() {
         secondaryCtaText="Free Quote"
         secondaryCtaHref="/free-inspection"
         logoSrc="/logo-header-v2.png"
-        heroImageSrc="/images/commercial-building-pest-control.png"
+        heroImageSrc="/images/commercial-building-pest-control.webp"
         heroImageAlt="Commercial strip mall property"
         mascotSrc="/mascot.png"
         showMascot={true}

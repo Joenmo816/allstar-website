@@ -80,7 +80,7 @@ export default function PestLibraryPage() {
         secondaryCtaText="Free Inspection"
         secondaryCtaHref="/contact"
         logoSrc="/logo-header-v2.png"
-        heroImageSrc="/images/pest-control-hero.jpg"
+        heroImageSrc="/images/pest-control-hero.webp"
         heroImageAlt="Pest control inspection"
         mascotSrc="/mascot.png"
         showMascot={true}

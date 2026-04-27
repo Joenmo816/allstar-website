@@ -61,7 +61,7 @@ export default function WarehousePage() {
           secondaryCtaText="Schedule Assessment"
           secondaryCtaHref="/free-inspection"
           logoSrc="/images/allstar-logo-header-v2.png"
-          heroImageSrc="/images/warehouse.png"
+          heroImageSrc="/images/warehouse.webp"
           mascotSrc="/images/allstar-mascot.png"
           showMascot={false}
         />
