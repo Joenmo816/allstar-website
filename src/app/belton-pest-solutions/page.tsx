@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Pest Solutions in Belton, MO",
   description:
-    "Looking for pest solutions in Belton, MO? All Star Pest Solutions provides safe, effective service backed by 30+ years of experience. Locally owned. No mandatory contracts.",
+    "Looking for pest solutions in Belton, MO? All Star Pest Solutions provides safe, effective service backed by 30+ Years of Experience. Locally owned. No mandatory contracts.",
 };
 
 const pestTypes = [
@@ -61,7 +61,7 @@ export default function BeltonPage() {
 
             <p className="text-base leading-8 text-slate-700 md:text-lg">
               At <strong>All Star Pest Solutions</strong>, we bring over{" "}
-              <strong>30 years of experience</strong> helping homeowners protect
+              <strong>30+ Years of Experience</strong> helping homeowners protect
               their homes from unwanted pests. We are locally owned and operated
               and proud to serve Belton with safe, effective, modern treatment
               methods.
@@ -121,7 +121,7 @@ export default function BeltonPage() {
               returning, and what treatment will actually solve the problem.
             </p>
             <p className="mt-4 text-base leading-8 text-slate-200">
-              With over 30 years in the field, All Star Pest Solutions brings
+              With Over 30 Years of Experience in the field, All Star Pest Solutions brings
               the kind of knowledge Belton homeowners can trust.
             </p>
           </aside>
@@ -220,4 +220,6 @@ export default function BeltonPage() {
     </main>
   );
 }
+
+
 

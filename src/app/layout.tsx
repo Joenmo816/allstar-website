@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | All Star Pest Solutions",
   },
   description:
-    "Owner-operated pest solutions in the South Kansas City metro. Free inspections, no contracts, starting at $89, guaranteed re-service, and 30+ years of experience.",
+    "Owner-operated pest solutions in the South Kansas City metro. Free inspections, no contracts, starting at $89, guaranteed re-service, and 30+ Years of Experience.",
   alternates: {
     canonical: "/",
   },
@@ -72,7 +72,7 @@ const sitewideStructuredData = {
       logo: `${siteUrl}/social-review.png`,
       image: `${siteUrl}/social-review.png`,
       email: "info@allstarpestkc.com",
-      telephone: "+1-913-738-7827",
+      telephone: "+1-(913) 738-7827",
     },
     {
       "@type": "LocalBusiness",
@@ -81,7 +81,7 @@ const sitewideStructuredData = {
       url: siteUrl,
       image: `${siteUrl}/social-review.png`,
       email: "info@allstarpestkc.com",
-      telephone: "+1-913-738-7827",
+      telephone: "+1-(913) 738-7827",
       priceRange: "$$",
       description:
         "All Star Pest Solutions is an owner-operated pest solutions company serving Johnson County, Miami County, Cass County, and Jackson County with residential, commercial, termite, rodent, ant, spider, cockroach, mosquito, and real estate termite inspection services.",
@@ -135,7 +135,7 @@ const sitewideStructuredData = {
         {
           "@type": "ContactPoint",
           contactType: "customer service",
-          telephone: "+1-913-738-7827",
+          telephone: "+1-(913) 738-7827",
           areaServed: ["KS", "MO"],
           availableLanguage: ["English"],
         },
@@ -218,3 +218,4 @@ export default function RootLayout({
     </html>
   );
 }
+

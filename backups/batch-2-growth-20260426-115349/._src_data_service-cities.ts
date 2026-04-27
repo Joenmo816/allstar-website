@@ -157,3 +157,5 @@ export function getCityBySlug(slug: string) {
 export const featuredCities = serviceCities.filter((city) =>
   ["belton", "raymore", "louisburg", "overland-park", "leawood", "loch-lloyd"].includes(city.slug)
 );
+
+

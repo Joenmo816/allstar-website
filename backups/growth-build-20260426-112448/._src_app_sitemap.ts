@@ -8,28 +8,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pestFiles = fs.readdirSync(pestsDir);
 
   const pestUrls = pestFiles.map((file) => ({
-    url: `https://www.allstarpestkc.com/pests/${file.replace(/\.(jpg|jpeg|png)$/i, "")}`,
+    url: `https://allstarpestkc.com/pests/${file.replace(/\.(jpg|jpeg|png)$/i, "")}`,
     lastModified: new Date(),
   }));
 
   return [
     {
-      url: "https://www.allstarpestkc.com",
+      url: "https://allstarpestkc.com",
       lastModified: new Date(),
     },
     {
-      url: "https://www.allstarpestkc.com/residential",
+      url: "https://allstarpestkc.com/residential",
       lastModified: new Date(),
     },
     {
-      url: "https://www.allstarpestkc.com/commercial",
+      url: "https://allstarpestkc.com/commercial",
       lastModified: new Date(),
     },
     {
-      url: "https://www.allstarpestkc.com/termite-services",
+      url: "https://allstarpestkc.com/termite-services",
       lastModified: new Date(),
     },
     ...pestUrls,
   ];
 }
+
+
 

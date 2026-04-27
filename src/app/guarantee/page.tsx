@@ -13,13 +13,15 @@ export default function GuaranteePage() {
           while protecting your home, family, and the environment.
         </p>
         <p className="text-gray-600">
-          With 28 years of experience and local ownership, you can count on us 
+          With 30+ Years of Experience and local ownership, you can count on us 
           to provide honest, effective, and lasting pest solutions.
         </p>
       </div>
     </section>
   );
 }
+
+
 
 
 

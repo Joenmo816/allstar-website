@@ -507,7 +507,7 @@ export async function generateMetadata({
 
   return {
     title: `${pluralName} Control in ${cityData.name}, ${cityData.state} | All Star Pest Solutions`,
-    description: `Need help with ${pluralName.toLowerCase()} in ${cityData.name}, ${cityData.state}? All Star Pest Solutions provides safe, effective pest solutions backed by 30+ years of experience. No contracts. Call (913) 738-7827.`,
+    description: `Need help with ${pluralName.toLowerCase()} in ${cityData.name}, ${cityData.state}? All Star Pest Solutions provides safe, effective pest solutions backed by 30+ Years of Experience. No contracts. Call (913) 738-7827.`,
     alternates: {
       canonical: `${siteUrl}/${cityData.slug}/pest-library/${pest.slug}`,
     },
@@ -615,12 +615,12 @@ export default async function CityPestPage({ params }: PageProps) {
 
             <p className="mt-4 text-lg leading-8 text-gray-900">
               All Star Pest Solutions provides pest solutions in {cityData.name},{" "}
-              {cityData.state} backed by over 30 years of hands-on experience,
+              {cityData.state} backed by Over 30 Years of Experience of hands-on experience,
               modern treatment methods, and direct owner-level service.
             </p>
 
             <ul className="mt-5 space-y-3 text-base font-semibold leading-7 text-gray-900">
-              <li>• Over 30 years of real field experience</li>
+              <li>• Over 30 Years of Experience of real field experience</li>
               <li>• No mandatory contracts</li>
               <li>• Safe, modern treatment methods</li>
               <li>• Locally owned and operated</li>

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Why Choose All Star Pest Solutions | Kansas City Pest Experts",
   description:
-    "With over 25 years of experience, All Star Pest Solutions delivers reliable pest control and termite services across the Kansas City metro area.",
+    "With over 30+ Years of Experience, All Star Pest Solutions delivers reliable pest control and termite services across the Kansas City metro area.",
 };
 
 export default function WhyChooseUsPage() {
@@ -79,5 +79,7 @@ export default function WhyChooseUsPage() {
     </main>
   );
 }
+
+
 
 

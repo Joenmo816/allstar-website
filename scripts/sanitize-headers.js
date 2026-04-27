@@ -32,3 +32,5 @@ for (const f of staged()) {
   }
 }
 if (cleaned) console.log(`✅ sanitized ${cleaned} file(s)`);
+
+

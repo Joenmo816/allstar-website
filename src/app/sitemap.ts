@@ -1,36 +1,32 @@
 import type { MetadataRoute } from "next";
-import { serviceCities } from "@/data/service-cities";
 
 const siteUrl = "https://allstarpestkc.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = [
+  const routes = [
     "",
-    "/residential",
-    "/commercial",
-    "/termite-services",
-    "/pest-library",
-    "/service-area",
-    "/about",
     "/contact",
-    "/review",
-    "/pricing",
-    "/guarantee",
+    "/about",
+    "/charts",
+    "/services",
+    "/termite-inspection-kansas-city",
+    "/rodent-control-kansas-city",
+    "/spider-control-kansas-city",
+    "/cockroach-control-kansas-city",
+    "/mosquito-control-kansas-city",
+    "/bed-bug-treatment-kansas-city",
+    "/kansas-city-pest-control",
+    "/overland-park-pest-control",
+    "/olathe-pest-control",
+    "/leawood-pest-control",
+    "/belton-pest-control",
+    "/raymore-pest-control",
   ];
 
-  return [
-    ...staticRoutes.map((route) => ({
-      url: `${siteUrl}${route}`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: route === "" ? 1 : 0.8,
-    })),
-    ...serviceCities.map((city) => ({
-      url: `${siteUrl}/${city.slug}`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.9,
-    })),
-  ];
+  return routes.map((route) => ({
+    url: `${siteUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: route === "" ? 1 : 0.8,
+  }));
 }
-

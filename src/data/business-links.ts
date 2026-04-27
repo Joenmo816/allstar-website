@@ -14,3 +14,4 @@ export const callCtaText = "Call (913) 738-STAR";
 
 // Optional: use this for buttons/links that say “Leave a Review”
 export const reviewCtaText = "Leave a Google Review";
+

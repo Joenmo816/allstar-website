@@ -7,7 +7,7 @@ import EcoCommitment from "@/app/components/EcoCommitment";
 export const metadata: Metadata = {
   title: "Residential Pest Solutions | All Star Pest Solutions",
   description:
-    "Residential pest solutions for Kansas City homes. Safe, eco-friendly service for families, children, and pets with modern methods and over 30 years of experience.",
+    "Residential pest solutions for Kansas City homes. Safe, eco-friendly service for families, children, and pets with modern methods and over 30+ Years of Experience.",
 };
 
 const trustPoints = [
@@ -37,7 +37,7 @@ const serviceAdvantages = [
 const comparisonPoints = [
   {
     title: "Real Experience",
-    text: "You are not getting a technician with a few weeks of training. You are getting over 30 years of real-world pest experience.",
+    text: "You are not getting a technician with a few weeks of training. You are getting Over 30 Years of Experience of real-world pest experience.",
   },
   {
     title: "No Contracts Required",
@@ -94,7 +94,7 @@ export default function ResidentialPage() {
             provider: {
               "@type": "LocalBusiness",
               name: "All Star Pest Solutions",
-              telephone: "+1-913-738-7827",
+              telephone: "+1-(913) 738-7827",
               areaServed: [
                 "Johnson County KS",
                 "Miami County KS",
@@ -281,7 +281,7 @@ export default function ResidentialPage() {
 
           <p className="text-xl leading-relaxed text-slate-800 md:text-2xl">
             Whether you are dealing with ants, spiders, roaches, rodents, or a
-            bigger hidden issue, we bring over 30 years of real-world
+            bigger hidden issue, we bring Over 30 Years of Experience of real-world
             experience to every inspection and every service.
           </p>
         </section>
@@ -388,3 +388,4 @@ export default function ResidentialPage() {
     </>
   );
 }
+

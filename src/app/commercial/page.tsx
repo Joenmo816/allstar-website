@@ -5,7 +5,7 @@ import Hero from "../components/Hero";
 export const metadata: Metadata = {
   title: "Commercial Pest Solutions | All Star Pest Solutions",
   description:
-    "Professional commercial pest solutions for Kansas City area businesses. Protect your property with effective service, modern methods, and over 30 years of experience.",
+    "Professional commercial pest solutions for Kansas City area businesses. Protect your property with effective service, modern methods, and over 30+ Years of Experience.",
 };
 
 const commercialTypes = [
@@ -53,7 +53,7 @@ export default function CommercialPage() {
       <Hero
         eyebrow="State-Certified Commercial Applicator (KS & MO)"
         title="Commercial Pest Solutions"
-        description="Professional pest solutions protecting Kansas City businesses with modern methods, responsive service, and over 30 years of industry experience."
+        description="Professional pest solutions protecting Kansas City businesses with modern methods, responsive service, and Over 30 Years of Experience of industry experience."
         primaryCtaText="Call (913) 738-7827"
         primaryCtaHref="tel:+19137387827"
         secondaryCtaText="Free Quote"
@@ -133,4 +133,6 @@ export default function CommercialPage() {
     </main>
   );
 }
+
+
 

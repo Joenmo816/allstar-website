@@ -10,7 +10,7 @@ import { featuredCities, serviceCities } from "@/data/service-cities";
 export const metadata: Metadata = {
   title: "Pest Control Near Me | Free Inspection | All Star Pest Solutions",
   description:
-    "Owner-operated pest control with free inspections, no contracts, starting at $89, guaranteed re-service, and 30+ years of experience.",
+    "Owner-operated pest control with free inspections, no contracts, starting at $89, guaranteed re-service, and 30+ Years of Experience.",
 };
 
 export default function AdsPestControlPage() {
@@ -88,3 +88,5 @@ export default function AdsPestControlPage() {
     </main>
   );
 }
+
+

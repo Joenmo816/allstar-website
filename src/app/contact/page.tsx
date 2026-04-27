@@ -11,13 +11,13 @@ export const metadata: Metadata = {
 const contactPageStructuredData = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
-  "@id": "https://www.allstarpestkc.com/contact#contactpage",
-  url: "https://www.allstarpestkc.com/contact",
+  "@id": "https://allstarpestkc.com/contact#contactpage",
+  url: "https://allstarpestkc.com/contact",
   name: "Contact All Star Pest Solutions",
   description:
     "Request a free inspection from All Star Pest Solutions. Call, send your details, and let us help solve your pest problem in the Kansas City metro.",
   mainEntity: {
-    "@id": "https://www.allstarpestkc.com/#localbusiness",
+    "@id": "https://allstarpestkc.com/#localbusiness",
   },
 };
 
@@ -36,7 +36,7 @@ export default function ContactPage() {
         eyebrow="Fast Help Starts Here"
         title="Get Your Free Inspection"
         description="Call now or send us your information and we will get back to you as quickly as possible. All Star Pest Solutions proudly serves the Kansas City metro with modern, effective pest solutions."
-        primaryCtaText="Call 913-738-STAR"
+        primaryCtaText="Call (913) 738-STAR"
         primaryCtaHref="tel:+19137387827"
         secondaryCtaText="View Pest Library"
         secondaryCtaHref="/pest-library"
@@ -53,7 +53,7 @@ export default function ContactPage() {
             href="tel:+19137387827"
             className="rounded-xl bg-black py-6 text-center text-2xl font-bold text-white transition hover:bg-red-600"
           >
-            📞 Call 913-738-STAR
+            📞 Call (913) 738-STAR
           </a>
 
           <form
@@ -100,4 +100,6 @@ export default function ContactPage() {
     </main>
   );
 }
+
+
 

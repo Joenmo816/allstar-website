@@ -6,7 +6,9 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.allstarpestkc.com/sitemap.xml",
+    sitemap: "https://allstarpestkc.com/sitemap.xml",
   };
 }
+
+
 

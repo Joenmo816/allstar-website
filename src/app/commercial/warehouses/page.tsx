@@ -21,7 +21,7 @@ export default function WarehousePage() {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "All Star Pest Solutions",
-              telephone: "+1-913-738-7827",
+              telephone: "+1-(913) 738-7827",
               url: "https://allstarpestkc.com",
               areaServed: [
                 "Johnson County KS",
@@ -193,4 +193,6 @@ export default function WarehousePage() {
     </>
   );
 }
+
+
 

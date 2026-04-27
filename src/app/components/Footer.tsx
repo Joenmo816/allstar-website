@@ -14,7 +14,7 @@ export default function Footer() {
 
           <p className="mt-3 text-base leading-relaxed text-allstarSlate">
             Local experts delivering eco-friendly, family-conscious treatments
-            backed by over 30 years of real-world experience.
+            backed by Over 30 Years of Experience of real-world experience.
           </p>
 
           <p className="mt-3 font-bold text-allstarInk">
@@ -116,5 +116,7 @@ export default function Footer() {
     </footer>
   );
 }
+
+
 
 

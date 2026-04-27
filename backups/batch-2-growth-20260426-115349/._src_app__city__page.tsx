@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: `Pest Control in ${cityData.name}, ${cityData.state} | Free Inspection`,
-    description: `Owner-operated pest control in ${cityData.name}, ${cityData.state}. Free inspection, no contracts, starting at $89, guaranteed re-service, and 30+ years of experience.`,
+    description: `Owner-operated pest control in ${cityData.name}, ${cityData.state}. Free inspection, no contracts, starting at $89, guaranteed re-service, and 30+ Years of Experience.`,
     alternates: {
       canonical: `/${cityData.slug}`,
     },
@@ -58,7 +58,7 @@ export default async function CityPage({ params }: PageProps) {
     provider: {
       "@type": "LocalBusiness",
       name: "All Star Pest Solutions",
-      telephone: "+1-913-738-7827",
+      telephone: "+1-(913) 738-7827",
       url: siteUrl,
     },
     areaServed: {
@@ -252,3 +252,5 @@ export default async function CityPage({ params }: PageProps) {
     </main>
   );
 }
+
+

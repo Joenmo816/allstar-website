@@ -22,3 +22,5 @@ unusedImages.forEach(i => console.log(i + ".jpg"))
 console.log("")
 console.log("Total pests:", slugs.length)
 console.log("Total images:", imageFiles.length)
+
+

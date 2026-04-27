@@ -46,8 +46,8 @@ export default function TermiteServicesPage() {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "All Star Pest Solutions",
-              url: "https://www.allstarpestkc.com",
-              telephone: "+1-913-738-7827",
+              url: "https://allstarpestkc.com",
+              telephone: "+1-(913) 738-7827",
               areaServed: [
                 "Johnson County KS",
                 "Miami County KS",
@@ -395,3 +395,4 @@ export default function TermiteServicesPage() {
     </>
   );
 }
+

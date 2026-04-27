@@ -72,7 +72,7 @@ const whyChooseUs = [
 export const metadata: Metadata = {
   title: "Pest Control in South Kansas City | Free Inspection | All Star Pest Solutions",
   description:
-    "Owner-operated pest control in the South Kansas City metro. Free inspection, no contracts, starting at $89, guaranteed re-service, and 30+ years of experience.",
+    "Owner-operated pest control in the South Kansas City metro. Free inspection, no contracts, starting at $89, guaranteed re-service, and 30+ Years of Experience.",
 };
 
 export default function HomePage() {
@@ -371,4 +371,6 @@ export default function HomePage() {
 </main>
   );
 }
+
+
 

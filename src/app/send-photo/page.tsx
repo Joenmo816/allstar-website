@@ -119,7 +119,7 @@ export default function SendPhotoPage() {
               <input
                 type="hidden"
                 name="_next"
-                value="https://www.allstarpestkc.com/send-photo?submitted=1"
+                value="https://allstarpestkc.com/send-photo?submitted=1"
               />
               <input type="hidden" name="_captcha" value="false" />
 
@@ -260,3 +260,5 @@ export default function SendPhotoPage() {
     </main>
   );
 }
+
+

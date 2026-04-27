@@ -3,3 +3,5 @@ export const pests = [
   { slug: "american-cockroach", name: "American Cockroach", description: "Large reddish-brown cockroach found in homes." }
 ];
 
+
+

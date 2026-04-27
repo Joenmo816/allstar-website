@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s | All Star Pest Solutions",
   },
   description:
-    "All Star Pest Solutions provides residential, commercial, and termite services throughout the South Kansas City Metro Area. Over 30 years of experience. Licensed in Kansas and Missouri.",
+    "All Star Pest Solutions provides residential, commercial, and termite services throughout the South Kansas City Metro Area. Over 30+ Years of Experience. Licensed in Kansas and Missouri.",
   alternates: {
     canonical: "/",
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "All Star Pest Solutions",
     description:
-      "Serving the South Kansas City Metro Area with residential, commercial, and termite services backed by over 30 years of experience.",
+      "Serving the South Kansas City Metro Area with residential, commercial, and termite services backed by over 30+ Years of Experience.",
     url: siteUrl,
     siteName: "All Star Pest Solutions",
     images: [
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "All Star Pest Solutions",
     description:
-      "Serving the South Kansas City Metro Area with residential, commercial, and termite services backed by over 30 years of experience.",
+      "Serving the South Kansas City Metro Area with residential, commercial, and termite services backed by over 30+ Years of Experience.",
     images: [`${siteUrl}/logo-header-v2.png`],
   },
 };
@@ -68,7 +68,7 @@ const sitewideStructuredData = {
       logo: `${siteUrl}/logo-header-v2.png`,
       image: `${siteUrl}/logo-header-v2.png`,
       email: "info@allstarpestkc.com",
-      telephone: "+1-913-738-7827",
+      telephone: "+1-(913) 738-7827",
     },
     {
       "@type": "LocalBusiness",
@@ -77,7 +77,7 @@ const sitewideStructuredData = {
       url: siteUrl,
       image: `${siteUrl}/logo-header-v2.png`,
       email: "info@allstarpestkc.com",
-      telephone: "+1-913-738-7827",
+      telephone: "+1-(913) 738-7827",
       priceRange: "$$",
       description:
         "All Star Pest Solutions is a locally owned pest solutions company serving the South Kansas City Metro Area with residential, commercial, and termite services.",
@@ -99,7 +99,7 @@ const sitewideStructuredData = {
         {
           "@type": "ContactPoint",
           contactType: "customer service",
-          telephone: "+1-913-738-7827",
+          telephone: "+1-(913) 738-7827",
           areaServed: ["KS", "MO"],
           availableLanguage: ["English"],
         },
@@ -157,3 +157,4 @@ export default function RootLayout({
     </html>
   );
 }
+

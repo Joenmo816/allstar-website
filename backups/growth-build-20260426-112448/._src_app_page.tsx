@@ -66,7 +66,7 @@ const whyChooseUs = [
   {
     title: "Real Experience",
     description:
-      "You are not getting a technician with a few weeks of training. You are getting over 30 years of real-world pest experience.",
+      "You are not getting a technician with a few weeks of training. You are getting Over 30 Years of Experience of real-world pest experience.",
   },
   {
     title: "No Contracts Required",
@@ -353,3 +353,4 @@ export default function HomePage() {
     </main>
   );
 }
+

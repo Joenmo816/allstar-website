@@ -341,3 +341,5 @@ export function getCityBySlug(slug: string) {
 export function getCitySlugs() {
   return serviceCities.map((city) => city.slug);
 }
+
+

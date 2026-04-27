@@ -41,7 +41,7 @@ export default function JohnsonCountyPage() {
 
         <p className="mb-6 text-lg">
           All Star Pest Solutions proudly provides professional pest solutions
-          throughout Johnson County Kansas. With over 25 years of industry
+          throughout Johnson County Kansas. With Over 30 Years of Experience of industry
           experience, our certified applicators understand the pests common to
           homes and businesses in the Kansas City metro area.
         </p>
@@ -107,5 +107,7 @@ export default function JohnsonCountyPage() {
     </main>
   );
 }
+
+
 
 
