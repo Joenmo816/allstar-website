@@ -85,6 +85,8 @@ export default function HomePage() {
             alt="South Kansas City Metro skyline"
             fill
             priority
+            sizes="100vw"
+            quality={70}
             className="object-cover object-center"
           />
 
@@ -96,11 +98,9 @@ export default function HomePage() {
               <Image
                 src="/logo-header-v2.webp"
                 alt="All Star Pest Solutions logo"
-                width={1600}
-                height={500}
+                width={600}
+                height={200}
                 className="mb-6 h-auto w-full max-w-[500px] sm:max-w-[620px] md:max-w-[720px]"
-                priority
-                unoptimized
               />
 
               <p className="mb-4 inline-flex rounded-full border border-white/25 bg-white/10 px-4 py-2 text-sm font-black uppercase tracking-[0.14em] text-white">
@@ -156,7 +156,7 @@ export default function HomePage() {
                   alt="All Star mascot"
                   fill
                   className="object-contain object-bottom drop-shadow-[0_25px_60px_rgba(0,0,0,0.6)]"
-                  unoptimized
+                  sizes="400px"
                 />
               </div>
             </div>
