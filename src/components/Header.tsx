@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 
 const navLinks = [
-  { href: "/", label: "Home" },
   { href: "/residential", label: "Residential" },
   { href: "/commercial", label: "Commercial" },
   { href: "/termite-services", label: "Termites" },
@@ -23,16 +22,9 @@ export default function Header() {
       </div>
 
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4">
-        <Link href="/" className="flex min-w-0 items-center gap-3">
-          <img src="/star.webp" alt="All Star Pest Solutions" className="h-14 w-14 shrink-0 object-contain md:h-20 md:w-20" />
-          <div className="min-w-0">
-            <div className="text-xl font-black uppercase leading-tight text-red-600 md:text-4xl">
-              All Star Pest Solutions
-            </div>
-            <div className="text-sm font-black text-blue-700 md:text-xl">
-              Guaranteed Service. Guaranteed Results.
-            </div>
-          </div>
+        <Link href="/" className="flex min-w-0 items-center gap-4">
+          <img src="/star.webp" alt="All Star Pest Solutions star" className="h-14 w-14 shrink-0 object-contain md:h-20 md:w-20" />
+          <img src="/logo-header-v2.webp" alt="All Star Pest Solutions" className="h-16 w-auto max-w-[520px] object-contain md:h-24" />
         </Link>
 
         <button
@@ -44,7 +36,7 @@ export default function Header() {
         </button>
 
         <nav className="hidden items-center gap-5 text-sm font-black uppercase text-red-600 lg:flex">
-          {navLinks.slice(1).map((link) => (
+          {navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="hover:text-blue-700">
               {link.label}
             </Link>
@@ -54,6 +46,7 @@ export default function Header() {
 
       {open && (
         <nav className="grid gap-2 border-t border-slate-200 bg-white px-4 py-4 text-lg font-black uppercase text-red-600 lg:hidden">
+          <Link href="/" onClick={() => setOpen(false)} className="rounded-xl bg-slate-50 px-4 py-3">Home</Link>
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} onClick={() => setOpen(false)} className="rounded-xl bg-slate-50 px-4 py-3">
               {link.label}
