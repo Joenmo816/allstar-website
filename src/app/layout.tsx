@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import Header from "@/components/Header";
 import StickyContact from "@/components/StickyContact";
 
 export const metadata: Metadata = {
@@ -25,7 +26,7 @@ const localBusinessSchema = {
     addressCountry: "US",
   },
   areaServed: "Kansas City Metro",
-  priceRange: "C:\allstar-website",
+  priceRange: "$$",
 };
 
 export default function RootLayout({
@@ -36,6 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Header />
         {children}
         <StickyContact />
         <script
