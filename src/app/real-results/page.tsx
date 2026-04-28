@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Guaranteed Service. Guaranteed Results. | All Star Pest Solutions",
+  title: "Real Pest Control Results | All Star Pest Solutions",
   description:
     "Learn why Kansas City area homeowners choose All Star Pest Solutions for honest, local, eco-conscious pest control and termite protection.",
 };
@@ -15,18 +15,16 @@ export default function Page() {
         </p>
 
         <h1 className="mb-6 text-4xl font-black tracking-tight text-slate-950 md:text-5xl">
-          Guaranteed Service. Guaranteed Results.
+          Real Pest Control Results
         </h1>
 
         <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm md:p-8">
           <p className="whitespace-pre-line text-lg leading-8 text-slate-800">
-Our slogan means something.
+Pest control is not just about spraying around a house. Real results come from inspection, identification, treatment, prevention, and follow-up when needed.
 
-All Star Pest Solutions believes customers deserve pest control that is honest, dependable, and focused on results. If a pest problem needs extra attention, we believe in standing behind the service and doing what is reasonable to help make it right.
+All Star Pest Solutions focuses on finding why the pest problem is happening, where pests are entering, and what needs to be corrected to help stop the issue from returning.
 
-No mandatory contracts. No scare tactics. No one-size-fits-all pest control.
-
-Just local service, real inspections, safe modern treatment methods, and a commitment to protecting your home.
+Whether it is ants in walls, termite concerns, rodents, spiders, cockroaches, wasps, fleas, bed bugs, or mosquitoes, the goal is simple: solve the problem and protect the property.
           </p>
         </div>
 

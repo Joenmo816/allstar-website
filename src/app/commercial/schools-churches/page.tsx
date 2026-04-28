@@ -20,8 +20,8 @@ export default function SchoolsChurchesPage() {
         primaryCtaText="Call (913) 738-7827"
         primaryCtaHref="tel:+19137387827"
         secondaryCtaText="Free Quote"
-        secondaryCtaHref="/free-inspection"
-        logoSrc="/images/allstar-public/logo-header-v2.png"
+        secondaryCtaHref="/contact"
+        logoSrc="/logo-header-v2.png"
         heroImageSrc="/images/commercial-schools-churches.svg"
         mascotSrc="/images/allstar-mascot.png"
         showMascot={false}
@@ -132,6 +132,7 @@ export default function SchoolsChurchesPage() {
     </main>
   );
 }
+
 
 
 

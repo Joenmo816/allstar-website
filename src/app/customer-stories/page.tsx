@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Guaranteed Service. Guaranteed Results. | All Star Pest Solutions",
+  title: "Customer Stories | All Star Pest Solutions",
   description:
     "Learn why Kansas City area homeowners choose All Star Pest Solutions for honest, local, eco-conscious pest control and termite protection.",
 };
@@ -15,18 +15,16 @@ export default function Page() {
         </p>
 
         <h1 className="mb-6 text-4xl font-black tracking-tight text-slate-950 md:text-5xl">
-          Guaranteed Service. Guaranteed Results.
+          Customer Stories
         </h1>
 
         <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm md:p-8">
           <p className="whitespace-pre-line text-lg leading-8 text-slate-800">
-Our slogan means something.
+Every pest problem has a story. A homeowner hears scratching in the wall. Ants show up in the kitchen. Termite swarmers appear near a window. Wasps build near an entry door. Spiders keep showing up in the basement.
 
-All Star Pest Solutions believes customers deserve pest control that is honest, dependable, and focused on results. If a pest problem needs extra attention, we believe in standing behind the service and doing what is reasonable to help make it right.
+All Star Pest Solutions helps customers understand what is happening, what the risk is, and what can be done to fix it.
 
-No mandatory contracts. No scare tactics. No one-size-fits-all pest control.
-
-Just local service, real inspections, safe modern treatment methods, and a commitment to protecting your home.
+As we continue serving more local homeowners, this page will highlight real customer situations, common pest problems, and how All Star Pest Solutions helped solve them.
           </p>
         </div>
 

@@ -20,8 +20,8 @@ export default function HospitalPage() {
         primaryCtaText="Call (913) 738-7827"
         primaryCtaHref="tel:+19137387827"
         secondaryCtaText="Free Quote"
-        secondaryCtaHref="/free-inspection"
-        logoSrc="/images/allstar-logo-header-v2.png"
+        secondaryCtaHref="/contact"
+        logoSrc="/logo-header-v2.png"
         heroImageSrc="/images/commercial-hospital.svg"
         mascotSrc="/images/allstar-mascot.png"
         showMascot={false}
@@ -133,6 +133,7 @@ export default function HospitalPage() {
     </main>
   );
 }
+
 
 
 

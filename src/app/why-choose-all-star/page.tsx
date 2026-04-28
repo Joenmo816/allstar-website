@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Guaranteed Service. Guaranteed Results. | All Star Pest Solutions",
+  title: "Why Choose All Star Pest Solutions | All Star Pest Solutions",
   description:
     "Learn why Kansas City area homeowners choose All Star Pest Solutions for honest, local, eco-conscious pest control and termite protection.",
 };
@@ -15,18 +15,16 @@ export default function Page() {
         </p>
 
         <h1 className="mb-6 text-4xl font-black tracking-tight text-slate-950 md:text-5xl">
-          Guaranteed Service. Guaranteed Results.
+          Why Choose All Star Pest Solutions
         </h1>
 
         <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm md:p-8">
           <p className="whitespace-pre-line text-lg leading-8 text-slate-800">
-Our slogan means something.
+All Star Pest Solutions is locally owned, owner-operated, and built around solving pest problems the right way — not locking people into contracts or rushing through quick sprays.
 
-All Star Pest Solutions believes customers deserve pest control that is honest, dependable, and focused on results. If a pest problem needs extra attention, we believe in standing behind the service and doing what is reasonable to help make it right.
+With over 25 years of pest control experience, certified applicators in Kansas and Missouri, and a customer-first service model, we focus on real inspections, targeted treatments, and honest recommendations.
 
-No mandatory contracts. No scare tactics. No one-size-fits-all pest control.
-
-Just local service, real inspections, safe modern treatment methods, and a commitment to protecting your home.
+When you call All Star, you are not dealing with a giant call center. You are working with a local pest professional who cares about protecting your home, your family, your pets, and the pollinators around your property.
           </p>
         </div>
 

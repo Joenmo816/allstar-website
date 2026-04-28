@@ -1,127 +1,72 @@
-import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import Hero from "@/app/components/Hero";
-import { pests } from "@/data/pests.generated";
+import { pests } from "@/lib/pests";
 
-export const metadata: Metadata = {
-  title: "Pest Library | All Star Pest Solutions",
+export const metadata = {
+  title: "Pest Library Kansas City | All Star Pest Solutions",
   description:
-    "Explore common pests found in Kansas City homes and businesses. Learn how to identify, prevent, and handle infestations.",
+    "Identify common Kansas City pests including ants, termites, spiders, wasps, rodents, cockroaches, and mosquitoes. Call All Star Pest Solutions for local pest control.",
 };
-
-// 🔥 GLOBAL PLURAL FIX
-function pluralizePestName(name: string) {
-  const trimmed = name.trim();
-
-  const special: Record<string, string> = {
-    "Silverfish": "Silverfish",
-    "House Mouse": "House Mice",
-    "Deer Mouse": "Deer Mice",
-    "Mouse": "Mice",
-
-    "Brown Banded Cockroach": "Brown-Banded Cockroaches",
-    "American Cockroach": "American Cockroaches",
-    "German Cockroach": "German Cockroaches",
-    "Oriental Cockroach": "Oriental Cockroaches",
-    "Smoky Brown Cockroach": "Smokybrown Cockroaches",
-
-    "Subterranean Termite": "Subterranean Termites",
-    "Termite Swarmer": "Termite Swarmers",
-
-    "Bald Faced Hornet": "Bald-Faced Hornets",
-    "European Hornet": "European Hornets",
-    "Paper Wasp": "Paper Wasps",
-    "Red Wasp": "Red Wasps",
-    "Yellowjacket": "Yellowjackets",
-    "Mud Dauber": "Mud Daubers",
-    "Blue Mud Dauber": "Blue Mud Daubers",
-    "Cicada Killer": "Cicada Killers",
-
-    "Honey Bee": "Honey Bees",
-    "Bumble Bee": "Bumble Bees",
-    "Carpenter Bee": "Carpenter Bees",
-    "Mason Bee": "Mason Bees",
-    "Leaf Cutter Bee": "Leafcutter Bees",
-    "Sweat Bee": "Sweat Bees",
-
-    "Lady Bug": "Ladybugs",
-    "Black Widow": "Black Widows",
-    "Brown Widow": "Brown Widows",
-    "Brown Recluse Spider": "Brown Recluse Spiders",
-    "Daddy Longlegs": "Daddy Longlegs"
-  };
-
-  if (special[trimmed]) return special[trimmed];
-
-  if (trimmed.endsWith(" Mouse")) return trimmed.replace(/ Mouse$/, " Mice");
-  if (trimmed.endsWith(" mouse")) return trimmed.replace(/ mouse$/, " mice");
-  if (trimmed.endsWith("Cockroach")) return trimmed.replace(/Cockroach$/, "Cockroaches");
-  if (trimmed.endsWith("cockroach")) return trimmed.replace(/cockroach$/, "cockroaches");
-
-  if (trimmed.endsWith("sh")) return `${trimmed}es`;
-  if (trimmed.endsWith("ch")) return `${trimmed}es`;
-  if (trimmed.endsWith("x")) return `${trimmed}es`;
-  if (trimmed.endsWith("s")) return trimmed;
-  if (trimmed.endsWith("y")) return `${trimmed.slice(0, -1)}ies`;
-
-  return `${trimmed}s`;
-}
 
 export default function PestLibraryPage() {
   return (
-    <main className="bg-white pb-16">
-      <Hero
-        eyebrow="Know Your Enemy"
-        title="Pest Library"
-        description="Explore the most common pests found in Kansas City homes and businesses. Learn how to identify them, what attracts them, and what risks they may pose."
-        primaryCtaText="Call (913) 738-7827"
-        primaryCtaHref="tel:+19137387827"
-        secondaryCtaText="Free Inspection"
-        secondaryCtaHref="/contact"
-        logoSrc="/logo-header-v2.png"
-        heroImageSrc="/images/pest-control-hero.webp"
-        heroImageAlt="Pest control inspection"
-        mascotSrc="/mascot.png"
-        showMascot={true}
-      />
+    <main className="min-h-screen bg-white">
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <p className="mb-3 text-sm font-black uppercase tracking-wide text-red-700">
+          Kansas City Pest Library
+        </p>
 
-      <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid gap-8 md:grid-cols-3 lg:grid-cols-4">
-          {pests.map((pest) => {
-            const pluralName = pluralizePestName(pest.name);
+        <h1 className="max-w-4xl text-4xl font-black tracking-tight text-slate-950 md:text-5xl">
+          Identify the pest. Understand the risk. Get real pest solutions.
+        </h1>
 
-            return (
-              <Link key={pest.slug} href={`/pest-library/${pest.slug}`}>
-                <div className="cursor-pointer rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                  
-                  <div className="relative mb-4 h-48 w-full overflow-hidden rounded-md">
-                    <Image
-                      src={pest.image}
-                      alt={pluralName}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
-                      className="object-cover"
-                    />
-                  </div>
+        <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-700">
+          Use this pest library to learn what may be showing up around your home
+          or business. If you are unsure, text All Star Pest Solutions a photo
+          and we will help identify the issue.
+        </p>
 
-                  {/* 🔥 FIXED NAME */}
-                  <h2 className="mb-2 text-center text-xl font-bold text-slate-900">
-                    {pluralName}
-                  </h2>
+        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {pests.map((pest) => (
+            <Link
+              key={pest.slug}
+              href={`/pest-library/${pest.slug}`}
+              className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+            >
+              <h2 className="text-2xl font-black text-slate-950">
+                {pest.name}
+              </h2>
+              <p className="mt-3 text-slate-700">{pest.description}</p>
+              <p className="mt-5 font-black text-red-700">
+                Learn about {pest.name.toLowerCase()} →
+              </p>
+            </Link>
+          ))}
+        </div>
 
-                  {/* 🔥 STRONGER CTA */}
-                  <p className="text-center text-sm font-semibold text-red-600">
-                    View Details →
-                  </p>
-                </div>
-              </Link>
-            );
-          })}
+        <div className="mt-12 rounded-3xl bg-slate-950 p-6 text-white md:flex md:items-center md:justify-between md:p-8">
+          <div>
+            <h2 className="text-2xl font-black">Not sure what pest you found?</h2>
+            <p className="mt-2 text-slate-200">
+              Text a photo to All Star Pest Solutions and ask for help identifying it.
+            </p>
+          </div>
+
+          <div className="mt-5 flex flex-col gap-3 sm:flex-row md:mt-0">
+            <a
+              href="tel:9137387827"
+              className="rounded-2xl bg-red-600 px-6 py-3 text-center font-black text-white hover:bg-red-700"
+            >
+              Call 913-738-STAR
+            </a>
+            <a
+              href="sms:9137387827"
+              className="rounded-2xl bg-white px-6 py-3 text-center font-black text-slate-950 hover:bg-slate-100"
+            >
+              Text a Photo
+            </a>
+          </div>
         </div>
       </section>
     </main>
   );
 }
-
-

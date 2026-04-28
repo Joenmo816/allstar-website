@@ -131,3 +131,34 @@
     @apply absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent;
   }
 }
+
+/* ALL STAR HEADER OVERLAP FIX */
+@media (max-width: 1280px) {
+  header nav {
+    gap: 1rem !important;
+  }
+
+  header a {
+    white-space: nowrap;
+  }
+
+  header img {
+    flex-shrink: 0;
+  }
+
+  header [href^="tel:"] {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  header {
+    overflow-x: hidden;
+  }
+
+  header nav {
+    flex-wrap: wrap !important;
+    row-gap: 0.75rem !important;
+  }
+}

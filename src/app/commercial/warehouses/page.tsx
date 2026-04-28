@@ -59,8 +59,8 @@ export default function WarehousePage() {
           primaryCtaText="Call (913) 738-7827"
           primaryCtaHref="tel:+19137387827"
           secondaryCtaText="Schedule Assessment"
-          secondaryCtaHref="/free-inspection"
-          logoSrc="/images/allstar-logo-header-v2.png"
+          secondaryCtaHref="/contact"
+          logoSrc="/logo-header-v2.png"
           heroImageSrc="/images/warehouse.webp"
           mascotSrc="/images/allstar-mascot.png"
           showMascot={false}
@@ -175,7 +175,7 @@ export default function WarehousePage() {
 
           <div className="flex justify-center gap-4">
             <Link
-              href="/free-inspection"
+              href="/contact"
               className="rounded-md bg-allstarBlueLight px-6 py-3 font-semibold text-black transition hover:bg-allstarBlueLight"
             >
               Schedule Warehouse Assessment
@@ -193,6 +193,7 @@ export default function WarehousePage() {
     </>
   );
 }
+
 
 
 

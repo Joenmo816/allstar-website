@@ -19,8 +19,8 @@ export default function PropertyManagementPage() {
         primaryCtaText="Call (913) 738-7827"
         primaryCtaHref="tel:+19137387827"
         secondaryCtaText="Free Quote"
-        secondaryCtaHref="/free-inspection"
-        logoSrc="/images/allstar-logo-header-v2.png"
+        secondaryCtaHref="/contact"
+        logoSrc="/logo-header-v2.png"
         heroImageSrc="/images/commercial-property-management.svg"
         mascotSrc="/images/allstar-mascot.png"
         showMascot={false}
@@ -130,6 +130,7 @@ export default function PropertyManagementPage() {
     </main>
   );
 }
+
 
 
 

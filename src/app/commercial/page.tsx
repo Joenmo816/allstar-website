@@ -41,7 +41,7 @@ const commercialTypes = [
   },
   {
     title: "Office Buildings",
-    href: "/commercial/offices",
+    href: "/commercial",
     description:
       "Professional, low-disruption service for offices, common spaces, and employee areas.",
   },
@@ -57,7 +57,7 @@ export default function CommercialPage() {
         primaryCtaText="Call (913) 738-7827"
         primaryCtaHref="tel:+19137387827"
         secondaryCtaText="Free Quote"
-        secondaryCtaHref="/free-inspection"
+        secondaryCtaHref="/contact"
         logoSrc="/logo-header-v2.png"
         heroImageSrc="/images/commercial-building-pest-control.webp"
         heroImageAlt="Commercial strip mall property"
@@ -122,7 +122,7 @@ export default function CommercialPage() {
             </a>
 
             <Link
-              href="/free-inspection"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg border border-white/20 px-5 py-3 font-semibold transition hover:bg-white/10"
             >
               Request Free Quote
@@ -133,6 +133,7 @@ export default function CommercialPage() {
     </main>
   );
 }
+
 
 
 

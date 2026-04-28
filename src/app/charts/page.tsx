@@ -127,8 +127,26 @@ export default function ChartsPage() {
           ))}
         </div>
       </section>
-    </main>
+    
+<div className="mt-14">
+  <h2 className="text-3xl font-black text-slate-950">
+    Learn More About Common Pests
+  </h2>
+
+  <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <a href="/pest-library/ants" className="font-black text-red-700">Ants</a>
+    <a href="/pest-library/termites" className="font-black text-red-700">Termites</a>
+    <a href="/pest-library/spiders" className="font-black text-red-700">Spiders</a>
+    <a href="/pest-library/wasps" className="font-black text-red-700">Wasps</a>
+    <a href="/pest-library/rodents" className="font-black text-red-700">Rodents</a>
+    <a href="/pest-library/cockroaches" className="font-black text-red-700">Roaches</a>
+    <a href="/pest-library/mosquitoes" className="font-black text-red-700">Mosquitoes</a>
+  </div>
+</div>
+
+</main>
   );
 }
+
 
 
