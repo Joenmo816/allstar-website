@@ -11,14 +11,19 @@ const routes = [
   "/contact",
   "/reviews",
   "/blog",
+  "/vblog",
+  "/blog-creator",
+  "/content-generator",
   "/guarantee",
   "/discounts",
   "/text-a-pest-photo",
+
   "/general-pest-control-kansas-city",
   "/home-pest-control-kansas-city",
   "/commercial-pest-control-kansas-city",
   "/termite-inspection-kansas-city",
   "/termite-treatment-kansas-city",
+  "/termite-damage-warning-signs-kansas-city",
   "/ants-kansas-city",
   "/spider-control-kansas-city",
   "/rodent-control-kansas-city",
@@ -27,6 +32,7 @@ const routes = [
   "/mosquito-control-kansas-city",
   "/wasp-control-kansas-city",
   "/flea-treatment-kansas-city",
+
   "/cities/overland-park-ks",
   "/cities/leawood-ks",
   "/cities/prairie-village-ks",
@@ -41,14 +47,14 @@ const routes = [
   "/cities/raymore-mo",
   "/cities/peculiar-mo",
   "/cities/harrisonville-mo",
-  "/cities/lees-summit-mo",
+  "/cities/lees-summit-mo"
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
-    url: ${baseUrl},
+    url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
-    priority: route === "" ? 1 : route.startsWith("/cities") ? 0.82 : 0.9,
+    priority: route === "" ? 1 : route.startsWith("/cities") ? 0.82 : 0.86
   }));
 }
