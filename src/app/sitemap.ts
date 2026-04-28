@@ -27,7 +27,6 @@ const routes = [
   "/mosquito-control-kansas-city",
   "/wasp-control-kansas-city",
   "/flea-treatment-kansas-city",
-
   "/cities/overland-park-ks",
   "/cities/leawood-ks",
   "/cities/prairie-village-ks",
@@ -37,32 +36,19 @@ const routes = [
   "/cities/olathe-ks",
   "/cities/spring-hill-ks",
   "/cities/stilwell-ks",
-  "/cities/bucyrus-ks",
   "/cities/louisburg-ks",
-  "/cities/paola-ks",
-  "/cities/osawatomie-ks",
-  "/cities/drexel-mo",
-  "/cities/cleveland-mo",
-  "/cities/freeman-mo",
-  "/cities/peculiar-mo",
-  "/cities/raymore-mo",
   "/cities/belton-mo",
-  "/cities/grandview-mo",
-  "/cities/martin-city-mo",
-  "/cities/loch-lloyd-mo",
+  "/cities/raymore-mo",
+  "/cities/peculiar-mo",
   "/cities/harrisonville-mo",
   "/cities/lees-summit-mo",
-  "/cities/raytown-mo",
-  "/cities/parkville-mo",
-  "/cities/adrian-mo",
-  "/cities/archie-mo"
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
-    url: `${baseUrl}${route}`,
+    url: ${baseUrl},
     lastModified: new Date(),
     changeFrequency: "weekly",
-    priority: route === "" ? 1 : route.startsWith("/cities") ? 0.8 : 0.9,
+    priority: route === "" ? 1 : route.startsWith("/cities") ? 0.82 : 0.9,
   }));
 }

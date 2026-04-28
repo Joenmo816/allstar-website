@@ -5,7 +5,7 @@ import StrongCTA from "../components/StrongCTA";
 export const metadata: Metadata = {
   title: "Service Areas | South Kansas City Pest Control | All Star Pest Solutions",
   description:
-    "All Star Pest Solutions serves the south Kansas City metro with pest control and termite inspection services.",
+    "All Star Pest Solutions serves selected south Kansas City metro communities with pest control and termite inspection services.",
 };
 
 const cities = [
@@ -18,25 +18,12 @@ const cities = [
   ["Olathe KS", "/cities/olathe-ks"],
   ["Spring Hill KS", "/cities/spring-hill-ks"],
   ["Stilwell KS", "/cities/stilwell-ks"],
-  ["Bucyrus KS", "/cities/bucyrus-ks"],
   ["Louisburg KS", "/cities/louisburg-ks"],
-  ["Paola KS", "/cities/paola-ks"],
-  ["Osawatomie KS", "/cities/osawatomie-ks"],
-  ["Drexel MO", "/cities/drexel-mo"],
-  ["Cleveland MO", "/cities/cleveland-mo"],
-  ["Freeman MO", "/cities/freeman-mo"],
-  ["Peculiar MO", "/cities/peculiar-mo"],
-  ["Raymore MO", "/cities/raymore-mo"],
   ["Belton MO", "/cities/belton-mo"],
-  ["Grandview MO", "/cities/grandview-mo"],
-  ["Martin City MO", "/cities/martin-city-mo"],
-  ["Loch Lloyd MO", "/cities/loch-lloyd-mo"],
+  ["Raymore MO", "/cities/raymore-mo"],
+  ["Peculiar MO", "/cities/peculiar-mo"],
   ["Harrisonville MO", "/cities/harrisonville-mo"],
   ["Lee's Summit MO", "/cities/lees-summit-mo"],
-  ["Raytown MO", "/cities/raytown-mo"],
-  ["Parkville MO", "/cities/parkville-mo"],
-  ["Adrian MO", "/cities/adrian-mo"],
-  ["Archie MO", "/cities/archie-mo"]
 ];
 
 export default function CitiesPage() {
@@ -52,7 +39,8 @@ export default function CitiesPage() {
         </h1>
 
         <p className="mt-6 max-w-3xl text-xl font-semibold leading-8 text-slate-700">
-          Local, owner-operated pest control with no mandatory contracts.
+          We focus on the communities we can serve well — with real local pest control,
+          termite inspections, honest recommendations, and no mandatory contracts.
         </p>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
