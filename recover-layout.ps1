@@ -1,3 +1,16 @@
+$ErrorActionPreference = "Stop"
+
+Write-Host "Recovering broken layout.tsx..." -ForegroundColor Green
+
+$layoutPath = "src\app\layout.tsx"
+$backupDir = ".\backup-layout-recovery-$(Get-Date -Format yyyyMMdd-HHmmss)"
+New-Item -ItemType Directory -Force -Path $backupDir | Out-Null
+
+if (Test-Path $layoutPath) {
+  Copy-Item $layoutPath "$backupDir\layout.tsx.broken" -Force
+}
+
+$layout = @'
 import "./globals.css";
 import type { Metadata } from "next";
 import StickyContact from "@/components/StickyContact";
@@ -48,3 +61,12 @@ export default function RootLayout({
     </html>
   );
 }
+'@
+
+Set-Content -Path $layoutPath -Value $layout -Encoding UTF8
+
+if (Test-Path ".next") {
+  Remove-Item ".next" -Recurse -Force
+}
+
+npm run build
