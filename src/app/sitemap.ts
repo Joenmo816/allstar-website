@@ -14,10 +14,13 @@ const routes = [
   "/guarantee",
   "/discounts",
   "/text-a-pest-photo",
-  "/seasonal-pest-control-kansas-city",
+  "/general-pest-control-kansas-city",
+  "/home-pest-control-kansas-city",
+  "/commercial-pest-control-kansas-city",
+  "/apartment-pest-control-kansas-city",
   "/termite-inspection-kansas-city",
-  "/real-estate-termite-inspections-kansas-city",
-  "/carpenter-ant-treatment-kansas-city",
+  "/termite-treatment-kansas-city",
+  "/termite-damage-warning-signs-kansas-city",
   "/ants-kansas-city",
   "/spider-control-kansas-city",
   "/rodent-control-kansas-city",
@@ -26,26 +29,10 @@ const routes = [
   "/mosquito-control-kansas-city",
   "/wasp-control-kansas-city",
   "/flea-treatment-kansas-city",
-  "/termite-swarm-season-kansas-city",
-  "/ants-inside-walls-termite-risk-kansas-city",
-  "/spring-pest-checklist-kansas-city",
-  "/cities/overland-park-ks",
-  "/cities/belton-mo",
-  "/cities/raymore-mo",
-  "/cities/lees-summit-mo",
-  "/cities/stilwell-ks",
-  "/cities/leawood-ks",
-  "/cities/louisburg-ks",
-  "/cities/harrisonville-mo",
-  "/cities/peculiar-mo",
-  "/cities/spring-hill-ks",
-  "/cities/paola-ks",
-  "/cities/cleveland-mo",
-  "/cities/martin-city-mo",
-  "/cities/loch-lloyd-mo",
-  "/cities/bucyrus-ks",
-  "/cities/freeman-mo",
-  "/cities/drexel-mo"
+  "/pest-prevention-kansas-city",
+  "/emergency-pest-control-kansas-city",
+  "/one-time-pest-control-kansas-city",
+  "/recurring-pest-control-kansas-city"
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -53,13 +40,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
-    priority:
-      route === ""
-        ? 1
-        : route === "/services" || route === "/contact"
-          ? 0.95
-          : route.startsWith("/cities")
-            ? 0.8
-            : 0.9,
+    priority: route === "" ? 1 : 0.9,
   }));
 }
