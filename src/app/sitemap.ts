@@ -4,12 +4,17 @@ const baseUrl = "https://allstarpestkc.com";
 
 const routes = [
   "",
+  "/about",
   "/services",
   "/cities",
   "/faqs",
   "/contact",
   "/reviews",
   "/blog",
+  "/guarantee",
+  "/discounts",
+  "/text-a-pest-photo",
+  "/seasonal-pest-control-kansas-city",
   "/termite-inspection-kansas-city",
   "/real-estate-termite-inspections-kansas-city",
   "/carpenter-ant-treatment-kansas-city",
@@ -45,9 +50,16 @@ const routes = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
-    url: ${baseUrl},
+    url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
-    priority: route === "" ? 1 : route.startsWith("/cities") ? 0.8 : 0.9,
+    priority:
+      route === ""
+        ? 1
+        : route === "/services" || route === "/contact"
+          ? 0.95
+          : route.startsWith("/cities")
+            ? 0.8
+            : 0.9,
   }));
 }
