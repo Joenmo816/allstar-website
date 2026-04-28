@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SeoInternalLinks from "./SeoInternalLinks";
 
 type SeoPageProps = {
   title: string;
@@ -115,6 +116,11 @@ export default function SeoLandingPage({
           CALL NOW — SAME DAY / NEXT DAY SERVICE
         </a>
       </div>
+    
+      <SeoInternalLinks />
     </main>
   );
 }
+
+
+

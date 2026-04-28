@@ -1,32 +1,53 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://allstarpestkc.com";
+const baseUrl = "https://allstarpestkc.com";
+
+const routes = [
+  "",
+  "/services",
+  "/cities",
+  "/faqs",
+  "/contact",
+  "/reviews",
+  "/blog",
+  "/termite-inspection-kansas-city",
+  "/real-estate-termite-inspections-kansas-city",
+  "/carpenter-ant-treatment-kansas-city",
+  "/ants-kansas-city",
+  "/spider-control-kansas-city",
+  "/rodent-control-kansas-city",
+  "/cockroach-exterminator-kansas-city",
+  "/bed-bug-treatment-kansas-city",
+  "/mosquito-control-kansas-city",
+  "/wasp-control-kansas-city",
+  "/flea-treatment-kansas-city",
+  "/termite-swarm-season-kansas-city",
+  "/ants-inside-walls-termite-risk-kansas-city",
+  "/spring-pest-checklist-kansas-city",
+  "/cities/overland-park-ks",
+  "/cities/belton-mo",
+  "/cities/raymore-mo",
+  "/cities/lees-summit-mo",
+  "/cities/stilwell-ks",
+  "/cities/leawood-ks",
+  "/cities/louisburg-ks",
+  "/cities/harrisonville-mo",
+  "/cities/peculiar-mo",
+  "/cities/spring-hill-ks",
+  "/cities/paola-ks",
+  "/cities/cleveland-mo",
+  "/cities/martin-city-mo",
+  "/cities/loch-lloyd-mo",
+  "/cities/bucyrus-ks",
+  "/cities/freeman-mo",
+  "/cities/drexel-mo"
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
-    "",
-    "/contact",
-    "/about",
-    "/charts",
-    "/services",
-    "/termite-inspection-kansas-city",
-    "/rodent-control-kansas-city",
-    "/spider-control-kansas-city",
-    "/cockroach-control-kansas-city",
-    "/mosquito-control-kansas-city",
-    "/bed-bug-treatment-kansas-city",
-    "/kansas-city-pest-control",
-    "/overland-park-pest-control",
-    "/olathe-pest-control",
-    "/leawood-pest-control",
-    "/belton-pest-control",
-    "/raymore-pest-control",
-  ];
-
   return routes.map((route) => ({
-    url: `${siteUrl}${route}`,
+    url: ${baseUrl},
     lastModified: new Date(),
     changeFrequency: "weekly",
-    priority: route === "" ? 1 : 0.8,
+    priority: route === "" ? 1 : route.startsWith("/cities") ? 0.8 : 0.9,
   }));
 }
